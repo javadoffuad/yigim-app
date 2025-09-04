@@ -1,0 +1,64 @@
+.card {
+    background: white;
+    border: 1px solid #eaeaec;
+    border-radius: 16px;
+    padding: 16px;
+    width: 320px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.quote {
+    font-size: 12px;
+    color: #4b4b4b;
+    line-height: 18px;
+    margin: 0;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.authorAvatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.specialAvatar {
+    width: 40px;
+    height: 40px;
+    background: #fff34c;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.specialAvatarImg {
+    width: 28px;
+    height: 8px;
+    object-fit: cover;
+}
+
+.authorInfo {
+    flex: 1;
+}
+
+.authorName {
+    font-weight: 500;
+    color: #1e1e1e;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.authorTitle {
+    color: #888888;
+    font-size: 12px;
+    line-height: 16px;
+}
