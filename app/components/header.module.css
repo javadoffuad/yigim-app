@@ -1,0 +1,95 @@
+/* Header Styles */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    padding: 32px 120px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    height: 72px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 40px;
+    box-shadow: 0 4px 16px rgba(30, 30, 30, 0.08);
+    backdrop-filter: blur(15px);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 188px;
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.nav-link {
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    text-decoration: none;
+    color: #1e1e1e;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 28px;
+    transition: background-color 0.2s ease;
+}
+
+.nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.lang-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 20px;
+    height: 40px;
+    box-sizing: border-box;
+    background: transparent;
+    border: none;
+    color: #1e1e1e;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 28px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.login-btn {
+    padding: 0 24px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background: #ffc404;
+    border: none;
+    color: #1e1e1e;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.28px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.login-btn:hover {
+    background: rgba(255, 196, 4, 0.9);
+}
