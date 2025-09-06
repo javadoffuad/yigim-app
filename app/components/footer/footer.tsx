@@ -5,6 +5,7 @@ import fb from '@/public/social/fb-logo.svg';
 import instagram from '@/public/social/instagram-logo.svg';
 import linkedin from '@/public/social/linkedin-logo.svg';
 import youtube from '@/public/social/youtube-logo.svg';
+import Link from 'next/link';
 
 export default function Footer() {
     return (
@@ -45,30 +46,30 @@ export default function Footer() {
             </div>
             
             <div className={styles["footer-social"]}>
-                <div className={styles["social-item"]}>
+                <Link href="https://facebook.com" className={styles["social-item"]} target='_blank'>
                     <Image src={fb} alt="Facebook" />
                     <span>Facebook</span>
-                </div>
-                <div className={styles["social-item"]}>
+                </Link>
+                <Link href="https://instagram.com" className={styles["social-item"]} target='_blank'>
                     <Image src={instagram} alt="Instagram" />
                     <span>Instagram</span>
-                </div>
-                <div className={styles["social-item"]}>
+                </Link>
+                <Link href="https://linkedin.com" className={styles["social-item"]} target='_blank'>
                     <Image src={linkedin} alt="LinkedIn" />
                     <span>Linkedin</span>
-                </div>
-                <div className={styles["social-item"]}>
+                </Link>
+                <Link href="https://youtube.com" className={styles["social-item"]} target='_blank'>
                     <Image src={youtube} alt="YouTube" />
                     <span>Youtube</span>
-                </div>
+                </Link>
             </div>
             
             <div className={styles["footer-bottom"]}>
                 <div className={styles["copyright"]}>© COPYRIGHT YIGIM 2025</div>
                 <div className={styles["footer-legal"]}>
-                    <a href="#">INFORMATION SECURITY</a>
-                    <a href="#">COOKIE POLICY</a>
-                    <a href="#">TERMS & CONDITION</a>
+                    <Link href="/security">INFORMATION SECURITY</Link>
+                    <Link href="/cookie-policy">COOKIE POLICY</Link>
+                    <Link href="/terms-condition">TERMS & CONDITION</Link>
                 </div>
                 <div className={styles["back-to-top"]}>BACK ON THE TOP ↑</div>
             </div>
