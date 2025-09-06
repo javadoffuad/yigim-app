@@ -25,7 +25,7 @@ export default function Header() {
               <button className={styles["lang-btn"]}>
                 ENG
                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                    <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </button>
               <Link href="/login" className={styles["login-btn"]}>Log in</Link>
