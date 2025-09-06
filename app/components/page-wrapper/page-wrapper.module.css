@@ -29,8 +29,7 @@
   font-size: 96px;
   margin-bottom: 60px;
   width: 100%;
-  max-width: var(--max-width);
-  padding-left: 45px;
+  max-width: 1120px;
 }
 
 .content {
