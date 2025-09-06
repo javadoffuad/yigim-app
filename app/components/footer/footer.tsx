@@ -18,7 +18,7 @@ export default function Footer() {
                     <div className={styles["footer-column"]}>
                         <h3 className={styles["footer-heading"]}>PRODUCT</h3>
                         <ul className={styles["footer-list"]}>
-                            <li><a href="#" className={`${styles["footer-link"]} ${styles["highlight"]}`}>All-In-One Aggregator Service</a></li>
+                            <li><a href="#" className={styles["footer-link"]}>All-In-One Aggregator Service</a></li>
                             <li><a href="#" className={styles["footer-link"]}>Internet - Acquiring /<br />E-Comm Solution</a></li>
                             <li><a href="#" className={styles["footer-link"]}>Link Payment +</a></li>
                             <li><a href="#" className={styles["footer-link"]}>Fast Invoice Payment</a></li>
