@@ -1,6 +1,9 @@
 'use client';
+
+import PageWrapper from "../components/page-wrapper/page-wrapper";
+
 export default function ContactsPage() {
   return (
-    <h1>Contacts</h1>
+    <PageWrapper title='Contacts' />
   );
 }
