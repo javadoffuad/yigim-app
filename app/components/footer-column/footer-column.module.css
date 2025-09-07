@@ -1,0 +1,33 @@
+.footer-column {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-heading {
+    font-weight: 500;
+    font-size: 14px;
+    color: #4b4b4b;
+    letter-spacing: 0.56px;
+}
+
+.footer-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    transition: color 0.2s ease;
+    white-space: pre-line;
+}
+
+.footer-link:hover {
+    color: #ffc404;
+}

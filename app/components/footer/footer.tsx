@@ -6,6 +6,57 @@ import instagram from '@/public/social/instagram-logo.svg';
 import linkedin from '@/public/social/linkedin-logo.svg';
 import youtube from '@/public/social/youtube-logo.svg';
 import Link from 'next/link';
+import { PAGE_COMPANY, PAGE_COMPANY_CONTACTS, PAGE_COMPANY_NEWS, PAGE_COMPANY_PARTNERS, PAGE_POLICIY, PAGE_PRODUCT_ALL_IN_ONE, PAGE_PRODUCT_FAST_INVOICE_PAYMENT, PAGE_PRODUCT_INTERNET_ACQUIRING, PAGE_PRODUCT_LINK_PAYMENT, PAGE_RESOURCES_API, PAGE_RESOURCES_HELP_CENTER, PAGE_SECURITY, PAGE_SOCIAL_FACEBOOK, PAGE_SOCIAL_INSTAGRAM, PAGE_SOCIAL_LINKEDIN, PAGE_SOCIAL_YOUTUBE, PAGE_TERMS_CONDITION } from '@/app/constants/navigation.constants';
+import FooterColumn from '../footer-column/footer-column';
+
+const products = [
+    {
+        text: 'All-In-One Aggregator Service',
+        url: PAGE_PRODUCT_ALL_IN_ONE
+    },
+    {
+        text: `Internet - Acquiring /\nE-Comm Solution`,
+        url: PAGE_PRODUCT_INTERNET_ACQUIRING
+    },
+    {
+        text: 'Link Payment +',
+        url: PAGE_PRODUCT_LINK_PAYMENT
+    },
+    {
+        text: 'Fast Invoice Payment',
+        url: PAGE_PRODUCT_FAST_INVOICE_PAYMENT
+    },
+];
+
+const company = [
+    {
+        text: 'About',
+        url: PAGE_COMPANY
+    },
+    {
+        text: 'News',
+        url: PAGE_COMPANY_NEWS
+    },
+    {
+        text: 'Our partners',
+        url: PAGE_COMPANY_PARTNERS
+    },
+    {
+        text: 'Contacts',
+        url: PAGE_COMPANY_CONTACTS
+    },
+];
+
+const resources = [
+    {
+        text: 'API Documentation',
+        url: PAGE_RESOURCES_API
+    },
+    {
+        text: 'Help Center',
+        url: PAGE_RESOURCES_HELP_CENTER
+    },
+];
 
 export default function Footer() {
     return (
@@ -15,50 +66,26 @@ export default function Footer() {
                 <Image src={logo} alt="YIGIM" className={styles["footer-logo"]} />
                 
                 <div className={styles["footer-links"]}>
-                    <div className={styles["footer-column"]}>
-                        <h3 className={styles["footer-heading"]}>PRODUCT</h3>
-                        <ul className={styles["footer-list"]}>
-                            <li><a href="#" className={styles["footer-link"]}>All-In-One Aggregator Service</a></li>
-                            <li><a href="#" className={styles["footer-link"]}>Internet - Acquiring /<br />E-Comm Solution</a></li>
-                            <li><a href="#" className={styles["footer-link"]}>Link Payment +</a></li>
-                            <li><a href="#" className={styles["footer-link"]}>Fast Invoice Payment</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div className={styles["footer-column"]}>
-                        <h3 className={styles["footer-heading"]}>COMPANY</h3>
-                        <ul className={styles["footer-list"]}>
-                            <li><a href="#" className={styles["footer-link"]}>About</a></li>
-                            <li><a href="#" className={styles["footer-link"]}>News</a></li>
-                            <li><a href="#" className={styles["footer-link"]}>Our partners</a></li>
-                            <li><a href="#" className={styles["footer-link"]}>Contacts</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div className={styles["footer-column"]}>
-                        <h3 className={styles["footer-heading"]}>RESOURCES</h3>
-                        <ul className={styles["footer-list"]}>
-                            <li><a href="#" className={styles["footer-link"]}>API Documentation</a></li>
-                            <li><a href="#" className={styles["footer-link"]}>Help Center</a></li>
-                        </ul>
-                    </div>
+                    <FooterColumn heading='PRODUCT' links={products}/>
+                    <FooterColumn heading='COMPANY' links={company}/>
+                    <FooterColumn heading='RESOURCES' links={resources}/>
                 </div>
             </div>
             
             <div className={styles["footer-social"]}>
-                <Link href="https://facebook.com" className={styles["social-item"]} target='_blank'>
+                <Link href={PAGE_SOCIAL_FACEBOOK} className={styles["social-item"]} target='_blank'>
                     <Image src={fb} alt="Facebook" />
                     <span>Facebook</span>
                 </Link>
-                <Link href="https://instagram.com" className={styles["social-item"]} target='_blank'>
+                <Link href={PAGE_SOCIAL_INSTAGRAM} className={styles["social-item"]} target='_blank'>
                     <Image src={instagram} alt="Instagram" />
                     <span>Instagram</span>
                 </Link>
-                <Link href="https://linkedin.com" className={styles["social-item"]} target='_blank'>
+                <Link href={PAGE_SOCIAL_LINKEDIN} className={styles["social-item"]} target='_blank'>
                     <Image src={linkedin} alt="LinkedIn" />
                     <span>Linkedin</span>
                 </Link>
-                <Link href="https://youtube.com" className={styles["social-item"]} target='_blank'>
+                <Link href={PAGE_SOCIAL_YOUTUBE} className={styles["social-item"]} target='_blank'>
                     <Image src={youtube} alt="YouTube" />
                     <span>Youtube</span>
                 </Link>
@@ -67,9 +94,9 @@ export default function Footer() {
             <div className={styles["footer-bottom"]}>
                 <div className={styles["copyright"]}>© COPYRIGHT YIGIM 2025</div>
                 <div className={styles["footer-legal"]}>
-                    <Link href="/security">INFORMATION SECURITY</Link>
-                    <Link href="/cookie-policy">COOKIE POLICY</Link>
-                    <Link href="/terms-condition">TERMS & CONDITION</Link>
+                    <Link href={PAGE_SECURITY}>INFORMATION SECURITY</Link>
+                    <Link href={PAGE_POLICIY}>COOKIE POLICY</Link>
+                    <Link href={PAGE_TERMS_CONDITION}>TERMS & CONDITION</Link>
                 </div>
                 <div className={styles["back-to-top"]}>BACK ON THE TOP ↑</div>
             </div>
