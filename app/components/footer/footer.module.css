@@ -2,7 +2,8 @@
     display: flex;
     justify-content: center;
     background: #1b1b1b;
-    padding: 100px 0 32px 0;
+    padding: 140px 0 32px 0;
+    margin-top: -40px;
 }
 
 .footer-content {
