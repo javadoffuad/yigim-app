@@ -6,9 +6,12 @@ import email from '@/public/email.svg';
 import phone from '@/public/phone.svg';
 import address from '@/public/address.svg';
 import styles from './page.module.css'
+import ContactForm from "./components/contact-form/contact-form";
+import ContactMap from "./components/contact-map/contact-map";
 
 export default function ContactsPage() {
   return (
+    <>
     <PageWrapper title='Get in touch'>
       <div className={styles["contact-cards"]}>
         <ContactCard altText="Email" icon={email}>
@@ -21,6 +24,9 @@ export default function ContactsPage() {
           Bakı, Yasamal r-nu,<br />İsmayıl Qutqaşınlı 507-511 B
         </ContactCard>
       </div>
+      <ContactForm />
     </PageWrapper>
+    <ContactMap />
+    </>
   );
 }

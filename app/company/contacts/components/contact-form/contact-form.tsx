@@ -1,0 +1,43 @@
+'use client';
+
+import styles from './contact-form.module.css';
+
+export default function ContactForm() {
+    return (
+        <div className={styles["contact-form-section"]}>
+            <div className={styles["form-header"]}>
+                <div className={styles["form-subtitle"]}>WE WILL CALL YOU.</div>
+                <h2 className={styles["form-title"]}>Have a question?</h2>
+            </div>
+            
+            <form className={styles["contact-form"]}>
+                <div className={styles["form-row"]}>
+                    <div className={styles["input-group"]}>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className={styles["input-icon"]}>
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" stroke="#888888" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                            <circle cx="12" cy="7" r="4" stroke="#888888" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                        <input type="text" placeholder="Full Name" className={styles["form-input"]} />
+                    </div>
+                    
+                    <div className={styles["input-group"]}>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className={styles["input-icon"]}>
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke="#888888" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                        <input type="tel" placeholder="Phone number" className={styles["form-input"]} />
+                    </div>
+                </div>
+                
+                <div className={`${styles["input-group"]} ${styles["textarea-group"]}`}>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className={styles["input-icon"]}>
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="#888888" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                        <polyline points="22,6 12,13 2,6" stroke="#888888" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                    <textarea placeholder="Message" className={styles["form-textarea"]}></textarea>
+                </div>
+                
+                <button type="submit" className={styles["submit-btn"]}>Send request</button>
+            </form>
+        </div>
+    );
+}

@@ -1,0 +1,108 @@
+.contact-form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
+    width: 100%;
+    margin-top: 120px;
+}
+
+.form-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.form-subtitle {
+    font-weight: 500;
+    font-size: 14px;
+    color: #888888;
+    letter-spacing: 0.56px;
+}
+
+.form-title {
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 80px;
+    letter-spacing: -2.56px;
+    color: #1e1e1e;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.form-row {
+    display: flex;
+    gap: 24px;
+}
+
+.input-group {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 20px 16px;
+    background: #f3f3f3;
+    border-radius: 16px;
+    min-height: 64px;
+}
+
+.textarea-group {
+    min-height: 124px;
+    align-items: flex-start;
+}
+
+.input-icon {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    color: #888888;
+}
+
+.form-input,
+.form-textarea {
+    flex: 1;
+    border: none;
+    background: transparent;
+    font-family: 'Geist', sans-serif;
+    font-size: 16px;
+    color: #1e1e1e;
+    outline: none;
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+    color: #888888;
+}
+
+.form-textarea {
+    resize: none;
+    min-height: 80px;
+}
+
+.submit-btn {
+    align-self: center;
+    padding: 12px 24px;
+    background: #ffc404;
+    border: none;
+    border-radius: 100px;
+    font-family: 'Geist', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #1e1e1e;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    letter-spacing: 0.32px;
+}
+
+.submit-btn:hover {
+    background: #e6b004;
+}
