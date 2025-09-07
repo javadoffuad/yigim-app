@@ -1,12 +1,12 @@
 'use client';
 
-import KeyFacts from './components/key-facts/key-facts';
-import styles from './page.module.css';
+import KeyFacts from '@/components/key-facts/key-facts';
+import MainHeader from '@/components/main-header/main-header';
 
 export default function HomePage() {
   return (
     <>
-      <section className={styles.top}></section>
+      <MainHeader />
       <KeyFacts />
     </>
   );
