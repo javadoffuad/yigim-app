@@ -15,7 +15,7 @@ export default function FooterColumn({heading, links}: Props) {
             <h3 className={styles["footer-heading"]}>{heading}</h3>
             <ul className={styles["footer-list"]}>
                 {links.map(link => 
-                    <Link href={link.url} className={styles["footer-link"]}>{link.text}</Link>
+                    <Link key={link.url} href={link.url} className={styles["footer-link"]}>{link.text}</Link>
                 )}
             </ul>
         </div>
