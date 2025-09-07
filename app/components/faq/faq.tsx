@@ -1,3 +1,5 @@
+'use client';
+
 import styles from './faq.module.css';
 
 interface Faq {
@@ -20,18 +22,18 @@ export default function Faq({items}: {items: Faq[]}) {
                     </div>
                 </div>
                 <div className={styles.faqList}>
-                    {items.map(item => (
-                        <div className={styles.faqItem}>
-                        <button className={styles.faqQuestion}>
-                            {item.question}
-                            <svg className={styles.faqIcon} width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M12 5V19M5 12H19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                            </svg>
-                        </button>
-                        <div className={styles.faqAnswer}>
-                            <p>{item.answer}</p>
+                    {items.map((item, index) => (
+                        <div key={index} className={styles.faqItem}>
+                            <button className={styles.faqQuestion}>
+                                {item.question}
+                                <svg className={styles.faqIcon} width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 5V19M5 12H19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                </svg>
+                            </button>
+                            <div className={styles.faqAnswer}>
+                                <p>{item.answer}</p>
+                            </div>
                         </div>
-                    </div>
                     ))}
                 </div>
             </div>
