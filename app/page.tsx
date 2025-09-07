@@ -1,7 +1,13 @@
 'use client';
 
+import KeyFacts from './components/key-facts/key-facts';
+import styles from './page.module.css';
+
 export default function HomePage() {
   return (
-    <h1>Hello, Next.js!</h1>
+    <>
+      <section className={styles.top}></section>
+      <KeyFacts />
+    </>
   );
 }

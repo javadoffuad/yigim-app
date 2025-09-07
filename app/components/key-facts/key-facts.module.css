@@ -1,0 +1,246 @@
+.key-facts-container {
+  display: flex;
+  flex-direction: column;
+  width: 1440px;
+  align-items: center;
+  gap: 120px;
+  padding: 120px 0;
+  position: relative;
+}
+
+.key-facts-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  width: 100%;
+}
+
+.highlight {
+  background: url(../../../public/highlight.svg) 0 1px no-repeat;
+  background-size: 100%;
+  padding: 4px 10px;
+}
+
+.key-facts-label {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: 'Aeonik-Medium', Helvetica, sans-serif;
+  font-weight: 500;
+  color: #888888;
+  font-size: 14px;
+  letter-spacing: 0.56px;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.key-facts-title {
+  position: relative;
+  width: 100%;
+  font-family: 'Aeonik-Medium', Helvetica, sans-serif;
+  font-weight: 500;
+  color: #1e1e1e;
+  font-size: 48px;
+  text-align: center;
+  letter-spacing: -1.92px;
+  line-height: 56px;
+}
+
+.key-facts-grid {
+  position: relative;
+  width: 100%;
+  height: 642px;
+}
+
+.key-facts-grid-inner {
+  position: relative;
+  width: 614px;
+  height: 310px;
+  top: 166px;
+  left: 413px;
+}
+
+.key-fact-card {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  border-radius: 16px;
+}
+
+.key-fact-card.card-1 {
+  width: 232px;
+  height: 206px;
+  top: 98px;
+  left: 322px;
+  background-color: white;
+  border: 1px solid #eaeaec;
+}
+
+.key-fact-card.card-2 {
+  width: 232px;
+  height: 206px;
+  top: 66px;
+  left: 0;
+  background-color: #8b7036;
+}
+
+.key-fact-card.card-3 {
+  width: 268px;
+  height: 206px;
+  top: 18px;
+  left: 100px;
+  background-color: white;
+  border: 1px solid #eaeaec;
+}
+
+.key-fact-card.card-4 {
+  width: 232px;
+  height: 206px;
+  top: 104px;
+  left: 148px;
+  background-color: #faf9f6;
+}
+
+.key-fact-card.card-5 {
+  width: 248px;
+  height: 206px;
+  top: 50px;
+  left: 366px;
+  background-color: #fffaeb;
+}
+
+.key-fact-card.card-6 {
+  width: 180px;
+  height: 206px;
+  top: 0;
+  left: 348px;
+  background-color: #faf9f6;
+}
+
+.key-fact-card.card-7 {
+  width: 232px;
+  height: 206px;
+  top: 40px;
+  left: 224px;
+  background-color: #0a101d;
+}
+
+.key-fact-content {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.key-fact-title-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+  flex: 1;
+  width: 100%;
+}
+
+.key-fact-title {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: -0.24px;
+  line-height: 16px;
+  white-space: pre-line;
+}
+
+.key-fact-title.aeonik {
+  font-family: 'Aeonik-Medium', Helvetica, sans-serif;
+}
+
+.key-fact-title.geist {
+  font-family: 'Geist', Helvetica, sans-serif;
+}
+
+.key-fact-title.white {
+  color: white;
+}
+
+.key-fact-title.dark {
+  color: #1e1e1e;
+}
+
+.key-fact-stats {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.key-fact-value-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  position: relative;
+}
+
+.key-fact-value {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-weight: 500;
+  font-size: 36px;
+  letter-spacing: -0.72px;
+  line-height: 48px;
+  white-space: nowrap;
+}
+
+.key-fact-value.aeonik {
+  font-family: 'Aeonik-Medium', Helvetica, sans-serif;
+}
+
+.key-fact-value.geist {
+  font-family: 'Geist', Helvetica, sans-serif;
+}
+
+.key-fact-value.white {
+  color: white;
+}
+
+.key-fact-value.dark {
+  color: #1e1e1e;
+}
+
+.key-fact-description-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  position: relative;
+}
+
+.key-fact-description {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: 'Geist', Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: -0.48px;
+  line-height: 32px;
+  white-space: nowrap;
+}
+
+.key-fact-description.white {
+  color: white;
+}
+
+.key-fact-description.dark {
+  color: #1e1e1e;
+}
