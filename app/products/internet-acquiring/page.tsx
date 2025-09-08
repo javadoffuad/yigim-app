@@ -9,6 +9,8 @@ import globalIcon from '@/public/global.svg';
 import holdingFundsIcon from '@/public/holding-funds.svg';
 import secureIcon from '@/public/secure.svg';
 import { FunctionCardProps } from "../components/main-functions/function-card/function-card";
+import { ThingCardProps } from "../components/three-things/thing-card/thing-card";
+import ThreeThings from "../components/three-things/main-section/main-section";
 
 const functions: FunctionCardProps[] = [
     {
@@ -43,9 +45,28 @@ const functions: FunctionCardProps[] = [
     },
 ]
 
+const threeThings: ThingCardProps[] = [
+    {
+        number: 1,
+        title: 'Backup Plan',
+        description: 'YIĞIM is connected to multiple processing centers, automatically rerouting transactions if one of them fails to ensure uninterrupted service',
+    },
+    {
+        number: 2,
+        title: 'Secure Transactions',
+        description: 'Ensures highest standards of data protection for all payment methods',
+    },
+    {
+        number: 3,
+        title: 'Simplicity',
+        description: 'Simplifies yout accounting by reconciling with YIĞIM instead of multiple banks',
+    },
+];
+
 export default function ProductPage() {
   return (
     <PageWrapper title='Internet - Acquiring / E-Comm Solution'>
+      <ThreeThings items={threeThings} />
       <MainFunctions items={functions} />
     </PageWrapper>
   );
