@@ -11,6 +11,9 @@ import secureIcon from '@/public/secure.svg';
 import { FunctionCardProps } from "../components/main-functions/function-card/function-card";
 import { ThingCardProps } from "../components/three-things/thing-card/thing-card";
 import ThreeThings from "../components/three-things/main-section/main-section";
+import { RealLifeCardProps } from "../components/real-life/real-life-card/real-life-card";
+import calendarIcon from '@/public/icons/calendar-freezer.svg';
+import RealLifeCases from "../components/real-life/main-section/main-section";
 
 const functions: FunctionCardProps[] = [
     {
@@ -63,9 +66,24 @@ const threeThings: ThingCardProps[] = [
     },
 ];
 
+const realLifeCases: RealLifeCardProps[] = [
+    {
+        icon: calendarIcon,
+        children: `In services like <strong>taxi rides or food delivery</strong>
+                    (e.g. Bolt or Wolt), funds can be <strong>securely pre-authorized</strong>
+                    and blocked (frozen) until the service is delivered.`,
+    },
+    {
+        icon: refundsIcon,
+        children: `If the service is canceled or not used, the amount is unblocked
+                    (returned back) to the customer — <strong>without any commission</strong> or penalty.`,
+    },
+];
+
 export default function ProductPage() {
   return (
     <PageWrapper title='Internet - Acquiring / E-Comm Solution'>
+      <RealLifeCases items={realLifeCases} />
       <ThreeThings items={threeThings} />
       <MainFunctions items={functions} />
     </PageWrapper>

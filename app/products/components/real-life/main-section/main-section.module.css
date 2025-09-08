@@ -1,0 +1,112 @@
+.section {
+    padding: 80px 0;
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 120px;
+}
+
+.header {
+    padding: 32px 120px;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 120px;
+}
+
+.content {
+    gap: 120px;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: row;
+}
+
+.subtitle {
+    font-family: 'Geist', sans-serif;
+    font-weight: 500;
+    color: #888888;
+    font-size: 14px;
+    letter-spacing: 0.56px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.title {
+    font-family: 'Geist', sans-serif;
+    font-weight: 500;
+    color: #1e1e1e;
+    font-size: 48px;
+    letter-spacing: -0.96px;
+    line-height: 56px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.hero-banner {
+    margin-bottom: 120px;
+    padding: 0 16px;
+}
+
+.hero-banner > div {
+    height: 704px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 32px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%), 
+                url('../../../../../public/images/pre-secure.png') 50% 50% / cover;
+    padding: 260px 0;
+}
+
+.hero-title {
+    font-family: 'Geist', sans-serif;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 72px;
+    letter-spacing: -2.88px;
+    line-height: 80px;
+    text-align: center;
+    margin: 0;
+}
+
+.cards {
+    position: relative;
+    max-width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    gap: 16px;
+}
+
+.arrow-connector {
+    position: absolute;
+    top: calc(50% - 20px);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    width: 40px;
+    height: 40px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 24px;
+}
+
+.arrow {
+    height: 14px;
+}

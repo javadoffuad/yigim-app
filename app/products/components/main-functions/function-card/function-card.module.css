@@ -10,20 +10,6 @@
     min-height: 212px;
 }
 
-.iconWrapper {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 8px;
-    background-color: #ffc404;
-    border-radius: 12px;
-    width: fit-content;
-}
-
-.icon {
-    flex-shrink: 0;
-}
-
 .content {
     display: flex;
     flex-direction: column;
@@ -50,7 +36,7 @@
     margin: 0;
 }
 
-.notification-icon {
+.iconWrapper {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -63,4 +49,5 @@
 .icon {
     width: 24px;
     height: 24px;
+    flex-shrink: 0;
 }
