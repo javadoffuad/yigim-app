@@ -7,7 +7,7 @@ import bellIcon from '@/public/bell.svg';
 import refundsIcon from '@/public/refunds.svg';
 import globalIcon from '@/public/global.svg';
 import holdingFundsIcon from '@/public/holding-funds.svg';
-import secureIcon from '@/public/more-secure.svg';
+import secureIcon from '@/public/secure.svg';
 import { FunctionCardProps } from "../components/main-functions/function-card/function-card";
 
 const functions: FunctionCardProps[] = [
