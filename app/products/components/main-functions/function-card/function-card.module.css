@@ -1,0 +1,66 @@
+.card {
+    flex: 1;
+    background-color: #f7f7f7;
+    border: 1px solid #eaeaec;
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-height: 212px;
+}
+
+.iconWrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    background-color: #ffc404;
+    border-radius: 12px;
+    width: fit-content;
+}
+
+.icon {
+    flex-shrink: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+
+.title {
+    font-family: 'Geist', sans-serif;
+    font-weight: 600;
+    color: #1e1e1e;
+    font-size: 16px;
+    letter-spacing: -0.32px;
+    line-height: 24px;
+    margin: 0;
+}
+
+.description {
+    font-family: 'Geist', sans-serif;
+    font-weight: 400;
+    color: #1e1e1e;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+}
+
+.notification-icon {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    background-color: #ffc404;
+    border-radius: 12px;
+    width: fit-content;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
