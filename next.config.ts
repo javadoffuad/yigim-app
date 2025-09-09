@@ -7,6 +7,9 @@ const nextConfig: NextConfig = {
   output: 'export',
   basePath: process.env.NODE_ENV === 'production' ? '/yigim-app' : '',
   assetPrefix: process.env.NODE_ENV === 'production' ? '/yigim-app/' : '',
+  unoptimized: true, // ОБЯЗАТЕЛЬНО для static export
+  domains: [],
+  path: '/yigim-app/_next/image', // Правильный путь для GitHub Pages
   /* config options here */
   async redirects() {
     return [
