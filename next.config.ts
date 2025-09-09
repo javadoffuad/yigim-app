@@ -5,7 +5,8 @@ const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig: NextConfig = {
   output: 'export',
-  basePath: process.env.PAGES_BASE_PATH,
+  basePath: process.env.NODE_ENV === 'production' ? '/yigim-app' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/yigim-app/' : '',
   /* config options here */
   async redirects() {
     return [
