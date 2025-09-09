@@ -1,38 +1,36 @@
 name: Deploy Next.js
+
 on:
   push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
-
-  workflow_dispatch:
+    branches: [master]
 
 jobs:
-  build-and-deploy:
-    name: Build Production
+  deploy:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # Даем право на запись в репозиторий
-      pages: write     # Разрешение для работы с GitHub Pages
+      contents: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          persist-credentials: false  # Важно! Должно быть `false` для корректной работы
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: '20'
+          cache: 'npm'
 
       - name: Install and build
         run: |
           npm ci
           npm run build
+        env:
+          NEXT_PUBLIC_BASE_PATH: '/yigim-app'
 
-      - name: Deploy to Github Pages
+      - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          keep_files: true
           publish_dir: ./out
+          force_orphan: true
