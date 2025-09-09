@@ -1,16 +1,11 @@
 import type { NextConfig } from "next";
 import { PAGE_COMPANY, PAGE_COMPANY_ABOUT, PAGE_PRODUCTS, PAGE_PRODUCT_ALL_IN_ONE } from "./app/constants/navigation.constants";
 
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig: NextConfig = {
   output: 'export',
-  compiler: {
-    removeConsole: process.env.NODE_ENV === 'production',
-  },
-  trailingSlash: true,
-  images: {
-    unoptimized: true // Обязательно для static export
-  },
-  basePath: process.env.NODE_ENV === 'production' ? '/yigim-app' : '',
+  basePath: process.env.PAGES_BASE_PATH,
   /* config options here */
   async redirects() {
     return [
