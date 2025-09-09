@@ -18,14 +18,14 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Setup Node with npm  # ← Явно указываем npm
+      - name: Setup Node with npm
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'  # ← Кэшируем npm
+          cache: 'npm'
 
       - name: Install dependencies with npm
-        run: npm ci  # ← Используем npm
+        run: npm ci
 
       - name: Build
         run: npm run build
