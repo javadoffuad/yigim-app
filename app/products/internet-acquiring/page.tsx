@@ -82,7 +82,7 @@ const realLifeCases: RealLifeCardProps[] = [
 
 export default function ProductPage() {
   return (
-    <PageWrapper title='Internet - Acquiring / E-Comm Solution'>
+    <PageWrapper title={`Internet - Acquiring / \nE-Comm Solution`}>
       <RealLifeCases items={realLifeCases} />
       <ThreeThings items={threeThings} />
       <MainFunctions items={functions} />

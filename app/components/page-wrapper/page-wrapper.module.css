@@ -22,12 +22,30 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: -340px;
+  margin-top: -168px;
+}
+
+.title-wrapper {
+  position: absolute;
+    z-index: 2;
+    height: 240px;
+    top: 266px;
+    left: 0;
+    align-items: flex-end;
+    width: 100%;
+    max-width: 1120px;
+    margin: auto;
+    display: flex;
+    right: 0;
 }
 
 .title {
   font-size: 96px;
-  margin-bottom: 60px;
+  font-weight: 500;
+  line-height: 120px;
+  letter-spacing: -4px;
+  font-family: 'Geist', sans-serif;
+  white-space: pre-line;
   width: 100%;
   max-width: 1120px;
 }

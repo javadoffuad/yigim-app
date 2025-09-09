@@ -12,8 +12,11 @@ export default function PageWrapper({title, children}: Props) {
     <>
         <div className={styles.bg} />
 
+        <div className={styles["title-wrapper"]}>
+          <h2 className={styles.title}>{title}</h2>
+        </div>
+
         <main className={styles.main}>
-            <h2 className={styles.title}>{title}</h2>
             <div className={styles.content}>
                 {children}
             </div>
