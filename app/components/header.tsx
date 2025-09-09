@@ -4,7 +4,7 @@ import Image from 'next/image';
 import styles from './header.module.css'
 import logo from '../../public/header-logo.svg';
 import Link from "next/link";
-import { PAGE_COMPANY, PAGE_COMPANY_CONTACTS, PAGE_COMPANY_NEWS, PAGE_HOME, PAGE_PRODUCTS, PAGE_RESOURCES_API, PAGE_SIGN_IN } from '../constants/navigation.constants';
+import { PAGE_COMPANY_ABOUT, PAGE_COMPANY_CONTACTS, PAGE_COMPANY_NEWS, PAGE_HOME, PAGE_PRODUCTS, PAGE_RESOURCES_API, PAGE_SIGN_IN } from '../constants/navigation.constants';
 
 export default function Header() {
   return (
@@ -16,7 +16,7 @@ export default function Header() {
             
             <div className={styles["nav-links"]}>
               <Link href={PAGE_PRODUCTS} className={styles["nav-link"]}>Products</Link>
-              <Link href={PAGE_COMPANY} className={styles["nav-link"]}>Company</Link>
+              <Link href={PAGE_COMPANY_ABOUT} className={styles["nav-link"]}>Company</Link>
               <Link href={PAGE_RESOURCES_API} className={styles["nav-link"]}>Developers</Link>
               <Link href={PAGE_COMPANY_NEWS} className={styles["nav-link"]}>News</Link>
               <Link href={PAGE_COMPANY_CONTACTS} className={styles["nav-link"]}>Contacts</Link>
