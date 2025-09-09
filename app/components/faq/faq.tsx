@@ -13,12 +13,12 @@ export default function Faq({items}: {items: Faq[]}) {
             <div className={styles["faq-content"]}>
                 <div className={styles["faq-left"]}>
                     <div className={styles["faq-header"]}>
-                        <span className={styles["section-label"]}>FREQUENTLY ASKED QUESTIONS</span>
+                        <div className={styles["section-subtitle"]}>FREQUENTLY ASKED QUESTIONS</div>
                         <h2 className={styles["faq-title"]}>Have<br />questions in<br />mind? Let us<br />answer it</h2>
-                        <p className={styles["faq-contact"]}>
-                            Don't answer your question?<br />
-                            contact us at <span className={styles["contact-email"]}>contact@yigim.az</span>
-                        </p>
+                    </div>
+                    <div className={styles["faq-contact"]}>
+                        Don't answer your question?<br />
+                        contact us at <span className={styles["contact-email"]}>contact@yigim.az</span>
                     </div>
                 </div>
                 <div className={styles.faqList}>
