@@ -3,7 +3,7 @@
 import styles from './main-section.module.css';
 import { ThingCard, ThingCardProps } from '../thing-card/thing-card';
 import Image from 'next/image';
-import solutionImage from '@/public/ecom-solution.jpg';
+import solutionImage from '@/public/images/ecom-solution.jpg';
 
 export default function ThreeThings({items}: {items: ThingCardProps[]}) {
   return (
