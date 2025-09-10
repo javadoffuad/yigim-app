@@ -2,15 +2,18 @@
 
 import styles from './main-section.module.css';
 import { ThingCard, ThingCardProps } from '../thing-card/thing-card';
-import Image from 'next/image';
-import solutionImage from '@/public/images/ecom-solution.jpg';
+import Image, { StaticImageData } from 'next/image';
 
-export default function ThreeThings({items}: {items: ThingCardProps[]}) {
+export default function ThreeThings({items, productName, image}: {
+    items: ThingCardProps[],
+    productName: string,
+    image: StaticImageData
+}) {
   return (
     <section className={styles.section}>
         <div className={styles.container}>
             <div className={styles.header}>
-                <div className={styles.subtitle}>INTERNET - ACQUIRING / E-COMM SOLUTION</div>
+                <div className={styles.subtitle}>{productName}</div>
                 <h2 className={styles.title}>3 Things To Know</h2>
             </div>
 
@@ -22,7 +25,7 @@ export default function ThreeThings({items}: {items: ThingCardProps[]}) {
                 </div>
 
                 <div className={styles.solution}>
-                    <Image src={solutionImage} alt="E-commerce Solution" className={styles["solution-image"]} />
+                    <Image src={image} alt="E-commerce Solution" className={styles["solution-image"]} />
                 </div>
             </div>
         </div>

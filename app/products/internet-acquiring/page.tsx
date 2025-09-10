@@ -14,6 +14,8 @@ import ThreeThings from "../components/three-things/main-section/main-section";
 import { RealLifeCardProps } from "../components/real-life/real-life-card/real-life-card";
 import calendarIcon from '@/public/icons/calendar-freezer.svg';
 import RealLifeCases from "../components/real-life/main-section/main-section";
+import solutionImage from '@/public/images/ecom-solution.jpg';
+import ProductInfo, { ProductInfoProps } from "../components/product-info/product-info";
 
 const functions: FunctionCardProps[] = [
     {
@@ -80,12 +82,20 @@ const realLifeCases: RealLifeCardProps[] = [
     },
 ];
 
+const productName = 'INTERNET - ACQUIRING / E-COMM SOLUTION';
+
+const info: ProductInfoProps = {
+  title: "The reliability game changer for your business: Even when one system goes down, your payments keep flowing smoothly.",
+  description: `This product is developed exclusively by YIĞIM's own developer team. We offer an integrated payment gateway for online stores and apps, supporting cards. The highest standards of encryption and tokenization ensure customer data security. Accepting:`
+}
+
 export default function ProductPage() {
   return (
     <PageWrapper title={`Internet - Acquiring / \nE-Comm Solution`}>
-      <RealLifeCases items={realLifeCases} />
-      <ThreeThings items={threeThings} />
-      <MainFunctions items={functions} />
+        <ProductInfo info={info} />
+        <RealLifeCases items={realLifeCases} />
+        <ThreeThings image={solutionImage} productName={productName} items={threeThings} />
+        <MainFunctions productName={productName} items={functions} />
     </PageWrapper>
   );
 }
