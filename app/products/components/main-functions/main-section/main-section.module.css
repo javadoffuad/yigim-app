@@ -48,7 +48,15 @@
     margin-top: 120px;
     flex-direction: column;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 16px;
     width: 100%;
+}
+
+.grid > div {
+    grid-column-start: span 2;
+}
+
+.grid.five > div:nth-last-child(-n+2) {
+    grid-column-start: span 3;
 }
