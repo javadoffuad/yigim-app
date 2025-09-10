@@ -18,7 +18,9 @@ export default function PageWrapper({title, children}: Props) {
 
         <main className={styles.main}>
             <div className={styles.content}>
-                {children}
+                <div className={styles.inner}>
+                  {children}
+                </div>
             </div>
         </main>
     </>

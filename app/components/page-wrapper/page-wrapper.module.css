@@ -55,6 +55,12 @@
   min-height: 200px;
   background-color: white;
   border-radius: 40px;
+  padding: 120px 0 0 0;
   z-index: 2;
-  padding: 120px 150px;
+}
+
+.inner {
+  width: 100%;
+  max-width: 1120px;
+  margin: auto;
 }
