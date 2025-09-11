@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from './feedback-card.module.css';
 
-interface FeedbackCard {
+export interface FeedbackCardProps {
   companyLogo: string;
   author: string;
   feedbackText: string;
@@ -13,7 +13,7 @@ export default function FeedbackCard({
   author, 
   feedbackText, 
   authorTitle 
-}: FeedbackCard) {
+}: FeedbackCardProps) {
     return (
         <div className={styles.card}>
             <p className={styles.quote}>
