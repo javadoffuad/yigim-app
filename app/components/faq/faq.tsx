@@ -1,6 +1,8 @@
 'use client';
 
+import { useState } from 'react';
 import styles from './faq.module.css';
+import FaqItem from '../ui/faq-item/faq-item';
 
 interface Faq {
   question: string;
@@ -8,6 +10,11 @@ interface Faq {
 }
 
 export default function Faq({items}: {items: Faq[]}) {
+    const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+    const handleClick = (index: number) => {
+        setOpenIndex(openIndex === index ? null : index);
+    };
     return (
         <section className={styles["faq-section"]}>
             <div className={styles["faq-content"]}>
@@ -23,17 +30,7 @@ export default function Faq({items}: {items: Faq[]}) {
                 </div>
                 <div className={styles.faqList}>
                     {items.map((item, index) => (
-                        <div key={index} className={styles.faqItem}>
-                            <button className={styles.faqQuestion}>
-                                {item.question}
-                                <svg className={styles.faqIcon} width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path d="M12 5V19M5 12H19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                                </svg>
-                            </button>
-                            <div className={styles.faqAnswer}>
-                                <p>{item.answer}</p>
-                            </div>
-                        </div>
+                        <FaqItem key={index} item={item} isOpen={index === openIndex} handleClick={() => handleClick(index)} />
                     ))}
                 </div>
             </div>
