@@ -25,7 +25,7 @@ export const RequestCallback = (): JSX.Element => {
 
   return (
     <>
-      <div className={`backdrop ${isOpen ? 'open' : ''} `} onClick={toggleCallbackModal}>
+      <div className={`request-callback-modal ${isOpen ? 'open' : ''} `}>
         <div className="request-callback-card">
           <div className="card-content">
             <div className="header-section">
@@ -74,6 +74,7 @@ export const RequestCallback = (): JSX.Element => {
             </button>
           </div>
         </div>
+        <div className="backdrop" onClick={toggleCallbackModal}></div>
       </div>
 
       <div className="quick-contact">
