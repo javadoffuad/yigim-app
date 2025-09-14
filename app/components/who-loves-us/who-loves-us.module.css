@@ -46,6 +46,9 @@
     flex-direction: row;
     gap: 8px;
     overflow: hidden;
+
+    mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
+    -webkit-mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
 }
 
 .column {
@@ -91,22 +94,27 @@
 }
 
 .scroll-up {
-    animation: scroll-up 20s linear infinite;
+    animation: scroll-up 65s linear infinite;
 }
 
 .scroll-down {
-    animation: scroll-down 15s linear infinite;
+    animation: scroll-down 60s linear infinite;
+}
+
+.scroll-down:hover,
+.scroll-up:hover {
+  animation-play-state: paused;
 }
 
 /* Разные скорости для столбцов */
 .column:nth-child(1) .scroll-down {
-    animation-duration: 10s;
+    animation-duration: 35s;
 }
 
 .column:nth-child(2) .scroll-up {
-    animation-duration: 15s;
+    animation-duration: 30s;
 }
 
 .column:nth-child(3) .scroll-down {
-    animation-duration: 20s;
+    animation-duration: 35s;
 }
