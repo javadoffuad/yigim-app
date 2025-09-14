@@ -4,7 +4,7 @@ import { RefObject } from 'react';
 import ProductMenuItem, { ProductMenuItemProps } from '../product-menu-item/product-menu-item';
 import styles from './product-menu.module.css';
 
-export default function ProductMenu({products, isOpen}: {ref: RefObject<null>; isOpen: boolean, products: ProductMenuItemProps[]}) {
+export default function ProductMenu({products, isOpen}: {ref: RefObject<HTMLDivElement | null>; isOpen: boolean, products: ProductMenuItemProps[]}) {
   return (
     <div className={`${styles['dropdown']} ${isOpen ? styles['show'] : ''}`}>
       <div className={styles['dropdown-inner']}>

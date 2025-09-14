@@ -17,7 +17,7 @@ import LangMenu, { LanguageCode } from './lang-menu/lang-menu';
 
 export default function Header() {
   const [productMenuIsOpen, setProductMenuIsOpen] = useState(false);
-  const dropdownRef = useRef(null);
+  const dropdownRef = useRef<HTMLDivElement>(null);
   const currentLang: LanguageCode = LanguageCode.ENG;
 
   const products: ProductMenuItemProps[] = [
@@ -48,11 +48,8 @@ export default function Header() {
   ];
 
   useEffect(() => {
-    console.log('useEffect', dropdownRef);
     const handleClickOutside = (event: any) => {
-      console.log('handleClickOutside', event, dropdownRef);
-      
-      if (dropdownRef?.current && !(dropdownRef.current as any).contains(event.target)) {
+      if (dropdownRef?.current && !dropdownRef.current.contains(event.target)) {
         setProductMenuIsOpen(false);
       }
     };
@@ -76,7 +73,7 @@ export default function Header() {
               </Link>
               
               <div className={styles["nav-links"]}>
-                <span className={styles["nav-link"]} onClick={toggleDropdown}>Products</span>
+                <span className={`${styles["nav-link"]} ${productMenuIsOpen ? styles.active : ''}`} onClick={toggleDropdown}>Products</span>
                 <Link href={PAGE_COMPANY_ABOUT} className={styles["nav-link"]}>Company</Link>
                 <Link href={PAGE_RESOURCES_API} className={styles["nav-link"]}>Developers</Link>
                 <Link href={PAGE_COMPANY_NEWS} className={styles["nav-link"]}>News</Link>
