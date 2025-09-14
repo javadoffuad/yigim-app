@@ -7,15 +7,18 @@ import product1Icon from '@/public/icons/product-1.svg';
 import product2Icon from '@/public/icons/product-2.svg';
 import product3Icon from '@/public/icons/product-3.svg';
 import product4Icon from '@/public/icons/product-4.svg';
+
 import Link from "next/link";
 import { PAGE_COMPANY_ABOUT, PAGE_COMPANY_CONTACTS, PAGE_COMPANY_NEWS, PAGE_HOME, PAGE_PRODUCT_ALL_IN_ONE, PAGE_PRODUCT_FAST_INVOICE_PAYMENT, PAGE_PRODUCT_INTERNET_ACQUIRING, PAGE_PRODUCT_LINK_PAYMENT, PAGE_PRODUCTS, PAGE_RESOURCES_API, PAGE_SIGN_IN } from '../../constants/navigation.constants';
 import { ProductMenuItemProps } from './product-menu-item/product-menu-item';
 import ProductMenu from './product-menu/product-menu';
 import { useEffect, useRef, useState } from 'react';
+import LangMenu, { LanguageCode } from './lang-menu/lang-menu';
 
 export default function Header() {
   const [productMenuIsOpen, setProductMenuIsOpen] = useState(false);
   const dropdownRef = useRef(null);
+  const currentLang: LanguageCode = LanguageCode.ENG;
 
   const products: ProductMenuItemProps[] = [
     {
@@ -86,15 +89,14 @@ export default function Header() {
                   <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                       <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
+                  <LangMenu currentLang={currentLang} />
                 </button>
                 <Link href={PAGE_SIGN_IN} className={styles["login-btn"]}>Log in</Link>
               </div>
           </nav>
       </header>
       
-      <div ref={dropdownRef}>
-        <ProductMenu isOpen={productMenuIsOpen} products={products} />
-      </div>
+      <ProductMenu ref={dropdownRef} isOpen={productMenuIsOpen} products={products} />
     </>
   );
 }
