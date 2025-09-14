@@ -9,8 +9,61 @@ import product3Icon from '@/public/icons/product-3.svg';
 import product4Icon from '@/public/icons/product-4.svg';
 import Link from "next/link";
 import { PAGE_COMPANY_ABOUT, PAGE_COMPANY_CONTACTS, PAGE_COMPANY_NEWS, PAGE_HOME, PAGE_PRODUCT_ALL_IN_ONE, PAGE_PRODUCT_FAST_INVOICE_PAYMENT, PAGE_PRODUCT_INTERNET_ACQUIRING, PAGE_PRODUCT_LINK_PAYMENT, PAGE_PRODUCTS, PAGE_RESOURCES_API, PAGE_SIGN_IN } from '../../constants/navigation.constants';
+import { ProductMenuItemProps } from './product-menu-item/product-menu-item';
+import ProductMenu from './product-menu/product-menu';
+import { useEffect, useRef, useState } from 'react';
 
 export default function Header() {
+  const [productMenuIsOpen, setProductMenuIsOpen] = useState(false);
+  const dropdownRef = useRef(null);
+
+  const products: ProductMenuItemProps[] = [
+    {
+      url: PAGE_PRODUCT_INTERNET_ACQUIRING,
+      title: 'Internet - Acquiring / E-Comm',
+      description: 'With just one integration, you now can simplify your whole payment process.',
+      icon: product1Icon,
+    },
+    {
+      url: PAGE_PRODUCT_ALL_IN_ONE,
+      title: 'All-In-One Aggregator Service',
+      description: 'With just one integration, you now can simplify your whole payment process.',
+      icon: product2Icon,
+    },
+    {
+      url: PAGE_PRODUCT_LINK_PAYMENT,
+      title: 'Link Payment +',
+      description: 'With just one integration, you now can simplify your whole payment process.',
+      icon: product3Icon,
+    },
+    {
+      url: PAGE_PRODUCT_FAST_INVOICE_PAYMENT,
+      title: 'Fast Invoice Payment',
+      description: 'With just one integration, you now can simplify your whole payment process.',
+      icon: product4Icon,
+    },
+  ];
+
+  useEffect(() => {
+    console.log('useEffect', dropdownRef);
+    const handleClickOutside = (event: any) => {
+      console.log('handleClickOutside', event, dropdownRef);
+      
+      if (dropdownRef?.current && !(dropdownRef.current as any).contains(event.target)) {
+        setProductMenuIsOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
+  const toggleDropdown = () => {
+    setProductMenuIsOpen(!productMenuIsOpen);
+  }
+
   return (
     <>
       <header className={styles.header}>
@@ -20,7 +73,7 @@ export default function Header() {
               </Link>
               
               <div className={styles["nav-links"]}>
-                <Link href={PAGE_PRODUCTS} className={styles["nav-link"]}>Products</Link>
+                <span className={styles["nav-link"]} onClick={toggleDropdown}>Products</span>
                 <Link href={PAGE_COMPANY_ABOUT} className={styles["nav-link"]}>Company</Link>
                 <Link href={PAGE_RESOURCES_API} className={styles["nav-link"]}>Developers</Link>
                 <Link href={PAGE_COMPANY_NEWS} className={styles["nav-link"]}>News</Link>
@@ -39,30 +92,8 @@ export default function Header() {
           </nav>
       </header>
       
-      <div className={styles['dropdown']}>
-        <div className={styles['dropdown-inner']}>
-          <Link href={PAGE_PRODUCT_INTERNET_ACQUIRING} className={styles['dropdown-product']}>
-            <Image className={styles['dropdown-product-icon']} src={product1Icon} alt="Internet - Acquiring / E-Comm" />
-            <div className={styles['dropdown-product-title']}>Internet - Acquiring / E-Comm</div>
-            <p className={styles['dropdown-product-desc']}>With just one integration, you now can simplify your whole payment process.</p>
-          </Link>
-
-          <Link href={PAGE_PRODUCT_ALL_IN_ONE} className={styles['dropdown-product']}>
-            <Image className={styles['dropdown-product-icon']} src={product2Icon} alt="All-In-One Aggregator Service" />
-            <div className={styles['dropdown-product-title']}>All-In-One Aggregator Service</div>
-            <p className={styles['dropdown-product-desc']}>With just one integration, you now can simplify your whole payment process.</p>
-          </Link>
-          <Link href={PAGE_PRODUCT_LINK_PAYMENT} className={styles['dropdown-product']}>
-            <Image className={styles['dropdown-product-icon']} src={product3Icon} alt="Link Payment +" />
-            <div className={styles['dropdown-product-title']}>Link Payment +</div>
-            <p className={styles['dropdown-product-desc']}>With just one integration, you now can simplify your whole payment process.</p>
-          </Link>
-          <Link href={PAGE_PRODUCT_FAST_INVOICE_PAYMENT} className={styles['dropdown-product']}>
-            <Image className={styles['dropdown-product-icon']} src={product4Icon} alt="Fast Invoice Payment" />
-            <div className={styles['dropdown-product-title']}>Fast Invoice Payment</div>
-            <p className={styles['dropdown-product-desc']}>With just one integration, you now can simplify your whole payment process.</p>
-          </Link>
-        </div>
+      <div ref={dropdownRef}>
+        <ProductMenu isOpen={productMenuIsOpen} products={products} />
       </div>
     </>
   );
