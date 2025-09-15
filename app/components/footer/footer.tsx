@@ -61,6 +61,13 @@ const resources = [
 ];
 
 export default function Footer() {
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    };
+
     return (
         <footer className={styles["footer"]}>
         <div className={styles["footer-content"]}>
@@ -100,7 +107,7 @@ export default function Footer() {
                     <Link href={PAGE_POLICIY}>COOKIE POLICY</Link>
                     <Link href={PAGE_TERMS_CONDITION}>TERMS & CONDITION</Link>
                 </div>
-                <div className={styles["back-to-top"]}>BACK ON THE TOP ↑</div>
+                <div className={styles["back-to-top"]} onClick={scrollToTop}>BACK ON THE TOP ↑</div>
             </div>
         </div>
     </footer>
