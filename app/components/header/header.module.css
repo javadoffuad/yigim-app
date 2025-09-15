@@ -47,7 +47,8 @@
     cursor: pointer;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link.active {
     background-color: rgba(0, 0, 0, 0.05);
 }
 
@@ -55,23 +56,6 @@
     display: flex;
     align-items: center;
     gap: 4px;
-}
-
-.lang-btn {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 0 20px;
-    height: 40px;
-    box-sizing: border-box;
-    background: transparent;
-    border: none;
-    color: #1e1e1e;
-    font-weight: 500;
-    font-size: 14px;
-    border-radius: 28px;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
 }
 
 .login-btn {
@@ -87,6 +71,7 @@
     letter-spacing: 0.28px;
     border-radius: 100px;
     cursor: pointer;
+    position: relative;
     transition: background-color 0.2s ease;
 }
 

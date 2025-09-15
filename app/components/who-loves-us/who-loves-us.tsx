@@ -172,29 +172,29 @@ export default function WhoLovesUs() {
     <section className={styles.section}>
         <div className={styles.content}>
             <div className={styles.text}>
-                <h3 className={styles.title}>Who loves us</h3>
-                <p className={styles.description}>...to ensure success of our 450+ clients</p>
+              <h3 className={styles.title}>Who loves us</h3>
+              <p className={styles.description}>...to ensure success of our 450+ clients</p>
             </div>
 
             <div className={styles.feedbacks}>
               <div className={styles.column}>
                 <div className={`${styles["scroll-content"]} ${styles["scroll-down"]}`}>
                   {
-                    feedbacks1.map((feedback, index) => <FeedbackCard key={index} {...feedback} />)
+                    [...feedbacks1, ...feedbacks1, ...feedbacks1].map((feedback, index) => <FeedbackCard key={index} {...feedback} />)
                   }
                 </div>
               </div>
               <div className={styles.column}>
                 <div className={`${styles["scroll-content"]} ${styles["scroll-up"]}`}>
                   {
-                    feedbacks2.map((feedback, index) => <FeedbackCard key={index} {...feedback} />)
+                    [...feedbacks2, ...feedbacks2, ...feedbacks2].map((feedback, index) => <FeedbackCard key={index} {...feedback} />)
                   }
                 </div>
               </div>
               <div className={styles.column}>
                 <div className={`${styles["scroll-content"]} ${styles["scroll-down"]}`}>
                   {
-                    feedbacks3.map((feedback, index) => <FeedbackCard key={index} {...feedback} />)
+                    [...feedbacks3, ...feedbacks3, ...feedbacks3].map((feedback, index) => <FeedbackCard key={index} {...feedback} />)
                   }
                 </div>
               </div>
