@@ -67,6 +67,7 @@
   font-size: 14px;
   border-radius: 28px;
   transition: background-color 0.2s ease;
+  cursor: pointer;
 }
 
 .button-primary {
