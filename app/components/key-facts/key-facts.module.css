@@ -20,7 +20,7 @@
 }
 
 .highlight {
-  background: url(../../../public/highlight.svg) 0 1px no-repeat;
+  background: url('/highlight.svg') 0 1px no-repeat;
   background-size: 100%;
   padding: 4px 10px;
 }
@@ -29,7 +29,6 @@
   position: relative;
   width: fit-content;
   margin-top: -1px;
-  font-family: 'Aeonik-Medium', Helvetica, sans-serif;
   font-weight: 500;
   color: #888888;
   font-size: 14px;
