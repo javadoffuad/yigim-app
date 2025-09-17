@@ -11,15 +11,19 @@ export interface ProductMenuItemProps {
   url: string;
 }
 
-export default function ProductMenuItem(props: ProductMenuItemProps) {
+export default function ProductMenuItem({menuItem, closeMenu}: {menuItem: ProductMenuItemProps, closeMenu: () => void}) {
+  const handleClick = () => {
+    closeMenu();
+  }
+
   return (
-    <Link href={props.url} className={styles['dropdown-product']}>
+    <Link href={menuItem.url} className={styles['dropdown-product']} onClick={handleClick}>
       <div className={styles['icon-wrapper']}>
-        <Image className={styles['icon']} src={props.icon} alt={props.title} />
+        <Image className={styles['icon']} src={menuItem.icon} alt={menuItem.title} />
       </div>
-      <div className={styles['dropdown-product-title']}>{props.title}</div>
+      <div className={styles['dropdown-product-title']}>{menuItem.title}</div>
       <p className={styles['dropdown-product-desc']}>
-        {props.description}
+        {menuItem.description}
       </p>
     </Link>
   );
