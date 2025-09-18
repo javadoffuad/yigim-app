@@ -28,7 +28,7 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npm run build && touch ./out/.nojekyll
+        run: npm run build
         env:
           NEXT_PUBLIC_BASE_PATH: '/yigim-app'
 
