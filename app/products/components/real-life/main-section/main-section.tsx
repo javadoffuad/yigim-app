@@ -29,8 +29,8 @@ export default function RealLifeCases({props}: {props: RealLifeProps}) {
 
             <div className={styles.cards}>
                 {
-                    props.cases.map(item => (
-                        <RealLifeCard icon={item.icon}>
+                    props.cases.map((item, index) => (
+                        <RealLifeCard key={index} icon={item.icon}>
                             {item.children}
                         </RealLifeCard>
                     ))
