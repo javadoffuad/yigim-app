@@ -86,7 +86,7 @@ interface Ball {
 export function BouncingFlags() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const ballsRef = useRef<Ball[]>([]);
-  const animationFrameId = useRef<number>();
+  const animationFrameId = useRef<number>(0);
   const [isInitialized, setIsInitialized] = useState(false);
   const dragInfo = useRef<{ball: Ball | null, offsetX: number, offsetY: number}>({ ball: null, offsetX: 0, offsetY: 0 });
 
