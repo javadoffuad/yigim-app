@@ -87,7 +87,7 @@ export default function Header() {
           </nav>
       </header>
       
-      <ProductMenu ref={dropdownRef} isOpen={productMenuIsOpen} products={products} />
+      <ProductMenu ref={dropdownRef} isOpen={productMenuIsOpen} products={products} closeMenu={toggleDropdown} />
     </>
   );
 }
