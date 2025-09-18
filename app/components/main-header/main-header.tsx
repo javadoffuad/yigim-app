@@ -20,7 +20,7 @@ export default function MainHeader() {
       </div>
 
       <Suspense fallback={<p>Loading video...</p>}>
-        <video className={styles.video} loop autoPlay>
+        <video className={styles.video} loop autoPlay muted>
           <source src="/videos/main.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
