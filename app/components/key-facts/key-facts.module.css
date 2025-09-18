@@ -20,7 +20,7 @@
 }
 
 .highlight {
-  background: url('/highlight.svg') 0 1px no-repeat;
+  background: url('../../../public/highlight.svg') 0 1px no-repeat;
   background-size: 100%;
   padding: 4px 10px;
 }
