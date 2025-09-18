@@ -83,7 +83,7 @@ const realLifeProps: RealLifeProps = {
             children: `By entering their Courier ID, the money goes directly to Wolt’s account no delays, no manual work.`,
         },
     ],
-    video: '/videos/wolt-courier.mp4',
+    video: 'wolt-courier.mp4',
     videoTitle: 'Wolt Courier',
 }
 

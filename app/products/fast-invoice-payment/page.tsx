@@ -83,7 +83,7 @@ const realLifeProps: RealLifeProps = {
             children: `For the business, this means faster payments, fewer support calls, and a smoother payment experience—all with one simple link.`,
         },
     ],
-    video: '/videos/fast-invoice.mp4',
+    video: 'fast-invoice.mp4',
     videoTitle: 'Fast Invoice, Fast Payment',
 }
 

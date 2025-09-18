@@ -82,7 +82,7 @@ const realLifeProps: RealLifeProps = {
                         (returned back) to the customer — <strong>without any commission</strong> or penalty.`,
         },
     ],
-    video: '/videos/secure.mp4',
+    video: 'secure.mp4',
     videoTitle: 'Secure Pre-Authorization',
 }
 

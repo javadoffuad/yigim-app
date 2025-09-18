@@ -95,7 +95,7 @@ const realLifeProps: RealLifeProps = {
             children: `Within minutes, the guest is able to pay from their phone. You see the payment come through, linked to that booking, and everything’s tracked automatically—no paperwork, no confusion.`,
         },
     ],
-    video: '/videos/link-payment.mp4',
+    video: 'link-payment.mp4',
     videoTitle: 'Instant Payment Links\nfor Seamless Bookings',
 }
 
