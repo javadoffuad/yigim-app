@@ -20,7 +20,7 @@ export default function RealLifeCases({props}: {props: RealLifeProps}) {
             </div>
 
             <div className={styles["video-container"]}>
-                <video className={styles.video} loop autoPlay>
+                <video className={styles.video} loop autoPlay muted>
                     <source src={props.video} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
