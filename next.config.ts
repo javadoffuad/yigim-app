@@ -6,6 +6,7 @@ const appPath = isProd ? '/yigim-app' : '';
 
 const nextConfig: NextConfig = {
   output: 'export',
+  trailingSlash: true,
   basePath: appPath,
   assetPrefix: appPath,
   images: {
