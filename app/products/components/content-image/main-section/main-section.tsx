@@ -10,11 +10,11 @@ export interface ContentImageProps {
     image: StaticImageData;
 }
 
-export default function ContentImage({content}: {content: ContentImageProps}) {
+export default function ContentImage({content, align = 'right'}: {content: ContentImageProps, align?: 'left' | 'right'}) {
   return (
     <div className={styles["container"]}>
       <section className={styles["section"]}>
-        <div className={styles["content-wrapper"]}>
+        <div className={`${styles["content-wrapper"]} ${align === 'left' ? styles["reverse"] : ''}`}>
           <div className={styles["text-content"]}>
             <header className={styles["header"]}>
               <p className={styles["label"]}>{content.label}</p>

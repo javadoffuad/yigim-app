@@ -15,7 +15,10 @@ import passwordIcon from "@/public/icons/password.svg";
 import banknoteIcon from "@/public/icons/banknote.svg";
 import smartphoneIcon from "@/public/icons/smartphone.svg";
 import userIdIcon from "@/public/icons/user-id.svg";
+import terminalsImage from "@/public/images/terminals.png";
+import appsImage from "@/public/images/apps.png";
 import RealLifeCases, { RealLifeProps } from "../components/real-life/main-section/main-section";
+import ContentImage, { ContentImageProps } from "../components/content-image/main-section/main-section";
 
 const productName = 'All-In-One Aggregator Service';
 const info: ProductInfoProps = {
@@ -86,12 +89,26 @@ const realLifeProps: RealLifeProps = {
     video: 'wolt-courier.mp4',
     videoTitle: 'Wolt Courier',
 }
+const content: ContentImageProps = {
+  title: 'Payment Terminals',
+  label: 'Our Coverage Network',
+  image: terminalsImage,
+  description: `This product is developed exclusively by YIĞIM's own developer team. “All-in-One” offers the broadest range of payment acceptance channels, covering nearly every option available. With a single integration, it enables the client’s billing system to quickly connect to multiple payment channels: Cash (terminal networks) or cashless (mobile payments).`,
+}
+const content2: ContentImageProps = {
+  title: 'Mobile Apps',
+  label: 'Our Coverage Network',
+  image: appsImage,
+  description: `This product is developed exclusively by YIĞIM's own developer team. “All-in-One” offers the broadest range of payment acceptance channels, covering nearly every option available. With a single integration, it enables the client’s billing system to quickly connect to multiple payment channels: Cash (terminal networks) or cashless (mobile payments).`,
+}
 
 export default function ProductPage() {
   return (
     <PageWrapper title='All-In-One Aggregator Service'>
       <ProductInfo info={info} />
       <RealLifeCases props={realLifeProps} />
+      <ContentImage content={content} />
+      <ContentImage content={content2} align="left" />
       <ThreeThings image={allInOneImage} productName={productName} items={threeThings} />
       <MainFunctions productName={productName} items={functions} />
     </PageWrapper>
