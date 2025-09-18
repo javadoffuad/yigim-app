@@ -9,7 +9,7 @@ import MainFunctions from "../components/main-functions/main-section/main-sectio
 import { FunctionCardProps } from "../components/main-functions/function-card/function-card";
 import linkPaymentImage from '@/public/images/link-payment.png';
 import ProductInfo, { ProductInfoProps } from "../components/product-info/product-info";
-import RealLifeCases from "../components/real-life/main-section/main-section";
+import RealLifeCases, { RealLifeProps } from "../components/real-life/main-section/main-section";
 import { RealLifeCardProps } from "../components/real-life/real-life-card/real-life-card";
 import encryptIcon from '@/public/icons/encrypt.svg';
 import linkIcon from '@/public/icons/link.svg';
@@ -20,6 +20,7 @@ import pageIcon from '@/public/icons/page.svg';
 import phoneCallingIcon from '@/public/icons/phone-calling-black.svg';
 import billIcon from '@/public/icons/bill.svg';
 
+const productName = 'Link Payment +';
 const content: ContentImageProps = {
   title: 'From Link to \nPayment in Seconds',
   label: 'Link Payment +',
@@ -77,22 +78,26 @@ const functions: FunctionCardProps[] = [
         description: "Merchants can brand the payment page with their logo, colors, and messaging",
     },
 ]
-const realLifeCases: RealLifeCardProps[] = [
-    {
-        icon: phoneCallingIcon,
-        children: `A customer calls to book a service or books right at the spot in the hotel — just a quick phone reservation.`,
-    },
-    {
-        icon: linkIcon,
-        children: `Instead of chasing payments later, you generate a payment link on the spot and send it e.g. via WhatsApp, SMS, E-mail or any other channel your guest prefers.`,
-    },
-    {
-        icon: billIcon,
-        children: `Within minutes, the guest is able to pay from their phone. You see the payment come through, linked to that booking, and everything’s tracked automatically—no paperwork, no confusion.`,
-    },
-];
 
-const productName = 'Link Payment +';
+const realLifeProps: RealLifeProps = {
+    productName: productName,
+    cases: [
+        {
+            icon: phoneCallingIcon,
+            children: `A customer calls to book a service or books right at the spot in the hotel — just a quick phone reservation.`,
+        },
+        {
+            icon: linkIcon,
+            children: `Instead of chasing payments later, you generate a payment link on the spot and send it e.g. via WhatsApp, SMS, E-mail or any other channel your guest prefers.`,
+        },
+        {
+            icon: billIcon,
+            children: `Within minutes, the guest is able to pay from their phone. You see the payment come through, linked to that booking, and everything’s tracked automatically—no paperwork, no confusion.`,
+        },
+    ],
+    video: '/videos/link-payment.mp4',
+    videoTitle: 'Instant Payment Links\nfor Seamless Bookings',
+}
 
 const info: ProductInfoProps = {
   title: "Sending secure payment links via SMS or WhatsApp means you get paid instantly — no website needed and no waiting.",
@@ -106,7 +111,7 @@ export default function ProductPage() {
   return (
     <PageWrapper title={productName}>
       <ProductInfo info={info} />
-      <RealLifeCases items={realLifeCases} />
+      <RealLifeCases props={realLifeProps} />
       <ContentImage content={content} />
       <ThreeThings image={linkPaymentImage} productName={productName} items={threeThings} />
       <MainFunctions productName={productName} items={functions} />

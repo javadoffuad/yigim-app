@@ -9,10 +9,15 @@ import reminderIcon from '@/public/icons/reminder.svg';
 import cardIcon from '@/public/icons/save-card.svg';
 import smartphoneIcon from '@/public/icons/smartphone.svg';
 import encryptIcon from '@/public/icons/encrypt.svg';
+import bellIcon from '@/public/bell.svg';
+import moneyIcon from '@/public/icons/money.svg';
+import energyIcon from '@/public/icons/energy.svg';
 import ThreeThings from "../components/three-things/main-section/main-section";
 import { ThingCardProps } from "../components/three-things/thing-card/thing-card";
 import fastInvoiceImage from '@/public/images/fast-invoice-image.png';
+import RealLifeCases, { RealLifeProps } from "../components/real-life/main-section/main-section";
 
+const productName = "Fast Invoice Payment";
 const info: ProductInfoProps = {
   title: "The smart SMS reminders with built-in payment options make payments effortless. Your customers pay faster while your workload drops.",
   description: `YIĞIM's own product that helps you to get your payments on time. FIP is a solution for accelerating invoice payments and reducing late payment risks. We solve  slow, inconvenient payments by replacing SMS reminders with smart links to pre-filled payment pages.`
@@ -61,12 +66,32 @@ const threeThings: ThingCardProps[] = [
       description: 'Automate reminders and reduce time chasing payments',
   },
 ];
-const productName = "Fast Invoice Payment";
+
+const realLifeProps: RealLifeProps = {
+    productName: productName,
+    cases: [
+        {
+            icon: bellIcon,
+            children: `Baku Electronics used to send plain SMS reminders for credit payments—customers still had to find the contract, log in, and fill in details.`,
+        },
+        {
+            icon: moneyIcon,
+            children: `Now, with YIĞIM’s Fast Invoice Payment, they send a smart link via SMS (or any other digital channel). The customer taps the link, sees a pre-filled payment page with all contract info, and pays in seconds.`,
+        },
+        {
+            icon: energyIcon,
+            children: `For the business, this means faster payments, fewer support calls, and a smoother payment experience—all with one simple link.`,
+        },
+    ],
+    video: '/videos/fast-invoice.mp4',
+    videoTitle: 'Fast Invoice, Fast Payment',
+}
 
 export default function ProductPage() {
   return (
-    <PageWrapper title='Fast Invoice Payment'>
+    <PageWrapper title={productName}>
       <ProductInfo info={info} />
+      <RealLifeCases props={realLifeProps} />
       <ThreeThings image={fastInvoiceImage} productName={productName} items={threeThings} />
       <MainFunctions productName={productName} items={functions} />
     </PageWrapper>

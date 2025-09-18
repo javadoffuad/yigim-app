@@ -12,7 +12,12 @@ import safeIcon from "@/public/icons/safe.svg";
 import billIcon from "@/public/icons/bill.svg";
 import chartIcon from "@/public/icons/chart.svg";
 import passwordIcon from "@/public/icons/password.svg";
+import banknoteIcon from "@/public/icons/banknote.svg";
+import smartphoneIcon from "@/public/icons/smartphone.svg";
+import userIdIcon from "@/public/icons/user-id.svg";
+import RealLifeCases, { RealLifeProps } from "../components/real-life/main-section/main-section";
 
+const productName = 'All-In-One Aggregator Service';
 const info: ProductInfoProps = {
   title: "With just one integration, you now can simplify your whole payment process.",
   description: `This product is developed exclusively by YIĞIM's own developer team. “All-in-One” offers the broadest range of payment acceptance channels, covering nearly every option available. With a single integration, it enables the client’s billing system to quickly connect to multiple payment channels: Cash (terminal networks) or cashless (mobile payments).`
@@ -61,14 +66,32 @@ const functions: FunctionCardProps[] = [
       title: "SMS Payment Codes",
       description: "A unique code via SMS lets customers make payments through terminals",
   },
-]
-
-const productName = 'All-In-One Aggregator Service';
+];
+const realLifeProps: RealLifeProps = {
+    productName: 'This product is developed exclusively by YIĞIM\s',
+    cases: [
+        {
+            icon: banknoteIcon,
+            children: `When a Wolt courier receives cash from a customer, they need a quick and secure way to transfer it to Wolt.`,
+        },
+        {
+            icon: smartphoneIcon,
+            children: `With our All-in-One solution, the courier can easily deposit the cash via a nearby terminal or mobile banking app.`,
+        },
+        {
+            icon: userIdIcon,
+            children: `By entering their Courier ID, the money goes directly to Wolt’s account no delays, no manual work.`,
+        },
+    ],
+    video: '/videos/wolt-courier.mp4',
+    videoTitle: 'Wolt Courier',
+}
 
 export default function ProductPage() {
   return (
     <PageWrapper title='All-In-One Aggregator Service'>
       <ProductInfo info={info} />
+      <RealLifeCases props={realLifeProps} />
       <ThreeThings image={allInOneImage} productName={productName} items={threeThings} />
       <MainFunctions productName={productName} items={functions} />
     </PageWrapper>
