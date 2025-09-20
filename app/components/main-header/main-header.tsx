@@ -18,8 +18,8 @@ export default function MainHeader() {
           <h2 className={styles["title"]}>One System<br/> Infinite<br/> Possibilities</h2>
           <p className={styles["subtitle"]}>From startups to governments, we connect the world<br/> through smart, secure payments.</p>
           <div className={styles["buttons"]}>
-            <Link href="#" className={`${styles["button"]} ${styles['button-primary']}`}>Get started</Link>
-            <Link href={PAGE_RESOURCES_API} className={`${styles["button"]} ${styles["button-tertiary"]}`}>Documentation</Link>
+            <Link href="#" className="button button-primary">Get started</Link>
+            <Link href={PAGE_RESOURCES_API} className="button button-tertiary">Documentation</Link>
           </div>
         </div>
       </div>

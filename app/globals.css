@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: var(--font-geist-sans);
+  font-family: var(--font-sans);
 }
 
 :root {
@@ -12,6 +12,7 @@
   --foreground: #171717;
 
   --max-width: 1200px;
+  --font-sans: 'Geist', sans-serif;
 }
 
 @theme inline {
