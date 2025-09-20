@@ -96,6 +96,7 @@
   background: #f3f3f3;
   border-radius: 16px;
   box-sizing: border-box;
+  position: relative;
 }
 
 .input-icon {
@@ -114,7 +115,11 @@
   border: none;
   background: transparent;
   outline: none;
-  padding: 0;
+  padding-left: 52px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100%;
 }
 
 .input-field::placeholder {
