@@ -21,7 +21,7 @@ interface Ball {
   color: string;
 }
 
-export function BouncingFlags() {
+export function BouncingParameters() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const ballsRef = useRef<Ball[]>([]);
   const animationFrameId = useRef<number>(0);
@@ -290,6 +290,10 @@ export function BouncingFlags() {
     handleMouseUp();
   };
 
+  const handleClick = () => {
+    console.log('handleClick');
+  };
+
   return (
     <section className={styles["section"]}>
       <div className={styles["title-wrapper"]}>
@@ -299,8 +303,8 @@ export function BouncingFlags() {
           the most reliable service...
         </h3>
         <div className={styles.buttons}>
-          <Link href={PAGE_COMPANY_PARTNERS} className={`${styles["button"]} ${styles['button-primary']}`}>Our Partners</Link>
-          <button className={`${styles["button"]} ${styles["button-tertiary"]}`}>Request a Call</button>
+          <Link href={PAGE_COMPANY_PARTNERS} className="button button-primary">Our Partners</Link>
+          <button className="button button-tertiary" onClick={handleClick}>Request a Call</button>
         </div>
       </div>
       <div className={styles["bouncing-container"]}>
