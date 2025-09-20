@@ -3,9 +3,10 @@
 import PageWrapper from '@/components/page-wrapper/page-wrapper';
 import WhoLovesUs from './components/who-loves-us/who-loves-us';
 import styles from './page.module.css';
-import { ICategory, IPartner, PartnerCategory } from '@/app/models/partners.models';
+import { ICategory, PartnerCategory } from '@/app/models/partners.models';
 import { partners } from '@/app/constants/partners.constants';
 import Image from 'next/image';
+import { useState } from 'react';
 
 const categories: ICategory[] = [
   {
@@ -31,6 +32,17 @@ const categories: ICategory[] = [
 ];
 
 export default function PartnersPage() {
+  const [selectedCategory, setSelectedCategory] = useState<PartnerCategory | null>(null);
+
+  // Фильтрация партнеров
+  const filteredPartners = selectedCategory === null 
+    ? partners 
+    : partners.filter(partner => partner.category === selectedCategory);
+
+  const selectCategory = (category: PartnerCategory | null) => {
+    setSelectedCategory(category);
+  };
+
   return (
     <PageWrapper title='Our partners'>
       <WhoLovesUs />
@@ -42,17 +54,24 @@ export default function PartnersPage() {
 
         <div className={styles.partners}>
           <div className={styles.buttons}>
-            <button className={`button button-primary ${styles["button-all"]}`}>All</button>
+            <button onClick={() => selectCategory(null)} className={`button ${selectedCategory === null ? 'button-primary' : ''} ${styles["button-all"]}`}>
+              All
+            </button>
             
             {
               categories.map((category, index) =>(
-                <button key={index} className="button button-tertiary">{category.name}</button>
+                <button
+                  key={index}
+                  onClick={() => selectCategory(index)}
+                  className={`button ${selectedCategory === category.code ? 'button-primary' : ''}`}>
+                  {category.name}
+                </button>
               ))
             }
           </div>
           <div className={styles['partners-container']}>
             {
-              partners.map((partner, index) =>
+              filteredPartners.map((partner, index) =>
                 <div key={index} className={styles['partner-item']} style={{ backgroundColor: partner.color }}>
                   <Image src={partner.logo} alt='' />
                 </div>
