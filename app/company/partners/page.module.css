@@ -1,0 +1,61 @@
+.section {
+    width: 100%;
+    margin-top: 134px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+    align-items: center;
+}
+
+.title {
+    font-size: 14px;
+    line-height: 20px;
+    color: #888888;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+}
+
+.description {
+    font-size: 48px;
+    line-height: 56px;
+    color: #1E1E1E;
+    font-weight: 500;
+    letter-spacing: -0.4px;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 40px;
+    margin-bottom: 120px;
+}
+
+.button-all {
+    padding: 0 32px;
+}
+
+.partners-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 20px;
+    gap: 16px;
+}
+
+.partner-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 268;
+    height: 80;
+    border-radius: 16px;
+    gap: 12px;
+    padding: 20px 80px;
+}

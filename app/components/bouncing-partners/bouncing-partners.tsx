@@ -1,78 +1,15 @@
 'use client';
 
 import React, { useRef, useEffect, useState } from 'react';
-
 import styles from './bouncing-partners.module.css';
-import taxi189Icon from '@/public/partners/189-taxi.svg';
-import adaIcon from '@/public/partners/ada.svg';
-import agroupIcon from '@/public/partners/agroup.svg';
-import arendaazIcon from '@/public/partners/arendaaz.svg';
-import autoazIcon from '@/public/partners/autoaz.svg';
-import azercosmosIcon from '@/public/partners/azercosmos.svg';
-import aznetIcon from '@/public/partners/aznet.svg';
-import beeonlineIcon from '@/public/partners/beeonline.svg';
-import bilgahBeachIcon from '@/public/partners/bilgah-beach.svg';
-import binaazIcon from '@/public/partners/binaaz.svg';
-import boltFoodIcon from '@/public/partners/bolt-food.svg';
-import boltIcon from '@/public/partners/bolt.svg';
-import bosIcon from '@/public/partners/bos.svg';
-import britishCollegeIcon from '@/public/partners/british-college.svg';
-import casposIcon from '@/public/partners/caspos.svg';
-import chargeazIcon from '@/public/partners/chargeaz.svg';
-import clubPortbakuIcon from '@/public/partners/club-portbaku.svg';
-import codeAcademyIcon from '@/public/partners/code-academy.svg';
-import connectIcon from '@/public/partners/connect.svg';
-import dinamoHotelIcon from '@/public/partners/dinamo-hotel.svg';
-import ekonomTaxiIcon from '@/public/partners/ekonom-taxi.svg';
-import emirateCarsIcon from '@/public/partners/emirate-cars.svg';
-import europcarIcon from '@/public/partners/europcar.svg';
-import evpointIcon from '@/public/partners/evpoint.svg';
-import fairmontIcon from '@/public/partners/fairmont.svg';
-import fsoClubIcon from '@/public/partners/fso-club.svg';
-import galaaltiIcon from '@/public/partners/galaalti.svg';
-import healthBakuIcon from '@/public/partners/health-baku.svg';
-import hiltonIcon from '@/public/partners/hilton.svg';
-import kontaktIcon from '@/public/partners/kontakt.svg';
-import kralInsaatIcon from '@/public/partners/kral-insaat.svg';
-import mediClubIcon from '@/public/partners/medi-club.svg';
-import merchantBakuIcon from '@/public/partners/merchant-baku.svg';
-import nikkiBeachIcon from '@/public/partners/nikki-beach.svg';
-import olimpHospitalIcon from '@/public/partners/olimp-hospital.svg';
-import portbakuIcon from '@/public/partners/portbaku.svg';
-import push30Icon from '@/public/partners/push30.svg';
-import rentbutikIcon from '@/public/partners/rentbutik.svg';
-import riverInnIcon from '@/public/partners/river-inn.svg';
-import seaBreezeIcon from '@/public/partners/sea-breeze.svg';
-import tapazIcon from '@/public/partners/tapaz.svg';
-import tokautoIcon from '@/public/partners/tokauto.svg';
-import turboazIcon from '@/public/partners/turboaz.svg';
-import uberIcon from '@/public/partners/uber.svg';
-import wepowerIcon from '@/public/partners/wepower.svg';
-import wingzIcon from '@/public/partners/wingz.svg';
-import woltIcon from '@/public/partners/wolt.svg';
-import worldclassIcon from '@/public/partners/worldclass.svg';
-import yangoIcon from '@/public/partners/yango.svg';
-import yengiceIcon from '@/public/partners/yengice.svg';
 import Link from 'next/link';
 import { PAGE_COMPANY_PARTNERS } from '@/app/constants/navigation.constants';
-
-const partnerLogos = [
-  taxi189Icon, adaIcon, agroupIcon, arendaazIcon, autoazIcon, 
-  azercosmosIcon, aznetIcon, beeonlineIcon, bilgahBeachIcon, 
-  binaazIcon, boltFoodIcon, boltIcon, bosIcon, britishCollegeIcon, 
-  casposIcon, chargeazIcon, clubPortbakuIcon, codeAcademyIcon, 
-  connectIcon, dinamoHotelIcon, ekonomTaxiIcon, emirateCarsIcon, 
-  europcarIcon, evpointIcon, fairmontIcon, fsoClubIcon, galaaltiIcon, 
-  healthBakuIcon, hiltonIcon, kontaktIcon, kralInsaatIcon, mediClubIcon, 
-  merchantBakuIcon, nikkiBeachIcon, olimpHospitalIcon, portbakuIcon, 
-  push30Icon, rentbutikIcon, riverInnIcon, seaBreezeIcon, tapazIcon, 
-  tokautoIcon, turboazIcon, uberIcon, wepowerIcon, wingzIcon, woltIcon, 
-  worldclassIcon, yangoIcon, yengiceIcon
-];
+import { partners } from '@/app/constants/partners.constants';
 
 const ballRadius = 30;
 const gravity = 0.25;
 const damping = .9;
+const maxIconWidth = 42;
 
 interface Ball {
   x: number;
@@ -81,6 +18,7 @@ interface Ball {
   vy: number;
   image: HTMLImageElement;
   isDragging: boolean;
+  color: string;
 }
 
 export function BouncingFlags() {
@@ -113,9 +51,10 @@ export function BouncingFlags() {
     let loadedCount = 0;
     const tempBalls: Ball[] = [];
 
-    partnerLogos.forEach((logo) => {
+    partners.forEach((partner) => {
       const image = new Image();
-      image.src = logo.src;
+      image.src = partner.logo.src;
+      
       image.onload = () => {
         tempBalls.push({
           x: canvasWidth / 2 + (Math.random() - 0.5) * (canvasWidth / 3),
@@ -124,10 +63,11 @@ export function BouncingFlags() {
           vy: 0,
           image,
           isDragging: false,
+          color: partner.color,
         });
         loadedCount++;
         
-        if (loadedCount === partnerLogos.length) {
+        if (loadedCount === partners.length) {
           ballsRef.current = tempBalls;
           setIsInitialized(true);
         }
@@ -222,16 +162,43 @@ export function BouncingFlags() {
                 ball2.vy = vel1F.y * damping;
             }
         }
-    }
+      }
 
 
-      balls.forEach(ball => {
-        ctx.save();
+      balls.forEach(ball => {               
+        // Рисуем круг
         ctx.beginPath();
-        ctx.arc(ball.x, ball.y, ballRadius, 0, Math.PI * 2, true);
-        ctx.closePath();
+        ctx.arc(ball.x, ball.y, ballRadius, 0, Math.PI * 2);
+        ctx.fillStyle = ball.color; // Цвет каждого бренда
+        ctx.fill();
+        
+        // Сохраняем состояние контекста
+        ctx.save();
+        
+        // Создаем обтравочную область в форме круга
+        ctx.beginPath();
+        ctx.arc(ball.x, ball.y, ballRadius, 0, Math.PI * 2);
         ctx.clip();
-        ctx.drawImage(ball.image, ball.x - ballRadius, ball.y - ballRadius, ballRadius * 2, ballRadius * 2);
+
+        // Автоматически вычисляем размеры иконки с сохранением пропорций
+        const aspectRatio = ball.image.width / ball.image.height;
+        let drawWidth = maxIconWidth;
+        let drawHeight = maxIconWidth / aspectRatio;
+        
+        // Если высота больше ширины, ограничиваем по высоте
+        if (aspectRatio < 1) {
+          drawHeight = maxIconWidth;
+          drawWidth = maxIconWidth * aspectRatio;
+        }
+        
+        // Вычисляем позицию для изображения (по центру)
+        const imageX = ball.x - drawWidth / 2;
+        const imageY = ball.y - drawHeight / 2;
+        
+        // Рисуем изображение
+        ctx.drawImage(ball.image, imageX, imageY, drawWidth, drawHeight);
+        
+        // Восстанавливаем состояние контекста
         ctx.restore();
       });
 
