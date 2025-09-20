@@ -64,7 +64,7 @@
   text-align: center;
 }
 
-.button.button-close {
+button.button-close {
   width: 100%;
   justify-content: center;
   height: 64px;
