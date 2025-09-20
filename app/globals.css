@@ -32,3 +32,36 @@ body {
   background: var(--background);
   color: var(--foreground);
 }
+
+/* Button start */
+.button {
+  padding: 0 24px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  height: 48px;
+  text-decoration: none;
+  color: #1e1e1e;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 28px;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.button-primary {
+  background: #FFC404;
+}
+
+.button-primary:hover  {
+  background: #EBB404;
+}
+
+.button-tertiary {
+  background: #f3f3f3;
+}
+
+.button-tertiary:hover  {
+  background: #F4F4F4;
+}
+/* Button end */
