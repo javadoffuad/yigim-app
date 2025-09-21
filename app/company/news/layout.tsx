@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import Header from './components/header/header';
-import Footer from "./components/footer/footer";
-import Faq from "./components/faq/faq";
-import { FAQ_LIST } from "./constants/faq.constants";
-import "./globals.css";
-import { RequestCallback } from "./components/request-callback/request-callback";
+import Header from '@/components/header/header';
+import Footer from "@/components/footer/footer";
+import Faq from "@/components/faq/faq";
+import { FAQ_LIST } from "@/constants/faq.constants";
+import { RequestCallback } from "@/components/request-callback/request-callback";
+import "@/app/globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,11 +18,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Yigim Home page",
-  description: "Yigim Home page description",
+  title: "Yigim Company News",
+  description: "Yigim Company News page description",
 };
 
-export default function RootLayout({
+export default function Layout({
   children,
 }: Readonly<{
   children: React.ReactNode;

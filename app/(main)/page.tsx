@@ -6,7 +6,7 @@ import OurVision from '@/components/our-vision/our-vision';
 import WhoLovesUs from '@/components/who-loves-us/who-loves-us';
 import { BouncingParameters } from '@/components/bouncing-partners/bouncing-partners';
 
-export default function HomePage() {
+export default function MainPage() {
   return (
     <>
       <MainHeader />

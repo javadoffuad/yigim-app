@@ -17,8 +17,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Yigim Partners",
-  description: "Yigim partners page description",
+  title: "Yigim Products",
+  description: "Yigim Products page description",
 };
 
 export default function Layout({

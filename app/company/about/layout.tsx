@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Header from '@/components/header/header';
-import Faq from "@/app/components/faq/faq";
-import Footer from "@/app/components/footer/footer";
-import { FAQ_LIST } from "@/app/constants/faq.constants";
+import Footer from "@/components/footer/footer";
+import Faq from "@/components/faq/faq";
+import { FAQ_LIST } from "@/constants/faq.constants";
+import { RequestCallback } from "@/components/request-callback/request-callback";
 import "@/app/globals.css";
 
 const geistSans = Geist({
@@ -17,8 +18,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Yigim Partners",
-  description: "Yigim partners page description",
+  title: "Yigim About",
+  description: "Yigim About page description",
 };
 
 export default function Layout({
@@ -31,7 +32,8 @@ export default function Layout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Header></Header>
+        <Header />
+        <RequestCallback />
         {children}
         <Faq items={FAQ_LIST} />
         <Footer />
