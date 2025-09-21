@@ -9,7 +9,6 @@ export default function MainHeader() {
   const videoPath = process.env.NEXT_PUBLIC_BASE_PATH 
     ? `${process.env.NEXT_PUBLIC_BASE_PATH}/main.mp4`
     : `main.mp4`;
-  console.log('router.basePath', videoPath)
 
   return (
     <div className={styles.container}>
