@@ -4,11 +4,10 @@ import { Suspense } from 'react';
 import Link from 'next/link';
 import styles from './main-header.module.css';
 import { PAGE_RESOURCES_API } from '@/constants/navigation.constants';
+import { getAbsolutePath } from '@/app/utils/absolute-path.utils';
 
 export default function MainHeader() {
-  const videoPath = process.env.NEXT_PUBLIC_BASE_PATH 
-    ? `${process.env.NEXT_PUBLIC_BASE_PATH}/main.mp4`
-    : 'main.mp4';
+  const videoPath = getAbsolutePath('main.mp4');
   console.log('process.env.NODE_ENV', process.env.NEXT_PUBLIC_BASE_PATH, videoPath, process.env.NODE_ENV);
 
   return (
