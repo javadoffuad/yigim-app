@@ -8,7 +8,7 @@ import { PAGE_RESOURCES_API } from '@/constants/navigation.constants';
 export default function MainHeader() {
   const videoPath = process.env.NEXT_PUBLIC_BASE_PATH 
     ? `${process.env.NEXT_PUBLIC_BASE_PATH}/main.mp4`
-    : `main.mp4`;
+    : 'main.mp4';
   console.log('process.env.NODE_ENV', process.env.NEXT_PUBLIC_BASE_PATH, videoPath, process.env.NODE_ENV);
 
   return (
@@ -26,7 +26,7 @@ export default function MainHeader() {
 
       <Suspense fallback={<p>Loading video...</p>}>
         <video className={styles.video} loop autoPlay muted>
-          <source src="/main.mp4" type="video/mp4" />
+          <source src={videoPath} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </Suspense>
