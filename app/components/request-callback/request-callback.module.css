@@ -29,12 +29,20 @@
   display: flex;
 }
 
-.quick-contact-button {
+.contact-button {
   width: 64;
   height: 64;
   border-radius: 48px;
   padding: 16px;
   gap: 8px;
-  background: rgba(30, 30, 30, 0.3);
+  background-color: rgba(30, 30, 30, 0.3);
   cursor: pointer;
+}
+
+.contact-button-phone {
+  background: rgba(30, 30, 30, 0.3);
+}
+
+.contact-button-chat {
+  background-color: rgba(139, 112, 54, 0.4);
 }

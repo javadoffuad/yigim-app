@@ -40,10 +40,10 @@ export const RequestCallback = (): JSX.Element => {
       </div>
 
       <div className={styles["quick-contact"]}>
-        <button className={styles["quick-contact-button"]}>
+        <button className={`${styles["contact-button"]} ${styles["contact-button-phone"]}`}>
           <Image src={phoneCallingIcon} alt="" onClick={toggleCallbackModal} />
         </button>
-        <button className={styles["quick-contact-button"]}>
+        <button className={`${styles["contact-button"]} ${styles["contact-button-chat"]}`}>
           <Image src={chatIcon} alt="" />
         </button>
       </div>
