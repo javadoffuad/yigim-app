@@ -3,7 +3,7 @@ import adaIcon from '@/public/partners2/ada.png';
 import agroupIcon from '@/public/partners2/agroup.png';
 import arendaazIcon from '@/public/partners2/arendaaz.png';
 import autoazIcon from '@/public/partners2/auto.az.svg';
-import azercosmosIcon from '@/public/partners2/azercosmos.png';
+import azercosmosIcon from '@/public/partners2/azercosmos.svg';
 import aznetIcon from '@/public/partners2/aznet.png';
 import beeonlineIcon from '@/public/partners2/bee-online.png';
 import bilgahBeachIcon from '@/public/partners2/bilgah-beach-hotel.png';

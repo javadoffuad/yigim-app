@@ -6,6 +6,7 @@ import OurVision from '@/components/our-vision/our-vision';
 import WhoLovesUs from '@/components/who-loves-us/who-loves-us';
 import { BouncingParameters } from '@/components/bouncing-partners/bouncing-partners';
 import WhoWeAre from '@/components/who-we-are/who-we-are';
+import Awards from '../components/awards/awards';
 
 export default function MainPage() {
   return (
@@ -14,8 +15,9 @@ export default function MainPage() {
       <WhoWeAre />
       <KeyFacts />
       <OurVision />
-      <WhoLovesUs />
       <BouncingParameters />
+      <WhoLovesUs />
+      <Awards />
     </>
   );
 }
