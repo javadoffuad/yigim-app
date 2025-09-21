@@ -40,7 +40,6 @@
 .key-facts-title {
   position: relative;
   width: 100%;
-  font-family: 'Aeonik-Medium', Helvetica, sans-serif;
   font-weight: 500;
   color: #1e1e1e;
   font-size: 48px;
@@ -71,6 +70,8 @@
   align-items: flex-start;
   padding: 16px;
   border-radius: 16px;
+
+  transition: all 1.2s ease;
 }
 
 .key-fact-card.card-1 {
@@ -82,12 +83,22 @@
   border: 1px solid #eaeaec;
 }
 
+.animated .key-fact-card.card-1 {
+  top: 262px;
+  left: 160px;
+}
+
 .key-fact-card.card-2 {
   width: 232px;
   height: 206px;
   top: 66px;
   left: 0;
   background-color: #8b7036;
+}
+
+.animated .key-fact-card.card-2 {
+  top: -182px;
+  left: 55px;
 }
 
 .key-fact-card.card-3 {
@@ -99,12 +110,22 @@
   border: 1px solid #eaeaec;
 }
 
+.animated .key-fact-card.card-3 {
+  top: -182px;
+  left: 303px;
+}
+
 .key-fact-card.card-4 {
   width: 232px;
   height: 206px;
   top: 104px;
   left: 148px;
   background-color: #faf9f6;
+}
+
+.animated .key-fact-card.card-4 {
+  top: 40px;
+  left: -24px;
 }
 
 .key-fact-card.card-5 {
@@ -115,12 +136,22 @@
   background-color: #fffaeb;
 }
 
+.animated .key-fact-card.card-5 {
+  top: 262px;
+  left: 408px;
+}
+
 .key-fact-card.card-6 {
   width: 180px;
   height: 206px;
   top: 0;
   left: 348px;
   background-color: #faf9f6;
+}
+
+.animated .key-fact-card.card-6 {
+  top: 40px;
+  left: 472px;
 }
 
 .key-fact-card.card-7 {
@@ -157,10 +188,6 @@
   letter-spacing: -0.24px;
   line-height: 16px;
   white-space: pre-line;
-}
-
-.key-fact-title.aeonik {
-  font-family: 'Aeonik-Medium', Helvetica, sans-serif;
 }
 
 .key-fact-title.geist {
@@ -201,10 +228,6 @@
   letter-spacing: -0.72px;
   line-height: 48px;
   white-space: nowrap;
-}
-
-.key-fact-value.aeonik {
-  font-family: 'Aeonik-Medium', Helvetica, sans-serif;
 }
 
 .key-fact-value.geist {

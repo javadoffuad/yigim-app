@@ -1,15 +1,13 @@
 import React from "react";
 import styles from "./key-facts.module.css";
 
-export default function KeyFacts() {
+export default function KeyFacts({animated}: {animated: boolean}) {
   const keyFactsData = [
     {
       title: "Trusted by\ncustomers",
       value: "4.8",
       description: "average rating",
       cardClass: "card-1",
-      titleFont: "aeonik",
-      valueFont: "aeonik",
       textColor: "dark",
     },
     {
@@ -17,8 +15,6 @@ export default function KeyFacts() {
       value: "450+",
       description: "active clients",
       cardClass: "card-2",
-      titleFont: "geist",
-      valueFont: "geist",
       textColor: "white",
     },
     {
@@ -26,8 +22,6 @@ export default function KeyFacts() {
       value: "99.5%",
       description: "successful operations",
       cardClass: "card-3",
-      titleFont: "geist",
-      valueFont: "geist",
       textColor: "dark",
     },
     {
@@ -35,8 +29,6 @@ export default function KeyFacts() {
       value: "7+",
       description: "partnered banks",
       cardClass: "card-4",
-      titleFont: "geist",
-      valueFont: "geist",
       textColor: "dark",
     },
     {
@@ -44,8 +36,6 @@ export default function KeyFacts() {
       value: "9+",
       description: "processing centers",
       cardClass: "card-5",
-      titleFont: "aeonik",
-      valueFont: "aeonik",
       textColor: "dark",
     },
     {
@@ -53,8 +43,6 @@ export default function KeyFacts() {
       value: "3+",
       description: "awards",
       cardClass: "card-6",
-      titleFont: "geist",
-      valueFont: "geist",
       textColor: "dark",
     },
     {
@@ -62,14 +50,12 @@ export default function KeyFacts() {
       value: "157%",
       description: "annual growth",
       cardClass: "card-7",
-      titleFont: "geist",
-      valueFont: "geist",
       textColor: "white",
     },
   ];
 
   return (
-    <div className={styles["key-facts-container"]}>
+    <div className={`${styles["key-facts-container"]} ${animated ? styles["animated"] : ''}`}>
       <div className={styles["key-facts-header"]}>
         <div className={styles["key-facts-label"]}>
           KEY FACTS
@@ -91,7 +77,7 @@ export default function KeyFacts() {
               <div className={styles["key-fact-content"]}>
                 <div className={styles["key-fact-title-section"]}>
                   <div
-                    className={`${styles["key-fact-title"]} ${styles[fact.titleFont]} ${styles[fact.textColor]}`}
+                    className={`${styles["key-fact-title"]} ${styles[fact.textColor]}`}
                   >
                     {fact.title}
                   </div>
@@ -100,7 +86,7 @@ export default function KeyFacts() {
                 <div className={styles["key-fact-stats"]}>
                   <div className={styles["key-fact-value-container"]}>
                     <div
-                      className={`${styles["key-fact-value"]} ${styles[fact.valueFont]} ${styles[fact.textColor]}`}
+                      className={`${styles["key-fact-value"]} ${styles[fact.textColor]}`}
                     >
                       {fact.value}
                     </div>
