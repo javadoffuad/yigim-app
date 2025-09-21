@@ -5,11 +5,13 @@ import MainHeader from '@/components/main-header/main-header';
 import OurVision from '@/components/our-vision/our-vision';
 import WhoLovesUs from '@/components/who-loves-us/who-loves-us';
 import { BouncingParameters } from '@/components/bouncing-partners/bouncing-partners';
+import WhoWeAre from '@/components/who-we-are/who-we-are';
 
 export default function MainPage() {
   return (
     <>
       <MainHeader />
+      <WhoWeAre />
       <KeyFacts />
       <OurVision />
       <WhoLovesUs />
