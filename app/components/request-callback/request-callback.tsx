@@ -1,13 +1,6 @@
 'use client';
 
 import React, { JSX, useState } from "react";
-import Image from "next/image";
-import phoneCallingIcon from '@/public/icons/phone-calling.svg';
-import chatIcon from '@/public/icons/chat.svg';
-import letterIcon from '@/public/icons/letter-white.svg';
-import whatsappIcon from '@/public/icons/whatsapp.svg';
-import smartphoneIcon from '@/public/icons/smartphone-white.svg';
-import cloneIcon from '@/public/icons/close-white.svg';
 import { RequestCallbackForm } from "../request-callback-form/request-callback-form";
 import { NotifyMessage, NotifyType } from "../notify-message/notify-message";
 import styles from "./request-callback.module.css";
@@ -52,24 +45,15 @@ export const RequestCallback = (): JSX.Element => {
 
       <div className={styles["quick-contact"]}>
         <button className={`${styles["contact-button"]} ${styles["contact-button-phone"]}`} onClick={toggleCallbackModal}>
-          <Image src={phoneCallingIcon} alt="" />
         </button>
         <button className={`${styles["contact-button"]} ${styles["contact-button-chat"]} ${chatIsOpen ? styles.open : ''}`} onClick={toggleChatDropdown}>
-          {
-            chatIsOpen
-            ? <Image src={cloneIcon} alt="" />
-            : <Image src={chatIcon} alt="" />
-          }
         </button>
         <div className={`${styles["chat-dropdown"] } ${chatIsOpen ? styles.open : ''}`} onClick={toggleChatDropdown}>
           <button className={`${styles["contact-button"]} ${styles["button-phone"]}`}>
-            <Image src={smartphoneIcon} alt="" />
           </button>
           <button className={`${styles["contact-button"]} ${styles["button-wp"]}`}>
-            <Image src={whatsappIcon} alt="" />
           </button>
           <button className={`${styles["contact-button"]} ${styles["button-email"]}`}>
-            <Image src={letterIcon} alt="" />
           </button>
         </div>
       </div>
