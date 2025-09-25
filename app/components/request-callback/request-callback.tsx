@@ -58,23 +58,24 @@ export const RequestCallback = (): JSX.Element => {
       <div className={styles["quick-contact"]}>
         <button className={`${styles["contact-button"]} ${styles["contact-button-phone"]}`} onClick={toggleCallbackModal}>
         </button>
-        <button className={`${styles["contact-button"]} ${styles["contact-button-chat"]} ${chatIsOpen ? styles.open : ''}`} onClick={toggleChatDropdown}>
-        </button>
 
-        {
-          chatIsOpen
-          ?
-          <div ref={dropdownRef} className={`${styles["chat-dropdown"] }`} onClick={toggleChatDropdown}>
-            <button className={`${styles["contact-button"]} ${styles["button-phone"]}`}>
-            </button>
-            <button className={`${styles["contact-button"]} ${styles["button-wp"]}`}>
-            </button>
-            <button className={`${styles["contact-button"]} ${styles["button-email"]}`}>
-            </button>
-          </div>
-          : null
-        }
-        
+        <div ref={dropdownRef}>
+          <button className={`${styles["contact-button"]} ${styles["contact-button-chat"]} ${chatIsOpen ? styles.open : ''}`} onClick={toggleChatDropdown}>
+          </button>
+          {
+            chatIsOpen
+            ?
+            <div  className={`${styles["chat-dropdown"] }`} onClick={toggleChatDropdown}>
+              <button className={`${styles["contact-button"]} ${styles["button-phone"]}`}>
+              </button>
+              <button className={`${styles["contact-button"]} ${styles["button-wp"]}`}>
+              </button>
+              <button className={`${styles["contact-button"]} ${styles["button-email"]}`}>
+              </button>
+            </div>
+            : null
+          }
+        </div>
       </div>
     </>
   );
