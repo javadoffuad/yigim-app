@@ -1,6 +1,6 @@
 'use client';
 
-import React, { JSX, useState } from "react";
+import React, { JSX, useEffect, useRef, useState } from "react";
 import { RequestCallbackForm } from "../request-callback-form/request-callback-form";
 import { NotifyMessage, NotifyType } from "../notify-message/notify-message";
 import styles from "./request-callback.module.css";
@@ -9,6 +9,20 @@ export const RequestCallback = (): JSX.Element => {
   const [isOpen, setIsOpen] = useState(false);
   const [chatIsOpen, setChatIsOpen] = useState(false);
   const [notifyType, setNotifyType] = useState<NotifyType | null>(null);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: any) => {
+      if (dropdownRef?.current && !dropdownRef.current.contains(event.target)) {
+        setChatIsOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
   const handleSubmit = (fullName: string, phoneNumber: string) => {
     console.log("Form submitted:", { fullName, phoneNumber });
@@ -21,8 +35,6 @@ export const RequestCallback = (): JSX.Element => {
   };
 
   const toggleChatDropdown = () => {
-    console.log('toggleChatDropdown', chatIsOpen);
-    
     setChatIsOpen(!chatIsOpen);
   };
 
@@ -52,7 +64,7 @@ export const RequestCallback = (): JSX.Element => {
         {
           chatIsOpen
           ?
-          <div className={`${styles["chat-dropdown"] }`} onClick={toggleChatDropdown}>
+          <div ref={dropdownRef} className={`${styles["chat-dropdown"] }`} onClick={toggleChatDropdown}>
             <button className={`${styles["contact-button"]} ${styles["button-phone"]}`}>
             </button>
             <button className={`${styles["contact-button"]} ${styles["button-wp"]}`}>
