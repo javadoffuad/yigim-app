@@ -76,8 +76,10 @@
 .key-fact-card.card-1 {
   width: 232px;
   height: 206px;
-  top: 98px;
-  left: 322px;
+  /* top: 98px;
+  left: 322px; */
+  top: 262px;
+  left: 160px;
   background-color: white;
   border: 1px solid #eaeaec;
 }
@@ -85,16 +87,20 @@
 .key-fact-card.card-2 {
   width: 232px;
   height: 206px;
-  top: 66px;
-  left: 0;
+  /* top: 66px;
+  left: 0; */
+  top: -182px;
+  left: 55px;
   background-color: #8b7036;
 }
 
 .key-fact-card.card-3 {
   width: 268px;
   height: 206px;
-  top: 18px;
-  left: 100px;
+  /* top: 18px;
+  left: 100px; */
+  top: -182px;
+  left: 303px;
   background-color: white;
   border: 1px solid #eaeaec;
 }
@@ -102,24 +108,30 @@
 .key-fact-card.card-4 {
   width: 232px;
   height: 206px;
-  top: 104px;
-  left: 148px;
+  /* top: 104px;
+  left: 148px; */
+  top: 40px;
+  left: -24px;
   background-color: #faf9f6;
 }
 
 .key-fact-card.card-5 {
   width: 248px;
   height: 206px;
-  top: 50px;
-  left: 366px;
+  /* top: 50px;
+  left: 366px; */
+  top: 262px;
+  left: 408px;
   background-color: #fffaeb;
 }
 
 .key-fact-card.card-6 {
   width: 180px;
   height: 206px;
-  top: 0;
-  left: 348px;
+  /* top: 0;
+  left: 348px; */
+  top: 40px;
+  left: 472px;
   background-color: #faf9f6;
 }
 
