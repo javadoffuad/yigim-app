@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 import { PAGE_PRODUCTS, PAGE_PRODUCT_ALL_IN_ONE } from "./app/constants/navigation.constants";
 
 const isProd = process.env.NODE_ENV === 'production';
-const appPath = isProd ? '/yigim-app' : '';
+const appPath = isProd ? process.env.NEXT_PUBLIC_BASE_PATH : '';
 
 const nextConfig: NextConfig = {
   output: 'export',
