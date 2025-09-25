@@ -4,12 +4,16 @@ import React, { JSX, useState } from "react";
 import Image from "next/image";
 import phoneCallingIcon from '@/public/icons/phone-calling.svg';
 import chatIcon from '@/public/icons/chat.svg';
+import letterIcon from '@/public/icons/letter.svg';
+import whatsappIcon from '@/public/icons/whatsapp.svg';
+import smartphoneIcon from '@/public/icons/smartphone.svg';
 import { RequestCallbackForm } from "../request-callback-form/request-callback-form";
 import { NotifyMessage, NotifyType } from "../notify-message/notify-message";
 import styles from "./request-callback.module.css";
 
 export const RequestCallback = (): JSX.Element => {
   const [isOpen, setIsOpen] = useState(false);
+  const [chatIsOpen, setChatIsOpen] = useState(false);
   const [notifyType, setNotifyType] = useState<NotifyType | null>(null);
 
   const handleSubmit = (fullName: string, phoneNumber: string) => {
@@ -20,6 +24,12 @@ export const RequestCallback = (): JSX.Element => {
   const toggleCallbackModal = () => {
     setIsOpen(!isOpen);
     setNotifyType(null);
+  };
+
+  const toggleChatDropdown = () => {
+    console.log('toggleChatDropdown', chatIsOpen);
+    
+    setChatIsOpen(!chatIsOpen);
   };
 
   return (
@@ -40,12 +50,23 @@ export const RequestCallback = (): JSX.Element => {
       </div>
 
       <div className={styles["quick-contact"]}>
-        <button className={`${styles["contact-button"]} ${styles["contact-button-phone"]}`}>
-          <Image src={phoneCallingIcon} alt="" onClick={toggleCallbackModal} />
+        <button className={`${styles["contact-button"]} ${styles["contact-button-phone"]}`} onClick={toggleCallbackModal}>
+          <Image src={phoneCallingIcon} alt="" />
         </button>
-        <button className={`${styles["contact-button"]} ${styles["contact-button-chat"]}`}>
+        <button className={`${styles["contact-button"]} ${styles["contact-button-chat"]}`} onClick={toggleChatDropdown}>
           <Image src={chatIcon} alt="" />
         </button>
+        <div className={`${styles["chat-dropdown"] } ${chatIsOpen ? styles.open : ''}`} onClick={toggleChatDropdown}>
+          <button className={`${styles["contact-button"]} ${styles["contact-button-email"]}`}>
+            <Image src={letterIcon} alt="" />
+          </button>
+          <button className={`${styles["contact-button"]} ${styles["contact-button-wp"]}`}>
+            <Image src={whatsappIcon} alt="" />
+          </button>
+          <button className={`${styles["contact-button"]} ${styles["contact-button-phone"]}`}>
+            <Image src={smartphoneIcon} alt="" />
+          </button>
+        </div>
       </div>
     </>
   );

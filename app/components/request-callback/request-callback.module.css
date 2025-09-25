@@ -46,3 +46,34 @@
 .contact-button-chat {
   background-color: rgba(139, 112, 54, 0.4);
 }
+
+.chat-button-wrapper {
+  position: relative;
+}
+
+.chat-dropdown {
+  position: absolute;
+  right: 0;
+  bottom: 72px;
+  width: 64px;
+  min-height: 64px;
+  display: none;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.chat-dropdown.open {
+  display: flex;
+}
+
+.contact-button-email {
+  background-color: rgba(66, 133, 244, 1);
+}
+
+.contact-button-wp {
+  background-color: rgba(37, 211, 102, 1);
+}
+
+.contact-button-phone {
+  background-color: rgba(97, 85, 245, 1);
+}
