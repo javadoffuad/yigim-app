@@ -57,13 +57,13 @@ export const RequestCallback = (): JSX.Element => {
           <Image src={chatIcon} alt="" />
         </button>
         <div className={`${styles["chat-dropdown"] } ${chatIsOpen ? styles.open : ''}`} onClick={toggleChatDropdown}>
-          <button className={`${styles["contact-button"]} ${styles["contact-button-phone"]}`}>
+          <button className={`${styles["contact-button"]} ${styles["button-phone"]}`}>
             <Image src={smartphoneIcon} alt="" />
           </button>
-          <button className={`${styles["contact-button"]} ${styles["contact-button-wp"]}`}>
+          <button className={`${styles["contact-button"]} ${styles["button-wp"]}`}>
             <Image src={whatsappIcon} alt="" />
           </button>
-          <button className={`${styles["contact-button"]} ${styles["contact-button-email"]}`}>
+          <button className={`${styles["contact-button"]} ${styles["button-email"]}`}>
             <Image src={letterIcon} alt="" />
           </button>
         </div>

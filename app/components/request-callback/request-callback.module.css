@@ -69,14 +69,14 @@
   display: flex;
 }
 
-.contact-button-email {
+.button-email {
   background-color: rgba(66, 133, 244, 1);
 }
 
-.contact-button-wp {
+.button-wp {
   background-color: rgba(37, 211, 102, 1);
 }
 
-.contact-button-phone {
+.button-phone {
   background-color: rgba(97, 85, 245, 1);
 }
