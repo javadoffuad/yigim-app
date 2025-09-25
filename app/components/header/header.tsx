@@ -11,13 +11,14 @@ import product4Icon from '@/public/icons/product-4.svg';
 import Link from "next/link";
 import { PAGE_COMPANY_ABOUT, PAGE_COMPANY_CONTACTS, PAGE_COMPANY_NEWS, PAGE_HOME, PAGE_PRODUCT_ALL_IN_ONE, PAGE_PRODUCT_FAST_INVOICE_PAYMENT, PAGE_PRODUCT_INTERNET_ACQUIRING, PAGE_PRODUCT_LINK_PAYMENT, PAGE_PRODUCTS, PAGE_RESOURCES_API, PAGE_SIGN_IN } from '../../constants/navigation.constants';
 import { ProductMenuItemProps } from './product-menu-item/product-menu-item';
-import ProductMenu from './product-menu/product-menu';
+import { ProductMenu } from './product-menu/product-menu';
 import { useEffect, useRef, useState } from 'react';
 import LangMenu, { LanguageCode } from './lang-menu/lang-menu';
 
 export default function Header() {
   const [productMenuIsOpen, setProductMenuIsOpen] = useState(false);
-  const dropdownRef = useRef<HTMLDivElement>(null);
+  const productMenuRef = useRef<HTMLDivElement>(null);
+  const productsButtonRef = useRef<HTMLSpanElement>(null);
   const currentLang: LanguageCode = LanguageCode.ENG;
 
   const products: ProductMenuItemProps[] = [
@@ -49,7 +50,12 @@ export default function Header() {
 
   useEffect(() => {
     const handleClickOutside = (event: any) => {
-      if (dropdownRef?.current && !dropdownRef.current.contains(event.target)) {
+      if (
+        productMenuRef?.current && 
+        !productMenuRef.current.contains(event.target as Node) &&
+        productsButtonRef?.current && 
+        !productsButtonRef.current.contains(event.target as Node)
+      ) {
         setProductMenuIsOpen(false);
       }
     };
@@ -73,7 +79,7 @@ export default function Header() {
               </Link>
               
               <div className={styles["nav-links"]}>
-                <span className={`${styles["nav-link"]} ${productMenuIsOpen ? styles.active : ''}`} onClick={toggleDropdown}>
+                <span ref={productsButtonRef} className={`${styles["nav-link"]} ${productMenuIsOpen ? styles.active : ''}`} onClick={toggleDropdown}>
                   Products
                 </span>
                 <Link href={PAGE_COMPANY_ABOUT} className={styles["nav-link"]}>Company</Link>
@@ -89,7 +95,12 @@ export default function Header() {
           </nav>
       </header>
       
-      <ProductMenu ref={dropdownRef} isOpen={productMenuIsOpen} products={products} closeMenu={toggleDropdown} />
+      {
+        productMenuIsOpen
+        ? <ProductMenu ref={productMenuRef} products={products} closeMenu={toggleDropdown} />
+        : null
+      }
+      
     </>
   );
 }

@@ -1,26 +1,28 @@
 'use client';
 
-import { RefObject } from 'react';
+import { forwardRef } from 'react';
 import ProductMenuItem, { ProductMenuItemProps } from '../product-menu-item/product-menu-item';
 import styles from './product-menu.module.css';
 
-export default function ProductMenu({
-  products,
-  isOpen,
-  closeMenu
-}: {
-  ref: RefObject<HTMLDivElement | null>;
-  isOpen: boolean;
+interface ProductMenuProps {
   products: ProductMenuItemProps[];
   closeMenu: () => void;
-}) {
-  return (
-    <div className={`${styles['dropdown']} ${isOpen ? styles['show'] : ''}`}>
-      <div className={styles['dropdown-inner']}>
-        {
-          products.map((product, index) => <ProductMenuItem key={index} menuItem={product} closeMenu={closeMenu} />)
-        }
-      </div>
-    </div>
-  );
 }
+
+export const ProductMenu = forwardRef<HTMLDivElement, ProductMenuProps>(
+  ({ products, closeMenu }, ref) => {
+    return (
+      <div ref={ref} className={styles['dropdown']}>
+        <div className={styles['dropdown-inner']}>
+          {products.map((product, index) => (
+            <ProductMenuItem
+              key={index}
+              menuItem={product}
+              closeMenu={closeMenu}
+            />
+          ))}
+        </div>
+      </div>
+    );
+  }
+);

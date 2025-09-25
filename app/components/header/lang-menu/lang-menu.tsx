@@ -21,7 +21,7 @@ interface Language {
 
 export default function LangMenu({currentLang}: {currentLang: LanguageCode}) {
   const [isOpen, setIsOpen] = useState(false);
-  const dropdownRef = useRef(null);
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
   const languages: Language[] = [
     {
@@ -43,7 +43,7 @@ export default function LangMenu({currentLang}: {currentLang: LanguageCode}) {
 
   useEffect(() => {
     const handleClickOutside = (event: any) => {
-      if (dropdownRef.current && !(dropdownRef.current as any).contains(event.target)) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
         setIsOpen(false);
       }
     };
