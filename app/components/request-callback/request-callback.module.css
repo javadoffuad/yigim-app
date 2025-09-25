@@ -37,6 +37,9 @@
   gap: 8px;
   background-color: rgba(30, 30, 30, 0.3);
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-button-phone {
