@@ -48,14 +48,21 @@ export const RequestCallback = (): JSX.Element => {
         </button>
         <button className={`${styles["contact-button"]} ${styles["contact-button-chat"]} ${chatIsOpen ? styles.open : ''}`} onClick={toggleChatDropdown}>
         </button>
-        <div className={`${styles["chat-dropdown"] } ${chatIsOpen ? styles.open : ''}`} onClick={toggleChatDropdown}>
-          <button className={`${styles["contact-button"]} ${styles["button-phone"]}`}>
-          </button>
-          <button className={`${styles["contact-button"]} ${styles["button-wp"]}`}>
-          </button>
-          <button className={`${styles["contact-button"]} ${styles["button-email"]}`}>
-          </button>
-        </div>
+
+        {
+          chatIsOpen
+          ?
+          <div className={`${styles["chat-dropdown"] }`} onClick={toggleChatDropdown}>
+            <button className={`${styles["contact-button"]} ${styles["button-phone"]}`}>
+            </button>
+            <button className={`${styles["contact-button"]} ${styles["button-wp"]}`}>
+            </button>
+            <button className={`${styles["contact-button"]} ${styles["button-email"]}`}>
+            </button>
+          </div>
+          : null
+        }
+        
       </div>
     </>
   );
