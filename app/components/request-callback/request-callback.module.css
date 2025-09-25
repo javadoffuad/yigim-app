@@ -43,15 +43,15 @@
 }
 
 .contact-button-phone {
-  background: url('/icons/phone-calling.svg') center no-repeat rgba(30, 30, 30, 0.3);
+  background: url('../../../public/icons/phone-calling.svg') center no-repeat rgba(30, 30, 30, 0.3);
 }
 
 .contact-button-chat {
-  background: url('/icons/chat.svg') center no-repeat rgba(139, 112, 54, 0.4);
+  background: url('../../../public/icons/chat.svg') center no-repeat rgba(139, 112, 54, 0.4);
 }
 
 .contact-button-chat.open {
-  background: url('/icons/close-white.svg') center no-repeat rgba(30, 30, 30, 0.3);
+  background: url('../../../public/icons/close-white.svg') center no-repeat rgba(30, 30, 30, 0.3);
 }
 
 .chat-button-wrapper {
@@ -70,13 +70,13 @@
 }
 
 .button-email {
-  background: url('/icons/letter-white.svg') center no-repeat rgba(66, 133, 244, 1);
+  background: url('../../../public/icons/letter-white.svg') center no-repeat rgba(66, 133, 244, 1);
 }
 
 .button-wp {
-  background: url('/icons/whatsapp.svg') center no-repeat rgba(37, 211, 102, 1);
+  background: url('../../../public/icons/whatsapp.svg') center no-repeat rgba(37, 211, 102, 1);
 }
 
 .button-phone {
-  background: url('/icons/smartphone-white.svg') center no-repeat rgba(97, 85, 245, 1);
+  background: url('../../../public/icons/smartphone-white.svg') center no-repeat rgba(97, 85, 245, 1);
 }
