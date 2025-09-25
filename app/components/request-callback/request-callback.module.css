@@ -50,6 +50,10 @@
   background-color: rgba(139, 112, 54, 0.4);
 }
 
+.contact-button-chat.open {
+  background-color: rgba(30, 30, 30, 0.3);
+}
+
 .chat-button-wrapper {
   position: relative;
 }
