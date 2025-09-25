@@ -73,7 +73,9 @@ export default function Header() {
               </Link>
               
               <div className={styles["nav-links"]}>
-                <span className={`${styles["nav-link"]} ${productMenuIsOpen ? styles.active : ''}`} onClick={toggleDropdown}>Products</span>
+                <span className={`${styles["nav-link"]} ${productMenuIsOpen ? styles.active : ''}`} onClick={toggleDropdown}>
+                  Products
+                </span>
                 <Link href={PAGE_COMPANY_ABOUT} className={styles["nav-link"]}>Company</Link>
                 <Link href={PAGE_RESOURCES_API} className={styles["nav-link"]}>Developers</Link>
                 <Link href={PAGE_COMPANY_NEWS} className={styles["nav-link"]}>News</Link>
