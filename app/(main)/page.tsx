@@ -7,6 +7,7 @@ import WhoLovesUs from '@/components/who-loves-us/who-loves-us';
 import { BouncingParameters } from '@/components/bouncing-partners/bouncing-partners';
 import WhoWeAre from '@/components/who-we-are/who-we-are';
 import Awards from '../components/awards/awards';
+import BuiltForTrust from '../components/built-for-trust/built-for-trust';
 
 export default function MainPage() {
   return (
@@ -15,6 +16,7 @@ export default function MainPage() {
       <WhoWeAre />
       <KeyFacts />
       <OurVision />
+      <BuiltForTrust />
       <BouncingParameters />
       <WhoLovesUs />
       <Awards />
