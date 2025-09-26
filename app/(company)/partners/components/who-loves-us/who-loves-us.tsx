@@ -113,29 +113,29 @@ const feedbacks2: FeedbackCardProps[] = [
 export default function WhoLovesUs() {
   return (
     <section className={styles.section}>
-        <div className={styles.content}>
-            <div className={styles.text}>
-              <h3 className={styles.title}>Who loves us</h3>
-              <p className={styles.description}>...to ensure success of our 450+ clients</p>
-            </div>
-
-            <div className={styles.feedbacks}>
-              <div className={styles.column}>
-                <div className={`${styles["scroll-content"]} ${styles["scroll-down"]}`}>
-                  {
-                    [...feedbacks1, ...feedbacks1, ...feedbacks1, ...feedbacks1].map((feedback, index) => <FeedbackCard key={index} {...feedback} />)
-                  }
-                </div>
-              </div>
-              <div className={styles.column}>
-                <div className={`${styles["scroll-content"]} ${styles["scroll-up"]}`}>
-                  {
-                    [...feedbacks2, ...feedbacks2, ...feedbacks2, ...feedbacks2].map((feedback, index) => <FeedbackCard key={index} {...feedback} />)
-                  }
-                </div>
-              </div>
-            </div>
+      <div className={styles.content}>
+        <div className={styles.text}>
+          <h3 className={styles.title}>Who loves us</h3>
+          <p className={styles.description}>...to ensure success of our 450+ clients</p>
         </div>
+
+        <div className={styles.feedbacks}>
+          <div className={styles.column}>
+            <div className={`${styles["scroll-content"]} ${styles["scroll-down"]}`}>
+              {
+                [...feedbacks1, ...feedbacks1, ...feedbacks1, ...feedbacks1].map((feedback, index) => <FeedbackCard key={index} {...feedback} />)
+              }
+            </div>
+          </div>
+          <div className={styles.column}>
+            <div className={`${styles["scroll-content"]} ${styles["scroll-up"]}`}>
+              {
+                [...feedbacks2, ...feedbacks2, ...feedbacks2, ...feedbacks2].map((feedback, index) => <FeedbackCard key={index} {...feedback} />)
+              }
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }

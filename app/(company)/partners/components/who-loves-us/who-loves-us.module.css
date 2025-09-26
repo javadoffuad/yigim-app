@@ -35,7 +35,7 @@
 }
 
 .feedbacks {
-    width: 100%;
+    width: calc(100vw - 16px);
     display: flex;
     flex-grow: 1;
     flex-direction: column;
