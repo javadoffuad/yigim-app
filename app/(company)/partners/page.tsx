@@ -62,7 +62,7 @@ export default function PartnersPage() {
               categories.map((category, index) =>(
                 <button
                   key={index}
-                  onClick={() => selectCategory(index)}
+                  onClick={() => selectCategory(category.code)}
                   className={`button ${selectedCategory === category.code ? 'button-primary' : ''}`}>
                   {category.name}
                 </button>

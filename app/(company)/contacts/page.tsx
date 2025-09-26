@@ -8,6 +8,7 @@ import address from '@/public/address.svg';
 import styles from './page.module.css'
 import ContactForm from "./components/contact-form/contact-form";
 import ContactMap from "./components/contact-map/contact-map";
+import { EMAIL } from "@/app/constants/contact.constants";
 
 export default function ContactsPage() {
   return (
@@ -15,7 +16,7 @@ export default function ContactsPage() {
     <PageWrapper title='Get in touch'>
       <div className={styles["contact-cards"]}>
         <ContactCard altText="Email" icon={email}>
-          info@yigim.az
+          {EMAIL}
         </ContactCard>
         <ContactCard altText="Phone" icon={phone}>
           (+994) 55 205 95 59<br />(+994) 55 255 84 55
