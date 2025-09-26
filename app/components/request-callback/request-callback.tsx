@@ -4,6 +4,8 @@ import React, { JSX, useEffect, useRef, useState } from "react";
 import { RequestCallbackForm } from "../request-callback-form/request-callback-form";
 import { NotifyMessage, NotifyType } from "../notify-message/notify-message";
 import styles from "./request-callback.module.css";
+import Link from "next/link";
+import { EMAIL, PHONE, WHATSAPP_URL } from "@/app/constants/contact.constants";
 
 export const RequestCallback = (): JSX.Element => {
   const [isOpen, setIsOpen] = useState(false);
@@ -66,12 +68,9 @@ export const RequestCallback = (): JSX.Element => {
             chatIsOpen
             ?
             <div  className={`${styles["chat-dropdown"] }`} onClick={toggleChatDropdown}>
-              <button className={`${styles["contact-button"]} ${styles["button-phone"]}`}>
-              </button>
-              <button className={`${styles["contact-button"]} ${styles["button-wp"]}`}>
-              </button>
-              <button className={`${styles["contact-button"]} ${styles["button-email"]}`}>
-              </button>
+              <Link href={`tel:${PHONE}`} className={`${styles["contact-button"]} ${styles["button-phone"]}`} />
+              <Link href={WHATSAPP_URL} className={`${styles["contact-button"]} ${styles["button-wp"]}`} />
+              <Link href={`mailto:${EMAIL}`} className={`${styles["contact-button"]} ${styles["button-email"]}`} />
             </div>
             : null
           }
