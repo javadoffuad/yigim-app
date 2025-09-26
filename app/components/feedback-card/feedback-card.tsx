@@ -1,29 +1,25 @@
 import Image from "next/image";
 import styles from './feedback-card.module.css';
-
-export interface FeedbackCardProps {
-  companyLogo: string;
-  author: string;
-  feedbackText: string;
-  authorTitle: string;
-}
+import { IFeedback } from "@/app/models/feedback.models";
 
 export default function FeedbackCard({ 
-  companyLogo, 
+  brand, 
   author, 
-  feedbackText, 
-  authorTitle 
-}: FeedbackCardProps) {
+  feedback, 
+  position 
+}: IFeedback) {
     return (
         <div className={styles.card}>
             <p className={styles.quote}>
-                {feedbackText}
+                {feedback}
             </p>
             <div className={styles.author}>
-                <Image src={companyLogo} alt={author} className={styles.authorAvatar} />
+                <div className={styles.brand} style={{backgroundColor: brand.color}}>
+                    <Image src={brand.icon} alt={author} className={styles.brandIcon} />
+                </div>
                 <div className={styles.authorInfo}>
                     <div className={styles.authorName}>{author}</div>
-                    <div className={styles.authorTitle}>{authorTitle}</div>
+                    <div className={styles.position}>{position}</div>
                 </div>
             </div>
         </div>

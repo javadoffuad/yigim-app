@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./awards.module.css";
 import Image from "next/image";
-import azercosmosLogo from '@/public/partners2/azercosmos.svg';
+import azercosmosLogo from '@/public/partners/azercosmos.svg';
 import visaLogo from '@/public/icons/visa.svg';
 import pciLogo from '@/public/icons/pci.svg';
 

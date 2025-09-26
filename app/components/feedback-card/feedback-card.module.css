@@ -23,11 +23,17 @@
     gap: 12px;
 }
 
-.authorAvatar {
+.brand {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    object-fit: cover;
+}
+
+.brandIcon {
+    width: 40px;
+    height: 40px;
+    padding: 4px;
+    object-fit: contain;
 }
 
 .specialAvatar {
@@ -57,7 +63,7 @@
     line-height: 16px;
 }
 
-.authorTitle {
+.position {
     color: #888888;
     font-size: 12px;
     line-height: 16px;
