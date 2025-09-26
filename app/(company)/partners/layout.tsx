@@ -5,6 +5,7 @@ import Faq from "@/app/components/faq/faq";
 import Footer from "@/app/components/footer/footer";
 import { FAQ_LIST } from "@/app/constants/faq.constants";
 import "@/app/globals.css";
+import { RequestCallback } from "@/app/components/request-callback/request-callback";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,7 +32,8 @@ export default function Layout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Header></Header>
+        <Header />
+        <RequestCallback />
         {children}
         <Faq items={FAQ_LIST} />
         <Footer />
