@@ -10,6 +10,10 @@ import { useState } from 'react';
 
 const categories: ICategory[] = [
   {
+    code: PartnerCategory.ALL,
+    name: 'All'
+  },
+  {
     code: PartnerCategory.MOBILITY,
     name: '(e-)Mobility'
   },
@@ -32,14 +36,14 @@ const categories: ICategory[] = [
 ];
 
 export default function PartnersPage() {
-  const [selectedCategory, setSelectedCategory] = useState<PartnerCategory | null>(null);
+  const [selectedCategory, setSelectedCategory] = useState<PartnerCategory>(PartnerCategory.ALL);
 
   // Фильтрация партнеров
-  const filteredPartners = selectedCategory === null 
+  const filteredPartners = selectedCategory === PartnerCategory.ALL 
     ? partners 
     : partners.filter(partner => partner.category === selectedCategory);
 
-  const selectCategory = (category: PartnerCategory | null) => {
+  const selectCategory = (category: PartnerCategory) => {
     setSelectedCategory(category);
   };
 
@@ -54,16 +58,12 @@ export default function PartnersPage() {
 
         <div className={styles.partners}>
           <div className={styles.buttons}>
-            <button onClick={() => selectCategory(null)} className={`button ${selectedCategory === null ? 'button-primary' : ''} ${styles["button-all"]}`}>
-              All
-            </button>
-            
             {
               categories.map((category, index) =>(
                 <button
                   key={index}
                   onClick={() => selectCategory(category.code)}
-                  className={`button ${selectedCategory === category.code ? 'button-primary' : ''}`}>
+                  className={`button ${selectedCategory === category.code ? 'button-primary' : ''} ${category.code === PartnerCategory.ALL ? styles["button-all"] : ''}`}>
                   {category.name}
                 </button>
               ))

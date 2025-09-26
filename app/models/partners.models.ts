@@ -1,6 +1,7 @@
 import { StaticImageData } from "next/image";
 
 export enum PartnerCategory {
+  ALL,
   MOBILITY,
   HOSPITAL,
   DELIVERY,

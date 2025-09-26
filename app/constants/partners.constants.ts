@@ -156,7 +156,7 @@ export const partners: IPartner[] = [
     color: '#E1F1E4'
   },
   {
-    category: PartnerCategory.HOSPITAL,
+    category: PartnerCategory.ALL,
     logo: bakuOxfordSchoolIcon,
     color: '#E16265'
   },
@@ -296,12 +296,12 @@ export const partners: IPartner[] = [
     color: '#EB3831'
   },
   {
-    category: PartnerCategory.HOSPITAL,
+    category: PartnerCategory.ALL,
     logo: codeAcademyIcon,
     color: '#E9E9E9'
   },
   {
-    category: PartnerCategory.HOSPITAL,
+    category: PartnerCategory.ALL,
     logo: adaIcon,
     color: '#EFEFEF'
   },
@@ -311,7 +311,7 @@ export const partners: IPartner[] = [
     color: '#2B2B2B'
   },
   {
-    category: PartnerCategory.HOSPITAL,
+    category: PartnerCategory.ALL,
     logo: britishCollegeIcon,
     color: '#EBF2F7'
   },
