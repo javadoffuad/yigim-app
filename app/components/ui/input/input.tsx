@@ -6,6 +6,7 @@ interface InputProps {
   label: string;
   value: string;
   onChange: (value: string) => void;
+  onBlur: () => void;
   icon: string;
   type?: 'text' | 'password' | 'email';
   error?: string;
@@ -18,6 +19,7 @@ const Input: React.FC<InputProps> = ({
   label,
   value,
   onChange,
+  onBlur,
   icon,
   type = 'text',
   error,
@@ -29,7 +31,10 @@ const Input: React.FC<InputProps> = ({
   const inputRef = useRef<HTMLInputElement>(null);
 
   const handleFocus = () => setIsFocused(true);
-  const handleBlur = () => setIsFocused(false);
+  const handleBlur = () => {
+    onBlur();
+    setIsFocused(false)
+  };
 
   const isLabelActive = isFocused || value.length > 0;
 

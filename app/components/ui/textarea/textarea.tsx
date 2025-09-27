@@ -6,6 +6,7 @@ interface TextareaProps {
   label: string;
   value: string;
   onChange: (value: string) => void;
+  onBlur: () => void;
   icon: string;
   error?: string;
   caption?: string;
@@ -17,6 +18,7 @@ const Textarea: React.FC<TextareaProps> = ({
   label,
   value,
   onChange,
+  onBlur,
   icon,
   error,
   caption,
@@ -27,7 +29,10 @@ const Textarea: React.FC<TextareaProps> = ({
   const inputRef = useRef<HTMLTextAreaElement>(null);
 
   const handleFocus = () => setIsFocused(true);
-  const handleBlur = () => setIsFocused(false);
+  const handleBlur = () => {
+    onBlur();
+    setIsFocused(false);
+  }
 
   const isLabelActive = isFocused || value.length > 0;
 
