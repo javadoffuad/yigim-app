@@ -13,8 +13,8 @@ import { ThingCardProps } from "../components/three-things/thing-card/thing-card
 import ThreeThings from "../components/three-things/main-section/main-section";
 import calendarIcon from '@/public/icons/calendar-freezer.svg';
 import RealLifeCases, { RealLifeProps } from "../components/real-life/main-section/main-section";
-import solutionImage from '@/public/images/ecom-solution.jpg';
 import ProductInfo, { ProductInfoProps } from "../components/product-info/product-info";
+import { getAbsolutePath } from "@/app/utils/absolute-path.utils";
 
 const functions: FunctionCardProps[] = [
     {
@@ -94,12 +94,13 @@ const info: ProductInfoProps = {
 }
 
 export default function ProductPage() {
-  return (
-    <PageWrapper title={`Internet - Acquiring / \nE-Comm Solution`}>
-        <ProductInfo info={info} />
-        <RealLifeCases props={realLifeProps} />
-        <ThreeThings image={solutionImage} productName={productName} items={threeThings} />
-        <MainFunctions productName={productName} items={functions} />
-    </PageWrapper>
-  );
+    const videPath = getAbsolutePath('internet-acquiring-ecom-solution.mp4');
+    return (
+        <PageWrapper title={`Internet - Acquiring / \nE-Comm Solution`}>
+            <ProductInfo info={info} />
+            <RealLifeCases props={realLifeProps} />
+            <ThreeThings videoPath={videPath} productName={productName} items={threeThings} />
+            <MainFunctions productName={productName} items={functions} />
+        </PageWrapper>
+    );
 }

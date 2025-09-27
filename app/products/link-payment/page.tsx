@@ -7,10 +7,8 @@ import ThreeThings from "../components/three-things/main-section/main-section";
 import { ThingCardProps } from "../components/three-things/thing-card/thing-card";
 import MainFunctions from "../components/main-functions/main-section/main-section";
 import { FunctionCardProps } from "../components/main-functions/function-card/function-card";
-import linkPaymentImage from '@/public/images/link-payment.png';
 import ProductInfo, { ProductInfoProps } from "../components/product-info/product-info";
 import RealLifeCases, { RealLifeProps } from "../components/real-life/main-section/main-section";
-import { RealLifeCardProps } from "../components/real-life/real-life-card/real-life-card";
 import encryptIcon from '@/public/icons/encrypt.svg';
 import linkIcon from '@/public/icons/link.svg';
 import qrIcon from '@/public/icons/qr.svg';
@@ -19,6 +17,7 @@ import saveCardIcon from '@/public/icons/save-card.svg';
 import pageIcon from '@/public/icons/page.svg';
 import phoneCallingIcon from '@/public/icons/phone-calling-black.svg';
 import billIcon from '@/public/icons/bill.svg';
+import { getAbsolutePath } from "@/app/utils/absolute-path.utils";
 
 const productName = 'Link Payment +';
 const content: ContentImageProps = {
@@ -81,6 +80,8 @@ const functions: FunctionCardProps[] = [
 
 const realLifeProps: RealLifeProps = {
     productName: productName,
+    video: 'link-payment.mp4',
+    videoTitle: 'Instant Payment Links\nfor Seamless Bookings',
     cases: [
         {
             icon: phoneCallingIcon,
@@ -95,8 +96,6 @@ const realLifeProps: RealLifeProps = {
             children: `Within minutes, the guest is able to pay from their phone. You see the payment come through, linked to that booking, and everything’s tracked automatically—no paperwork, no confusion.`,
         },
     ],
-    video: 'link-payment.mp4',
-    videoTitle: 'Instant Payment Links\nfor Seamless Bookings',
 }
 
 const info: ProductInfoProps = {
@@ -108,13 +107,14 @@ const info: ProductInfoProps = {
 }
 
 export default function ProductPage() {
-  return (
-    <PageWrapper title={productName}>
-      <ProductInfo info={info} />
-      <RealLifeCases props={realLifeProps} />
-      <ContentImage content={content} />
-      <ThreeThings image={linkPaymentImage} productName={productName} items={threeThings} />
-      <MainFunctions productName={productName} items={functions} />
-    </PageWrapper>
-  );
+    const videoPath = getAbsolutePath('link-payment-3-things.mp4');
+    return (
+        <PageWrapper title={productName}>
+        <ProductInfo info={info} />
+        <RealLifeCases props={realLifeProps} />
+        <ContentImage content={content} />
+        <ThreeThings videoPath={videoPath} productName={productName} items={threeThings} />
+        <MainFunctions productName={productName} items={functions} />
+        </PageWrapper>
+    );
 }

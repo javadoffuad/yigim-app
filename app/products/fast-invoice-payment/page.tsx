@@ -14,8 +14,8 @@ import moneyIcon from '@/public/icons/money.svg';
 import energyIcon from '@/public/icons/energy.svg';
 import ThreeThings from "../components/three-things/main-section/main-section";
 import { ThingCardProps } from "../components/three-things/thing-card/thing-card";
-import fastInvoiceImage from '@/public/images/fast-invoice-image.png';
 import RealLifeCases, { RealLifeProps } from "../components/real-life/main-section/main-section";
+import { getAbsolutePath } from "@/app/utils/absolute-path.utils";
 
 const productName = "Fast Invoice Payment";
 const info: ProductInfoProps = {
@@ -88,12 +88,13 @@ const realLifeProps: RealLifeProps = {
 }
 
 export default function ProductPage() {
-  return (
-    <PageWrapper title={productName}>
-      <ProductInfo info={info} />
-      <RealLifeCases props={realLifeProps} />
-      <ThreeThings image={fastInvoiceImage} productName={productName} items={threeThings} />
-      <MainFunctions productName={productName} items={functions} />
-    </PageWrapper>
-  );
+    const videPath = getAbsolutePath('fast-invoice-smartphone-invoice.mp4');
+    return (
+        <PageWrapper title={productName}>
+        <ProductInfo info={info} />
+        <RealLifeCases props={realLifeProps} />
+        <ThreeThings videoPath={videPath} productName={productName} items={threeThings} />
+        <MainFunctions productName={productName} items={functions} />
+        </PageWrapper>
+    );
 }

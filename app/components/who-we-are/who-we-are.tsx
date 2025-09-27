@@ -1,7 +1,9 @@
 import React, { Suspense } from "react";
 import styles from "./who-we-are.module.css";
+import { getAbsolutePath } from "@/app/utils/absolute-path.utils";
 
 export default function WhoWeAre() {
+  const videoPath = getAbsolutePath('who-we-are.mp4');
   return (
     <div className={styles["section"]}>
       <div className={styles["section-header"]}>
@@ -20,7 +22,7 @@ export default function WhoWeAre() {
         <div className={styles["video-container"]}>
           <Suspense fallback={<p>Loading video...</p>}>
             <video className={styles.video} loop autoPlay muted>
-              <source src="who-we-are.mp4" type="video/mp4" />
+              <source src={videoPath} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </Suspense>

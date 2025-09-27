@@ -4,7 +4,6 @@ import PageWrapper from "@/components/page-wrapper/page-wrapper";
 import ProductInfo, { ProductInfoProps } from "../components/product-info/product-info";
 import ThreeThings from "../components/three-things/main-section/main-section";
 import { ThingCardProps } from "../components/three-things/thing-card/thing-card";
-import allInOneImage from "@/public/images/all-in-one-image.png";
 import MainFunctions from "../components/main-functions/main-section/main-section";
 import { FunctionCardProps } from "../components/main-functions/function-card/function-card";
 import widgetAddIcon from "@/public/icons/widget-add.svg";
@@ -19,6 +18,7 @@ import terminalsImage from "@/public/images/terminals.png";
 import appsImage from "@/public/images/apps.png";
 import RealLifeCases, { RealLifeProps } from "../components/real-life/main-section/main-section";
 import ContentImage, { ContentImageProps } from "../components/content-image/main-section/main-section";
+import { getAbsolutePath } from "@/app/utils/absolute-path.utils";
 
 const productName = 'All-In-One Aggregator Service';
 const info: ProductInfoProps = {
@@ -72,22 +72,22 @@ const functions: FunctionCardProps[] = [
 ];
 const realLifeProps: RealLifeProps = {
     productName: 'This product is developed exclusively by YIĞIM\s',
-    cases: [
-        {
-            icon: banknoteIcon,
-            children: `When a Wolt courier receives cash from a customer, they need a quick and secure way to transfer it to Wolt.`,
-        },
-        {
-            icon: smartphoneIcon,
-            children: `With our All-in-One solution, the courier can easily deposit the cash via a nearby terminal or mobile banking app.`,
-        },
-        {
-            icon: userIdIcon,
-            children: `By entering their Courier ID, the money goes directly to Wolt’s account no delays, no manual work.`,
-        },
-    ],
     video: 'wolt-courier.mp4',
     videoTitle: 'Wolt Courier',
+    cases: [
+      {
+          icon: banknoteIcon,
+          children: `When a Wolt courier receives cash from a customer, they need a quick and secure way to transfer it to Wolt.`,
+      },
+      {
+          icon: smartphoneIcon,
+          children: `With our All-in-One solution, the courier can easily deposit the cash via a nearby terminal or mobile banking app.`,
+      },
+      {
+          icon: userIdIcon,
+          children: `By entering their Courier ID, the money goes directly to Wolt’s account no delays, no manual work.`,
+      },
+    ],
 }
 const content: ContentImageProps = {
   title: 'Payment Terminals',
@@ -103,13 +103,14 @@ const content2: ContentImageProps = {
 }
 
 export default function ProductPage() {
+  const videPath = getAbsolutePath('all-in-onefuturistic-neon-ribbon.mp4');
   return (
     <PageWrapper title='All-In-One Aggregator Service'>
       <ProductInfo info={info} />
       <RealLifeCases props={realLifeProps} />
       <ContentImage content={content} />
       <ContentImage content={content2} align="left" />
-      <ThreeThings image={allInOneImage} productName={productName} items={threeThings} />
+      <ThreeThings videoPath={videPath} productName={productName} items={threeThings} />
       <MainFunctions productName={productName} items={functions} />
     </PageWrapper>
   );

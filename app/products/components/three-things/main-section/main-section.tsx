@@ -2,12 +2,12 @@
 
 import styles from './main-section.module.css';
 import { ThingCard, ThingCardProps } from '../thing-card/thing-card';
-import Image, { StaticImageData } from 'next/image';
+import { Suspense } from 'react';
 
-export default function ThreeThings({items, productName, image}: {
+export default function ThreeThings({items, productName, videoPath}: {
     items: ThingCardProps[],
     productName: string,
-    image: StaticImageData
+    videoPath: string,
 }) {
   return (
     <section className={styles.section}>
@@ -25,7 +25,12 @@ export default function ThreeThings({items, productName, image}: {
                 </div>
 
                 <div className={styles.solution}>
-                    <Image src={image} alt="E-commerce Solution" className={styles["solution-image"]} />
+                    <Suspense fallback={<p>Loading video...</p>}>
+                        <video className={styles.video} loop autoPlay muted>
+                            <source src={videoPath} type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </Suspense>
                 </div>
             </div>
         </div>
