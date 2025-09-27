@@ -72,15 +72,15 @@ const realLifeProps: RealLifeProps = {
     cases: [
         {
             icon: bellIcon,
-            children: `Baku Electronics used to send plain SMS reminders for credit payments—customers still had to find the contract, log in, and fill in details.`,
+            children: <span><strong>Baku Electronics</strong> used to send plain SMS reminders for credit payments—customers still had to find the contract, log in, and fill in details.</span>,
         },
         {
             icon: moneyIcon,
-            children: `Now, with YIĞIM’s Fast Invoice Payment, they send a smart link via SMS (or any other digital channel). The customer taps the link, sees a pre-filled payment page with all contract info, and pays in seconds.`,
+            children: <span>Now, with <strong>YIĞIM’s Fast Invoice Payment,</strong> they send a smart link via SMS (or any other digital channel). The customer taps the link, sees a pre-filled payment page with all contract info, and pays in seconds.</span>,
         },
         {
             icon: energyIcon,
-            children: `For the business, this means faster payments, fewer support calls, and a smoother payment experience—all with one simple link.`,
+            children: <span><strong>For the business,</strong> this means faster payments, fewer support calls, and a smoother payment experience—all with one simple link.</span>,
         },
     ],
     video: 'fast-invoice.mp4',

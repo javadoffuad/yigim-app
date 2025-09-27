@@ -72,14 +72,14 @@ const realLifeProps: RealLifeProps = {
     cases: [
         {
         icon: calendarIcon,
-        children: `In services like <strong>taxi rides or food delivery</strong>
+        children: <span>In services like <strong>taxi rides or food delivery</strong>
                     (e.g. Bolt or Wolt), funds can be <strong>securely pre-authorized</strong>
-                    and blocked (frozen) until the service is delivered.`,
+                    and blocked (frozen) until the service is delivered.</span>,
         },
         {
             icon: refundsIcon,
-            children: `If the service is canceled or not used, the amount is unblocked
-                        (returned back) to the customer — <strong>without any commission</strong> or penalty.`,
+            children: <span>If the service is canceled or not used, the amount is unblocked
+                        (returned back) to the customer — <strong>without any commission</strong> or penalty.</span>,
         },
     ],
     video: 'secure.mp4',

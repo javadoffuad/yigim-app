@@ -77,15 +77,15 @@ const realLifeProps: RealLifeProps = {
     cases: [
       {
           icon: banknoteIcon,
-          children: `When a Wolt courier receives cash from a customer, they need a quick and secure way to transfer it to Wolt.`,
+          children: <span>When a <strong>Wolt courier</strong> receives cash from a customer, they need a <strong>quick and secure way to transfer</strong> it to Wolt.</span>,
       },
       {
           icon: smartphoneIcon,
-          children: `With our All-in-One solution, the courier can easily deposit the cash via a nearby terminal or mobile banking app.`,
+          children: <span>With our <strong>All-in-One solution</strong>, the courier can easily deposit the cash <strong>via a nearby terminal or mobile</strong> banking app.</span>,
       },
       {
           icon: userIdIcon,
-          children: `By entering their Courier ID, the money goes directly to Wolt’s account no delays, no manual work.`,
+          children: <span>By entering their Courier ID, the money goes directly to Wolt’s account <strong>no delays, no manual work.</strong></span>,
       },
     ],
 }
