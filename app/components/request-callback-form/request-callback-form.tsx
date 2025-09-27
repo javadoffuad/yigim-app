@@ -118,7 +118,7 @@ export const RequestCallbackForm = (props: RequestCallbackFormProps): JSX.Elemen
               value={formValues.phoneNumber}
               error={errors.phoneNumber?.message ?? ''}
               onChange={(value) => handleChange('phoneNumber', value)}
-              onBlur={() => handleBlur('fullName')} />
+              onBlur={() => handleBlur('phoneNumber')} />
           </div>
 
           <button type="submit" className="submit-button" disabled={isSubmitting}>
