@@ -9,10 +9,8 @@
 
 .input-field {
   width: 100%;
-  padding: 15px 10px 0 52px;
-  height: 64px;
+  padding: 28px 10px 0 52px;
   border: 1px solid transparent;
-  border-radius: 8px;
   font-weight: 400;
   color: #1e1e1e;
   font-size: 16px;
@@ -21,6 +19,8 @@
   transition: all 0.2s ease;
   box-sizing: border-box;
   border-radius: 16px;
+  resize: none;
+  min-height: 124px;
 }
 
 .input-field:hover {
@@ -43,18 +43,16 @@
   width: 24px;
   height: 24px;
   flex-shrink: 0;
-  z-index: 1;
   position: absolute;
   left: 16px;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 20px;
+  z-index: 1;
 }
 
 .input-label {
   position: absolute;
   left: 52px;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 20px;
   color: #888888;
   font-size: 16px;
   line-height: 1.5;
