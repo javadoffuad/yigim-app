@@ -6,6 +6,7 @@ import userIcon from '@/public/icons/user.svg';
 import phoneIcon from '@/public/icons/phone.svg';
 import closeIcon from '@/public/icons/close.svg';
 import "./request-callback-form.css";
+import Input from "../ui/input/input";
 
 export interface RequestCallbackFormProps {
   handleSubmit: (fullname: string, phoneNumber: string) => void;
@@ -33,31 +34,9 @@ export const RequestCallbackForm = (props: RequestCallbackFormProps): JSX.Elemen
 
         <div className="form-section">
           <div className="input-group">
-            <div className="input-container">
-              <div className="input-wrapper">
-                <Image src={userIcon} className="input-icon" alt="" />
-                <input
-                  type="text"
-                  className="input-field"
-                  placeholder="Full Name"
-                  value={fullName}
-                  onChange={(e) => setFullName(e.target.value)}
-                />
-              </div>
-            </div>
+            <Input icon={userIcon} label="Full Name" value={fullName} onChange={setFullName} />
 
-            <div className="input-container">
-              <div className="input-wrapper">
-                <Image src={phoneIcon} className="input-icon" alt="" />
-                <input
-                  type="tel"
-                  className="input-field"
-                  placeholder="Phone number"
-                  value={phoneNumber}
-                  onChange={(e) => setPhoneNumber(e.target.value)}
-                />
-              </div>
-            </div>
+            <Input icon={phoneIcon} label="Phone number" value={phoneNumber} onChange={setPhoneNumber} />
           </div>
 
           <button type="submit" className="submit-button" onClick={handleSubmit}>
