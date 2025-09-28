@@ -13,15 +13,14 @@ import { PAGE_COMPANY_ABOUT, PAGE_COMPANY_CONTACTS, PAGE_COMPANY_NEWS, PAGE_HOME
 import { ProductMenuItemProps } from './product-menu-item/product-menu-item';
 import { ProductMenu } from './product-menu/product-menu';
 import { useEffect, useRef, useState } from 'react';
-import LangMenu, { LanguageCode } from './lang-menu/lang-menu';
+import LangMenu from './lang-menu/lang-menu';
 import { useTranslations } from 'next-intl';
 
 export default function Header() {
   const [productMenuIsOpen, setProductMenuIsOpen] = useState(false);
   const productMenuRef = useRef<HTMLDivElement>(null);
   const productsButtonRef = useRef<HTMLSpanElement>(null);
-  const currentLang: LanguageCode = LanguageCode.ENG;
-    const t = useTranslations('Header');
+  const t = useTranslations('Header');
 
   const products: ProductMenuItemProps[] = [
     {
@@ -91,7 +90,7 @@ export default function Header() {
               </div>
               
               <div className={styles["nav-actions"]}>
-                <LangMenu currentLang={currentLang} />
+                <LangMenu />
                 <Link href={PAGE_SIGN_IN} className={styles["login-btn"]}>Log in</Link>
               </div>
           </nav>

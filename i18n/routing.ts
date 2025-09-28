@@ -1,13 +1,14 @@
+import { LanguageCode } from '@/app/models/language.models';
 import {defineRouting} from 'next-intl/routing';
  
 export const routing = defineRouting({
   // Все поддерживаемые локали
-  locales: ['en', 'az'],
+  locales: [LanguageCode.ENG, LanguageCode.AZE, LanguageCode.RUS],
  
   // Локаль по умолчанию (не отображается в URL)
-  defaultLocale: 'en',
+  defaultLocale: LanguageCode.ENG,
 
   // Не показывать локаль по умолчанию в URL
-  localeDetection: false,
+  localeDetection: true,
   localePrefix: 'as-needed',
 });
