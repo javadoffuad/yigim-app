@@ -19,7 +19,6 @@ import appsImage from "@/public/images/apps.png";
 import RealLifeCases, { RealLifeProps } from "../components/real-life/main-section/main-section";
 import ContentImage, { ContentImageProps } from "../components/content-image/main-section/main-section";
 import { getAbsolutePath } from "@/app/utils/absolute-path.utils";
-import { generateLocaleStaticParams } from "@/app/utils/static-params";
 
 const productName = 'All-In-One Aggregator Service';
 const info: ProductInfoProps = {
@@ -115,8 +114,4 @@ export default function ProductPage() {
       <MainFunctions productName={productName} items={functions} />
     </PageWrapper>
   );
-}
-
-export async function generateStaticParams() {
-  return generateLocaleStaticParams();
 }

@@ -7,7 +7,6 @@ import { ICategory, PartnerCategory } from '@/app/models/partners.models';
 import { partners } from '@/app/constants/partners.constants';
 import Image from 'next/image';
 import { useState } from 'react';
-import { generateLocaleStaticParams } from '@/app/utils/static-params';
 
 const categories: ICategory[] = [
   {
@@ -83,8 +82,4 @@ export default function PartnersPage() {
       </div>
     </PageWrapper>
   );
-}
-
-export async function generateStaticParams() {
-  return generateLocaleStaticParams();
 }

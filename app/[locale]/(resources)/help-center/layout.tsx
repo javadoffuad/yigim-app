@@ -9,6 +9,7 @@ import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { routing } from "@/i18n/routing";
 import { ILayoutProps } from "@/app/models/layout.models";
+import { generateLocaleStaticParams } from "@/app/utils/static-params";
 
 export const metadata: Metadata = {
   title: "Yigim Help center",
@@ -38,4 +39,8 @@ export default async function Layout({children, params}: ILayoutProps) {
       </body>
     </html>
   );
+}
+
+export async function generateStaticParams() {
+  return generateLocaleStaticParams();
 }
