@@ -7,7 +7,7 @@ const appPath = isProd ? process.env.NEXT_PUBLIC_BASE_PATH : '';
 
 
 const nextConfig: NextConfig = {
-  output: 'export',
+  output: isProd ? 'export' : undefined,
   trailingSlash: true,
   basePath: appPath,
   assetPrefix: appPath,
