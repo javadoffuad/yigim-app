@@ -7,8 +7,10 @@ import styles from "./request-callback.module.css";
 import Link from "next/link";
 import { EMAIL, PHONE, WHATSAPP_URL } from "@/app/constants/contact.constants";
 
-export const RequestCallback = (): JSX.Element => {
-  const [isOpen, setIsOpen] = useState(false);
+export const RequestCallback = (
+  {outerIsOpen, setOuterIsOpen}: {outerIsOpen?: boolean, setOuterIsOpen?: () => void}
+): JSX.Element => {
+  const [isOpen, setIsOpen] = useState(outerIsOpen ?? false);
   const [chatIsOpen, setChatIsOpen] = useState(false);
   const [notifyType, setNotifyType] = useState<NotifyType | null>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
@@ -32,7 +34,11 @@ export const RequestCallback = (): JSX.Element => {
   };
 
   const toggleCallbackModal = () => {
-    setIsOpen(!isOpen);
+    if (setOuterIsOpen) {
+      setOuterIsOpen();
+    } else {
+      setIsOpen(!isOpen);
+    }
     setNotifyType(null);
   };
 
@@ -40,22 +46,27 @@ export const RequestCallback = (): JSX.Element => {
     setChatIsOpen(!chatIsOpen);
   };
 
+  const modalIsOpen = outerIsOpen ?? isOpen;
+
   return (
     <>
-      <div className={`${styles.modal} ${isOpen ? styles.open : ''}`}>
-        
-        {
-          notifyType !== null
-            ? <NotifyMessage
-                type={notifyType}
-                handleClose={toggleCallbackModal} />
-            : <RequestCallbackForm
-                handleClose={toggleCallbackModal}
-                handleSubmit={handleSubmit} />
-        }
+      {
+        modalIsOpen ?
+        <div className={styles.modal}>
+          {
+            notifyType !== null
+              ? <NotifyMessage
+                  type={notifyType}
+                  handleClose={toggleCallbackModal} />
+              : <RequestCallbackForm
+                  handleClose={toggleCallbackModal}
+                  handleSubmit={handleSubmit} />
+          }
 
-        <div className={styles.backdrop} onClick={toggleCallbackModal}></div>
-      </div>
+          <div className={styles.backdrop} onClick={toggleCallbackModal}></div>
+        </div>
+        : null
+      }
 
       <div className={styles["quick-contact"]}>
         <button className={`${styles["contact-button"]} ${styles["contact-button-phone"]}`} onClick={toggleCallbackModal}>

@@ -4,13 +4,10 @@
   height: 100%;
   position: fixed;
   z-index: 4;
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.modal.open {
-  display: flex;
+  top: 0;
 }
 
 .backdrop {

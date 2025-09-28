@@ -21,7 +21,7 @@ interface Ball {
   color: string;
 }
 
-export function BouncingParameters() {
+export function BouncingParameters({setRequestCallbackIsOpen}: {setRequestCallbackIsOpen: () => void}) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const ballsRef = useRef<Ball[]>([]);
   const animationFrameId = useRef<number>(0);
@@ -291,7 +291,7 @@ export function BouncingParameters() {
   };
 
   const handleClick = () => {
-    console.log('handleClick');
+    setRequestCallbackIsOpen();
   };
 
   return (
