@@ -1,0 +1,16 @@
+{
+  "HomePage": {
+    "title": "[az] Hello world!"
+  },
+  "Header": {
+    "Navigation": {
+      "Products": {
+        "Label": "[az] Products"
+      },
+      "Company": "[az] Company",
+      "Developers": "[az] Developers",
+      "News": "[az] News",
+      "Contacts": "[az] News"
+    }
+  }
+}

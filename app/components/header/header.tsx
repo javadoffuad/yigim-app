@@ -14,12 +14,14 @@ import { ProductMenuItemProps } from './product-menu-item/product-menu-item';
 import { ProductMenu } from './product-menu/product-menu';
 import { useEffect, useRef, useState } from 'react';
 import LangMenu, { LanguageCode } from './lang-menu/lang-menu';
+import { useTranslations } from 'next-intl';
 
 export default function Header() {
   const [productMenuIsOpen, setProductMenuIsOpen] = useState(false);
   const productMenuRef = useRef<HTMLDivElement>(null);
   const productsButtonRef = useRef<HTMLSpanElement>(null);
   const currentLang: LanguageCode = LanguageCode.ENG;
+    const t = useTranslations('Header');
 
   const products: ProductMenuItemProps[] = [
     {
@@ -80,12 +82,12 @@ export default function Header() {
               
               <div className={styles["nav-links"]}>
                 <span ref={productsButtonRef} className={`${styles["nav-link"]} ${productMenuIsOpen ? styles.active : ''}`} onClick={toggleDropdown}>
-                  Products
+                  {t('Navigation.Products.Label')}
                 </span>
-                <Link href={PAGE_COMPANY_ABOUT} className={styles["nav-link"]}>Company</Link>
-                <Link href={PAGE_RESOURCES_API} className={styles["nav-link"]}>Developers</Link>
-                <Link href={PAGE_COMPANY_NEWS} className={styles["nav-link"]}>News</Link>
-                <Link href={PAGE_COMPANY_CONTACTS} className={styles["nav-link"]}>Contacts</Link>
+                <Link href={PAGE_COMPANY_ABOUT} className={styles["nav-link"]}>{t('Navigation.Company')}</Link>
+                <Link href={PAGE_RESOURCES_API} className={styles["nav-link"]}>{t('Navigation.Developers')}</Link>
+                <Link href={PAGE_COMPANY_NEWS} className={styles["nav-link"]}>{t('Navigation.News')}</Link>
+                <Link href={PAGE_COMPANY_CONTACTS} className={styles["nav-link"]}>{t('Navigation.Contacts')}</Link>
               </div>
               
               <div className={styles["nav-actions"]}>
