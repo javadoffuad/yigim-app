@@ -13,7 +13,7 @@ import { generateLocaleStaticParams } from "@/app/utils/static-params";
 
 export const metadata: Metadata = {
   title: "Yigim Partners",
-  description: "Yigim partners page description",
+  description: "Yigim partners page description!",
 };
 
 export default async function Layout({children, params}: ILayoutProps) {
