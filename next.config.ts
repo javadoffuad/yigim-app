@@ -7,12 +7,17 @@ const appPath = isProd ? process.env.NEXT_PUBLIC_BASE_PATH : '';
 
 
 const nextConfig: NextConfig = {
-  output: isProd ? 'export' : undefined,
+  // output: isProd ? 'export' : undefined,
   trailingSlash: true,
   basePath: appPath,
   assetPrefix: appPath,
   images: {
-    unoptimized: true, // обязательно для static export
+    unoptimized: false, // обязательно для static export
+  },
+  // Для next-intl
+  i18n: {
+    locales: ['en', 'ru', 'az'],
+    defaultLocale: 'en',
   },
   async redirects() {
     return [
