@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
   output: 'export',
   trailingSlash: true,
   basePath: appPath,
-  assetPrefix: `${appPath}/`,
+  assetPrefix: appPath,
   images: {
     unoptimized: true, // обязательно для static export
   },
