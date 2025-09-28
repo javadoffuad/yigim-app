@@ -9,6 +9,7 @@ import styles from './page.module.css'
 import ContactForm from "./components/contact-form/contact-form";
 import ContactMap from "./components/contact-map/contact-map";
 import { EMAIL } from "@/app/constants/contact.constants";
+import { generateLocaleStaticParams } from "@/app/utils/static-params";
 
 export default function ContactsPage() {
   return (
@@ -30,4 +31,8 @@ export default function ContactsPage() {
     <ContactMap />
     </>
   );
+}
+
+export async function generateStaticParams() {
+  return generateLocaleStaticParams();
 }

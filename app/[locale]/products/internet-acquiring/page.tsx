@@ -15,6 +15,7 @@ import calendarIcon from '@/public/icons/calendar-freezer.svg';
 import RealLifeCases, { RealLifeProps } from "../components/real-life/main-section/main-section";
 import ProductInfo, { ProductInfoProps } from "../components/product-info/product-info";
 import { getAbsolutePath } from "@/app/utils/absolute-path.utils";
+import { generateLocaleStaticParams } from "@/app/utils/static-params";
 
 const functions: FunctionCardProps[] = [
     {
@@ -103,4 +104,8 @@ export default function ProductPage() {
             <MainFunctions productName={productName} items={functions} />
         </PageWrapper>
     );
+}
+
+export async function generateStaticParams() {
+  return generateLocaleStaticParams();
 }

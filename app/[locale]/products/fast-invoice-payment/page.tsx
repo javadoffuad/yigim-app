@@ -16,6 +16,7 @@ import ThreeThings from "../components/three-things/main-section/main-section";
 import { ThingCardProps } from "../components/three-things/thing-card/thing-card";
 import RealLifeCases, { RealLifeProps } from "../components/real-life/main-section/main-section";
 import { getAbsolutePath } from "@/app/utils/absolute-path.utils";
+import { generateLocaleStaticParams } from "@/app/utils/static-params";
 
 const productName = "Fast Invoice Payment";
 const info: ProductInfoProps = {
@@ -97,4 +98,8 @@ export default function ProductPage() {
         <MainFunctions productName={productName} items={functions} />
         </PageWrapper>
     );
+}
+
+export async function generateStaticParams() {
+  return generateLocaleStaticParams();
 }

@@ -18,6 +18,7 @@ import pageIcon from '@/public/icons/page.svg';
 import phoneCallingIcon from '@/public/icons/phone-calling-black.svg';
 import billIcon from '@/public/icons/bill.svg';
 import { getAbsolutePath } from "@/app/utils/absolute-path.utils";
+import { generateLocaleStaticParams } from "@/app/utils/static-params";
 
 const productName = 'Link Payment +';
 const content: ContentImageProps = {
@@ -117,4 +118,8 @@ export default function ProductPage() {
         <MainFunctions productName={productName} items={functions} />
         </PageWrapper>
     );
+}
+
+export async function generateStaticParams() {
+  return generateLocaleStaticParams();
 }
