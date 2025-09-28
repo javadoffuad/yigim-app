@@ -1,0 +1,16 @@
+{
+  "HomePage": {
+    "title": "[ru] Hello world!"
+  },
+  "Header": {
+    "Navigation": {
+      "Products": {
+        "Label": "[ru] Products"
+      },
+      "Company": "[ru] Company",
+      "Developers": "[ru] Developers",
+      "News": "[ru] News",
+      "Contacts": "[ru] News"
+    }
+  }
+}

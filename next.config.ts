@@ -15,10 +15,10 @@ const nextConfig: NextConfig = {
     unoptimized: false, // обязательно для static export
   },
   // Для next-intl
-  i18n: {
-    locales: ['en', 'ru', 'az'],
-    defaultLocale: 'en',
-  },
+  // i18n: {
+  //   locales: ['en', 'ru', 'az'],
+  //   defaultLocale: 'en',
+  // },
   async redirects() {
     return [
       {
