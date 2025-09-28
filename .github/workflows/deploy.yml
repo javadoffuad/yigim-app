@@ -24,8 +24,21 @@ jobs:
           node-version: '20'
           cache: 'npm'
 
+      - name: Remove all npm config files
+        run: |
+          rm -f .npmrc
+          rm -f .yarnrc
+          rm -f .yarnrc.yml
+          # Очищаем кэш npm
+          npm config delete registry
+          npm config delete @scope:registry
+          npm cache clean --force
+
       - name: Install dependencies with npm
-        run: npm install --registry=https://registry.npmjs.org/
+        run: |
+          # Принудительно устанавливаем публичный registry
+          npm config set registry https://registry.npmjs.org/
+          npm install --no-optional --loglevel=verbose
 
       - name: Build
         run: npm run build
