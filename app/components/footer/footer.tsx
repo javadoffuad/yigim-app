@@ -7,7 +7,7 @@ import fb from '@/public/social/fb-logo.svg';
 import instagram from '@/public/social/instagram-logo.svg';
 import linkedin from '@/public/social/linkedin-logo.svg';
 import youtube from '@/public/social/youtube-logo.svg';
-import Link from 'next/link';
+import {Link} from '@/i18n/navigation';
 import { PAGE_COMPANY_ABOUT, PAGE_COMPANY_CONTACTS, PAGE_COMPANY_NEWS, PAGE_COMPANY_PARTNERS, PAGE_POLICIY, PAGE_PRODUCT_ALL_IN_ONE, PAGE_PRODUCT_FAST_INVOICE_PAYMENT, PAGE_PRODUCT_INTERNET_ACQUIRING, PAGE_PRODUCT_LINK_PAYMENT, PAGE_RESOURCES_API, PAGE_RESOURCES_HELP_CENTER, PAGE_SECURITY, PAGE_SOCIAL_FACEBOOK, PAGE_SOCIAL_INSTAGRAM, PAGE_SOCIAL_LINKEDIN, PAGE_SOCIAL_YOUTUBE, PAGE_TERMS_CONDITION } from '@/app/constants/navigation.constants';
 import FooterColumn from '../footer-column/footer-column';
 

@@ -8,7 +8,7 @@ import product2Icon from '@/public/icons/product-2.svg';
 import product3Icon from '@/public/icons/product-3.svg';
 import product4Icon from '@/public/icons/product-4.svg';
 
-import Link from "next/link";
+import {Link} from '@/i18n/navigation';
 import { PAGE_COMPANY_ABOUT, PAGE_COMPANY_CONTACTS, PAGE_COMPANY_NEWS, PAGE_HOME, PAGE_PRODUCT_ALL_IN_ONE, PAGE_PRODUCT_FAST_INVOICE_PAYMENT, PAGE_PRODUCT_INTERNET_ACQUIRING, PAGE_PRODUCT_LINK_PAYMENT, PAGE_PRODUCTS, PAGE_RESOURCES_API, PAGE_SIGN_IN } from '../../constants/navigation.constants';
 import { ProductMenuItemProps } from './product-menu-item/product-menu-item';
 import { ProductMenu } from './product-menu/product-menu';

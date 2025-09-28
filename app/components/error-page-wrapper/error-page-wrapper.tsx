@@ -1,6 +1,6 @@
 'use client';
 
-import Link from 'next/link';
+import {Link} from '@/i18n/navigation';
 import styles from './error-page-wrapper.module.css';
 import { PAGE_HOME } from '@/app/constants/navigation.constants';
 

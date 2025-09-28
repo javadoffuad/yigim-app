@@ -1,7 +1,7 @@
 'use client';
 
 import { Suspense } from 'react';
-import Link from 'next/link';
+import {Link} from '@/i18n/navigation';
 import styles from './main-header.module.css';
 import { PAGE_RESOURCES_API } from '@/constants/navigation.constants';
 import { getAbsolutePath } from '@/app/utils/absolute-path.utils';

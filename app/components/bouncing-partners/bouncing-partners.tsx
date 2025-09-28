@@ -2,7 +2,7 @@
 
 import React, { useRef, useEffect, useState } from 'react';
 import styles from './bouncing-partners.module.css';
-import Link from 'next/link';
+import {Link} from '@/i18n/navigation';
 import { PAGE_COMPANY_PARTNERS } from '@/app/constants/navigation.constants';
 import { partners } from '@/app/constants/partners.constants';
 
