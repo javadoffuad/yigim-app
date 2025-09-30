@@ -1,6 +1,6 @@
 {
-  "HomePage": {
-    "MainPoster": {
+  "PageHome": {
+    "AreaMainPoster": {
       "Label": "BİR SİSTEM SƏRHƏDSİZ İMKANLAR",
       "SubLabel": "Startuplardan dövlət müəssisələrinə qədər, dünyanın ağıllı və təhlükəsiz ödəniş həllərini əlçatan edirik.",
       "ButtonGetStarted": {
@@ -8,6 +8,48 @@
       },
       "ButtonDocumentation": {
         "Label": "Sənədləşmə"
+      }
+    },
+    "AreaWhoWeAre": {
+      "Label": "BİZ KİMİK",
+      "Description": "YIĞIM — Azərbaycanda istehlak malları və xidmətləri ödənişlərini təmin edən №1 şirkətdir.",
+      "Video": {
+        "Label": "Bütün məhsullarımız istənilən sistemə \nasan inteqrasiya üçün nəzərdə tutulub."
+      }
+    },
+    "AreaKeyFacts": {
+      "Label": "Əsas Faktlar",
+      "Description": "Ödəniş üsullarında fərqlilik yaradırıq.",
+      "AreaCards": {
+        "Card1": {
+          "Label": "Müştərilərin etibarı",
+          "SubLabel": "orta reytinq"
+        },
+        "Card2": {
+          "Label": "Bizneslər bizə etibar edir",
+          "SubLabel": "aktiv müştəri"
+        },
+        "Card3": {
+          "Label": "Uğurlu əməliyyatların faizi",
+          "SubLabel": "uğurlu əməliyyat"
+        },
+        "Card4": {
+          "Label": "Bank inteqrasiyaları",
+          "SubLabel": "tərəfdaş bank"
+        },
+        "Card5": {
+          "Label": "Prossesinq mərkəzləri ilə inteqrasiya ",
+          "SubLabel": "Prossesinq mərkəzi"
+        },
+        "Card6": {
+          "Label": "Qazandığımız mükafatlar",
+          "SubLabel": "mükafat"
+        },
+        "Card7": {
+          "Label": "Eksponensial artım (ümumdünya 108%-ə qarşı)",
+          "SubLabel": "illik artım"
+        }
+        
       }
     }
   },

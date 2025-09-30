@@ -1,6 +1,6 @@
 {
-  "HomePage": {
-    "MainPoster": {
+  "PageHome": {
+    "AreaMainPoster": {
       "Label": "One System  Infinite Possibilities",
       "SubLabel": "From startups to governments, we connect the world\n through smart, secure payments.",
       "ButtonGetStarted": {
@@ -8,6 +8,48 @@
       },
       "ButtonDocumentation": {
         "Label": "Documentation"
+      }
+    },
+    "AreaWhoWeAre": {
+      "Label": "who we are",
+      "Description": "Yigim is №1 company in Azerbaijan\nenabling consumer goods / services payments.",
+      "Video": {
+        "Label": "All our products are designed to be integrated \ninto any given system."
+      }
+    },
+    "AreaKeyFacts": {
+      "Label": "Key Facts",
+      "Description": "We <span>catalyze</span> change in \nhow people pay.",
+      "AreaCards": {
+        "Card1": {
+          "Label": "Trusted by \ncustomers",
+          "SubLabel": "average rating"
+        },
+        "Card2": {
+          "Label": "Trusted by \nbusinesses",
+          "SubLabel": "active clients"
+        },
+        "Card3": {
+          "Label": "Transaction \nsuccess rate",
+          "SubLabel": "successful operations"
+        },
+        "Card4": {
+          "Label": "Bank \nintegrations",
+          "SubLabel": "partnered banks"
+        },
+        "Card5": {
+          "Label": "Integrated with \nProccessing Centers",
+          "SubLabel": "processing centers"
+        },
+        "Card6": {
+          "Label": "Award-winning \nachievements",
+          "SubLabel": "awards"
+        },
+        "Card7": {
+          "Label": "Exponential growth \n(vs. global 108%)",
+          "SubLabel": "annual growth"
+        }
+
       }
     }
   },

@@ -1,14 +1,18 @@
 import React, { Suspense } from "react";
+import { useTranslations } from "next-intl";
 import styles from "./who-we-are.module.css";
 import { getAbsolutePath } from "@/app/utils/absolute-path.utils";
+import { I18N_HOME_PAGE } from "@/app/constants/i18n.constants";
 
 export default function WhoWeAre() {
+  const t = useTranslations(`${I18N_HOME_PAGE}.AreaWhoWeAre`);
   const videoPath = getAbsolutePath('who-we-are.mp4');
+
   return (
     <div className={styles["section"]}>
       <div className={styles["section-header"]}>
         <div className={styles["header-label"]}>
-          who we are
+          {t('Label')}
         </div>
 
         <div className={styles["header-title"]}>
@@ -26,7 +30,9 @@ export default function WhoWeAre() {
               Your browser does not support the video tag.
             </video>
           </Suspense>
-          <p className={styles["video-title"]}>All our products are designed to be integrated<br /> into any given system.</p>
+          <p className={styles["video-title"]}>
+            {t('Video.Label')}
+          </p>
         </div>
       </div>
     </div>

@@ -1,1 +1,1 @@
-export const I18N_HOME_PAGE = 'HomePage';
+export const I18N_HOME_PAGE = 'PageHome';

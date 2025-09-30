@@ -10,7 +10,7 @@ import { I18N_HOME_PAGE } from '@/app/constants/i18n.constants';
 
 export default function MainHeader() {
   const videoPath = getAbsolutePath('main.mp4');
-  const t = useTranslations(`${I18N_HOME_PAGE}.MainPoster`);
+  const t = useTranslations(`${I18N_HOME_PAGE}.AreaMainPoster`);
 
   return (
     <div className={styles.container}>

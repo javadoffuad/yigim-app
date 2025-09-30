@@ -19,7 +19,7 @@
   width: 100%;
 }
 
-.highlight {
+.key-facts-title span {
   background: url('../../../public/highlight.svg') 0 1px no-repeat;
   background-size: 100%;
   padding: 4px 10px;
@@ -35,18 +35,19 @@
   letter-spacing: 0.56px;
   line-height: 20px;
   white-space: nowrap;
+  text-transform: uppercase;
 }
 
 .key-facts-title {
   position: relative;
   width: 100%;
-  font-family: 'Aeonik-Medium', Helvetica, sans-serif;
   font-weight: 500;
   color: #1e1e1e;
   font-size: 48px;
   text-align: center;
   letter-spacing: -1.92px;
   line-height: 56px;
+  white-space: pre-line;
 }
 
 .key-facts-grid {
@@ -171,14 +172,6 @@
   white-space: pre-line;
 }
 
-.key-fact-title.aeonik {
-  font-family: 'Aeonik-Medium', Helvetica, sans-serif;
-}
-
-.key-fact-title.geist {
-  font-family: 'Geist', Helvetica, sans-serif;
-}
-
 .key-fact-title.white {
   color: white;
 }
@@ -213,14 +206,6 @@
   letter-spacing: -0.72px;
   line-height: 48px;
   white-space: nowrap;
-}
-
-.key-fact-value.aeonik {
-  font-family: 'Aeonik-Medium', Helvetica, sans-serif;
-}
-
-.key-fact-value.geist {
-  font-family: 'Geist', Helvetica, sans-serif;
 }
 
 .key-fact-value.white {
