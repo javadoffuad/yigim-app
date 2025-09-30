@@ -1,6 +1,6 @@
 ## Getting Started
 
-[Demo yigim app](https://javadoffuad.github.io/yigim-app/)
+[Demo yigim app](https://yigim-app.vercel.app/)
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
