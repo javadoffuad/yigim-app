@@ -1,16 +1,25 @@
 {
   "HomePage": {
-    "title": "[ru] Hello world!"
+    "MainPoster": {
+      "Label": "Одна система — бесконечные возможности",
+      "SubLabel": "От стартапов до государственных структур — мы соединяем мир с помощью умных и безопасных платежей.",
+      "ButtonGetStarted": {
+        "Label": "Начать"
+      },
+      "ButtonDocumentation": {
+        "Label": "Документация"
+      }
+    }
   },
   "Header": {
     "Navigation": {
       "Products": {
-        "Label": "[ru] Products"
+        "Label": "Продукты"
       },
-      "Company": "[ru] Company",
-      "Developers": "[ru] Developers",
-      "News": "[ru] News",
-      "Contacts": "[ru] Contacts"
+      "Company": "О компании",
+      "Developers": "API & Документация",
+      "News": "Новости",
+      "Contacts": "Контакты"
     }
   }
 }

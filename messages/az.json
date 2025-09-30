@@ -1,16 +1,25 @@
 {
   "HomePage": {
-    "title": "[az] Hello world!"
+    "MainPoster": {
+      "Label": "BİR SİSTEM SƏRHƏDSİZ İMKANLAR",
+      "SubLabel": "Startuplardan dövlət müəssisələrinə qədər, dünyanın ağıllı və təhlükəsiz ödəniş həllərini əlçatan edirik.",
+      "ButtonGetStarted": {
+        "Label": "Başlayın"
+      },
+      "ButtonDocumentation": {
+        "Label": "Sənədləşmə"
+      }
+    }
   },
   "Header": {
     "Navigation": {
       "Products": {
-        "Label": "[az] Products"
+        "Label": "Məhsullar"
       },
-      "Company": "[az] Company",
-      "Developers": "[az] Developers",
-      "News": "[az] News",
-      "Contacts": "[az] Contacts"
+      "Company": "Haqqımızda",
+      "Developers": "API & Sənədləşmə",
+      "News": "Xəbərlər",
+      "Contacts": "Əlaqə"
     }
   }
 }
