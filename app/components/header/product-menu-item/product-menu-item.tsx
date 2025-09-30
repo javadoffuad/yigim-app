@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import styles from './product-menu-item.module.css'
-import Link from "next/link";
+import {Link} from '@/i18n/navigation';
 
 export interface ProductMenuItemProps {
   title: string;
