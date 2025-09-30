@@ -8,7 +8,6 @@ import { getAbsolutePath } from '@/app/utils/absolute-path.utils';
 
 export default function MainHeader() {
   const videoPath = getAbsolutePath('main.mp4');
-  console.log('process.env.NODE_ENV', process.env.NEXT_PUBLIC_BASE_PATH, videoPath, process.env.NODE_ENV);
 
   return (
     <div className={styles.container}>
