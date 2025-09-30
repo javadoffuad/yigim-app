@@ -49,8 +49,11 @@
           "Label": "Eksponensial artım (ümumdünya 108%-ə qarşı)",
           "SubLabel": "illik artım"
         }
-        
       }
+    },
+    "AreaOurVision": {
+      "Label": "Strateji baxışımız",
+      "Description": "Ən səmərəli və insan yönümlü ödəmə sistemləri yaradan şirkət olmaq."
     }
   },
   "Header": {

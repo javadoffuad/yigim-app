@@ -49,8 +49,11 @@
           "Label": "Exponential growth \n(vs. global 108%)",
           "SubLabel": "annual growth"
         }
-
       }
+    },
+    "AreaOurVision": {
+      "Label": "Our vision",
+      "Description": "To become a company that creates the most efficient \nand the most human-centric payment systems."
     }
   },
   "Header": {
