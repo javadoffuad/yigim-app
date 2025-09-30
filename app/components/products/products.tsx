@@ -52,7 +52,7 @@ export default function ProductsAndServices() {
                 <div className={styles["products"]}>
                     {
                         products.map((product, index) => (
-                            <div className={`${styles["product-item"]} ${index === activeProduct ? styles["active"] : ""}`}
+                            <div key={index} className={`${styles["product-item"]} ${index === activeProduct ? styles["active"] : ""}`}
                                 onClick={() => handleClick(index)}>
                                 <div className={styles["product-title"]}>{product.name}</div>
                                 <div className={styles["product-video"]}>
