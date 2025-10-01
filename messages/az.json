@@ -108,7 +108,7 @@
         "Label": "Zəng sifariş edin"
       }
     },
-    "WhatWeAreProud": {
+    "AreaWhatWeAreProud": {
       "Label": "Qürur mənbəyimiz",
       "SubLabel": "Mükafatlar və<br />Tərəfdaşlıqlar",
       "Card1": {
@@ -131,6 +131,33 @@
       "Developers": "API & Sənədləşmə",
       "News": "Xəbərlər",
       "Contacts": "Əlaqə"
+    }
+  },
+  "ModalRequestCallback": {
+    "Label": "SİZƏ ZƏNG EDƏK?",
+    "Description": "Zəng edin siniz suallarınızı ətraflı cavablandıraq.",
+    "Loading": "Göndərilir...",
+    "ControlFullName": {
+      "Label": "Tam adınız",
+      "ErrorRequired": "Tam adınız vacibdir",
+      "ErrorMinimalValue": "Tam adınız 2 simvoldan az olmalıdır"
+    },
+    "ControlPhoneNumber": {
+      "Label": "Telefon nömrəniz",
+      "ErrorRequired": "Telefon nömrəniz vacibdir",
+      "ErrorInvalidNumber": "Zəhmət olmasa telefon nömrənizi düzgün daxil edin"
+    },
+    "ButtonCallMe": {
+      "Label": "Mənimlə əlaqə saxlayın"
+    },
+    "NotifySuccess": {
+      "LabelSuccess": "Təşəkkür edirik",
+      "LabelError": "Xəta",
+      "SubLabelSuccess": "Sizin müraciətiniz qeydə alındı",
+      "SubLabelError": "Xəta baş verdi.<br/>Lütfən, yenidən cəhd edin.",
+      "ButtonClose": {
+        "Label": "Bağla"
+      }
     }
   },
   "Products": {

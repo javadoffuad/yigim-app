@@ -8,6 +8,7 @@ import closeIcon from '@/public/icons/close.svg';
 import "./request-callback-form.css";
 import Input from "../ui/input/input";
 import { useForm, SubmitHandler } from "react-hook-form"
+import { useTranslations } from "next-intl";
 
 type FormData = {
   fullName: string
@@ -20,6 +21,7 @@ export interface RequestCallbackFormProps {
 }
 
 export const RequestCallbackForm = (props: RequestCallbackFormProps): JSX.Element => {
+  const t = useTranslations('ModalRequestCallback');
   const {
     register,
     handleSubmit: hookFormSubmit,
@@ -41,12 +43,12 @@ export const RequestCallbackForm = (props: RequestCallbackFormProps): JSX.Elemen
       if (!data.fullName.trim()) {
         errors.fullName = {
           type: "required",
-          message: "Full name is required"
+          message: t('ControlFullName.ErrorRequired')
         };
       } else if (data.fullName.length < 2) {
         errors.fullName = {
           type: "minLength",
-          message: "Full name must be at least 2 characters"
+          message: t('ControlFullName.ErrorMinimalValue')
         };
       }
 
@@ -54,12 +56,12 @@ export const RequestCallbackForm = (props: RequestCallbackFormProps): JSX.Elemen
       if (!data.phoneNumber.trim()) {
         errors.phoneNumber = {
           type: "required",
-          message: "Phone number is required"
+          message: t('ControlPhoneNumber.ErrorRequired')
         };
       } else if (!/^[\+]?[0-9\s\-\(\)]{10,}$/.test(data.phoneNumber)) {
         errors.phoneNumber = {
           type: "pattern",
-          message: "Please enter a valid phone number"
+          message: t('ControlPhoneNumber.ErrorInvalidNumber')
         };
       }
 
@@ -94,9 +96,9 @@ export const RequestCallbackForm = (props: RequestCallbackFormProps): JSX.Elemen
     <div className="request-callback-card">
       <div className="card-content">
         <div className="header-section">
-          <div className="subtitle">REQUEST CALLBACK</div>
+          <div className="subtitle">{t('Label')}</div>
           <h1 className="title">
-            Book a call and we will answer your questions in detail.
+            {t('Description')}
           </h1>
         </div>
 
@@ -104,7 +106,7 @@ export const RequestCallbackForm = (props: RequestCallbackFormProps): JSX.Elemen
           <div className="input-group">
             <Input
               icon={userIcon}
-              label="Full Name"
+              label={t('ControlFullName.Label')}
               required
               value={formValues.fullName} 
               error={errors.fullName?.message ?? ''}
@@ -113,7 +115,7 @@ export const RequestCallbackForm = (props: RequestCallbackFormProps): JSX.Elemen
 
             <Input
               icon={phoneIcon}
-              label="Phone number"
+              label={t('ControlPhoneNumber.Label')}
               required
               value={formValues.phoneNumber}
               error={errors.phoneNumber?.message ?? ''}
@@ -122,7 +124,7 @@ export const RequestCallbackForm = (props: RequestCallbackFormProps): JSX.Elemen
           </div>
 
           <button type="submit" className="submit-button" disabled={isSubmitting}>
-            {isSubmitting ? "Sending..." : "Call me"}
+            {isSubmitting ? t('Loading') : t('ButtonCallMe.Label')}
           </button>
         </form>
 

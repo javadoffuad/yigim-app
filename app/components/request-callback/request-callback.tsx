@@ -29,7 +29,6 @@ export const RequestCallback = (
   }, []);
 
   const handleSubmit = (fullName: string, phoneNumber: string) => {
-    console.log("Form submitted:", { fullName, phoneNumber });
     setNotifyType(NotifyType.ERROR);
   };
 

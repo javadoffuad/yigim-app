@@ -108,7 +108,7 @@
         "Label": "Запросить звонок"
       }
     },
-    "WhatWeAreProud": {
+    "AreaWhatWeAreProud": {
       "Label": "Чем мы гордимся",
       "SubLabel": "Награды и<br />партнёрства",
       "Card1": {
@@ -131,6 +131,33 @@
       "Developers": "API & Документация",
       "News": "Новости",
       "Contacts": "Контакты"
+    }
+  },
+  "ModalRequestCallback": {
+    "Label": "ЗАПРОСИТЬ ЗВОНОК",
+    "Description": "Оставьте заявку, и мы подробно ответим на все ваши вопросы.",
+    "Loading": "Отправляется...",
+    "ControlFullName": {
+      "Label": "Полное имя",
+      "ErrorRequired": "Полное имя обязательное поле",
+      "ErrorMinimalValue": "Полное имя должно быть не менее 2 символов"
+    },
+    "ControlPhoneNumber": {
+      "Label": "Номер телефона",
+      "ErrorRequired": "Номер телефона обязательное поле",
+      "ErrorInvalidNumber": "Пожалуйста, введите корректный номер телефона"
+    },
+    "ButtonCallMe": {
+      "Label": "Перезвоните мне"
+    },
+    "NotifySuccess": {
+      "LabelSuccess": "Спасибо!",
+      "LabelError": "Ошибка",
+      "SubLabelSuccess": "Ваша заявка принята.",
+      "SubLabelError": "Что-то пошло не так.<br/>Пожалуйста, попробуйте еще раз.",
+      "ButtonClose": {
+        "Label": "Закрыть"
+      }
     }
   },
   "Products": {

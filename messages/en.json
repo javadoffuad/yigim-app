@@ -108,7 +108,7 @@
         "Label": "Request a Call"
       }
     },
-    "WhatWeAreProud": {
+    "AreaWhatWeAreProud": {
       "Label": "What we are proud of",
       "SubLabel": "Awards and<br />Partnerships",
       "Card1": {
@@ -131,6 +131,33 @@
       "Developers": "Developers",
       "News": "News",
       "Contacts": "Contacts"
+    }
+  },
+  "ModalRequestCallback": {
+    "Label": "REQUEST CALLBACK",
+    "Description": "Book a call and we will answer your questions in detail.",
+    "Loading": "Sending...",
+    "ControlFullName": {
+      "Label": "Full Name",
+      "ErrorRequired": "Full Name is required",
+      "ErrorMinimalValue": "Full name must be at least 2 characters"
+    },
+    "ControlPhoneNumber": {
+      "Label": "Phone number",
+      "ErrorRequired": "Phone number is required",
+      "ErrorInvalidNumber": "Please enter a valid phone number"
+    },
+    "ButtonCallMe": {
+      "Label": "Call me"
+    },
+    "NotifySuccess": {
+      "LabelSuccess": "Thank you",
+      "LabelError": "Error",
+      "SubLabelSuccess": "Your request has been registered.",
+      "SubLabelError": "Something went wrong.<br/>Please try again.",
+      "ButtonClose": {
+        "Label": "Close"
+      }
     }
   },
   "Products": {

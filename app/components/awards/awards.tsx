@@ -8,7 +8,7 @@ import { useTranslations } from "next-intl";
 import { I18N_HOME_PAGE } from "@/app/constants/i18n.constants";
 
 export default function Awards() {
-  const t = useTranslations(`${I18N_HOME_PAGE}.WhatWeAreProud`);
+  const t = useTranslations(`${I18N_HOME_PAGE}.AreaWhatWeAreProud`);
   return (
     <div className={styles["section"]}>
       <div className={styles["section-header"]}>
