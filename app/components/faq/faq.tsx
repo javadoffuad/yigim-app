@@ -3,14 +3,16 @@
 import { useState } from 'react';
 import styles from './faq.module.css';
 import FaqItem from '../ui/faq-item/faq-item';
+import { FAQ_LIST } from '@/app/constants/faq.constants';
 
 interface Faq {
   question: string;
   answer: string;
 }
 
-export default function Faq({items}: {items: Faq[]}) {
+export default function Faq() {
     const [openIndex, setOpenIndex] = useState<number | null>(null);
+    const items = FAQ_LIST;
 
     const handleClick = (index: number) => {
         setOpenIndex(openIndex === index ? null : index);
