@@ -68,11 +68,7 @@
     color: #1e1e1e;
 }
 
-.faq-contact .highlight {
-    color: #ffc404;
-}
-
-.contact-email {
+.faq-contact span {
     color: #ffc404;
     letter-spacing: -0.08px;
     line-height: 24px;

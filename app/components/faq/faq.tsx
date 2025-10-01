@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import styles from './faq.module.css';
 import FaqItem from '../ui/faq-item/faq-item';
-import { FAQ_LIST } from '@/app/constants/faq.constants';
+import { useTranslations } from 'next-intl';
 
 interface Faq {
   question: string;
@@ -12,7 +12,41 @@ interface Faq {
 
 export default function Faq() {
     const [openIndex, setOpenIndex] = useState<number | null>(null);
-    const items = FAQ_LIST;
+    const t = useTranslations(`FAQ`);
+    const faqItems = [
+        {
+            question: t('AreaQuestions.Question1.Label'),
+            answer: t('AreaQuestions.Question1.Answer'),
+        },
+        {
+            question: t('AreaQuestions.Question2.Label'),
+            answer: t('AreaQuestions.Question2.Answer'),
+        },
+        {
+            question: t('AreaQuestions.Question3.Label'),
+            answer: t('AreaQuestions.Question3.Answer'),
+        },
+        {
+            question: t('AreaQuestions.Question4.Label'),
+            answer: t('AreaQuestions.Question4.Answer'),
+        },
+        {
+            question: t('AreaQuestions.Question5.Label'),
+            answer: t('AreaQuestions.Question5.Answer'),
+        },
+        {
+            question: t('AreaQuestions.Question6.Label'),
+            answer: t('AreaQuestions.Question6.Answer'),
+        },
+        {
+            question: t('AreaQuestions.Question7.Label'),
+            answer: t('AreaQuestions.Question7.Answer'),
+        },
+        {
+            question: t('AreaQuestions.Question8.Label'),
+            answer: t('AreaQuestions.Question8.Answer'),
+        },
+    ];
 
     const handleClick = (index: number) => {
         setOpenIndex(openIndex === index ? null : index);
@@ -22,16 +56,14 @@ export default function Faq() {
             <div className={styles["faq-content"]}>
                 <div className={styles["faq-left"]}>
                     <div className={styles["faq-header"]}>
-                        <div className={styles["section-subtitle"]}>FREQUENTLY ASKED QUESTIONS</div>
-                        <h2 className={styles["faq-title"]}>Have<br />questions in<br />mind? Let us<br />answer it</h2>
+                        <div className={styles["section-subtitle"]}>{t('Label')}</div>
+                        <h2 className={styles["faq-title"]} dangerouslySetInnerHTML={{__html: t.raw('SubLabel')}} />
                     </div>
-                    <div className={styles["faq-contact"]}>
-                        Don't answer your question?<br />
-                        contact us at <span className={styles["contact-email"]}>contact@yigim.az</span>
-                    </div>
+                    <div className={styles["faq-contact"]}
+                        dangerouslySetInnerHTML={{__html: t.raw('LabelContact')}} />
                 </div>
                 <div className={styles.faqList}>
-                    {items.map((item, index) => (
+                    {faqItems.map((item, index) => (
                         <FaqItem key={index} item={item} isOpen={index === openIndex} handleClick={() => handleClick(index)} />
                     ))}
                 </div>
