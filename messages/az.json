@@ -72,6 +72,30 @@
           "Name": "Fast invoice"
         }
       }
+    },
+    "AreaBuiltForTrust": {
+      "Label": "Etibar üçün<br />yaradılıb",
+      "Card1": {
+        "Label": "Təhlükəsiz əsasında",
+        "Brand": "PCI DSS",
+        "SubLabel": "Sertifikatı 1-ci Səviyyə"
+      },
+      "Card2": {
+        "Label": "Lisenziya",
+        "SubLabel": "Azərbaycan Mərkəzi Bankı"
+      },
+      "Card3": {
+        "Label": "Rəsmi Visa<br /> texnologiyaların tərəfdaşı",
+        "Brand": "Visa",
+        "SubLabel": "Rəsmi tərəfdaş"
+      },
+      "Card4": {
+        "Label": "Lisenziya",
+        "SubLabel": "Azərbaycan Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi"
+      },
+      "Card5": {
+        "Label": "Ən yaxşı müştəri həlləri nominasiyası."
+      }
     }
   },
   "Header": {

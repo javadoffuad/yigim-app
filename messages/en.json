@@ -72,6 +72,30 @@
           "Name": "Fast invoice"
         }
       }
+    },
+    "AreaBuiltForTrust": {
+      "Label": "Built for<br />Trust",
+      "Card1": {
+        "Label": "Secure by default",
+        "Brand": "PCI DSS",
+        "SubLabel": "Level 1 Certified"
+      },
+      "Card2": {
+        "Label": "Licensed by the",
+        "SubLabel": "Central Bank of Azerbaijan"
+      },
+      "Card3": {
+        "Label": "Official Visa<br /> technology partner",
+        "Brand": "Visa",
+        "SubLabel": "Official partner"
+      },
+      "Card4": {
+        "Label": "Licensed by the",
+        "SubLabel": "Ministry of Digital Development and Transport of Azerbaijan"
+      },
+      "Card5": {
+        "Label": "Best customer solution nomination."
+      }
     }
   },
   "Header": {
