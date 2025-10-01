@@ -54,6 +54,24 @@
     "AreaOurVision": {
       "Label": "Our vision",
       "Description": "To become a company that creates the most efficient \nand the most human-centric payment systems."
+    },
+    "AreaWhatWeDo": {
+      "Label": "What we do",
+      "SubLabel": "Products & Services",
+      "Products": {
+        "Product1": {
+          "Name": "Internet - Acquiring / E-Comm Solution"
+        },
+        "Product2": {
+          "Name": "All-In-One Aggregator Service"
+        },
+        "Product3": {
+          "Name": "Link Payment +"
+        },
+        "Product4": {
+          "Name": "Fast invoice"
+        }
+      }
     }
   },
   "Header": {
@@ -65,6 +83,20 @@
       "Developers": "Developers",
       "News": "News",
       "Contacts": "Contacts"
+    }
+  },
+  "Products": {
+    "Product1": {
+      "Name": "Internet - Acquiring / E-Comm Solution"
+    },
+    "Product2": {
+      "Name": "All-In-One Aggregator Service"
+    },
+    "Product3": {
+      "Name": "Link Payment +"
+    },
+    "Product4": {
+      "Name": "Fast invoice"
     }
   }
 }

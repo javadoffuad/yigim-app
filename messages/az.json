@@ -54,6 +54,24 @@
     "AreaOurVision": {
       "Label": "Strateji baxışımız",
       "Description": "Ən səmərəli və insan yönümlü ödəmə sistemləri yaradan şirkət olmaq."
+    },
+    "AreaWhatWeDo": {
+      "Label": "NƏ EDİRİK",
+      "SubLabel": "Məhsullar & Xidmətlər",
+      "Products": {
+        "Product1": {
+          "Name": "Internet - Acquiring / E-Comm Solution"
+        },
+        "Product2": {
+          "Name": "All-In-One Aggregator Service"
+        },
+        "Product3": {
+          "Name": "Link Payment +"
+        },
+        "Product4": {
+          "Name": "Fast invoice"
+        }
+      }
     }
   },
   "Header": {
@@ -65,6 +83,20 @@
       "Developers": "API & Sənədləşmə",
       "News": "Xəbərlər",
       "Contacts": "Əlaqə"
+    }
+  },
+  "Products": {
+    "Product1": {
+      "Name": "Internet -Ekvayrinq / E-Ticarət Həlləri"
+    },
+    "Product2": {
+      "Name": "All-In-One Aqreqator Xidməti"
+    },
+    "Product3": {
+      "Name": "Link Payment +"
+    },
+    "Product4": {
+      "Name": "Fast invoice"
     }
   }
 }

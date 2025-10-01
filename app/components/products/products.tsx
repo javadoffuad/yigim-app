@@ -1,33 +1,36 @@
 import React, { Suspense, useState } from "react";
 import styles from "./products.module.css";
 import { getAbsolutePath } from "@/app/utils/absolute-path.utils";
+import { useTranslations } from "next-intl";
+import { I18N_HOME_PAGE } from "@/app/constants/i18n.constants";
 
 interface IProduct {
     name: string;
     videoPath: string;
 }
 
-const products: IProduct[] = [
-    {
-        name: 'Internet - Acquiring / E-Comm Solution',
-        videoPath: getAbsolutePath('internet-acquiring-ecom-solution.mp4'),
-    },
-    {
-        name: 'All-In-One Aggregator Service',
-        videoPath: getAbsolutePath('all-in-onefuturistic-neon-ribbon.mp4'),
-    },
-    {
-        name: 'Link Payment +',
-        videoPath: getAbsolutePath('link-payment-3-things.mp4'),
-    },
-    {
-        name: 'Fast invoice',
-        videoPath: getAbsolutePath('fast-invoice-smartphone-invoice.mp4'),
-    },
-];
-
 export default function ProductsAndServices() {
-    const [activeProduct, setActiveProduct] = useState<number>(0)
+    const [activeProduct, setActiveProduct] = useState<number>(0);
+    const t = useTranslations(`${I18N_HOME_PAGE}.AreaWhatWeDo`);
+
+    const products: IProduct[] = [
+        {
+            name: t('Products.Product1.Name'),
+            videoPath: getAbsolutePath('internet-acquiring-ecom-solution.mp4'),
+        },
+        {
+            name: t('Products.Product2.Name'),
+            videoPath: getAbsolutePath('all-in-onefuturistic-neon-ribbon.mp4'),
+        },
+        {
+            name: t('Products.Product3.Name'),
+            videoPath: getAbsolutePath('link-payment-3-things.mp4'),
+        },
+        {
+            name: t('Products.Product4.Name'),
+            videoPath: getAbsolutePath('fast-invoice-smartphone-invoice.mp4'),
+        },
+    ];
 
     const handleClick = (index: number) => {
         if (index === activeProduct) {
@@ -40,11 +43,11 @@ export default function ProductsAndServices() {
         <div className={styles["section"]}>
             <div className={styles["section-header"]}>
                 <div className={styles["header-label"]}>
-                what we do
+                {t('Label')}
                 </div>
 
                 <div className={styles["header-title"]}>
-                Products & Services
+                {t('SubLabel')}
                 </div>
             </div>
 

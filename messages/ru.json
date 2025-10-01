@@ -54,6 +54,24 @@
     "AreaOurVision": {
       "Label": "Наше видение",
       "Description": "Стать компанией, создающей самые эффективные и ориентированные на человека платёжные системы."
+    },
+    "AreaWhatWeDo": {
+      "Label": "Что мы делаем",
+      "SubLabel": "Продукты & Услуги",
+      "Products": {
+        "Product1": {
+          "Name": "Интернет - Эквайринг / E-Comm Решения"
+        },
+        "Product2": {
+          "Name": "All-In-One Агрегатор услуг"
+        },
+        "Product3": {
+          "Name": "Link Payment +"
+        },
+        "Product4": {
+          "Name": "Fast invoice"
+        }
+      }
     }
   },
   "Header": {
@@ -65,6 +83,20 @@
       "Developers": "API & Документация",
       "News": "Новости",
       "Contacts": "Контакты"
+    }
+  },
+  "Products": {
+    "Product1": {
+      "Name": "Интернет - Эквайринг / E-Comm Решения"
+    },
+    "Product2": {
+      "Name": "All-In-One Агрегатор услуг"
+    },
+    "Product3": {
+      "Name": "Link Payment +"
+    },
+    "Product4": {
+      "Name": "Fast invoice"
     }
   }
 }
