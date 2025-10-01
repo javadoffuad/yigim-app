@@ -5,19 +5,22 @@ import {Link} from '@/i18n/navigation';
 import styles from './main-header.module.css';
 import { PAGE_RESOURCES_API } from '@/constants/navigation.constants';
 import { getAbsolutePath } from '@/app/utils/absolute-path.utils';
+import { useTranslations } from 'next-intl';
+import { I18N_HOME_PAGE } from '@/app/constants/i18n.constants';
 
 export default function MainHeader() {
   const videoPath = getAbsolutePath('main.mp4');
+  const t = useTranslations(`${I18N_HOME_PAGE}.AreaMainPoster`);
 
   return (
     <div className={styles.container}>
       <div className={styles["container-inner"]}>
         <div className={styles["info-pane"]}>
-          <h2 className={styles["title"]}>One System<br/> Infinite<br/> Possibilities</h2>
-          <p className={styles["subtitle"]}>From startups to governments, we connect the world<br/> through smart, secure payments.</p>
+          <h2 className={styles["title"]}>{t('Label')}</h2>
+          <p className={styles["subtitle"]}>{t('SubLabel')}</p>
           <div className={styles["buttons"]}>
-            <Link href="#" className="button button-primary">Get started</Link>
-            <Link href={PAGE_RESOURCES_API} className="button button-tertiary">Documentation</Link>
+            <Link href="#" className="button button-primary">{t('ButtonGetStarted.Label')}</Link>
+            <Link href={PAGE_RESOURCES_API} className="button button-tertiary">{t('ButtonDocumentation.Label')}</Link>
           </div>
         </div>
       </div>

@@ -18,12 +18,6 @@
   width: 100%;
 }
 
-.highlight {
-  background: url('../../../public/highlight-long.svg') 0 5px no-repeat;
-  background-size: 100%;
-  padding: 4px 10px;
-}
-
 .header-label {
   position: relative;
   width: fit-content;
@@ -48,6 +42,12 @@
   line-height: 56px;
 }
 
+.header-title span {
+  background: url('../../../public/highlight-long.svg') 0 5px no-repeat;
+  background-size: 100%;
+  padding: 4px 10px;
+}
+
 .content {
   position: relative;
   width: 100%;
@@ -70,7 +70,6 @@
 .video-title {
   position: absolute;
   font-weight: 500;
-  font-style: Medium;
   font-size: 48px;
   letter-spacing: -0.4px;
   text-align: center;
@@ -78,4 +77,6 @@
   width: 100%;
   top: 50%;
   transform: translateY(-50%);
+  padding: 0 20px;
+  white-space: pre-line;
 }

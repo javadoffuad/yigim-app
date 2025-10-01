@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Header from '@/components/header/header';
 import Faq from "@/app/components/faq/faq";
 import Footer from "@/app/components/footer/footer";
-import { FAQ_LIST } from "@/app/constants/faq.constants";
 import { RequestCallback } from "@/app/components/request-callback/request-callback";
 import { ILayoutProps } from "@/app/models/layout.models";
 import { setRequestLocale } from "next-intl/server";
@@ -33,7 +32,7 @@ export default async function Layout({children, params}: ILayoutProps) {
           <Header />
           <RequestCallback />
           {children}
-          <Faq items={FAQ_LIST} />
+          <Faq />
           <Footer />
         </NextIntlClientProvider>
       </body>

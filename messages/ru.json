@@ -1,16 +1,216 @@
 {
-  "HomePage": {
-    "title": "[ru] Hello world!"
+  "PageHome": {
+    "AreaMainPoster": {
+      "Label": "Одна система — бесконечные возможности",
+      "SubLabel": "От стартапов до государственных структур — мы соединяем мир с помощью умных и безопасных платежей.",
+      "ButtonGetStarted": {
+        "Label": "Начать"
+      },
+      "ButtonDocumentation": {
+        "Label": "Документация"
+      }
+    },
+    "AreaWhoWeAre": {
+      "Label": "Кто мы",
+      "Description": "YIĞIM — №1 компания в Азербайджане<br/> по приёму платежей <span>товаров и услуг.</span>",
+      "Video": {
+        "Label": "Все наши продукты созданы для лёгкой интеграции в любую систему."
+      }
+    },
+    "AreaKeyFacts": {
+      "Label": "Ключевые факты",
+      "Description": "Мы меняем подход к тому, \nкак люди совершают платежи.",
+      "AreaCards": {
+        "Card1": {
+          "Label": "Доверие клиентов",
+          "SubLabel": "Средняя оценка"
+        },
+        "Card2": {
+          "Label": "Доверие со стороны бизнеса",
+          "SubLabel": "активных клиентов"
+        },
+        "Card3": {
+          "Label": "Успешность транзакций",
+          "SubLabel": "успешных операций"
+        },
+        "Card4": {
+          "Label": "Интеграция с банками",
+          "SubLabel": "партнерских банков"
+        },
+        "Card5": {
+          "Label": "Интеграция с процессинговыми центрами",
+          "SubLabel": "процессинговых центров"
+        },
+        "Card6": {
+          "Label": "Признанные достижения",
+          "SubLabel": "награды"
+        },
+        "Card7": {
+          "Label": "Экспоненциальный рост (в сравнении с мировым показателем 108%)",
+          "SubLabel": "годовой рост"
+        }
+      }
+    },
+    "AreaOurVision": {
+      "Label": "Наше видение",
+      "Description": "Стать компанией, создающей самые эффективные и ориентированные на человека платёжные системы."
+    },
+    "AreaWhatWeDo": {
+      "Label": "Что мы делаем",
+      "SubLabel": "Продукты & Услуги",
+      "Products": {
+        "Product1": {
+          "Name": "Интернет - Эквайринг / E-Comm Решения"
+        },
+        "Product2": {
+          "Name": "All-In-One Агрегатор услуг"
+        },
+        "Product3": {
+          "Name": "Link Payment +"
+        },
+        "Product4": {
+          "Name": "Fast invoice"
+        }
+      }
+    },
+    "AreaBuiltForTrust": {
+      "Label": "Создано<br />на основе<br />доверия",
+      "Card1": {
+        "Label": "Безопасность по умолчанию",
+        "Brand": "PCI DSS",
+        "SubLabel": "Сертификация уровня 1"
+      },
+      "Card2": {
+        "Label": "Лицензировано",
+        "SubLabel": "Центральным банком Азербайджана"
+      },
+      "Card3": {
+        "Label": "Официальный технологический<br /> партнёр Visa",
+        "Brand": "Visa",
+        "SubLabel": "Официальный партнёр"
+      },
+      "Card4": {
+        "Label": "Лицензировано",
+        "SubLabel": "Министерством цифрового развития и транспорта Азербайджана"
+      },
+      "Card5": {
+        "Label": "Номинация «Лучшее клиентское решение»"
+      }
+    },
+    "AreaWhoLovesUs": {
+      "Label": "Кто нас ценит",
+      "Description": "Вместе с нашими партнёрами<br/>мы предлагаем самый надёжный сервис…",
+      "DescriptionClient": "...чтобы обеспечить успех более чем 450 клиентов",
+      "ButtonPartners": {
+        "Label": "Наш партнёр"
+      },
+      "ButtonRequestCall": {
+        "Label": "Запросить звонок"
+      }
+    },
+    "AreaWhatWeAreProud": {
+      "Label": "Чем мы гордимся",
+      "SubLabel": "Награды и<br />партнёрства",
+      "Card1": {
+        "Label": "Обеспечение международных платежей для 74-го Международного астронавтического конгресса"
+      },
+      "Card2": {
+        "Label": "Награда VISA Above and Beyond Award — Специальное признание, март 2024"
+      },
+      "Card3": {
+        "Label": "Сертификат соответствия стандарту PCI DSS"
+      }
+    }
   },
   "Header": {
     "Navigation": {
       "Products": {
-        "Label": "[ru] Products"
+        "Label": "Продукты"
       },
-      "Company": "[ru] Company",
-      "Developers": "[ru] Developers",
-      "News": "[ru] News",
-      "Contacts": "[ru] Contacts"
+      "Company": "О компании",
+      "Developers": "API & Документация",
+      "News": "Новости",
+      "Contacts": "Контакты"
+    }
+  },
+  "ModalRequestCallback": {
+    "Label": "ЗАПРОСИТЬ ЗВОНОК",
+    "Description": "Оставьте заявку, и мы подробно ответим на все ваши вопросы.",
+    "Loading": "Отправляется...",
+    "ControlFullName": {
+      "Label": "Полное имя",
+      "ErrorRequired": "Полное имя обязательное поле",
+      "ErrorMinimalValue": "Полное имя должно быть не менее 2 символов"
+    },
+    "ControlPhoneNumber": {
+      "Label": "Номер телефона",
+      "ErrorRequired": "Номер телефона обязательное поле",
+      "ErrorInvalidNumber": "Пожалуйста, введите корректный номер телефона"
+    },
+    "ButtonCallMe": {
+      "Label": "Перезвоните мне"
+    },
+    "NotifySuccess": {
+      "LabelSuccess": "Спасибо!",
+      "LabelError": "Ошибка",
+      "SubLabelSuccess": "Ваша заявка принята.",
+      "SubLabelError": "Что-то пошло не так.<br/>Пожалуйста, попробуйте еще раз.",
+      "ButtonClose": {
+        "Label": "Закрыть"
+      }
+    }
+  },
+  "FAQ": {
+    "Label": "Часто задаваемые вопросы",
+    "SubLabel": "Есть вопросы?<br/>Мы с радостью ответим!",
+    "LabelContact": "Не нашли ответ на свой вопрос?<br/>Свяжитесь с нами по адресу: <span>contact@yigim.az</span>",
+    "AreaQuestions": {
+      "Question1": {
+        "Label": "Что такое YIĞIM?",
+        "Answer": "YIĞIM is a comprehensive payment processing platform that provides tailored solutions for businesses across various industries."
+      },
+      "Question2": {
+        "Label": "Какие платёжные методы вы поддерживаете?",
+        "Answer": "We support all major payment methods including credit cards, bank transfers, digital wallets, and local payment solutions."
+      },
+      "Question3": {
+        "Label": "Кто может использовать YIĞIM?",
+        "Answer": "YIĞIM is designed for businesses of all sizes, from startups to enterprise-level companies across various industries."
+      },
+      "Question4": {
+        "Label": "Сколько времени занимает интеграция?",
+        "Answer": "Integration typically takes 1-2 weeks depending on your specific requirements and existing infrastructure."
+      },
+      "Question5": {
+        "Label": "Безопасен ли YIĞIM?",
+        "Answer": "Yes, YIĞIM employs industry-leading security measures including PCI DSS compliance and advanced encryption protocols."
+      },
+      "Question6": {
+        "Label": "Предоставляете ли вы поддержку клиентов?",
+        "Answer": "We provide 24/7 customer support through multiple channels including phone, email, and live chat."
+      },
+      "Question7": {
+        "Label": "Как рассчитываются комиссии?",
+        "Answer": "Our fees are transparent and competitive, calculated based on transaction volume and the specific services you use."
+      },
+      "Question8": {
+        "Label": "С какими банками вы интегрированы?",
+        "Answer": "We're integrated with all major banks in Azerbaijan and have partnerships with international banking networks."
+      }
+    }
+  },
+  "Products": {
+    "Product1": {
+      "Name": "Интернет - Эквайринг / E-Comm Решения"
+    },
+    "Product2": {
+      "Name": "All-In-One Агрегатор услуг"
+    },
+    "Product3": {
+      "Name": "Link Payment +"
+    },
+    "Product4": {
+      "Name": "Fast invoice"
     }
   }
 }

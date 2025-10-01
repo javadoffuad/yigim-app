@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Header from '@/components/header/header';
 import Footer from "@/components/footer/footer";
 import Faq from "@/components/faq/faq";
-import { FAQ_LIST } from "@/constants/faq.constants";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
@@ -31,7 +30,7 @@ export default async function MainLayout({children, params}: ILayoutProps) {
         <NextIntlClientProvider>
           <Header />
           {children}
-          <Faq items={FAQ_LIST} />
+          <Faq />
           <Footer />
         </NextIntlClientProvider>
       </body>

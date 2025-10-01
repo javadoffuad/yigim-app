@@ -1,69 +1,58 @@
 import React from "react";
 import styles from "./key-facts.module.css";
+import { useTranslations } from "next-intl";
+import { I18N_HOME_PAGE } from "@/app/constants/i18n.constants";
 
 export default function KeyFacts() {
+  const t = useTranslations(`${I18N_HOME_PAGE}.AreaKeyFacts`);
   const keyFactsData = [
     {
-      title: "Trusted by\ncustomers",
+      title: t("AreaCards.Card1.Label"),
       value: "4.8",
-      description: "average rating",
+      description: t("AreaCards.Card1.SubLabel"),
       cardClass: "card-1",
-      titleFont: "aeonik",
-      valueFont: "aeonik",
       textColor: "dark",
     },
     {
-      title: "Trusted by\nbusinesses",
+      title: t("AreaCards.Card2.Label"),
       value: "450+",
-      description: "active clients",
+      description: t("AreaCards.Card2.SubLabel"),
       cardClass: "card-2",
-      titleFont: "geist",
-      valueFont: "geist",
       textColor: "white",
     },
     {
-      title: "Transaction\nsuccess rate",
+      title: t("AreaCards.Card3.Label"),
       value: "99.5%",
-      description: "successful operations",
+      description: t("AreaCards.Card3.SubLabel"),
       cardClass: "card-3",
-      titleFont: "geist",
-      valueFont: "geist",
       textColor: "dark",
     },
     {
-      title: "Bank\nintegrations",
+      title: t("AreaCards.Card4.Label"),
       value: "7+",
-      description: "partnered banks",
+      description: t("AreaCards.Card4.SubLabel"),
       cardClass: "card-4",
-      titleFont: "geist",
-      valueFont: "geist",
       textColor: "dark",
     },
     {
-      title: "Integrated\nwith banks",
+      title: t("AreaCards.Card5.Label"),
       value: "9+",
-      description: "processing centers",
+      description: t("AreaCards.Card5.SubLabel"),
       cardClass: "card-5",
-      titleFont: "aeonik",
-      valueFont: "aeonik",
       textColor: "dark",
     },
     {
-      title: "Award-winning\nachievements",
+      title: t("AreaCards.Card6.Label"),
       value: "3+",
-      description: "awards",
+      description: t("AreaCards.Card6.SubLabel"),
       cardClass: "card-6",
-      titleFont: "geist",
-      valueFont: "geist",
       textColor: "dark",
     },
     {
-      title: "Exponential growth\n(vs. global 108%)",
+      title: t("AreaCards.Card7.Label"),
       value: "157%",
-      description: "annual growth",
+      description: t("AreaCards.Card7.SubLabel"),
       cardClass: "card-7",
-      titleFont: "geist",
-      valueFont: "geist",
       textColor: "white",
     },
   ];
@@ -72,13 +61,10 @@ export default function KeyFacts() {
     <div className={styles["key-facts-container"]}>
       <div className={styles["key-facts-header"]}>
         <div className={styles["key-facts-label"]}>
-          KEY FACTS
+          {t('Label')}
         </div>
 
-        <div className={styles["key-facts-title"]}>
-          We <span className={styles["highlight"]}>catalyze</span> change in <br />
-          how people pay.
-        </div>
+        <div className={styles["key-facts-title"]} dangerouslySetInnerHTML={{__html: t.raw('Description')}} />
       </div>
 
       <div className={styles["key-facts-grid"]}>
@@ -91,7 +77,7 @@ export default function KeyFacts() {
               <div className={styles["key-fact-content"]}>
                 <div className={styles["key-fact-title-section"]}>
                   <div
-                    className={`${styles["key-fact-title"]} ${styles[fact.titleFont]} ${styles[fact.textColor]}`}
+                    className={`${styles["key-fact-title"]} ${styles[fact.textColor]}`}
                   >
                     {fact.title}
                   </div>
@@ -100,7 +86,7 @@ export default function KeyFacts() {
                 <div className={styles["key-fact-stats"]}>
                   <div className={styles["key-fact-value-container"]}>
                     <div
-                      className={`${styles["key-fact-value"]} ${styles[fact.valueFont]} ${styles[fact.textColor]}`}
+                      className={`${styles["key-fact-value"]} ${styles[fact.textColor]}`}
                     >
                       {fact.value}
                     </div>
