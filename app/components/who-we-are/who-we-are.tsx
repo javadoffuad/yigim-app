@@ -15,11 +15,7 @@ export default function WhoWeAre() {
           {t('Label')}
         </div>
 
-        <div className={styles["header-title"]}>
-          Yigim is №1 company in Azerbaijan<br />
-          enabling <span className={styles["highlight"]}>consumer goods</span> / services<br />
-          payments.
-        </div>
+        <div className={styles["header-title"]} dangerouslySetInnerHTML={{__html: t.raw('Description')}} />
       </div>
 
       <div className={styles["content"]}>

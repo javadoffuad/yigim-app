@@ -12,7 +12,7 @@
     },
     "AreaWhoWeAre": {
       "Label": "BİZ KİMİK",
-      "Description": "YIĞIM — Azərbaycanda istehlak malları və xidmətləri ödənişlərini təmin edən №1 şirkətdir.",
+      "Description": "YIĞIM — Azərbaycanda <span>istehlak malları</span> və xidmətləri<br/> ödənişlərini təmin edən №1 şirkətdir.",
       "Video": {
         "Label": "Bütün məhsullarımız istənilən sistemə \nasan inteqrasiya üçün nəzərdə tutulub."
       }

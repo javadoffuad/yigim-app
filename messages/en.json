@@ -12,7 +12,7 @@
     },
     "AreaWhoWeAre": {
       "Label": "who we are",
-      "Description": "Yigim is №1 company in Azerbaijan\nenabling consumer goods / services payments.",
+      "Description": "Yigim is №1 company in Azerbaijan <br/>enabling <span>consumer goods</span> / services<br/> payments.",
       "Video": {
         "Label": "All our products are designed to be integrated \ninto any given system."
       }
