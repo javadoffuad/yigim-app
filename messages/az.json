@@ -96,6 +96,30 @@
       "Card5": {
         "Label": "Ən yaxşı müştəri həlləri nominasiyası."
       }
+    },
+    "AreaWhoLovesUs": {
+      "Label": "BİZİ kİMLƏR SEVİR",
+      "Description": "tərəfdaşlarımızla birlikdə<br/>ən etibarlı xidməti təqdim edirik.",
+      "DescriptionClient": "450+ müştərimizin uğurunu təmin etmək üçün...",
+      "ButtonPartners": {
+        "Label": "Bizim tərəfdaşlarımız"
+      },
+      "ButtonRequestCall": {
+        "Label": "Zəng sifariş edin"
+      }
+    },
+    "WhatWeAreProud": {
+      "Label": "Qürur mənbəyimiz",
+      "SubLabel": "Mükafatlar və<br />Tərəfdaşlıqlar",
+      "Card1": {
+        "Label": "74-cü Beynəlxalq Astronavtika Konqresi üçün beynəlxalq ödənişləri mümkün etdik"
+      },
+      "Card2": {
+        "Label": "VISA \"Above and Beyond\" Mükafatı, Xüsusi Tanıtım, Mart 2024"
+      },
+      "Card3": {
+        "Label": "PCI DSS Uyğunluq Sertifikatı"
+      }
     }
   },
   "Header": {

@@ -5,6 +5,8 @@ import styles from './bouncing-partners.module.css';
 import {Link} from '@/i18n/navigation';
 import { PAGE_COMPANY_PARTNERS } from '@/app/constants/navigation.constants';
 import { partners } from '@/app/constants/partners.constants';
+import { useTranslations } from 'next-intl';
+import { I18N_HOME_PAGE } from '@/app/constants/i18n.constants';
 
 const ballRadius = 30;
 const gravity = 0.25;
@@ -22,6 +24,7 @@ interface Ball {
 }
 
 export function BouncingParameters({setRequestCallbackIsOpen}: {setRequestCallbackIsOpen: () => void}) {
+  const t = useTranslations(`${I18N_HOME_PAGE}.AreaWhoLovesUs`);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const ballsRef = useRef<Ball[]>([]);
   const animationFrameId = useRef<number>(0);
@@ -297,14 +300,11 @@ export function BouncingParameters({setRequestCallbackIsOpen}: {setRequestCallba
   return (
     <section className={styles["section"]}>
       <div className={styles["title-wrapper"]}>
-        <p className={styles.subtitle}>Who loves us</p>
-        <h3 className={styles.title}>
-          Together with our partners we offer<br />
-          the most reliable service...
-        </h3>
+        <p className={styles.subtitle}>{t('Label')}</p>
+        <h3 className={styles.title} dangerouslySetInnerHTML={{__html: t.raw('Description')}} />
         <div className={styles.buttons}>
-          <Link href={PAGE_COMPANY_PARTNERS} className="button button-primary">Our Partners</Link>
-          <button className="button button-tertiary" onClick={handleClick}>Request a Call</button>
+          <Link href={PAGE_COMPANY_PARTNERS} className="button button-primary">{t('ButtonPartners.Label')}</Link>
+          <button className="button button-tertiary" onClick={handleClick}>{t('ButtonRequestCall.Label')}</button>
         </div>
       </div>
       <div className={styles["bouncing-container"]}>

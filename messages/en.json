@@ -96,6 +96,30 @@
       "Card5": {
         "Label": "Best customer solution nomination."
       }
+    },
+    "AreaWhoLovesUs": {
+      "Label": "Who Loves Us",
+      "Description": "Together with our partners we offer<br/>the most reliable service...",
+      "DescriptionClient": "...to ensure success of our 450+ clients",
+      "ButtonPartners": {
+        "Label": "Our partners"
+      },
+      "ButtonRequestCall": {
+        "Label": "Request a Call"
+      }
+    },
+    "WhatWeAreProud": {
+      "Label": "What we are proud of",
+      "SubLabel": "Awards and<br />Partnerships",
+      "Card1": {
+        "Label": "Enabling international payments for the 74th International Astronautical Congress"
+      },
+      "Card2": {
+        "Label": "VISA Above and Beyond Award Special Recognition, March, 2024"
+      },
+      "Card3": {
+        "Label": "PCI DSS Compliance Certificate"
+      }
     }
   },
   "Header": {
