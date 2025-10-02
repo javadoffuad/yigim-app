@@ -21,30 +21,31 @@ export default function Header() {
   const productMenuRef = useRef<HTMLDivElement>(null);
   const productsButtonRef = useRef<HTMLSpanElement>(null);
   const t = useTranslations('Header');
+  const p = useTranslations('Products');
 
   const products: ProductMenuItemProps[] = [
     {
-      url: PAGE_PRODUCT_INTERNET_ACQUIRING,
-      title: 'Internet - Acquiring / E-Comm',
-      description: 'With just one integration, you now can simplify your whole payment process.',
-      icon: product1Icon,
-    },
-    {
       url: PAGE_PRODUCT_ALL_IN_ONE,
-      title: 'All-In-One Aggregator Service',
-      description: 'With just one integration, you now can simplify your whole payment process.',
+      title: p('Product1.Label'),
+      description: p('Product1.SubLabel'),
       icon: product2Icon,
     },
     {
+      url: PAGE_PRODUCT_INTERNET_ACQUIRING,
+      title: p('Product2.Label'),
+      description: p('Product2.SubLabel'),
+      icon: product1Icon,
+    },
+    {
       url: PAGE_PRODUCT_LINK_PAYMENT,
-      title: 'Link Payment +',
-      description: 'With just one integration, you now can simplify your whole payment process.',
+      title: p('Product3.Label'),
+      description: p('Product3.SubLabel'),
       icon: product3Icon,
     },
     {
       url: PAGE_PRODUCT_FAST_INVOICE_PAYMENT,
-      title: 'Fast Invoice Payment',
-      description: 'With just one integration, you now can simplify your whole payment process.',
+      title: p('Product4.Label'),
+      description: p('Product4.SubLabel'),
       icon: product4Icon,
     },
   ];

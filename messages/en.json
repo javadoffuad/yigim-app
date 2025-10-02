@@ -281,16 +281,20 @@
   },
   "Products": {
     "Product1": {
-      "Label": "All-In-One Aggregator Service"
+      "Label": "All-In-One Aggregator Service",
+      "SubLabel": "With just one integration, you now can simplify your whole payment process."
     },
     "Product2": {
-      "Label": "Internet - Acquiring / E-Comm Solution"
+      "Label": "Internet - Acquiring / E-Comm Solution",
+      "SubLabel": "Reliable payments for your business: Even if one processing center experiences issues, transactions continue smoothly, with a 99.9% success rate."
     },
     "Product3": {
-      "Label": "Link Payment +"
+      "Label": "Link Payment +",
+      "SubLabel": "With our comprehensive payment system, you can send secure payment links via SMS or WhatsApp, allowing instant payments — no website required "
     },
     "Product4": {
-      "Label": "Fast Invoice Payment"
+      "Label": "Fast Invoice Payment",
+      "SubLabel": "The smart SMS reminders with built-in payment options make payments effortless. Your customers pays on time while your workload drops."
     }
   },
   "NotifySuccess": {

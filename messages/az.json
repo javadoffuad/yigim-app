@@ -281,16 +281,20 @@
   },
   "Products": {
     "Product1": {
-      "Label": "All-In-One Aqreqator Xidməti"
+      "Label": "All-In-One Aqreqator Xidməti",
+      "SubLabel": "Sadəcə bir inteqrasiya ilə bütün ödəniş proseslərinizi sadələşdirə bilərsiniz."
     },
     "Product2": {
-      "Label": "Internet -Ekvayrinq / E-Ticarət Həlləri"
+      "Label": "Internet -Ekvayrinq / E-Ticarət Həlləri",
+      "SubLabel": "Biznesiniz üçün etibarlılıq: Hətta bir prosessinq mərkəzində nasazlıq olsa belə, ödənişləriniz fasiləsiz icra olunur (99.9% uğurlu ödənişlərin faizi)."
     },
     "Product3": {
-      "Label": "Link Payment +"
+      "Label": "Link Payment +",
+      "SubLabel": "Geniş ödəniş sistemimizlə siz sadəcə bir kliklə, SMS və ya WhatsApp vasitəsilə təhlükəsiz ödəniş linkləri göndərə bilərsiniz — bu da dərhal ödəniş imkanı yaradır və vebsayta ehtiyac qalmır."
     },
     "Product4": {
-      "Label": "Fast Invoice Payment"
+      "Label": "Fast Invoice Payment",
+      "SubLabel": "Ağıllı SMS xatırlatmaları ilə daxil edilmiş ödəniş seçimləri ödənişləri asanlaşdırır. Müştəriləriniz vaxtında ödəniş edir, sizin iş yükünüz isə azalır."
     }
   },
   "NotifySuccess": {
