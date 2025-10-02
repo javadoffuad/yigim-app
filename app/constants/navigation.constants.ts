@@ -18,7 +18,7 @@ export const PAGE_SECURITY = '/security';
 export const PAGE_POLICIY = '/policy';
 export const PAGE_SIGN_IN = '/login';
 
-export const PAGE_SOCIAL_FACEBOOK = 'https://facebook.com';
-export const PAGE_SOCIAL_INSTAGRAM = 'https://instagram.com';
-export const PAGE_SOCIAL_LINKEDIN = 'https://linkedin.com';
-export const PAGE_SOCIAL_YOUTUBE = 'https://youtube.com';
+export const PAGE_SOCIAL_FACEBOOK = 'https://www.facebook.com/yigimpaymentsystem/';
+export const PAGE_SOCIAL_INSTAGRAM = 'https://www.instagram.com/yigimpayment/';
+export const PAGE_SOCIAL_LINKEDIN = 'https://www.linkedin.com/company/yigim-payment-system/';
+export const PAGE_SOCIAL_YOUTUBE = 'https://www.youtube.com/channel/UCHeazFk5mhzvcj1Y37NpgHA/featured';
