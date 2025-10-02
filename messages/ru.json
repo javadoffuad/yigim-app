@@ -188,13 +188,12 @@
   },
   "Header": {
     "Navigation": {
-      "Products": {
-        "Label": "Продукты"
-      },
+      "Products": "Продукты",
       "Company": "О компании",
       "Developers": "API & Документация",
       "News": "Новости",
-      "Contacts": "Контакты"
+      "Contacts": "Контакты",
+      "Login": "Вход"
     }
   },
   "ModalRequestCallback": {

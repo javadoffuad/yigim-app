@@ -188,13 +188,12 @@
   },
   "Header": {
     "Navigation": {
-      "Products": {
-        "Label": "Məhsullar"
-      },
+      "Products": "Məhsullar",
       "Company": "Haqqımızda",
       "Developers": "API & Sənədləşmə",
       "News": "Xəbərlər",
-      "Contacts": "Əlaqə"
+      "Contacts": "Əlaqə",
+      "Login": "Giriş"
     }
   },
   "ModalRequestCallback": {

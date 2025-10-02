@@ -188,13 +188,12 @@
   },
   "Header": {
     "Navigation": {
-      "Products": {
-        "Label": "Products"
-      },
+      "Products": "Products",
       "Company": "Company",
       "Developers": "Developers",
       "News": "News",
-      "Contacts": "Contacts"
+      "Contacts": "Contacts",
+      "Login": "Log in"
     }
   },
   "ModalRequestCallback": {

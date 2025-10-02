@@ -82,7 +82,7 @@ export default function Header() {
               
               <div className={styles["nav-links"]}>
                 <span ref={productsButtonRef} className={`${styles["nav-link"]} ${productMenuIsOpen ? styles.active : ''}`} onClick={toggleDropdown}>
-                  {t('Navigation.Products.Label')}
+                  {t('Navigation.Products')}
                 </span>
                 <Link href={PAGE_COMPANY_ABOUT} className={styles["nav-link"]}>{t('Navigation.Company')}</Link>
                 <Link href={PAGE_RESOURCES_API} className={styles["nav-link"]}>{t('Navigation.Developers')}</Link>
@@ -92,7 +92,7 @@ export default function Header() {
               
               <div className={styles["nav-actions"]}>
                 <LangMenu />
-                <Link href={PAGE_SIGN_IN} className={styles["login-btn"]}>Log in</Link>
+                <Link href={PAGE_SIGN_IN} className={styles["login-btn"]}>{t('Navigation.Login')}</Link>
               </div>
           </nav>
       </header>
