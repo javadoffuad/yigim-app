@@ -148,6 +148,15 @@
       }
     }
   },
+  "PageNews": {
+    "Label": "Company News"
+  },
+  "PageApi": {
+    "Label": "API Documentation"
+  },
+  "PageHelp": {
+    "Label": "Help Center"
+  },
   "Header": {
     "Navigation": {
       "Products": {
@@ -263,5 +272,8 @@
     "ButtonClose": {
       "Label": "Close"
     }
+  },
+  "PageUnderConstruction": {
+    "Label": "Page under construction"
   }
 }

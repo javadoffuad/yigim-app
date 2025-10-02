@@ -148,6 +148,15 @@
       }
     }
   },
+  "PageNews": {
+    "Label": "Xəbərlər"
+  },
+  "PageApi": {
+    "Label": "API Sənədləşmə"
+  },
+  "PageHelp": {
+    "Label": "Dəstək Mərkəzi"
+  },
   "Header": {
     "Navigation": {
       "Products": {
@@ -263,5 +272,8 @@
     "ButtonClose": {
       "Label": "Bağla"
     }
+  },
+  "PageUnderConstruction": {
+    "Label": "Səhifə hazırlanır"
   }
 }

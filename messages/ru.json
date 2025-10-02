@@ -148,6 +148,15 @@
       }
     }
   },
+  "PageNews": {
+    "Label": "Новости"
+  },
+  "PageApi": {
+    "Label": "Документация API"
+  },
+  "PageHelp": {
+    "Label": "Центр поддержки"
+  },
   "Header": {
     "Navigation": {
       "Products": {
@@ -263,5 +272,8 @@
     "ButtonClose": {
       "Label": "Закрыть"
     }
+  },
+  "PageUnderConstruction": {
+    "Label": "Страница в разработке"
   }
 }
