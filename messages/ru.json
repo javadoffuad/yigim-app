@@ -167,44 +167,44 @@
     "AreaQuestions": {
       "Question1": {
         "Label": "Что такое YIĞIM?",
-        "Answer": "YIĞIM is a comprehensive payment processing platform that provides tailored solutions for businesses across various industries."
+        "Answer": "YIĞIM — это комплексная платформа обработки платежей, предлагающая индивидуальные решения для бизнеса в разных отраслях."
       },
       "Question2": {
         "Label": "Какие платёжные методы вы поддерживаете?",
-        "Answer": "We support all major payment methods including credit cards, bank transfers, digital wallets, and local payment solutions."
+        "Answer": "Мы поддерживаем все основные платёжные методы: банковские карты, переводы, цифровые кошельки и локальные платёжные решения."
       },
       "Question3": {
         "Label": "Кто может использовать YIĞIM?",
-        "Answer": "YIĞIM is designed for businesses of all sizes, from startups to enterprise-level companies across various industries."
+        "Answer": "YIĞIM подходит для бизнеса любого масштаба — от стартапов до крупных компаний в различных сферах."
       },
       "Question4": {
         "Label": "Сколько времени занимает интеграция?",
-        "Answer": "Integration typically takes 1-2 weeks depending on your specific requirements and existing infrastructure."
+        "Answer": "Обычно интеграция занимает от 1 до 2 недель в зависимости от ваших технических требований и инфраструктуры."
       },
       "Question5": {
         "Label": "Безопасен ли YIĞIM?",
-        "Answer": "Yes, YIĞIM employs industry-leading security measures including PCI DSS compliance and advanced encryption protocols."
+        "Answer": "Да, мы используем передовые меры безопасности, включая соответствие стандарту PCI DSS и современные методы шифрования."
       },
       "Question6": {
         "Label": "Предоставляете ли вы поддержку клиентов?",
-        "Answer": "We provide 24/7 customer support through multiple channels including phone, email, and live chat."
+        "Answer": "Да, мы предоставляем круглосуточную поддержку через телефон, электронную почту и онлайн-чат."
       },
       "Question7": {
         "Label": "Как рассчитываются комиссии?",
-        "Answer": "Our fees are transparent and competitive, calculated based on transaction volume and the specific services you use."
+        "Answer": "Наши тарифы прозрачны и конкурентоспособны — они зависят от объема транзакций и используемых вами услуг."
       },
       "Question8": {
         "Label": "С какими банками вы интегрированы?",
-        "Answer": "We're integrated with all major banks in Azerbaijan and have partnerships with international banking networks."
+        "Answer": "Мы интегрированы со всеми ведущими банками Азербайджана и сотрудничаем с международными банковскими сетями."
       }
     }
   },
   "Products": {
     "Product1": {
-      "Name": "Интернет - Эквайринг / E-Comm Решения"
+      "Name": "All-In-One Агрегатор услуг"
     },
     "Product2": {
-      "Name": "All-In-One Агрегатор услуг"
+      "Name": "Интернет - Эквайринг / E-Comm Решения"
     },
     "Product3": {
       "Name": "Link Payment +"
