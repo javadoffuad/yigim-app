@@ -287,19 +287,23 @@
   "Products": {
     "Product1": {
       "Label": "All-In-One Aggregator Service",
-      "SubLabel": "With just one integration, you now can simplify your whole payment process."
+      "SubLabel": "With just one integration, you now can simplify your whole payment process.",
+      "Description": "This product is fully developed by YIĞIM’s in-house team. The ‘All-in-One’ solution brings together almost every payment method in one place. As a merchant, you would need only ONE integration, your billing system can easily connect to multiple channels — from cash payments at terminals to cashless options like mobile payments."
     },
     "Product2": {
       "Label": "Internet - Acquiring / E-Comm Solution",
-      "SubLabel": "Reliable payments for your business: Even if one processing center experiences issues, transactions continue smoothly, with a 99.9% success rate."
+      "SubLabel": "Reliable payments for your business: Even if one processing center experiences issues, transactions continue smoothly, with a 99.9% success rate.",
+      "Description": "Developed entirely by YIĞIM’s in-house team, this integrated payment gateway supports cards for online stores and apps, ensures the highest transaction success rates, and protects customer data with advanced encryption and tokenization."
     },
     "Product3": {
       "Label": "Link Payment +",
-      "SubLabel": "With our comprehensive payment system, you can send secure payment links via SMS or WhatsApp, allowing instant payments — no website required "
+      "SubLabel": "With our comprehensive payment system, you can send secure payment links via SMS or WhatsApp, allowing instant payments — no website required ",
+      "Description": "One of YIĞIM's own flagship products - your comprehensive payment management system which enables an effortless payment for your customers & consumers and a full tracking of transactions for you. To further simplify collection of funds for you, we integrated a feature that enables you to simply send a link that will directly lead to the payment page. Easy, seamless, and secure."
     },
     "Product4": {
       "Label": "Fast Invoice Payment",
-      "SubLabel": "The smart SMS reminders with built-in payment options make payments effortless. Your customers pays on time while your workload drops."
+      "SubLabel": "The smart SMS reminders with built-in payment options make payments effortless. Your customers pays on time while your workload drops.",
+      "Description": "YIĞIM's own product that helps you to get your payments on time. This is a solution for accelerating invoice payments and reducing late payment risks. We solve slow, inconvenient payments by replacing SMS reminders with smart links to pre-filled payment pages."
     }
   },
   "NotifySuccess": {

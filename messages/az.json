@@ -287,19 +287,23 @@
   "Products": {
     "Product1": {
       "Label": "All-In-One Aqreqator Xidməti",
-      "SubLabel": "Sadəcə bir inteqrasiya ilə bütün ödəniş proseslərinizi sadələşdirə bilərsiniz."
+      "SubLabel": "Sadəcə bir inteqrasiya ilə bütün ödəniş proseslərinizi sadələşdirə bilərsiniz.",
+      "Description": "“All-in-One” həlli demək olar ki, bütün ödəniş üsullarını bir araya gətirir. Satıcı kimi sizə yalnız BİR inteqrasiya lazımdır: hesablaşma sisteminiz həm nağd (terminallar vasitəsilə), həm də nağdsız (mobil ödənişlər) kanallara qoşula bilər."
     },
     "Product2": {
       "Label": "Internet -Ekvayrinq / E-Ticarət Həlləri",
-      "SubLabel": "Biznesiniz üçün etibarlılıq: Hətta bir prosessinq mərkəzində nasazlıq olsa belə, ödənişləriniz fasiləsiz icra olunur (99.9% uğurlu ödənişlərin faizi)."
+      "SubLabel": "Biznesiniz üçün etibarlılıq: Hətta bir prosessinq mərkəzində nasazlıq olsa belə, ödənişləriniz fasiləsiz icra olunur (99.9% uğurlu ödənişlərin faizi).",
+      "Description": "Tam olaraq YIĞIM-ın daxili komandası tərəfindən hazırlanan bu inteqrasiya olunmuş ödəniş imkanı, onlayn mağazalar və mobil tətbiqlər üçün kart dəstəyini təmin edir, əməliyyatların uğur nisbətini maksimuma çatdırır və müştəri məlumatlarını yüksək səviyyəli şifrə və tokenləşdirmə ilə qoruyur."
     },
     "Product3": {
       "Label": "Link Payment +",
-      "SubLabel": "Geniş ödəniş sistemimizlə siz sadəcə bir kliklə, SMS və ya WhatsApp vasitəsilə təhlükəsiz ödəniş linkləri göndərə bilərsiniz — bu da dərhal ödəniş imkanı yaradır və vebsayta ehtiyac qalmır."
+      "SubLabel": "Geniş ödəniş sistemimizlə siz sadəcə bir kliklə, SMS və ya WhatsApp vasitəsilə təhlükəsiz ödəniş linkləri göndərə bilərsiniz — bu da dərhal ödəniş imkanı yaradır və vebsayta ehtiyac qalmır.",
+      "Description": "Bu, YIĞIM-ın əsas məhsullarından biridir — həm müştəriləriniz üçün rahat və problemsiz ödəniş imkanı yaradır, həm də sizin üçün bütün əməliyyatların tam izlənməsini təmin edən kompleks ödəniş idarəetmə sistemidir. Vəsaitlərin toplanmasını daha da asanlaşdırmaq üçün sizə sadəcə bir ödəniş linki göndərməyə imkan verən funksiya inteqrasiya olunub — birbaşa ödəniş səhifəsinə yönləndirilir. Sadə, rahat və təhlükəsiz."
     },
     "Product4": {
       "Label": "Fast Invoice Payment",
-      "SubLabel": "Ağıllı SMS xatırlatmaları ilə daxil edilmiş ödəniş seçimləri ödənişləri asanlaşdırır. Müştəriləriniz vaxtında ödəniş edir, sizin iş yükünüz isə azalır."
+      "SubLabel": "Ağıllı SMS xatırlatmaları ilə daxil edilmiş ödəniş seçimləri ödənişləri asanlaşdırır. Müştəriləriniz vaxtında ödəniş edir, sizin iş yükünüz isə azalır.",
+      "Description": "YIĞIM-ın öz məhsulu olan bu həll faktura ödənişlərini sürətləndirir və gecikmiş ödəniş risklərini azaldır. Biz ləng və çətin ödəniş proseslərini ağıllı linklərlə əvəz edərək, SMS xatırlatmalarını daha effektiv edirik."
     }
   },
   "NotifySuccess": {

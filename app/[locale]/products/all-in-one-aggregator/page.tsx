@@ -19,12 +19,8 @@ import appsImage from "@/public/images/apps.png";
 import RealLifeCases, { RealLifeProps } from "../components/real-life/main-section/main-section";
 import ContentImage, { ContentImageProps } from "../components/content-image/main-section/main-section";
 import { getAbsolutePath } from "@/app/utils/absolute-path.utils";
+import { useTranslations } from "next-intl";
 
-const productName = 'All-In-One Aggregator Service';
-const info: ProductInfoProps = {
-  title: "With just one integration, you now can simplify your whole payment process.",
-  description: `This product is developed exclusively by YIĞIM's own developer team. “All-in-One” offers the broadest range of payment acceptance channels, covering nearly every option available. With a single integration, it enables the client’s billing system to quickly connect to multiple payment channels: Cash (terminal networks) or cashless (mobile payments).`
-}
 const threeThings: ThingCardProps[] = [
   {
       number: 1,
@@ -103,15 +99,20 @@ const content2: ContentImageProps = {
 }
 
 export default function ProductPage() {
+  const t = useTranslations('Products');
+  const info: ProductInfoProps = {
+    title: t('Product1.SubLabel'),
+    description: t('Product1.Description'),
+  }
   const videPath = getAbsolutePath('all-in-onefuturistic-neon-ribbon.mp4');
   return (
-    <PageWrapper title='All-In-One Aggregator Service'>
+    <PageWrapper title={t('Product1.Label')}>
       <ProductInfo info={info} />
       <RealLifeCases props={realLifeProps} />
       <ContentImage content={content} />
       <ContentImage content={content2} align="left" />
-      <ThreeThings videoPath={videPath} productName={productName} items={threeThings} />
-      <MainFunctions productName={productName} items={functions} />
+      <ThreeThings videoPath={videPath} productName={t('Product1.Label')} items={threeThings} />
+      <MainFunctions productName={t('Product1.Label')} items={functions} />
     </PageWrapper>
   );
 }

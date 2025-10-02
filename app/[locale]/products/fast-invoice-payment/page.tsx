@@ -16,6 +16,7 @@ import ThreeThings from "../components/three-things/main-section/main-section";
 import { ThingCardProps } from "../components/three-things/thing-card/thing-card";
 import RealLifeCases, { RealLifeProps } from "../components/real-life/main-section/main-section";
 import { getAbsolutePath } from "@/app/utils/absolute-path.utils";
+import { useTranslations } from "next-intl";
 
 const productName = "Fast Invoice Payment";
 const info: ProductInfoProps = {
@@ -88,13 +89,18 @@ const realLifeProps: RealLifeProps = {
 }
 
 export default function ProductPage() {
+    const t = useTranslations('Products.Product4');
+    const info: ProductInfoProps = {
+        title: t('SubLabel'),
+        description: t('Description'),
+    }
     const videPath = getAbsolutePath('fast-invoice-smartphone-invoice.mp4');
     return (
-        <PageWrapper title={productName}>
+        <PageWrapper title={t('Label')}>
         <ProductInfo info={info} />
         <RealLifeCases props={realLifeProps} />
-        <ThreeThings videoPath={videPath} productName={productName} items={threeThings} />
-        <MainFunctions productName={productName} items={functions} />
+        <ThreeThings videoPath={videPath} productName={t('Label')} items={threeThings} />
+        <MainFunctions productName={t('Label')} items={functions} />
         </PageWrapper>
     );
 }

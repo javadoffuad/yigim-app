@@ -18,6 +18,7 @@ import pageIcon from '@/public/icons/page.svg';
 import phoneCallingIcon from '@/public/icons/phone-calling-black.svg';
 import billIcon from '@/public/icons/bill.svg';
 import { getAbsolutePath } from "@/app/utils/absolute-path.utils";
+import { useTranslations } from "next-intl";
 
 const productName = 'Link Payment +';
 const content: ContentImageProps = {
@@ -98,23 +99,20 @@ const realLifeProps: RealLifeProps = {
     ],
 }
 
-const info: ProductInfoProps = {
-  title: "Sending secure payment links via SMS or WhatsApp means you get paid instantly — no website needed and no waiting.",
-  description: `One of YIĞIM's own flagship products that enables an effortless
-                payment for your customers & consumers. You will be able to simply
-                send a link that will directly lead to the payment page. Easy, seamless,
-                and secure.`
-}
-
 export default function ProductPage() {
+    const t = useTranslations('Products.Product3');
+    const info: ProductInfoProps = {
+        title: t('SubLabel'),
+        description: t('Description'),
+    }
     const videoPath = getAbsolutePath('link-payment-3-things.mp4');
     return (
-        <PageWrapper title={productName}>
+        <PageWrapper title={t('Label')}>
         <ProductInfo info={info} />
         <RealLifeCases props={realLifeProps} />
         <ContentImage content={content} />
-        <ThreeThings videoPath={videoPath} productName={productName} items={threeThings} />
-        <MainFunctions productName={productName} items={functions} />
+        <ThreeThings videoPath={videoPath} productName={t('Label')} items={threeThings} />
+        <MainFunctions productName={t('Label')} items={functions} />
         </PageWrapper>
     );
 }

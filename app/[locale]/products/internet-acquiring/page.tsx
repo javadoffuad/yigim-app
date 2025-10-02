@@ -15,6 +15,7 @@ import calendarIcon from '@/public/icons/calendar-freezer.svg';
 import RealLifeCases, { RealLifeProps } from "../components/real-life/main-section/main-section";
 import ProductInfo, { ProductInfoProps } from "../components/product-info/product-info";
 import { getAbsolutePath } from "@/app/utils/absolute-path.utils";
+import { useTranslations } from "next-intl";
 
 const functions: FunctionCardProps[] = [
     {
@@ -86,21 +87,19 @@ const realLifeProps: RealLifeProps = {
     videoTitle: 'Secure Pre-Authorization',
 }
 
-const productName = 'INTERNET - ACQUIRING / E-COMM SOLUTION';
-
-const info: ProductInfoProps = {
-  title: "The reliability game changer for your business: Even when one system goes down, your payments keep flowing smoothly.",
-  description: `This product is developed exclusively by YIĞIM's own developer team. We offer an integrated payment gateway for online stores and apps, supporting cards. The highest standards of encryption and tokenization ensure customer data security. Accepting:`
-}
-
 export default function ProductPage() {
+    const t = useTranslations('Products.Product2');
+    const info: ProductInfoProps = {
+        title: t('SubLabel'),
+        description: t('Description'),
+    }
     const videPath = getAbsolutePath('internet-acquiring-ecom-solution.mp4');
     return (
-        <PageWrapper title={`Internet - Acquiring / \nE-Comm Solution`}>
+        <PageWrapper title={t('Label')}>
             <ProductInfo info={info} />
             <RealLifeCases props={realLifeProps} />
-            <ThreeThings videoPath={videPath} productName={productName} items={threeThings} />
-            <MainFunctions productName={productName} items={functions} />
+            <ThreeThings videoPath={videPath} productName={t('Label')} items={threeThings} />
+            <MainFunctions productName={t('Label')} items={functions} />
         </PageWrapper>
     );
 }
