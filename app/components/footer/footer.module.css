@@ -62,7 +62,6 @@
 }
 
 .copyright {
-    width: 200px;
     font-weight: 500;
     font-size: 12px;
     color: #888888;
@@ -79,6 +78,7 @@
     font-size: 12px;
     color: #888888;
     transition: color 0.2s ease;
+    text-transform: uppercase;
 }
 
 .footer-legal a:hover {
@@ -86,13 +86,13 @@
 }
 
 .back-to-top {
-    width: 200px;
     text-align: right;
     font-weight: 500;
     font-size: 12px;
     color: #888888;
     cursor: pointer;
     transition: color 0.2s ease;
+    text-transform: uppercase;
 }
 
 .back-to-top:hover {

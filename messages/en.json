@@ -60,16 +60,16 @@
       "SubLabel": "Products & Services",
       "Products": {
         "Product1": {
-          "Name": "Internet - Acquiring / E-Comm Solution"
+          "Label": "Internet - Acquiring / E-Comm Solution"
         },
         "Product2": {
-          "Name": "All-In-One Aggregator Service"
+          "Label": "All-In-One Aggregator Service"
         },
         "Product3": {
-          "Name": "Link Payment +"
+          "Label": "Link Payment +"
         },
         "Product4": {
-          "Name": "Fast invoice"
+          "Label": "Fast invoice"
         }
       }
     },
@@ -199,18 +199,43 @@
       }
     }
   },
+  "Footer": {
+    "AreaNavigations": {
+      "Products": {
+        "Label": "Products"
+      },
+      "Company": {
+        "Label": "Company",
+        "LabelAbout": "About",
+        "LabelNews": "News",
+        "LabelPartners": "Out partners",
+        "LabelContacts": "Contacts"
+      },
+      "Resources": {
+        "Label": "Resources",
+        "LabelApi": "API Documentation",
+        "LabelHelp": "Help Center"
+      }
+    },
+    "AreaStaticNavigation": {
+      "LabelSecurity": "Information security",
+      "LabelPolicy": "Cookie policy",
+      "LabelTerms": "Terms & condition",
+      "LabelBackToTop": "Back on the top"
+    }
+  },
   "Products": {
     "Product1": {
-      "Name": "All-In-One Aggregator Service"
+      "Label": "All-In-One Aggregator Service"
     },
     "Product2": {
-      "Name": "Internet - Acquiring / E-Comm Solution"
+      "Label": "Internet - Acquiring / E-Comm Solution"
     },
     "Product3": {
-      "Name": "Link Payment +"
+      "Label": "Link Payment +"
     },
     "Product4": {
-      "Name": "Fast invoice"
+      "Label": "Fast Invoice Payment"
     }
   }
 }

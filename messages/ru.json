@@ -60,16 +60,16 @@
       "SubLabel": "Продукты & Услуги",
       "Products": {
         "Product1": {
-          "Name": "Интернет - Эквайринг / E-Comm Решения"
+          "Label": "Интернет - Эквайринг / E-Comm Решения"
         },
         "Product2": {
-          "Name": "All-In-One Агрегатор услуг"
+          "Label": "All-In-One Агрегатор услуг"
         },
         "Product3": {
-          "Name": "Link Payment +"
+          "Label": "Link Payment +"
         },
         "Product4": {
-          "Name": "Fast invoice"
+          "Label": "Fast invoice"
         }
       }
     },
@@ -199,18 +199,43 @@
       }
     }
   },
+  "Footer": {
+    "AreaNavigations": {
+      "Products": {
+        "Label": "Продукты"
+      },
+      "Company": {
+        "Label": "Компания",
+        "LabelAbout": "О нас",
+        "LabelNews": "Новости",
+        "LabelPartners": "Наш партнёр",
+        "LabelContacts": "Контакты"
+      },
+      "Resources": {
+        "Label": "Ресурсы",
+        "LabelApi": "Документация API",
+        "LabelHelp": "Центр поддержки"
+      }
+    },
+    "AreaStaticNavigation": {
+      "LabelSecurity": "Информационная безопасность",
+      "LabelPolicy": "Политика использования файлов cookie",
+      "LabelTerms": "Условия и положения",
+      "LabelBackToTop": "Наверх"
+    }
+  },
   "Products": {
     "Product1": {
-      "Name": "All-In-One Агрегатор услуг"
+      "Label": "All-In-One Агрегатор услуг"
     },
     "Product2": {
-      "Name": "Интернет - Эквайринг / E-Comm Решения"
+      "Label": "Интернет - Эквайринг / E-Comm Решения"
     },
     "Product3": {
-      "Name": "Link Payment +"
+      "Label": "Link Payment +"
     },
     "Product4": {
-      "Name": "Fast invoice"
+      "Label": "Fast Invoice Payment"
     }
   }
 }

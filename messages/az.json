@@ -60,16 +60,16 @@
       "SubLabel": "Məhsullar & Xidmətlər",
       "Products": {
         "Product1": {
-          "Name": "Internet - Acquiring / E-Comm Solution"
+          "Label": "Internet - Acquiring / E-Comm Solution"
         },
         "Product2": {
-          "Name": "All-In-One Aggregator Service"
+          "Label": "All-In-One Aggregator Service"
         },
         "Product3": {
-          "Name": "Link Payment +"
+          "Label": "Link Payment +"
         },
         "Product4": {
-          "Name": "Fast invoice"
+          "Label": "Fast invoice"
         }
       }
     },
@@ -199,18 +199,43 @@
       }
     }
   },
+  "Footer": {
+    "AreaNavigations": {
+      "Products": {
+        "Label": "MƏHSULLAR"
+      },
+      "Company": {
+        "Label": "ŞİRKƏT",
+        "LabelAbout": "Haqqımızda",
+        "LabelNews": "Xəbərlər",
+        "LabelPartners": "Bizim tərəfdaşlarımız",
+        "LabelContacts": "Əlaqə"
+      },
+      "Resources": {
+        "Label": "RESURSLAR",
+        "LabelApi": "API Sənədləşmə",
+        "LabelHelp": "Dəstək Mərkəzi"
+      }
+    },
+    "AreaStaticNavigation": {
+      "LabelSecurity": "MƏLUMAT TƏHLÜKƏSİZLİYİ",
+      "LabelPolicy": "COOKİE SİYASƏTİ",
+      "LabelTerms": "ŞƏRTLƏR VƏ QAYDALAR",
+      "LabelBackToTop": "YUXARI HİSSƏYƏ QAYIT"
+    }
+  },
   "Products": {
     "Product1": {
-      "Name": "All-In-One Aqreqator Xidməti"
+      "Label": "All-In-One Aqreqator Xidməti"
     },
     "Product2": {
-      "Name": "Internet -Ekvayrinq / E-Ticarət Həlləri"
+      "Label": "Internet -Ekvayrinq / E-Ticarət Həlləri"
     },
     "Product3": {
-      "Name": "Link Payment +"
+      "Label": "Link Payment +"
     },
     "Product4": {
-      "Name": "Fast invoice"
+      "Label": "Fast Invoice Payment"
     }
   }
 }

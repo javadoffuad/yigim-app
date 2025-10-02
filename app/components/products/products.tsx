@@ -15,19 +15,19 @@ export default function ProductsAndServices() {
 
     const products: IProduct[] = [
         {
-            name: t('Products.Product1.Name'),
+            name: t('Products.Product1.Label'),
             videoPath: getAbsolutePath('internet-acquiring-ecom-solution.mp4'),
         },
         {
-            name: t('Products.Product2.Name'),
+            name: t('Products.Product2.Label'),
             videoPath: getAbsolutePath('all-in-onefuturistic-neon-ribbon.mp4'),
         },
         {
-            name: t('Products.Product3.Name'),
+            name: t('Products.Product3.Label'),
             videoPath: getAbsolutePath('link-payment-3-things.mp4'),
         },
         {
-            name: t('Products.Product4.Name'),
+            name: t('Products.Product4.Label'),
             videoPath: getAbsolutePath('fast-invoice-smartphone-invoice.mp4'),
         },
     ];
