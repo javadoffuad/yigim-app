@@ -160,6 +160,32 @@
   "PageAbout": {
     "Label": "Brendin arxasında"
   },
+  "PagePartners": {
+    "Label": "Tərəfdaşlar",
+    "AreaWhoLovesUs": {
+      "Label": "BİZİ kİMLƏR SEVİR",
+      "Description": "tərəfdaşlarımızla birlikdə<br/>ən etibarlı xidməti təqdim edirik.",
+      "DescriptionClient": "450+ müştərimizin uğurunu təmin etmək üçün...",
+      "ButtonAll": {
+        "Label": "Hamısı"
+      },
+      "ButtonMobility": {
+        "Label": "(e-) Mobillik"
+      },
+      "ButtonHospitality": {
+        "Label": "Otellər"
+      },
+      "ButtonFoodDelivery": {
+        "Label": "Yemək çatdırılması"
+      },
+      "ButtonConsumerGoods": {
+        "Label": "İstehlak malları"
+      },
+      "ButtonMarketplace": {
+        "Label": "Onlayn mağaza"
+      }
+    }
+  },
   "Header": {
     "Navigation": {
       "Products": {

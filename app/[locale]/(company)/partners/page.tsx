@@ -7,36 +7,39 @@ import { ICategory, PartnerCategory } from '@/app/models/partners.models';
 import { partners } from '@/app/constants/partners.constants';
 import Image from 'next/image';
 import { useState } from 'react';
-
-const categories: ICategory[] = [
-  {
-    code: PartnerCategory.ALL,
-    name: 'All'
-  },
-  {
-    code: PartnerCategory.MOBILITY,
-    name: '(e-)Mobility'
-  },
-  {
-    code: PartnerCategory.HOSPITAL,
-    name: 'Hospitality'
-  },
-  {
-    code: PartnerCategory.DELIVERY,
-    name: 'Food Delivery'
-  },
-  {
-    code: PartnerCategory.CONSUMER_GOODS,
-    name: 'Consumer Goods'
-  },
-  {
-    code: PartnerCategory.MARKETPLACE,
-    name: 'Online Marketplace'
-  },
-];
+import { useTranslations } from 'next-intl';
+import { I18N_PARTNERS_PAGE } from '@/app/constants/i18n.constants';
 
 export default function PartnersPage() {
   const [selectedCategory, setSelectedCategory] = useState<PartnerCategory>(PartnerCategory.ALL);
+  const t = useTranslations(`${I18N_PARTNERS_PAGE}`);
+
+  const categories: ICategory[] = [
+    {
+      code: PartnerCategory.ALL,
+      name: t('AreaWhoLovesUs.ButtonAll.Label'),
+    },
+    {
+      code: PartnerCategory.MOBILITY,
+      name: t('AreaWhoLovesUs.ButtonMobility.Label'),
+    },
+    {
+      code: PartnerCategory.HOSPITAL,
+      name: t('AreaWhoLovesUs.ButtonHospitality.Label'),
+    },
+    {
+      code: PartnerCategory.DELIVERY,
+      name: t('AreaWhoLovesUs.ButtonFoodDelivery.Label'),
+    },
+    {
+      code: PartnerCategory.CONSUMER_GOODS,
+      name: t('AreaWhoLovesUs.ButtonConsumerGoods.Label'),
+    },
+    {
+      code: PartnerCategory.MARKETPLACE,
+      name: t('AreaWhoLovesUs.ButtonMarketplace.Label'),
+    },
+  ];
 
   // Фильтрация партнеров
   const filteredPartners = selectedCategory === PartnerCategory.ALL 
@@ -48,12 +51,12 @@ export default function PartnersPage() {
   };
 
   return (
-    <PageWrapper title='Our partners'>
+    <PageWrapper title={t('Label')}>
       <WhoLovesUs />
       <div className={styles.section}>
         <div className={styles.text}>
-          <h3 className={styles.title}>Who loves us</h3>
-          <p className={styles.description}>Together with our partners we offer<br />the most reliable service...</p>
+          <h3 className={styles.title}>{t('AreaWhoLovesUs.Label')}</h3>
+          <p className={styles.description} dangerouslySetInnerHTML={{__html: t.raw('AreaWhoLovesUs.Description')}} />
         </div>
 
         <div className={styles.partners}>

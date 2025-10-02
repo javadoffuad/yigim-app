@@ -160,6 +160,32 @@
   "PageAbout": {
     "Label": "За брендом"
   },
+  "PagePartners": {
+    "Label": "Партнеры",
+    "AreaWhoLovesUs": {
+      "Label": "Кто нас ценит",
+      "Description": "Вместе с нашими партнёрами<br/>мы предлагаем самый надёжный сервис…",
+      "DescriptionClient": "...чтобы обеспечить успех более чем 450 клиентов",
+      "ButtonAll": {
+        "Label": "Все"
+      },
+      "ButtonMobility": {
+        "Label": "(e-)Мобильность"
+      },
+      "ButtonHospitality": {
+        "Label": "Гостиницы"
+      },
+      "ButtonFoodDelivery": {
+        "Label": "Доставка еды"
+      },
+      "ButtonConsumerGoods": {
+        "Label": "Потребительские товары"
+      },
+      "ButtonMarketplace": {
+        "Label": "Интернет-магазин"
+      }
+    }
+  },
   "Header": {
     "Navigation": {
       "Products": {

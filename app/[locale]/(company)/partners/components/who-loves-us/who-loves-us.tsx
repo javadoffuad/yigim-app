@@ -4,6 +4,8 @@ import FeedbackCard from '@/app/components/feedback-card/feedback-card';
 import styles from './who-loves-us.module.css';
 import { IFeedback } from '@/app/models/feedback.models';
 import { FEEDBACKS1, FEEDBACKS2 } from '@/app/constants/feedbacks.constants';
+import { I18N_PARTNERS_PAGE } from '@/app/constants/i18n.constants';
+import { useTranslations } from 'next-intl';
 
 const feedbacks1: IFeedback[] = [
   ...FEEDBACKS1,
@@ -19,12 +21,13 @@ const feedbacks2: IFeedback[] = [
 ];
 
 export default function WhoLovesUs() {
+  const t = useTranslations(`${I18N_PARTNERS_PAGE}.AreaWhoLovesUs`);
   return (
     <section className={styles.section}>
       <div className={styles.content}>
         <div className={styles.text}>
-          <h3 className={styles.title}>Who loves us</h3>
-          <p className={styles.description}>...to ensure success of our 450+ clients</p>
+          <h3 className={styles.title}>{t('Label')}</h3>
+          <p className={styles.description}>{t('DescriptionClient')}</p>
         </div>
 
         <div className={styles.feedbacks}>

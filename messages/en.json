@@ -102,7 +102,7 @@
       "Description": "Together with our partners we offer<br/>the most reliable service...",
       "DescriptionClient": "...to ensure success of our 450+ clients",
       "ButtonPartners": {
-        "Label": "Our partners"
+        "Label": "Our partner"
       },
       "ButtonRequestCall": {
         "Label": "Request a Call"
@@ -159,6 +159,32 @@
   },
   "PageAbout": {
     "Label": "Behind the Brand"
+  },
+  "PagePartners": {
+    "Label": "Partners",
+    "AreaWhoLovesUs": {
+      "Label": "Who Loves Us",
+      "Description": "Together with our partners we offer<br/>the most reliable service...",
+      "DescriptionClient": "...to ensure success of our 450+ clients",
+      "ButtonAll": {
+        "Label": "All"
+      },
+      "ButtonMobility": {
+        "Label": "(e-)Mobility"
+      },
+      "ButtonHospitality": {
+        "Label": "Hospitality"
+      },
+      "ButtonFoodDelivery": {
+        "Label": "Food Delivery"
+      },
+      "ButtonConsumerGoods": {
+        "Label": "Consumer Goods"
+      },
+      "ButtonMarketplace": {
+        "Label": "Online Marketplace"
+      }
+    }
   },
   "Header": {
     "Navigation": {
