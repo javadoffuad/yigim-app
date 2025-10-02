@@ -186,6 +186,12 @@
       }
     }
   },
+  "PageNotFound": {
+    "Label": "This page you are looking for does not exist",
+    "ButtonGoHome": {
+      "Label": "Go home"
+    }
+  },
   "Header": {
     "Navigation": {
       "Products": "Products",

@@ -186,6 +186,12 @@
       }
     }
   },
+  "PageNotFound": {
+    "Label": "Страница, которую вы ищете, не существует",
+    "ButtonGoHome": {
+      "Label": "Вернуться на главную"
+    }
+  },
   "Header": {
     "Navigation": {
       "Products": "Продукты",

@@ -186,6 +186,12 @@
       }
     }
   },
+  "PageNotFound": {
+    "Label": "Axtardığınız səhifə mövcud deyil",
+    "ButtonGoHome": {
+      "Label": "Ana səhifəyə qayıt"
+    }
+  },
   "Header": {
     "Navigation": {
       "Products": "Məhsullar",
