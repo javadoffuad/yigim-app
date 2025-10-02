@@ -28,7 +28,7 @@ export default function GlobalNotFound({
       <body>
         <Header />
         <RequestCallback />
-        <ErrorPageWrapper errorCode="400" message="This page you are looking for does not exist" />
+        <ErrorPageWrapper errorCode="400" />
       </body>
     </html>
   )

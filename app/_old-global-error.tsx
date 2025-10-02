@@ -28,7 +28,7 @@ export default function GlobalError({
       <body>
         <Header />
         <RequestCallback />
-        <ErrorPageWrapper errorCode="500" message="This page you are looking for does not exist" />
+        <ErrorPageWrapper errorCode="500" />
       </body>
     </html>
   )
