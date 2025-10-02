@@ -157,6 +157,9 @@
   "PageHelp": {
     "Label": "Центр поддержки"
   },
+  "PageAbout": {
+    "Label": "За брендом"
+  },
   "Header": {
     "Navigation": {
       "Products": {

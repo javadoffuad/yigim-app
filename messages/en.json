@@ -157,6 +157,9 @@
   "PageHelp": {
     "Label": "Help Center"
   },
+  "PageAbout": {
+    "Label": "Behind the Brand"
+  },
   "Header": {
     "Navigation": {
       "Products": {
