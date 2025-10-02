@@ -122,6 +122,32 @@
       }
     }
   },
+  "PageContacts": {
+    "Label": "Əlaqə",
+    "LabelAddress": "Bakı, Yasamal r-nu,  İsmayıl Qutqaşınlı 507-511B, Altes Plaza A Bloku, 15-ci mərtəbə",
+    "AreaForm": {
+      "Label": "BİZ SİZƏ ZƏNG EDƏCƏYİK",
+      "SubLabel": "Sualınız var?",
+      "Loading": "Göndərilir...",
+      "ControlFullName": {
+        "Label": "Tam adınız",
+        "ErrorRequired": "Tam adınız vacibdir",
+        "ErrorMinimalValue": "Tam adınız 2 simvoldan az olmalıdır"
+      },
+      "ControlPhoneNumber": {
+        "Label": "Telefon nömrəniz",
+        "ErrorRequired": "Telefon nömrəniz vacibdir",
+        "ErrorInvalidNumber": "Zəhmət olmasa telefon nömrənizi düzgün daxil edin"
+      },
+      "ControlMessage": {
+        "Label": "Mesaj",
+        "ErrorRequired": "Mesaj vacibdir"
+      },
+      "ButtonSendRequest": {
+        "Label": "Müraciət göndər"
+      }
+    }
+  },
   "Header": {
     "Navigation": {
       "Products": {
@@ -149,15 +175,6 @@
     },
     "ButtonCallMe": {
       "Label": "Mənimlə əlaqə saxlayın"
-    },
-    "NotifySuccess": {
-      "LabelSuccess": "Təşəkkür edirik",
-      "LabelError": "Xəta",
-      "SubLabelSuccess": "Sizin müraciətiniz qeydə alındı",
-      "SubLabelError": "Xəta baş verdi.<br/>Lütfən, yenidən cəhd edin.",
-      "ButtonClose": {
-        "Label": "Bağla"
-      }
     }
   },
   "FAQ": {
@@ -236,6 +253,15 @@
     },
     "Product4": {
       "Label": "Fast Invoice Payment"
+    }
+  },
+  "NotifySuccess": {
+    "LabelSuccess": "Təşəkkür edirik",
+    "LabelError": "Xəta",
+    "SubLabelSuccess": "Sizin müraciətiniz qeydə alındı",
+    "SubLabelError": "Xəta baş verdi.<br/>Lütfən, yenidən cəhd edin.",
+    "ButtonClose": {
+      "Label": "Bağla"
     }
   }
 }

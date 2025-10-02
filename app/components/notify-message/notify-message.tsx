@@ -18,7 +18,7 @@ export interface NotifyMessageProps {
 }
 
 export const NotifyMessage = (props: NotifyMessageProps): JSX.Element => {
-  const t = useTranslations(`ModalRequestCallback.NotifySuccess`);
+  const t = useTranslations(`NotifySuccess`);
   const isError = props.type === NotifyType.ERROR;
   const label = isError ? t('LabelError') : t('LabelSuccess');
   const subLabel = isError ? t.raw('SubLabelError') : t.raw('SubLabelSuccess');

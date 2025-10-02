@@ -8,21 +8,24 @@ import address from '@/public/address.svg';
 import styles from './page.module.css'
 import ContactForm from "./components/contact-form/contact-form";
 import ContactMap from "./components/contact-map/contact-map";
-import { EMAIL } from "@/app/constants/contact.constants";
+import { EMAIL, PHONES } from "@/app/constants/contact.constants";
+import { useTranslations } from "next-intl";
+import { I18N_CONTACTS_PAGE } from "@/app/constants/i18n.constants";
 
 export default function ContactsPage() {
+  const t = useTranslations(`${I18N_CONTACTS_PAGE}`);
   return (
     <>
-    <PageWrapper title='Get in touch'>
+    <PageWrapper title={t('Label')}>
       <div className={styles["contact-cards"]}>
         <ContactCard altText="Email" icon={email}>
           {EMAIL}
         </ContactCard>
         <ContactCard altText="Phone" icon={phone}>
-          (+994) 55 205 95 59<br />(+994) 55 255 84 55
+          {PHONES.map((phone, index) => <p key={index}>{phone}</p>)}
         </ContactCard>
         <ContactCard altText="Address" icon={address}>
-          Bakı, Yasamal r-nu,<br />İsmayıl Qutqaşınlı 507-511 B
+          {t('LabelAddress')}
         </ContactCard>
       </div>
       <ContactForm />

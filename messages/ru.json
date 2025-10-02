@@ -122,6 +122,32 @@
       }
     }
   },
+  "PageContacts": {
+    "Label": "Контакты",
+    "LabelAddress": "Баку, Ясамальский район, ул. Исмаил Гуткашенли 507–511B, Altes Plaza, блок A, 15-й этаж",
+    "AreaForm": {
+      "Label": "Мы вам позвоним",
+      "SubLabel": "Есть вопросы? ",
+      "Loading": "Отправляется...",
+      "ControlFullName": {
+        "Label": "Полное имя",
+        "ErrorRequired": "Полное имя обязательное поле",
+        "ErrorMinimalValue": "Полное имя должно быть не менее 2 символов"
+      },
+      "ControlPhoneNumber": {
+        "Label": "Номер телефона",
+        "ErrorRequired": "Номер телефона обязательное поле",
+        "ErrorInvalidNumber": "Пожалуйста, введите корректный номер телефона"
+      },
+      "ControlMessage": {
+        "Label": "Сообщение",
+        "ErrorRequired": "Сообщение обязательное поле"
+      },
+      "ButtonSendRequest": {
+        "Label": "Отправить обращение"
+      }
+    }
+  },
   "Header": {
     "Navigation": {
       "Products": {
@@ -149,15 +175,6 @@
     },
     "ButtonCallMe": {
       "Label": "Перезвоните мне"
-    },
-    "NotifySuccess": {
-      "LabelSuccess": "Спасибо!",
-      "LabelError": "Ошибка",
-      "SubLabelSuccess": "Ваша заявка принята.",
-      "SubLabelError": "Что-то пошло не так.<br/>Пожалуйста, попробуйте еще раз.",
-      "ButtonClose": {
-        "Label": "Закрыть"
-      }
     }
   },
   "FAQ": {
@@ -236,6 +253,15 @@
     },
     "Product4": {
       "Label": "Fast Invoice Payment"
+    }
+  },
+  "NotifySuccess": {
+    "LabelSuccess": "Спасибо!",
+    "LabelError": "Ошибка",
+    "SubLabelSuccess": "Ваша заявка принята.",
+    "SubLabelError": "Что-то пошло не так.<br/>Пожалуйста, попробуйте еще раз.",
+    "ButtonClose": {
+      "Label": "Закрыть"
     }
   }
 }

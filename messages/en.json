@@ -122,6 +122,32 @@
       }
     }
   },
+  "PageContacts": {
+    "Label": "Get in touch",
+    "LabelAddress": "Baku, Yasamal district, Ismayil Gutgashinli Street 507-511B, Altes Plaza, Block A, 15th floor",
+    "AreaForm": {
+      "Label": "We will call you.",
+      "SubLabel": "Have a question?",
+      "Loading": "Sending...",
+      "ControlFullName": {
+        "Label": "Full Name",
+        "ErrorRequired": "Full Name is required",
+        "ErrorMinimalValue": "Full name must be at least 2 characters"
+      },
+      "ControlPhoneNumber": {
+        "Label": "Phone number",
+        "ErrorRequired": "Phone number is required",
+        "ErrorInvalidNumber": "Please enter a valid phone number"
+      },
+      "ControlMessage": {
+        "Label": "Message",
+        "ErrorRequired": "Message is required"
+      },
+      "ButtonSendRequest": {
+        "Label": "Send request"
+      }
+    }
+  },
   "Header": {
     "Navigation": {
       "Products": {
@@ -149,15 +175,6 @@
     },
     "ButtonCallMe": {
       "Label": "Call me"
-    },
-    "NotifySuccess": {
-      "LabelSuccess": "Thank you",
-      "LabelError": "Error",
-      "SubLabelSuccess": "Your request has been registered.",
-      "SubLabelError": "Something went wrong.<br/>Please try again.",
-      "ButtonClose": {
-        "Label": "Close"
-      }
     }
   },
   "FAQ": {
@@ -236,6 +253,15 @@
     },
     "Product4": {
       "Label": "Fast Invoice Payment"
+    }
+  },
+  "NotifySuccess": {
+    "LabelSuccess": "Thank you",
+    "LabelError": "Error",
+    "SubLabelSuccess": "Your request has been registered.",
+    "SubLabelError": "Something went wrong.<br/>Please try again.",
+    "ButtonClose": {
+      "Label": "Close"
     }
   }
 }
