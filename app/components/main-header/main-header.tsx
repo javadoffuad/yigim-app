@@ -3,7 +3,7 @@
 import { Suspense } from 'react';
 import {Link} from '@/i18n/navigation';
 import styles from './main-header.module.css';
-import { PAGE_RESOURCES_API } from '@/constants/navigation.constants';
+import { PAGE_RESOURCES_DEVELOPERS } from '@/constants/navigation.constants';
 import { getAbsolutePath } from '@/app/utils/absolute-path.utils';
 import { useTranslations } from 'next-intl';
 import { I18N_HOME_PAGE } from '@/app/constants/i18n.constants';
@@ -20,7 +20,7 @@ export default function MainHeader() {
           <p className={styles["subtitle"]}>{t('SubLabel')}</p>
           <div className={styles["buttons"]}>
             <Link href="#" className="button button-primary">{t('ButtonGetStarted.Label')}</Link>
-            <Link href={PAGE_RESOURCES_API} className="button button-tertiary">{t('ButtonDocumentation.Label')}</Link>
+            <Link href={PAGE_RESOURCES_DEVELOPERS} className="button button-tertiary">{t('ButtonDocumentation.Label')}</Link>
           </div>
         </div>
       </div>

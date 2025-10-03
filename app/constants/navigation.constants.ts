@@ -10,7 +10,7 @@ export const PAGE_PRODUCT_INTERNET_ACQUIRING = `${PAGE_PRODUCTS}/internet-acquir
 export const PAGE_PRODUCT_LINK_PAYMENT = `${PAGE_PRODUCTS}/link-payment`;
 export const PAGE_PRODUCT_FAST_INVOICE_PAYMENT = `${PAGE_PRODUCTS}/fast-invoice-payment`;
 
-export const PAGE_RESOURCES_API = '/api';
+export const PAGE_RESOURCES_DEVELOPERS = '/developers';
 export const PAGE_RESOURCES_HELP_CENTER = '/help-center';
 
 export const PAGE_TERMS_CONDITION = '/terms-condition';
