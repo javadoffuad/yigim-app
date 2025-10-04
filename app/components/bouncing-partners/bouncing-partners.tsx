@@ -7,6 +7,7 @@ import { PAGE_COMPANY_PARTNERS } from '@/app/constants/navigation.constants';
 import { partners } from '@/app/constants/partners.constants';
 import { useTranslations } from 'next-intl';
 import { I18N_HOME_PAGE } from '@/app/constants/i18n.constants';
+import SectionTitle from '../section-title/section-title';
 
 const ballRadius = 30;
 const gravity = 0.25;
@@ -300,8 +301,10 @@ export function BouncingParameters({setRequestCallbackIsOpen}: {setRequestCallba
   return (
     <section className={styles["section"]}>
       <div className={styles["title-wrapper"]}>
-        <p className={styles.subtitle}>{t('Label')}</p>
-        <h3 className={styles.title} dangerouslySetInnerHTML={{__html: t.raw('Description')}} />
+        <SectionTitle
+          title={t('Label')}
+          description={t.raw('Description')} />
+
         <div className={styles.buttons}>
           <Link href={PAGE_COMPANY_PARTNERS} className="button button-primary">{t('ButtonPartners.Label')}</Link>
           <button className="button button-tertiary" onClick={handleClick}>{t('ButtonRequestCall.Label')}</button>

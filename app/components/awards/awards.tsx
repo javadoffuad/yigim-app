@@ -6,17 +6,15 @@ import visaLogo from '@/public/icons/visa.svg';
 import pciLogo from '@/public/icons/pci.svg';
 import { useTranslations } from "next-intl";
 import { I18N_HOME_PAGE } from "@/app/constants/i18n.constants";
+import SectionTitle from "../section-title/section-title";
 
 export default function Awards() {
   const t = useTranslations(`${I18N_HOME_PAGE}.AreaWhatWeAreProud`);
   return (
     <div className={styles["section"]}>
-      <div className={styles["section-header"]}>
-        <div className={styles["header-label"]}>
-          {t('Label')}
-        </div>
-        <div className={styles["header-title"]} dangerouslySetInnerHTML={{__html: t.raw('SubLabel')}} />
-      </div>
+      <SectionTitle
+        title={t('Label')}
+        description={t.raw('SubLabel')} />
 
       <div className={styles["content"]}>
         <div className={styles["awards"]}>

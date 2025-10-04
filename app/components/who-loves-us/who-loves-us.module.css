@@ -15,30 +15,6 @@
     gap: 120px;
 }
 
-.text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-}
-
-.title {
-    font-size: 14px;
-    line-height: 20px;
-    color: #888888;
-    font-weight: 500;
-    letter-spacing: 0.4px;
-    text-transform: uppercase;
-}
-
-.description {
-    font-size: 48px;
-    line-height: 56px;
-    color: #1E1E1E;
-    font-weight: 500;
-    letter-spacing: -0.4px;
-}
-
 .feedbacks {
     width: 972px;
     display: flex;

@@ -5,6 +5,7 @@ import FeedbackCard from '../feedback-card/feedback-card';
 import styles from './who-loves-us.module.css';
 import { useTranslations } from 'next-intl';
 import { I18N_HOME_PAGE } from '@/app/constants/i18n.constants';
+import SectionTitle from '../section-title/section-title';
 
 const feedbacks1 = [
   ...FEEDBACKS1,
@@ -29,10 +30,9 @@ export default function WhoLovesUs() {
   return (
     <section className={styles.section}>
         <div className={styles.content}>
-            <div className={styles.text}>
-              <h3 className={styles.title}>{t('Label')}</h3>
-              <p className={styles.description}>{t('DescriptionClient')}</p>
-            </div>
+            <SectionTitle
+              title={t('Label')}
+              description={t('DescriptionClient')} />
 
             <div className={styles.feedbacks}>
               <div className={styles.column}>

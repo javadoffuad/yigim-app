@@ -3,6 +3,7 @@
 import styles from './main-section.module.css';
 import { ThingCard, ThingCardProps } from '../thing-card/thing-card';
 import { Suspense } from 'react';
+import SectionTitle from '@/app/components/section-title/section-title';
 
 export default function ThreeThings({items, productName, videoPath}: {
     items: ThingCardProps[],
@@ -12,10 +13,9 @@ export default function ThreeThings({items, productName, videoPath}: {
   return (
     <section className={styles.section}>
         <div className={styles.container}>
-            <div className={styles.header}>
-                <div className={styles.subtitle}>{productName}</div>
-                <h2 className={styles.title}>3 Things To Know</h2>
-            </div>
+            <SectionTitle
+                title={productName}
+                description="3 Things To Know" />
 
             <div className={styles.content}>
                 <div className={styles["content-list"]}>

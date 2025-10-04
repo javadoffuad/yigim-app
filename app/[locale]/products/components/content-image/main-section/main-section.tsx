@@ -2,6 +2,7 @@
 
 import Image, { StaticImageData } from 'next/image';
 import styles from './main-section.module.css';
+import SectionTitle from '@/app/components/section-title/section-title';
 
 export interface ContentImageProps {
     title: string;
@@ -16,10 +17,10 @@ export default function ContentImage({content, align = 'right'}: {content: Conte
       <section className={styles["section"]}>
         <div className={`${styles["content-wrapper"]} ${align === 'left' ? styles["reverse"] : ''}`}>
           <div className={styles["text-content"]}>
-            <header className={styles["header"]}>
-              <p className={styles["label"]}>{content.label}</p>
-              <h1 className={styles["title"]}>{content.title}</h1>
-            </header>
+            <SectionTitle
+              textAlign='left'
+              title={content.label}
+              description={content.title} />
             
             <p className={styles["description"]}>
               {content.description}

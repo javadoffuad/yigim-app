@@ -34,30 +34,6 @@
   width: 582px;
 }
 
-.header {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.label {
-  font-size: 14px;
-  font-weight: 500;
-  color: #888888;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  margin: 0;
-}
-
-.title {
-  font-size: 48px;
-  line-height: 56px;
-  font-weight: 500;
-  color: #1e1e1e;
-  letter-spacing: -0.2px;
-  margin: 0;
-}
-
 .description {
   font-size: 20px;
   font-weight: 400;

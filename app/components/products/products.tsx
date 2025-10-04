@@ -3,6 +3,7 @@ import styles from "./products.module.css";
 import { getAbsolutePath } from "@/app/utils/absolute-path.utils";
 import { useTranslations } from "next-intl";
 import { I18N_HOME_PAGE } from "@/app/constants/i18n.constants";
+import SectionTitle from "../section-title/section-title";
 
 interface IProduct {
     name: string;
@@ -41,15 +42,9 @@ export default function ProductsAndServices() {
 
     return (
         <div className={styles["section"]}>
-            <div className={styles["section-header"]}>
-                <div className={styles["header-label"]}>
-                {t('Label')}
-                </div>
-
-                <div className={styles["header-title"]}>
-                {t('SubLabel')}
-                </div>
-            </div>
+            <SectionTitle
+                title={t('Label')}
+                description={t('SubLabel')} />
 
             <div className={styles["content"]}>
                 <div className={styles["products"]}>
