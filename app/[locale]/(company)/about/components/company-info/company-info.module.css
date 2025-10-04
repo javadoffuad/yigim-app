@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1120px;
+    min-height: 100px;
+    margin-bottom: 236px;
+    font-family: 'Geist', sans-serif;
+}
+
+.title {
+    width: 212px;
+    font-weight: 500;
+    color: #1e1e1e;
+    font-size: 64px;
+    letter-spacing: -0.4px;
+    line-height: 72px;
+    flex-shrink: 0;
+}
+
+.description {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    margin-left: 180px;
+    margin-top: 87px;
+    align-self: flex-end;
+    font-weight: 400;
+    color: #1e1e1e;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.description p:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.description mark {
+    border-radius: 8px;
+    padding: 0 4px;
+    background-color: #FFE79B;
+    box-decoration-break: clone;
+}
