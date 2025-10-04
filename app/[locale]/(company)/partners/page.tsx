@@ -9,6 +9,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { I18N_PARTNERS_PAGE } from '@/app/constants/i18n.constants';
+import SectionTitle from '@/app/components/section-title/section-title';
 
 export default function PartnersPage() {
   const [selectedCategory, setSelectedCategory] = useState<PartnerCategory>(PartnerCategory.ALL);
@@ -54,10 +55,9 @@ export default function PartnersPage() {
     <PageWrapper title={t('Label')}>
       <WhoLovesUs />
       <div className={styles.section}>
-        <div className={styles.text}>
-          <h3 className={styles.title}>{t('AreaWhoLovesUs.Label')}</h3>
-          <p className={styles.description} dangerouslySetInnerHTML={{__html: t.raw('AreaWhoLovesUs.Description')}} />
-        </div>
+        <SectionTitle
+          title={t('AreaWhoLovesUs.Label')}
+          description={t.raw('AreaWhoLovesUs.Description')} />
 
         <div className={styles.partners}>
           <div className={styles.buttons}>

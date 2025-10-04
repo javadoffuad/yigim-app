@@ -6,6 +6,7 @@ import { IFeedback } from '@/app/models/feedback.models';
 import { FEEDBACKS1, FEEDBACKS2 } from '@/app/constants/feedbacks.constants';
 import { I18N_PARTNERS_PAGE } from '@/app/constants/i18n.constants';
 import { useTranslations } from 'next-intl';
+import SectionTitle from '@/app/components/section-title/section-title';
 
 const feedbacks1: IFeedback[] = [
   ...FEEDBACKS1,
@@ -25,10 +26,10 @@ export default function WhoLovesUs() {
   return (
     <section className={styles.section}>
       <div className={styles.content}>
-        <div className={styles.text}>
-          <h3 className={styles.title}>{t('Label')}</h3>
-          <p className={styles.description}>{t('DescriptionClient')}</p>
-        </div>
+        <SectionTitle
+          textAlign='left'
+          title={t('Label')}
+          description={t('DescriptionClient')} />
 
         <div className={styles.feedbacks}>
           <div className={styles.column}>

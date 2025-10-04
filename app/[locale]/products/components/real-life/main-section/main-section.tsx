@@ -3,6 +3,7 @@
 import styles from './main-section.module.css';
 import { RealLifeCard, RealLifeCardProps } from '../real-life-card/real-life-card';
 import { getAbsolutePath } from '@/app/utils/absolute-path.utils';
+import SectionTitle from '@/app/components/section-title/section-title';
 
 export interface RealLifeProps {
     productName: string;
@@ -16,10 +17,9 @@ export default function RealLifeCases({props}: {props: RealLifeProps}) {
     return (
         <section className={styles.section}>
             <div className={styles.container}>
-                <div className={styles.header}>
-                    <div className={styles.subtitle}>{props.productName}</div>
-                    <h2 className={styles.title}>Real-Life Example</h2>
-                </div>
+                <SectionTitle
+                    title={props.productName}
+                    description="Real-Life Example" />
 
                 <div className={styles["video-container"]}>
                     <video className={styles.video} loop autoPlay muted>

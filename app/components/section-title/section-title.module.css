@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+    align-items: center;
+}
+
+.align-left {
+    align-items: flex-start;
+}
+
+.title {
+    font-size: 14px;
+    line-height: 20px;
+    color: #888888;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+}
+
+.description {
+    font-size: 48px;
+    line-height: 56px;
+    color: #1E1E1E;
+    font-weight: 500;
+    letter-spacing: -0.4px;
+    text-align: center;
+}
+
+.align-left .description {
+    text-align: center;
+}
