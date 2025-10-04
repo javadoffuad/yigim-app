@@ -162,7 +162,40 @@
     "Label": "Help Center"
   },
   "PageAbout": {
-    "Label": "Behind the Brand"
+    "Label": "Behind the Brand",
+    "AreaWhoWeAre": {
+      "Label": "Who We Are",
+      "Description": "<p>Founded in 2017 in Baku, Azerbaijan, the booming financial capital of CIS region, YIĞIM makes it easier to pay for products and services. We provide high-tech payment processing solutions including kiosks, mobile/web payments, and card acceptance. We serve over 450 brands across Azerbaijan: From hospitality, through food delivery to consumer goods.</p><p>Moreover, YIĞIM takes pride in being a truly local service. <mark>Our program solutions and technological advancements are all meticulously developed by in-house Azerbaijani experts,</mark> ensuring a deep understanding of the unique needs of the local market. This commitment to local expertise allows us to offer exceptional service and unparalleled support to our valued clients.</p>"
+    },
+    "AreaOffers": {
+      "Label": "Offers",
+      "Description": "The company primarily offers <br/>four payment products:"
+    },
+    "AreaOurTeam": {
+      "Label": "Our Team",
+      "Description": "Meet the heroes"
+    },
+    "AreaWhatWeAreProud": {
+      "Label": "What we are proud of",
+      "SubLabel": "Awards and<br />Partnerships",
+      "Card1": {
+        "Label": "Enabling international payments for the 74th International Astronautical Congress"
+      },
+      "Card2": {
+        "Label": "VISA Above and Beyond Award Special Recognition, March, 2024"
+      },
+      "Card3": {
+        "Label": "PCI DSS Compliance Certificate"
+      }
+    },
+    "AreaOurMission": {
+      "Label": "Our  mission",
+      "Description": "Everyday we empower our clients, partners and community to achieve their big dreams by connecting them to the world."
+    },
+    "AreaOurVision": {
+      "Label": "Our vision",
+      "Description": "To become a company that creates the most efficient \nand the most human-centric payment systems."
+    }
   },
   "PagePartners": {
     "Label": "Partners",

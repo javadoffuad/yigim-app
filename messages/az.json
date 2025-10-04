@@ -109,7 +109,7 @@
       }
     },
     "AreaWhatWeAreProud": {
-      "Label": "Qürur mənbəyimiz",
+      "Label": "QÜRUR MƏNBƏYİMİZ",
       "SubLabel": "Mükafatlar və<br />Tərəfdaşlıqlar",
       "Card1": {
         "Label": "74-cü Beynəlxalq Astronavtika Konqresi üçün beynəlxalq ödənişləri mümkün etdik"
@@ -162,7 +162,40 @@
     "Label": "Dəstək Mərkəzi"
   },
   "PageAbout": {
-    "Label": "Brendin arxasında"
+    "Label": "Brendin arxasında",
+    "AreaWhoWeAre": {
+      "Label": "Biz Kimik",
+      "Description": "<p>2017-ci ildə Azərbaycanın sürətlə inkişaf edən maliyyə paytaxtı Bakı şəhərində əsası qoyulmuş YIĞIM, məhsul və xidmətlərin ödənişlərini həyata keçirilməsini asanlaşdırır. Biz yüksək texnologiyalı ödəniş həlləri — ödəmə terminalları, mobil və veb ödənişlər, kart qəbul sistemləri təqdim edirik. Hazırda Azərbaycanda qonaqlama sahəsindən tutmuş qida çatdırılması və istehlak mallarınadək 450-dən çox brendə xidmət göstəririk.</p><p>Bundan əlavə, YIĞIM olaraq yerli xidmət şirkəti olmaqdan  qürur duyuruq. <mark>Təklif etdiyimiz həllər və texnoloji yeniliklər Azərbaycanlı mütəxəssislər tərəfindən diqqətlə hazırlanır</mark> və bu da yerli bazarın özünəməxsus ehtiyaclarını dərindən anlamağa imkan verir. Yerli təcrübəyə əsaslanan bu bağlılıq bizim müştərilərimizə yüksək səviyyəli xidmət və bənzərsiz dəstək göstərməyə şərait yaradır.</p>"
+    },
+    "AreaOffers": {
+      "Label": "TƏKLİFLƏR",
+      "Description": "Şirkət dörd ödəniş məhsulunu <br/>təklif edir:"
+    },
+    "AreaOurTeam": {
+      "Label": "Komandamız",
+      "Description": "Qəhrəmanlarla tanış olun"
+    },
+    "AreaWhatWeAreProud": {
+      "Label": "QÜRUR MƏNBƏYİMİZ",
+      "SubLabel": "Mükafatlar və<br />Tərəfdaşlıqlar",
+      "Card1": {
+        "Label": "74-cü Beynəlxalq Astronavtika Konqresi üçün beynəlxalq ödənişləri mümkün etdik"
+      },
+      "Card2": {
+        "Label": "VISA \"Above and Beyond\" Mükafatı, Xüsusi Tanıtım, Mart 2024"
+      },
+      "Card3": {
+        "Label": "PCI DSS Uyğunluq Sertifikatı"
+      }
+    },
+    "AreaOurMission": {
+      "Label": "Missiyamız",
+      "Description": "Hər gün müştərilərimiz, tərəfdaşlarımız və cəmiyyətimiz üçün dünya texnologiyalarını əlçatan edərək onların böyük hədəflərinə çatmasına dəstək oluruq."
+    },
+    "AreaOurVision": {
+      "Label": "Strateji baxışımız",
+      "Description": "Ən səmərəli və insan yönümlü ödəmə sistemləri yaradan şirkət olmaq."
+    }
   },
   "PagePartners": {
     "Label": "Tərəfdaşlar",
