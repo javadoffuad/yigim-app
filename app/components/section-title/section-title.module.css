@@ -19,6 +19,11 @@
     text-transform: uppercase;
 }
 
+.middle .title {
+    font-size: 20px;
+    line-height: 24px;
+}
+
 .description {
     font-size: 48px;
     line-height: 56px;
@@ -29,5 +34,11 @@
 }
 
 .align-left .description {
-    text-align: center;
+    text-align: left;
+}
+
+.middle .description {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.2px;
 }
