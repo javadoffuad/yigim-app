@@ -11,6 +11,7 @@ import BuiltForTrust from '@/components/built-for-trust/built-for-trust';
 import { RequestCallback } from '@/components/request-callback/request-callback';
 import { useState } from 'react';
 import ProductsAndServices from '@/components/products/products';
+import OurTeam from '@/app/components/our-team/our-team';
 
 export default function MainPage({params}: PageProps<'/[locale]'>) {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,6 +31,7 @@ export default function MainPage({params}: PageProps<'/[locale]'>) {
       <BouncingParameters setRequestCallbackIsOpen={setRequestCallbackIsOpen}/>
       <WhoLovesUs />
       <Awards />
+      <OurTeam />
       <RequestCallback outerIsOpen={isOpen} setOuterIsOpen={setRequestCallbackIsOpen} />
     </>
   );
