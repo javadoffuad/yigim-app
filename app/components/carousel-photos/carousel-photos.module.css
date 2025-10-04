@@ -9,4 +9,5 @@
   /* Расстояние между элементами */
   padding: 0 4px;
   box-sizing: border-box;
+  outline: none;
 }
