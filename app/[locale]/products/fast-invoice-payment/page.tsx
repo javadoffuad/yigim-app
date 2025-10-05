@@ -19,10 +19,6 @@ import { getAbsolutePath } from "@/app/utils/absolute-path.utils";
 import { useTranslations } from "next-intl";
 
 const productName = "Fast Invoice Payment";
-const info: ProductInfoProps = {
-  title: "The smart SMS reminders with built-in payment options make payments effortless. Your customers pay faster while your workload drops.",
-  description: `YIĞIM's own product that helps you to get your payments on time. FIP is a solution for accelerating invoice payments and reducing late payment risks. We solve  slow, inconvenient payments by replacing SMS reminders with smart links to pre-filled payment pages.`
-}
 const functions: FunctionCardProps[] = [
   {
       icon: linkIcon,

@@ -5,53 +5,54 @@ import { I18N_HOME_PAGE } from "@/app/constants/i18n.constants";
 
 export default function KeyFacts() {
   const t = useTranslations(`${I18N_HOME_PAGE}.AreaKeyFacts`);
+  const s = useTranslations('StatsData');
   const keyFactsData = [
     {
-      title: t("AreaCards.Card1.Label"),
+      title: s("AverageRating.Label"),
       value: "4.8",
-      description: t("AreaCards.Card1.SubLabel"),
+      description: s("AverageRating.SubLabel"),
       cardClass: "card-1",
       textColor: "dark",
     },
     {
-      title: t("AreaCards.Card2.Label"),
+      title: s("ActiveClients.Label"),
       value: "450+",
-      description: t("AreaCards.Card2.SubLabel"),
+      description: s("ActiveClients.SubLabel"),
       cardClass: "card-2",
       textColor: "white",
     },
     {
-      title: t("AreaCards.Card3.Label"),
+      title: s("SuccessfulOperations.Label"),
       value: "99.5%",
-      description: t("AreaCards.Card3.SubLabel"),
+      description: s("SuccessfulOperations.SubLabel"),
       cardClass: "card-3",
       textColor: "dark",
     },
     {
-      title: t("AreaCards.Card4.Label"),
+      title: s("PartneredBanks.Label"),
       value: "7+",
-      description: t("AreaCards.Card4.SubLabel"),
+      description: s("PartneredBanks.SubLabel"),
       cardClass: "card-4",
       textColor: "dark",
     },
     {
-      title: t("AreaCards.Card5.Label"),
+      title: s("ProcessingCenters.Label"),
       value: "9+",
-      description: t("AreaCards.Card5.SubLabel"),
+      description: s("ProcessingCenters.SubLabel"),
       cardClass: "card-5",
       textColor: "dark",
     },
     {
-      title: t("AreaCards.Card6.Label"),
+      title: s("Awards.Label"),
       value: "3+",
-      description: t("AreaCards.Card6.SubLabel"),
+      description: s("Awards.SubLabel"),
       cardClass: "card-6",
       textColor: "dark",
     },
     {
-      title: t("AreaCards.Card7.Label"),
+      title: s("AnnualGrowth.Label"),
       value: "157%",
-      description: t("AreaCards.Card7.SubLabel"),
+      description: s("AnnualGrowth.SubLabel"),
       cardClass: "card-7",
       textColor: "white",
     },

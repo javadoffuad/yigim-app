@@ -19,37 +19,7 @@
     },
     "AreaKeyFacts": {
       "Label": "Əsas Faktlar",
-      "Description": "Ödəniş üsullarında fərqlilik yaradırıq.",
-      "AreaCards": {
-        "Card1": {
-          "Label": "Müştərilərin etibarı",
-          "SubLabel": "orta reytinq"
-        },
-        "Card2": {
-          "Label": "Bizneslər bizə etibar edir",
-          "SubLabel": "aktiv müştəri"
-        },
-        "Card3": {
-          "Label": "Uğurlu əməliyyatların faizi",
-          "SubLabel": "uğurlu əməliyyat"
-        },
-        "Card4": {
-          "Label": "Bank inteqrasiyaları",
-          "SubLabel": "tərəfdaş bank"
-        },
-        "Card5": {
-          "Label": "Prossesinq mərkəzləri ilə inteqrasiya ",
-          "SubLabel": "Prossesinq mərkəzi"
-        },
-        "Card6": {
-          "Label": "Qazandığımız mükafatlar",
-          "SubLabel": "mükafat"
-        },
-        "Card7": {
-          "Label": "Eksponensial artım (ümumdünya 108%-ə qarşı)",
-          "SubLabel": "illik artım"
-        }
-      }
+      "Description": "Ödəniş üsullarında fərqlilik yaradırıq."
     },
     "AreaOurVision": {
       "Label": "Strateji baxışımız",
@@ -341,6 +311,36 @@
       "Label": "Fast Invoice Payment",
       "SubLabel": "Ağıllı SMS xatırlatmaları ilə daxil edilmiş ödəniş seçimləri ödənişləri asanlaşdırır. Müştəriləriniz vaxtında ödəniş edir, sizin iş yükünüz isə azalır.",
       "Description": "YIĞIM-ın öz məhsulu olan bu həll faktura ödənişlərini sürətləndirir və gecikmiş ödəniş risklərini azaldır. Biz ləng və çətin ödəniş proseslərini ağıllı linklərlə əvəz edərək, SMS xatırlatmalarını daha effektiv edirik."
+    }
+  },
+  "StatsData": {
+    "AverageRating": {
+      "Label": "Müştərilərin etibarı",
+      "SubLabel": "orta reytinq"
+    },
+    "ActiveClients": {
+      "Label": "Bizneslər bizə etibar edir",
+      "SubLabel": "aktiv müştəri"
+    },
+    "SuccessfulOperations": {
+      "Label": "Uğurlu əməliyyatların faizi",
+      "SubLabel": "uğurlu əməliyyat"
+    },
+    "PartneredBanks": {
+      "Label": "Bank inteqrasiyaları",
+      "SubLabel": "tərəfdaş bank"
+    },
+    "ProcessingCenters": {
+      "Label": "Prossesinq mərkəzləri ilə inteqrasiya ",
+      "SubLabel": "Prossesinq mərkəzi"
+    },
+    "Awards": {
+      "Label": "Qazandığımız mükafatlar",
+      "SubLabel": "mükafat"
+    },
+    "AnnualGrowth": {
+      "Label": "Eksponensial artım (ümumdünya 108%-ə qarşı)",
+      "SubLabel": "illik artım"
     }
   },
   "NotifySuccess": {

@@ -19,37 +19,7 @@
     },
     "AreaKeyFacts": {
       "Label": "Key Facts",
-      "Description": "We <span>catalyze</span> change in \nhow people pay.",
-      "AreaCards": {
-        "Card1": {
-          "Label": "Trusted by \ncustomers",
-          "SubLabel": "average rating"
-        },
-        "Card2": {
-          "Label": "Trusted by \nbusinesses",
-          "SubLabel": "active clients"
-        },
-        "Card3": {
-          "Label": "Transaction \nsuccess rate",
-          "SubLabel": "successful operations"
-        },
-        "Card4": {
-          "Label": "Bank \nintegrations",
-          "SubLabel": "partnered banks"
-        },
-        "Card5": {
-          "Label": "Integrated with \nProccessing Centers",
-          "SubLabel": "processing centers"
-        },
-        "Card6": {
-          "Label": "Award-winning \nachievements",
-          "SubLabel": "awards"
-        },
-        "Card7": {
-          "Label": "Exponential growth \n(vs. global 108%)",
-          "SubLabel": "annual growth"
-        }
-      }
+      "Description": "We <span>catalyze</span> change in \nhow people pay."
     },
     "AreaOurVision": {
       "Label": "Our vision",
@@ -341,6 +311,36 @@
       "Label": "Fast Invoice Payment",
       "SubLabel": "The smart SMS reminders with built-in payment options make payments effortless. Your customers pays on time while your workload drops.",
       "Description": "YIĞIM's own product that helps you to get your payments on time. This is a solution for accelerating invoice payments and reducing late payment risks. We solve slow, inconvenient payments by replacing SMS reminders with smart links to pre-filled payment pages."
+    }
+  },
+  "StatsData": {
+    "AverageRating": {
+      "Label": "Trusted by \ncustomers",
+      "SubLabel": "average rating"
+    },
+    "ActiveClients": {
+      "Label": "Trusted by \nbusinesses",
+      "SubLabel": "active clients"
+    },
+    "SuccessfulOperations": {
+      "Label": "Transaction \nsuccess rate",
+      "SubLabel": "successful operations"
+    },
+    "PartneredBanks": {
+      "Label": "Bank \nintegrations",
+      "SubLabel": "partnered banks"
+    },
+    "ProcessingCenters": {
+      "Label": "Integrated with \nProccessing Centers",
+      "SubLabel": "processing centers"
+    },
+    "Awards": {
+      "Label": "Award-winning \nachievements",
+      "SubLabel": "awards"
+    },
+    "AnnualGrowth": {
+      "Label": "Exponential growth \n(vs. global 108%)",
+      "SubLabel": "annual growth"
     }
   },
   "NotifySuccess": {

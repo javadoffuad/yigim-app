@@ -14,16 +14,62 @@ import product1Icon from '@/public/icons/product-1.svg';
 import product2Icon from '@/public/icons/product-2.svg';
 import product3Icon from '@/public/icons/product-3.svg';
 import product4Icon from '@/public/icons/product-4.svg';
+import StatCard from "./components/stats-card/stats-card";
 
 export default function AboutPage() {
   const t = useTranslations(`${I18N_ABOUT_PAGE}`);
   const p = useTranslations('Products');
+  const k = useTranslations('StatsData');
+  const statsData = [
+    {
+      label: k("ActiveClients.Label"),
+      value: "450+",
+      subLabel: k("ActiveClients.SubLabel"),
+    },
+    {
+      label: k("SuccessfulOperations.Label"),
+      value: "99.5%",
+      subLabel: k("SuccessfulOperations.SubLabel"),
+    },
+    {
+      label: k("PartneredBanks.Label"),
+      value: "7+",
+      subLabel: k("PartneredBanks.SubLabel"),
+    },
+    {
+      label: k("AnnualGrowth.Label"),
+      value: "157%",
+      subLabel: k("AnnualGrowth.SubLabel"),
+    },
+    {
+      label: k("Awards.Label"),
+      value: "3+",
+      subLabel: k("Awards.SubLabel"),
+    },
+    {
+      label: k("AverageRating.Label"),
+      value: "4.8",
+      subLabel: k("AverageRating.SubLabel"),
+    },
+    {
+      label: k("ProcessingCenters.Label"),
+      value: "9+",
+      subLabel: k("ProcessingCenters.SubLabel"),
+    },
+  ];
 
   return (
     <PageWrapper title={t('Label')}>
       <CompanyInfo
         title={t('AreaWhoWeAre.Label')}
         description={t.raw('AreaWhoWeAre.Description')} />
+
+      <div className={styles["stats-grid"]}>
+        {statsData.map((item, index) => (
+          <StatCard key={index} {...item} />
+        ))}
+      </div>
+
       <SectionTitle
         title={t('AreaOffers.Label')}
         description={t.raw('AreaOffers.Description')} />
