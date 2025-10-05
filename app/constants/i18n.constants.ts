@@ -5,4 +5,7 @@ export const I18N_API_PAGE = 'PageApi';
 export const I18N_HELP_PAGE = 'PageHelp';
 export const I18N_ABOUT_PAGE = 'PageAbout';
 export const I18N_PARTNERS_PAGE = 'PagePartners';
+export const I18N_SECURITY_PAGE = 'PageSecurity';
+export const I18N_POLICY_PAGE = 'PagePolicy';
+export const I18N_TERMS_CONDITION_PAGE = 'PageTermsCondition';
 export const I18N_NOT_FOUND_PAGE = 'PageNotFound';

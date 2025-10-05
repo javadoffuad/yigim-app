@@ -181,6 +181,15 @@
       "Label": "Ana səhifəyə qayıt"
     }
   },
+  "PageSecurity": {
+    "Label": "Məlumat təhlükəsizliyi"
+  },
+  "PagePolicy": {
+    "Label": "Cookie siyasəti"
+  },
+  "PageTermsCondition": {
+    "Label": "Şərtlər və qaydalar"
+  },
   "Header": {
     "Navigation": {
       "Products": "Məhsullar",

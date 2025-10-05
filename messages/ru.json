@@ -181,6 +181,15 @@
       "Label": "Вернуться на главную"
     }
   },
+  "PageSecurity": {
+    "Label": "Информационная безопасность"
+  },
+  "PagePolicy": {
+    "Label": "Политика использования файлов cookie"
+  },
+  "PageTermsCondition": {
+    "Label": "Условия и положения"
+  },
   "Header": {
     "Navigation": {
       "Products": "Продукты",

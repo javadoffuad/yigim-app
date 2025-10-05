@@ -181,6 +181,15 @@
       "Label": "Go home"
     }
   },
+  "PageSecurity": {
+    "Label": "Information security"
+  },
+  "PagePolicy": {
+    "Label": "Cookie policy"
+  },
+  "PageTermsCondition": {
+    "Label": "Terms & condition"
+  },
   "Header": {
     "Navigation": {
       "Products": "Products",
