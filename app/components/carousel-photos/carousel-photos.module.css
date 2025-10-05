@@ -1,6 +1,6 @@
 .carousel {
   width: 100%;
-  max-width: 1600px;
+  max-width: 2000px;
   display: flex;
   flex-direction: column;
 }
