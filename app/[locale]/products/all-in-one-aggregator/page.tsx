@@ -23,67 +23,40 @@ import { useTranslations } from "next-intl";
 
 const threeThings: ThingCardProps[] = [
   {
-      number: 1,
-      title: 'One Integration, Full Market Coverage',
-      description: 'With a single integration, your business gains access to the largest omni-channel payment network in Azerbaijan.',
+    number: 1,
+    title: 'One Integration, Full Market Coverage',
+    description: 'With a single integration, your business gains access to the largest omni-channel payment network in Azerbaijan.',
   },
   {
-      number: 2,
-      title: 'You’re in Control',
-      description: 'Access live transaction data and exportable daily, weekly, and monthly reports — all from one dashboard.',
+    number: 2,
+    title: 'You’re in Control',
+    description: 'Access live transaction data and exportable daily, weekly, and monthly reports — all from one dashboard.',
   },
   {
-      number: 3,
-      title: 'Brand Visibility',
-      description: 'Your logo appears instantly across top banks\' apps and major terminal networks — boosting reach and building trust',
+    number: 3,
+    title: 'Brand Visibility',
+    description: 'Your logo appears instantly across top banks\' apps and major terminal networks — boosting reach and building trust',
   },
 ];
 
-const functions: FunctionCardProps[] = [
-  {
-      icon: widgetAddIcon,
-      title: "Unified Payment Integration",
-      description: "Handle all payments—app or terminal—with a single connection",
-  },
-  {
-      icon: safeIcon,
-      title: "Direct Fund Handling",
-      description: "YIĞIM collects and distributes funds end-to-end",
-  },
-  {
-      icon: billIcon,
-      title: "Automated Reconciliation",
-      description: "Easily manage and match transactions ",
-  },
-  {
-      icon: chartIcon,
-      title: "Smart Reporting",
-      description: "Daily, weekly, and monthly reports with export functionality and automated generation",
-  },
-  {
-      icon: passwordIcon,
-      title: "SMS Payment Codes",
-      description: "A unique code via SMS lets customers make payments through terminals",
-  },
-];
 const realLifeProps: RealLifeProps = {
-    productName: 'This product is developed exclusively by YIĞIM\s',
-    video: 'wolt-courier.mp4',
-    videoTitle: 'Wolt Courier',
-    cases: [
-      {
-          icon: banknoteIcon,
-          children: <span>When a <strong>Wolt courier</strong> receives cash from a customer, they need a <strong>quick and secure way to transfer</strong> it to Wolt.</span>,
-      },
-      {
-          icon: smartphoneIcon,
-          children: <span>With our <strong>All-in-One solution</strong>, the courier can easily deposit the cash <strong>via a nearby terminal or mobile</strong> banking app.</span>,
-      },
-      {
-          icon: userIdIcon,
-          children: <span>By entering their Courier ID, the money goes directly to Wolt’s account <strong>no delays, no manual work.</strong></span>,
-      },
-    ],
+  productName: 'This product is developed exclusively by YIĞIM\s',
+  video: 'wolt-courier.mp4',
+  videoTitle: 'Wolt Courier',
+  cases: [
+    {
+      icon: banknoteIcon,
+      children: <span>When a <strong>Wolt courier</strong> receives cash from a customer, they need a <strong>quick and secure way to transfer</strong> it to Wolt.</span>,
+    },
+    {
+      icon: smartphoneIcon,
+      children: <span>With our <strong>All-in-One solution</strong>, the courier can easily deposit the cash <strong>via a nearby terminal or mobile</strong> banking app.</span>,
+    },
+    {
+      icon: userIdIcon,
+      children: <span>By entering their Courier ID, the money goes directly to Wolt’s account <strong>no delays, no manual work.</strong></span>,
+    },
+  ],
 }
 const content: ContentImageProps = {
   title: 'Payment Terminals',
@@ -99,20 +72,47 @@ const content2: ContentImageProps = {
 }
 
 export default function ProductPage() {
-  const t = useTranslations('Products');
+  const t = useTranslations('Products.Product1');
   const info: ProductInfoProps = {
-    title: t('Product1.SubLabel'),
-    description: t('Product1.Description'),
+    title: t('SubLabel'),
+    description: t('Description'),
   }
+  const functions: FunctionCardProps[] = [
+    {
+      icon: widgetAddIcon,
+      title: t('MainFunctions.PaymentIntegration.Label'),
+      description: t('MainFunctions.PaymentIntegration.Description'),
+    },
+    {
+      icon: safeIcon,
+      title: t('MainFunctions.FundHandling.Label'),
+      description: t('MainFunctions.FundHandling.Description'),
+    },
+    {
+      icon: billIcon,
+      title: t('MainFunctions.AutomatedReconciliation.Label'),
+      description: t('MainFunctions.AutomatedReconciliation.Description'),
+    },
+    {
+      icon: chartIcon,
+      title: t('MainFunctions.SmartReporting.Label'),
+      description: t('MainFunctions.SmartReporting.Description'),
+    },
+    {
+      icon: passwordIcon,
+      title: t('MainFunctions.SMSPaymentCodes.Label'),
+      description: t('MainFunctions.SMSPaymentCodes.Description'),
+    },
+  ];
   const videPath = getAbsolutePath('all-in-onefuturistic-neon-ribbon.mp4');
   return (
-    <PageWrapper title={t('Product1.Label')}>
+    <PageWrapper title={t('Label')}>
       <ProductInfo info={info} />
       <RealLifeCases props={realLifeProps} />
       <ContentImage content={content} />
       <ContentImage content={content2} align="left" />
-      <ThreeThings videoPath={videPath} productName={t('Product1.Label')} items={threeThings} />
-      <MainFunctions productName={t('Product1.Label')} items={functions} />
+      <ThreeThings videoPath={videPath} productName={t('Label')} items={threeThings} />
+      <MainFunctions productName={t('Label')} items={functions} />
     </PageWrapper>
   );
 }

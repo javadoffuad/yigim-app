@@ -277,22 +277,130 @@
     "Product1": {
       "Label": "All-In-One Aqreqator Xidməti",
       "SubLabel": "Sadəcə bir inteqrasiya ilə bütün ödəniş proseslərinizi sadələşdirə bilərsiniz.",
-      "Description": "“All-in-One” həlli demək olar ki, bütün ödəniş üsullarını bir araya gətirir. Satıcı kimi sizə yalnız BİR inteqrasiya lazımdır: hesablaşma sisteminiz həm nağd (terminallar vasitəsilə), həm də nağdsız (mobil ödənişlər) kanallara qoşula bilər."
+      "Description": "“All-in-One” həlli demək olar ki, bütün ödəniş üsullarını bir araya gətirir. Satıcı kimi sizə yalnız BİR inteqrasiya lazımdır: hesablaşma sisteminiz həm nağd (terminallar vasitəsilə), həm də nağdsız (mobil ödənişlər) kanallara qoşula bilər.",
+      "MainFunctions": {
+        "Label": "Əsas Funksiyalar",
+        "PaymentIntegration": {
+          "Label": "Vahid ödəniş inteqrasiyası",
+          "Description": "Tək bir bağlantı ilə bütün ödənişləri idarə edin — tətbiq və ya terminal vasitəsilə."
+        },
+        "FundHandling": {
+          "Label": "Vəsaitlərin avtomatlaşdırılmış idarəedilməsi",
+          "Description": "YIĞIM vəsaitləri başdan sona toplayır və hesablara yerləşdirir"
+        },
+        "AutomatedReconciliation": {
+          "Label": "Avtomatik uyğunlaşdırma",
+          "Description": "Əməliyyatları asanlıqla izləyin və uyğunlaşdırın."
+        },
+        "SmartReporting": {
+          "Label": "Ağıllı Hesabat Sistemi",
+          "Description": "Gündəlik, həftəlik və aylıq hesabatlar — ixrac edilə bilən və avtomatik generasiya ilə."
+        },
+        "SMSPaymentCodes": {
+          "Label": "SMS Ödəniş Kodları",
+          "Description": "Müştərilər terminallar vasitəsilə ödəniş etmək üçün SMS ilə göndərilən unikal koddan istifadə edirlər."
+        },
+        "Support": {
+          "Label": "7/24 Dəstək",
+          "Description": "Peşəkar komandamız sizə 24/7 dəstək göstərir."
+        }
+      }
     },
     "Product2": {
       "Label": "Internet -Ekvayrinq / E-Ticarət Həlləri",
       "SubLabel": "Biznesiniz üçün etibarlılıq: Hətta bir prosessinq mərkəzində nasazlıq olsa belə, ödənişləriniz fasiləsiz icra olunur (99.9% uğurlu ödənişlərin faizi).",
-      "Description": "Tam olaraq YIĞIM-ın daxili komandası tərəfindən hazırlanan bu inteqrasiya olunmuş ödəniş imkanı, onlayn mağazalar və mobil tətbiqlər üçün kart dəstəyini təmin edir, əməliyyatların uğur nisbətini maksimuma çatdırır və müştəri məlumatlarını yüksək səviyyəli şifrə və tokenləşdirmə ilə qoruyur."
+      "Description": "Tam olaraq YIĞIM-ın daxili komandası tərəfindən hazırlanan bu inteqrasiya olunmuş ödəniş imkanı, onlayn mağazalar və mobil tətbiqlər üçün kart dəstəyini təmin edir, əməliyyatların uğur nisbətini maksimuma çatdırır və müştəri məlumatlarını yüksək səviyyəli şifrə və tokenləşdirmə ilə qoruyur.",
+      "MainFunctions": {
+        "Label": "Əsas Funksiyalar",
+        "CardSave": {
+          "Label": "Kart məlumatların yadda saxlanılması",
+          "Description": "Əvvəllər istifadə olunan kartlar təhlükəsiz şəkildə tokenləşdirilir və gələcək istifadə üçün yadda saxlanılır."
+        },
+        "FlexibleTransaction": {
+          "Label": "Əməliyyatların çevik emalı",
+          "Description": "Həm 3D Secure, həm də 3D Secure olmayan əməliyyatları dəstəkləyirik"
+        },
+        "HoldingFunds": {
+          "Label": "Vəsaitlərin saxlanması",
+          "Description": "YIĞIM vəsaitləri xidmət tam yerinə yetirilənə qədər özündə saxlayır (məsələn, taksi sifarişi zamanı)."
+        },
+        "Refunds": {
+          "Label": "Geri qaytarma",
+          "Description": "Geri qaytarmaları paneliniz vasitəsilə asanlıqla idarə edin (məsələn, taksi sifarişi ləğv olunubsa)."
+        },
+        "MarketLeader": {
+          "Label": "Xarici kartların  qəbulu üzrə bazar lideri",
+          "Description": "Xidmətinizi beynəlxalq müştərilər üçün əlçatan edirik."
+        },
+        "Notifications": {
+          "Label": "Bildirişlər",
+          "Description": "Ödəniş təsdiqləri üçün avtomatlaşdırılmış SMS və e-poçt bildirişləri."
+        }
+      }
     },
     "Product3": {
       "Label": "Link Payment +",
       "SubLabel": "Geniş ödəniş sistemimizlə siz sadəcə bir kliklə, SMS və ya WhatsApp vasitəsilə təhlükəsiz ödəniş linkləri göndərə bilərsiniz — bu da dərhal ödəniş imkanı yaradır və vebsayta ehtiyac qalmır.",
-      "Description": "Bu, YIĞIM-ın əsas məhsullarından biridir — həm müştəriləriniz üçün rahat və problemsiz ödəniş imkanı yaradır, həm də sizin üçün bütün əməliyyatların tam izlənməsini təmin edən kompleks ödəniş idarəetmə sistemidir. Vəsaitlərin toplanmasını daha da asanlaşdırmaq üçün sizə sadəcə bir ödəniş linki göndərməyə imkan verən funksiya inteqrasiya olunub — birbaşa ödəniş səhifəsinə yönləndirilir. Sadə, rahat və təhlükəsiz."
+      "Description": "Bu, YIĞIM-ın əsas məhsullarından biridir — həm müştəriləriniz üçün rahat və problemsiz ödəniş imkanı yaradır, həm də sizin üçün bütün əməliyyatların tam izlənməsini təmin edən kompleks ödəniş idarəetmə sistemidir. Vəsaitlərin toplanmasını daha da asanlaşdırmaq üçün sizə sadəcə bir ödəniş linki göndərməyə imkan verən funksiya inteqrasiya olunub — birbaşa ödəniş səhifəsinə yönləndirilir. Sadə, rahat və təhlükəsiz.",
+      "MainFunctions": {
+        "Label": "Əsas Funksiyalar",
+        "EncryptedTransactions": {
+          "Label": "Şifrələnmiş əməliyyatlar",
+          "Description": "End-to-end şifrələmə sayəsində ödəniş məlumatları fişinqdən qorunur."
+        },
+        "PaymentLinkGeneration": {
+          "Label": "Ödəniş linklərinin yaradılması",
+          "Description": "Hər faktura üçün dinamik və təhlükəsiz linklər yaradılır"
+        },
+        "QR": {
+          "Label": "Statik və Dinamik QR",
+          "Description": "Statik: Bir kod bütün ödənişlər üçün təkrar istifadə olunur.Dinamik: Hər əməliyyat üçün unikal, məbləğə uyğun və son istifadə müddəti olan kod yaradılır (məsələn, fakturalar üçün)."
+        },
+        "SharedLinks": {
+          "Label": "Paylaşılan linklər",
+          "Description": "Bir link bir neçə şəxs tərəfindən istifadə oluna bilər (məsələn, tədbir ödənişləri və ya qrup sifarişləri üçün)."
+        },
+        "OneClickPayments": {
+          "Label": "Apple & Google Pay - Bir kliklə ödənişlər",
+          "Description": "İnkişaf etmiş tokenizasiya vasitəsilə YIĞIM Apple Pay, Google Pay və əvvəlki istifadə olunmuş kartların təhlükəsiz saxlanmasını dəstəkləyir, gələcək əməliyyatları problemsiz edir"
+        },
+        "CustomizablePages": {
+          "Label": "Fərdi səhifələr",
+          "Description": "Satıcılar ödəniş səhifəsini öz loqosu, rəngləri və mesajları ilə brendləşdirə bilərlər."
+        }
+      }
     },
     "Product4": {
       "Label": "Fast Invoice Payment",
       "SubLabel": "Ağıllı SMS xatırlatmaları ilə daxil edilmiş ödəniş seçimləri ödənişləri asanlaşdırır. Müştəriləriniz vaxtında ödəniş edir, sizin iş yükünüz isə azalır.",
-      "Description": "YIĞIM-ın öz məhsulu olan bu həll faktura ödənişlərini sürətləndirir və gecikmiş ödəniş risklərini azaldır. Biz ləng və çətin ödəniş proseslərini ağıllı linklərlə əvəz edərək, SMS xatırlatmalarını daha effektiv edirik."
+      "Description": "YIĞIM-ın öz məhsulu olan bu həll faktura ödənişlərini sürətləndirir və gecikmiş ödəniş risklərini azaldır. Biz ləng və çətin ödəniş proseslərini ağıllı linklərlə əvəz edərək, SMS xatırlatmalarını daha effektiv edirik.",
+      "MainFunctions": {
+        "Label": "Əsas Funksiyalar",
+        "CardSave": {
+          "Label": "Kart məlumatların yadda saxlanılması",
+          "Description": "Əvvəllər istifadə olunmuş kartlar gələcək ödənişlər üçün təhlükəsiz şəkildə tokenləşdirilərək saxlanılır."
+        },
+        "InstantPaymentLinks": {
+          "Label": "Anında ödəniş linkləri",
+          "Description": "Biz unikal link yaradırıq və onu API vasitəsilə sizin billing sisteminizə göndəririk ki, siz müştərinizə asanlıqla təqdim edə biləsiniz."
+        },
+        "AutomatedPaymentReminders": {
+          "Label": "Avtomatlaşdırılmış ödəniş xatırlatmaları",
+          "Description": "Hər fakturaya bağlı təhlükəsiz linklərlə fərdiləşdirilmiş SMS xatırlatmalarını planlaşdırın və göndərin."
+        },
+        "OneClickPayments": {
+          "Label": "Apple & Google Pay - Bir kliklə ödənişlər",
+          "Description": "Təkmilləşmiş tokenizasiya sayəsində YIĞIM Apple Pay, Google Pay-i və əvvəllər istifadə olunmuş kartların təhlükəsiz saxlanmasını dəstəkləyir, gələcək əməliyyatları rahat və problemsiz edir."
+        },
+        "MobileFirstInterface": {
+          "Label": "Mobil-yönümlü istifadəçi interfeysi",
+          "Description": "Mobil cihazlar üçün optimallaşdırılıb, hər yerdə və hər zaman problemsiz ödəniş təcrübəsi təmin edir."
+        },
+        "EndToEndEncryption": {
+          "Label": "End-to-End şifrələmə",
+          "Description": "Bütün əməliyyatlar uyğunluq səviyyəsində təhlükəsizlik və tam məlumat qorunması ilə həyata keçirilir."
+        }
+      }
     }
   },
   "StatsData": {

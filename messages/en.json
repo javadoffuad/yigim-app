@@ -277,22 +277,130 @@
     "Product1": {
       "Label": "All-In-One Aggregator Service",
       "SubLabel": "With just one integration, you now can simplify your whole payment process.",
-      "Description": "This product is fully developed by YIĞIM’s in-house team. The ‘All-in-One’ solution brings together almost every payment method in one place. As a merchant, you would need only ONE integration, your billing system can easily connect to multiple channels — from cash payments at terminals to cashless options like mobile payments."
+      "Description": "This product is fully developed by YIĞIM’s in-house team. The ‘All-in-One’ solution brings together almost every payment method in one place. As a merchant, you would need only ONE integration, your billing system can easily connect to multiple channels — from cash payments at terminals to cashless options like mobile payments.",
+      "MainFunctions": {
+        "Label": "Main Functions",
+        "PaymentIntegration": {
+          "Label": "Unified Payment Integration",
+          "Description": "With a single connection, handle all payments—app or terminal"
+        },
+        "FundHandling": {
+          "Label": "Automated Fund Handling:",
+          "Description": "YIĞIM collects and distributes funds end-to-end"
+        },
+        "AutomatedReconciliation": {
+          "Label": "Automated Reconciliation",
+          "Description": "Easily manage and match transactions"
+        },
+        "SmartReporting": {
+          "Label": "Smart Reporting",
+          "Description": "Daily, weekly, and monthly reports with export functionality and automated generation"
+        },
+        "SMSPaymentCodes": {
+          "Label": "SMS Payment Codes",
+          "Description": "A unique code via SMS lets customers make payments through terminals"
+        },
+        "Support": {
+          "Label": "24/7 Support",
+          "Description": "Our dedicated team provides 24/7 support"
+        }
+      }
     },
     "Product2": {
       "Label": "Internet - Acquiring / E-Comm Solution",
       "SubLabel": "Reliable payments for your business: Even if one processing center experiences issues, transactions continue smoothly, with a 99.9% success rate.",
-      "Description": "Developed entirely by YIĞIM’s in-house team, this integrated payment gateway supports cards for online stores and apps, ensures the highest transaction success rates, and protects customer data with advanced encryption and tokenization."
+      "Description": "Developed entirely by YIĞIM’s in-house team, this integrated payment gateway supports cards for online stores and apps, ensures the highest transaction success rates, and protects customer data with advanced encryption and tokenization.",
+      "MainFunctions": {
+        "Label": "Main Functions",
+        "CardSave": {
+          "Label": "Card Save",
+          "Description": "Cards used previously are securely tokenized and stored for future use"
+        },
+        "FlexibleTransaction": {
+          "Label": "Flexible Transaction Processing",
+          "Description": "We support both 3D Secure and non-3D Secure transactions"
+        },
+        "HoldingFunds": {
+          "Label": "Holding Funds",
+          "Description": "YIĞIM holds the funds until the service is being fulfilled (e.g. a taxi ride)"
+        },
+        "Refunds": {
+          "Label": "Refunds",
+          "Description": "Easy refund management directly through your dashboard (e.g. taxi ride was cancelled)"
+        },
+        "MarketLeader": {
+          "Label": "Market Leader in Foreign Card Acceptance",
+          "Description": "Expanded reach to international customers"
+        },
+        "Notifications": {
+          "Label": "Notifications",
+          "Description": "Automated SMS and email alerts for payment confirmations"
+        }
+      }
     },
     "Product3": {
       "Label": "Link Payment +",
       "SubLabel": "With our comprehensive payment system, you can send secure payment links via SMS or WhatsApp, allowing instant payments — no website required ",
-      "Description": "One of YIĞIM's own flagship products - your comprehensive payment management system which enables an effortless payment for your customers & consumers and a full tracking of transactions for you. To further simplify collection of funds for you, we integrated a feature that enables you to simply send a link that will directly lead to the payment page. Easy, seamless, and secure."
+      "Description": "One of YIĞIM's own flagship products - your comprehensive payment management system which enables an effortless payment for your customers & consumers and a full tracking of transactions for you. To further simplify collection of funds for you, we integrated a feature that enables you to simply send a link that will directly lead to the payment page. Easy, seamless, and secure.",
+      "MainFunctions": {
+        "Label": "Main Functions",
+        "EncryptedTransactions": {
+          "Label": "Encrypted Transactions",
+          "Description": "End-to-end encryption protects payment data from phishing"
+        },
+        "PaymentLinkGeneration": {
+          "Label": "Payment Link Generation",
+          "Description": "Dynamic, secure links created for each invoice"
+        },
+        "QR": {
+          "Label": "QR Static & Dynamic",
+          "Description": "Static: one code is reused for all payments. Dynamic: a unique, amount-specific code is generated for each transaction with an expiry (e.g., invoices)."
+        },
+        "SharedLinks": {
+          "Label": "Shared Links",
+          "Description": "A single link can be used by multiple people (e.g. for event payments or group orders)"
+        },
+        "OneClickPayments": {
+          "Label": "Apple & Google Pay - One-Click Payments",
+          "Description": "Through advanced tokenization, YIĞIM supports Apple Pay, Google Pay, and the secure storage of previously used cards for seamless future transactions."
+        },
+        "CustomizablePages": {
+          "Label": "Customizable Pages",
+          "Description": "Merchants can brand the payment page with their logo, colors, and messaging"
+        }
+      }
     },
     "Product4": {
       "Label": "Fast Invoice Payment",
       "SubLabel": "The smart SMS reminders with built-in payment options make payments effortless. Your customers pays on time while your workload drops.",
-      "Description": "YIĞIM's own product that helps you to get your payments on time. This is a solution for accelerating invoice payments and reducing late payment risks. We solve slow, inconvenient payments by replacing SMS reminders with smart links to pre-filled payment pages."
+      "Description": "YIĞIM's own product that helps you to get your payments on time. This is a solution for accelerating invoice payments and reducing late payment risks. We solve slow, inconvenient payments by replacing SMS reminders with smart links to pre-filled payment pages.",
+      "MainFunctions": {
+        "Label": "Main Functions",
+        "CardSave": {
+          "Label": "Card Save",
+          "Description": "Cards used previously are securely tokenized and stored for future use"
+        },
+        "InstantPaymentLinks": {
+          "Label": "Instant Payment Links",
+          "Description": "We generate the unique link, send it using API to your billing system so you can easily provide it to your customer."
+        },
+        "AutomatedPaymentReminders": {
+          "Label": "Automated Payment Reminders",
+          "Description": "Schedule and send custom SMS reminders with secure links tied to each invoice"
+        },
+        "OneClickPayments": {
+          "Label": "Apple & Google Pay - One-Click Payments",
+          "Description": "Through advanced tokenization, YIĞIM supports Apple Pay, Google Pay, and the secure storage of previously used cards for seamless future transactions."
+        },
+        "MobileFirstInterface": {
+          "Label": "Mobile-First Interface",
+          "Description": "Optimized for mobile devices to ensure a smooth payment experience anywhere, anytime"
+        },
+        "EndToEndEncryption": {
+          "Label": "End-to-End Encryption",
+          "Description": "Process all transactions with compliance-grade security and full data protection"
+        }
+      }
     }
   },
   "StatsData": {

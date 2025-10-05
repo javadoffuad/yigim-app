@@ -17,39 +17,6 @@ import ProductInfo, { ProductInfoProps } from "../components/product-info/produc
 import { getAbsolutePath } from "@/app/utils/absolute-path.utils";
 import { useTranslations } from "next-intl";
 
-const functions: FunctionCardProps[] = [
-    {
-        icon: cardSaveIcon,
-        title: "Card Save",
-        description: "Cards used previously are securely tokenized and stored for future use",
-    },
-    {
-        icon: secureIcon,
-        title: "More Secure",
-        description: "3D Secure (3DS) - Additional authentication for secure online payments",
-    },
-    {
-        icon: holdingFundsIcon,
-        title: "Holding Funds",
-        description: "YIĞIM holds the funds until the service is being fulfilled (e. g. a taxi ride)",
-    },
-    {
-        icon: refundsIcon,
-        title: "Refunds",
-        description: "Easy refund management directly through your dashboard (e. g. taxi ride was cancelled)",
-    },
-    {
-        icon: globalIcon,
-        title: "Foreign Card Acceptance",
-        description: "Expanded reach to international customers",
-    },
-    {
-        icon: bellIcon,
-        title: "Notifications",
-        description: "Automated SMS and email alerts for payment confirmations",
-    },
-]
-
 const threeThings: ThingCardProps[] = [
     {
         number: 1,
@@ -72,15 +39,15 @@ const realLifeProps: RealLifeProps = {
     productName: "INTERNET - ACQUIRING / E-COMM SOLUTION",
     cases: [
         {
-        icon: calendarIcon,
-        children: <span>In services like <strong>taxi rides or food delivery</strong>
-                    (e.g. Bolt or Wolt), funds can be <strong>securely pre-authorized</strong>
-                    and blocked (frozen) until the service is delivered.</span>,
+            icon: calendarIcon,
+            children: <span>In services like <strong>taxi rides or food delivery</strong>
+                (e.g. Bolt or Wolt), funds can be <strong>securely pre-authorized</strong>
+                and blocked (frozen) until the service is delivered.</span>,
         },
         {
             icon: refundsIcon,
             children: <span>If the service is canceled or not used, the amount is unblocked
-                        (returned back) to the customer — <strong>without any commission</strong> or penalty.</span>,
+                (returned back) to the customer — <strong>without any commission</strong> or penalty.</span>,
         },
     ],
     video: 'secure.mp4',
@@ -92,7 +59,39 @@ export default function ProductPage() {
     const info: ProductInfoProps = {
         title: t('SubLabel'),
         description: t('Description'),
-    }
+    };
+    const functions: FunctionCardProps[] = [
+        {
+            icon: cardSaveIcon,
+            title: t('MainFunctions.CardSave.Label'),
+            description: t('MainFunctions.CardSave.Description'),
+        },
+        {
+            icon: secureIcon,
+            title: t('MainFunctions.FlexibleTransaction.Label'),
+            description: t('MainFunctions.FlexibleTransaction.Description'),
+        },
+        {
+            icon: holdingFundsIcon,
+            title: t('MainFunctions.HoldingFunds.Label'),
+            description: t('MainFunctions.HoldingFunds.Description'),
+        },
+        {
+            icon: refundsIcon,
+            title: t('MainFunctions.Refunds.Label'),
+            description: t('MainFunctions.Refunds.Description'),
+        },
+        {
+            icon: globalIcon,
+            title: t('MainFunctions.MarketLeader.Label'),
+            description: t('MainFunctions.MarketLeader.Description'),
+        },
+        {
+            icon: bellIcon,
+            title: t('MainFunctions.Notifications.Label'),
+            description: t('MainFunctions.Notifications.Description'),
+        },
+    ];
     const videPath = getAbsolutePath('internet-acquiring-ecom-solution.mp4');
     return (
         <PageWrapper title={t('Label')}>

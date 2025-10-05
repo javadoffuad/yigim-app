@@ -22,10 +22,10 @@ import { useTranslations } from "next-intl";
 
 const productName = 'Link Payment +';
 const content: ContentImageProps = {
-  title: 'From Link to \nPayment in Seconds',
-  label: 'Link Payment +',
-  image: devicesImage,
-  description: `This product is developed exclusively by YIĞIM's own developer team. “All-in-One” offers the broadest range of payment acceptance channels, covering nearly every option available. With a single integration, it enables the client’s billing system to quickly connect to multiple payment channels: Cash (terminal networks) or cashless (mobile payments).`,
+    title: 'From Link to \nPayment in Seconds',
+    label: 'Link Payment +',
+    image: devicesImage,
+    description: `This product is developed exclusively by YIĞIM's own developer team. “All-in-One” offers the broadest range of payment acceptance channels, covering nearly every option available. With a single integration, it enables the client’s billing system to quickly connect to multiple payment channels: Cash (terminal networks) or cashless (mobile payments).`,
 }
 
 const threeThings: ThingCardProps[] = [
@@ -45,39 +45,6 @@ const threeThings: ThingCardProps[] = [
         description: 'Enables convenience for returning customers, leading to more sales with less effort.',
     },
 ];
-
-const functions: FunctionCardProps[] = [
-    {
-        icon: encryptIcon,
-        title: "Encrypted Transactions",
-        description: "End-to-end encryption protects payment data from phishing",
-    },
-    {
-        icon: linkIcon,
-        title: "Payment Link Generation",
-        description: "Dynamic, secure links created for each invoice",
-    },
-    {
-        icon: qrIcon,
-        title: "QR Static & Dynamic",
-        description: "Static - same code reused for all payments, dynamic - Unique per transaction, amount-specific, with expiry (e.g. invoices)",
-    },
-    {
-        icon: shareIcon,
-        title: "Shared Links",
-        description: "A single link can be used by multiple people (e.g. for event payments or group orders)",
-    },
-    {
-        icon: saveCardIcon,
-        title: "Saved Cards & One-Click Payments",
-        description: "Cards used previously are securely tokenized and stored for future use",
-    },
-    {
-        icon: pageIcon,
-        title: "Customizable Pages",
-        description: "Merchants can brand the payment page with their logo, colors, and messaging",
-    },
-]
 
 const realLifeProps: RealLifeProps = {
     productName: productName,
@@ -104,15 +71,47 @@ export default function ProductPage() {
     const info: ProductInfoProps = {
         title: t('SubLabel'),
         description: t('Description'),
-    }
+    };
+    const functions: FunctionCardProps[] = [
+        {
+            icon: encryptIcon,
+            title: t('MainFunctions.EncryptedTransactions.Label'),
+            description: t('MainFunctions.EncryptedTransactions.Description'),
+        },
+        {
+            icon: linkIcon,
+            title: t('MainFunctions.PaymentLinkGeneration.Label'),
+            description: t('MainFunctions.PaymentLinkGeneration.Description'),
+        },
+        {
+            icon: qrIcon,
+            title: t('MainFunctions.QR.Label'),
+            description: t('MainFunctions.QR.Description'),
+        },
+        {
+            icon: shareIcon,
+            title: t('MainFunctions.SharedLinks.Label'),
+            description: t('MainFunctions.SharedLinks.Description'),
+        },
+        {
+            icon: saveCardIcon,
+            title: t('MainFunctions.OneClickPayments.Label'),
+            description: t('MainFunctions.OneClickPayments.Description'),
+        },
+        {
+            icon: pageIcon,
+            title: t('MainFunctions.CustomizablePages.Label'),
+            description: t('MainFunctions.CustomizablePages.Description'),
+        },
+    ];
     const videoPath = getAbsolutePath('link-payment-3-things.mp4');
     return (
         <PageWrapper title={t('Label')}>
-        <ProductInfo info={info} />
-        <RealLifeCases props={realLifeProps} />
-        <ContentImage content={content} />
-        <ThreeThings videoPath={videoPath} productName={t('Label')} items={threeThings} />
-        <MainFunctions productName={t('Label')} items={functions} />
+            <ProductInfo info={info} />
+            <RealLifeCases props={realLifeProps} />
+            <ContentImage content={content} />
+            <ThreeThings videoPath={videoPath} productName={t('Label')} items={threeThings} />
+            <MainFunctions productName={t('Label')} items={functions} />
         </PageWrapper>
     );
 }

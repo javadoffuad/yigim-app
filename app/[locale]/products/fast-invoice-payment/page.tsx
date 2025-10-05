@@ -19,49 +19,23 @@ import { getAbsolutePath } from "@/app/utils/absolute-path.utils";
 import { useTranslations } from "next-intl";
 
 const productName = "Fast Invoice Payment";
-const functions: FunctionCardProps[] = [
-  {
-      icon: linkIcon,
-      title: "Instant Payment Links",
-      description: "Generate and send payment-ready invoices customers can pay immediately upon receipt",
-  },
-  {
-      icon: reminderIcon,
-      title: "Automated Payment Reminders",
-      description: "Schedule and send custom SMS reminders with secure links tied to each invoice.",
-  },
-  {
-      icon: cardIcon,
-      title: "Saved Cards & One-Click Payments",
-      description: "Cards used previously are securely tokenized and stored for future use",
-  },
-  {
-      icon: smartphoneIcon,
-      title: "Mobile-First Interface",
-      description: "Optimized for mobile devices to ensure a smooth payment experience anywhere, anytime",
-  },
-  {
-      icon: encryptIcon,
-      title: "End-to-End Encryption",
-      description: "Process all transactions with compliance-grade security and full data protection.",
-  },
-]
+
 const threeThings: ThingCardProps[] = [
-  {
-      number: 1,
-      title: 'Secure',
-      description: 'Secure Data Transmission: All data is encrypted to protect customer information',
-  },
-  {
-      number: 2,
-      title: 'Fast & Easy',
-      description: 'Send instant, mobile-friendly invoices customers can pay anytime, anywhere',
-  },
-  {
-      number: 3,
-      title: 'Automated & Smart',
-      description: 'Automate reminders and reduce time chasing payments',
-  },
+    {
+        number: 1,
+        title: 'Secure',
+        description: 'Secure Data Transmission: All data is encrypted to protect customer information',
+    },
+    {
+        number: 2,
+        title: 'Fast & Easy',
+        description: 'Send instant, mobile-friendly invoices customers can pay anytime, anywhere',
+    },
+    {
+        number: 3,
+        title: 'Automated & Smart',
+        description: 'Automate reminders and reduce time chasing payments',
+    },
 ];
 
 const realLifeProps: RealLifeProps = {
@@ -89,14 +63,41 @@ export default function ProductPage() {
     const info: ProductInfoProps = {
         title: t('SubLabel'),
         description: t('Description'),
-    }
+    };
+    const functions: FunctionCardProps[] = [
+        {
+            icon: linkIcon,
+            title: t('MainFunctions.InstantPaymentLinks.Label'),
+            description: t('MainFunctions.InstantPaymentLinks.Description'),
+        },
+        {
+            icon: reminderIcon,
+            title: t('MainFunctions.AutomatedPaymentReminders.Label'),
+            description: t('MainFunctions.AutomatedPaymentReminders.Description'),
+        },
+        {
+            icon: cardIcon,
+            title: t('MainFunctions.OneClickPayments.Label'),
+            description: t('MainFunctions.OneClickPayments.Description'),
+        },
+        {
+            icon: smartphoneIcon,
+            title: t('MainFunctions.MobileFirstInterface.Label'),
+            description: t('MainFunctions.MobileFirstInterface.Description'),
+        },
+        {
+            icon: encryptIcon,
+            title: t('MainFunctions.EndToEndEncryption.Label'),
+            description: t('MainFunctions.EndToEndEncryption.Description'),
+        },
+    ]
     const videPath = getAbsolutePath('fast-invoice-smartphone-invoice.mp4');
     return (
         <PageWrapper title={t('Label')}>
-        <ProductInfo info={info} />
-        <RealLifeCases props={realLifeProps} />
-        <ThreeThings videoPath={videPath} productName={t('Label')} items={threeThings} />
-        <MainFunctions productName={t('Label')} items={functions} />
+            <ProductInfo info={info} />
+            <RealLifeCases props={realLifeProps} />
+            <ThreeThings videoPath={videPath} productName={t('Label')} items={threeThings} />
+            <MainFunctions productName={t('Label')} items={functions} />
         </PageWrapper>
     );
 }
