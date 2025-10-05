@@ -228,12 +228,11 @@
   position: relative;
   width: fit-content;
   margin-top: -1px;
-  font-family: 'Geist', Helvetica, sans-serif;
   font-weight: 400;
   font-size: 24px;
   letter-spacing: -0.48px;
   line-height: 32px;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .key-fact-description.white {
