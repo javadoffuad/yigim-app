@@ -30,51 +30,14 @@
   flex-direction: column;
 }
 
-.award-item {
-  width: 100%;
-  height: 180;
-  display: flex;
-  border-radius: 24px;
-  border: 1px solid rgba(234, 234, 236, 1);
-  background-color: #fff;
-  gap: 48px;
-  padding: 40px;
-  align-items: center;
-}
-
-.icon-wrapper {
-  width: 200px;
-  height: 100px;
-  display: flex;
-  flex-shrink: 0;
-}
-
-.icon {
-  width: auto;
-  object-fit: none;
-}
-
-.award-info {
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 40px;
-  letter-spacing: -0.2px;
-  display: flex;
-  min-height: 100px;
-  justify-content: center;
-  align-items: center;
-  padding-left: 42px;
-  border-left: 1px solid rgba(234, 234, 236, 1);
-}
-
-.award-item:nth-child(1) {
+.awards > div:nth-child(1) {
   transform: rotate(-3deg);
 }
 
-.award-item:nth-child(2) {
+.awards > div:nth-child(2) {
   transform: rotate(1deg);
 }
 
-.award-item:nth-child(3) {
+.awards > div:nth-child(3) {
   transform: rotate(-2deg);
 }

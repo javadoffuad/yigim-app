@@ -81,3 +81,13 @@
 .stats-grid > div:nth-child(7) {
   grid-column: span 3; /* 3/12 = 25% */
 }
+
+.awards {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    max-width: 1080px;
+    margin-top: 120px;
+    min-height: 12px;
+    align-items: center;
+}

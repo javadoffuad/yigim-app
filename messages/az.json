@@ -80,16 +80,7 @@
     },
     "AreaWhatWeAreProud": {
       "Label": "QÜRUR MƏNBƏYİMİZ",
-      "SubLabel": "Mükafatlar və<br />Tərəfdaşlıqlar",
-      "Card1": {
-        "Label": "74-cü Beynəlxalq Astronavtika Konqresi üçün beynəlxalq ödənişləri mümkün etdik"
-      },
-      "Card2": {
-        "Label": "VISA \"Above and Beyond\" Mükafatı, Xüsusi Tanıtım, Mart 2024"
-      },
-      "Card3": {
-        "Label": "PCI DSS Uyğunluq Sertifikatı"
-      }
+      "SubLabel": "Mükafatlar və<br />Tərəfdaşlıqlar"
     },
     "AreaOurTeam": {
       "Label": "Komandamız",
@@ -147,16 +138,7 @@
     },
     "AreaWhatWeAreProud": {
       "Label": "QÜRUR MƏNBƏYİMİZ",
-      "SubLabel": "Mükafatlar və<br />Tərəfdaşlıqlar",
-      "Card1": {
-        "Label": "74-cü Beynəlxalq Astronavtika Konqresi üçün beynəlxalq ödənişləri mümkün etdik"
-      },
-      "Card2": {
-        "Label": "VISA \"Above and Beyond\" Mükafatı, Xüsusi Tanıtım, Mart 2024"
-      },
-      "Card3": {
-        "Label": "PCI DSS Uyğunluq Sertifikatı"
-      }
+      "SubLabel": "Mükafatlar və<br />Tərəfdaşlıqlar"
     },
     "AreaOurMission": {
       "Label": "Missiyamız",
@@ -341,6 +323,17 @@
     "AnnualGrowth": {
       "Label": "Eksponensial artım (ümumdünya 108%-ə qarşı)",
       "SubLabel": "illik artım"
+    }
+  },
+  "Awards": {
+    "Azercosmos": {
+      "Label": "74-cü Beynəlxalq Astronavtika Konqresi üçün beynəlxalq ödənişləri mümkün etdik"
+    },
+    "Visa": {
+      "Label": "VISA \"Above and Beyond\" Mükafatı, Xüsusi Tanıtım, Mart 2024"
+    },
+    "PciDss": {
+      "Label": "PCI DSS Uyğunluq Sertifikatı"
     }
   },
   "NotifySuccess": {

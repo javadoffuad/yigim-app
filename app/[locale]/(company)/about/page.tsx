@@ -15,11 +15,16 @@ import product2Icon from '@/public/icons/product-2.svg';
 import product3Icon from '@/public/icons/product-3.svg';
 import product4Icon from '@/public/icons/product-4.svg';
 import StatCard from "./components/stats-card/stats-card";
+import AwardCard from "@/app/components/award-card/award-card";
+import azercosmosLogo from '@/public/partners/azercosmos.svg';
+import visaLogo from '@/public/icons/visa.svg';
+import pciLogo from '@/public/icons/pci.svg';
 
 export default function AboutPage() {
   const t = useTranslations(`${I18N_ABOUT_PAGE}`);
   const p = useTranslations('Products');
   const k = useTranslations('StatsData');
+  const c = useTranslations('Awards');
   const statsData = [
     {
       label: k("ActiveClients.Label"),
@@ -117,6 +122,12 @@ export default function AboutPage() {
       <SectionTitle
         title={t('AreaWhatWeAreProud.Label')}
         description={t.raw('AreaWhatWeAreProud.SubLabel')} />
+
+      <div className={styles["awards"]}>
+        <AwardCard icon={azercosmosLogo} title={c('Azercosmos.Label')} type="card" year="2024" />
+        <AwardCard icon={visaLogo} title={c('Visa.Label')} type="card" year="2024" />
+        <AwardCard icon={pciLogo} title={c('PciDss.Label')} type="card" year="2024" />
+      </div>
     </PageWrapper>
   );
 }
