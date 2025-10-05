@@ -35,30 +35,26 @@ const threeThings: ThingCardProps[] = [
     },
 ];
 
-const realLifeProps: RealLifeProps = {
-    productName: "INTERNET - ACQUIRING / E-COMM SOLUTION",
-    cases: [
-        {
-            icon: calendarIcon,
-            children: <span>In services like <strong>taxi rides or food delivery</strong>
-                (e.g. Bolt or Wolt), funds can be <strong>securely pre-authorized</strong>
-                and blocked (frozen) until the service is delivered.</span>,
-        },
-        {
-            icon: refundsIcon,
-            children: <span>If the service is canceled or not used, the amount is unblocked
-                (returned back) to the customer — <strong>without any commission</strong> or penalty.</span>,
-        },
-    ],
-    video: 'secure.mp4',
-    videoTitle: 'Secure Pre-Authorization',
-}
-
 export default function ProductPage() {
     const t = useTranslations('Products.Product2');
     const info: ProductInfoProps = {
         title: t('SubLabel'),
         description: t('Description'),
+    };
+    const realLifeProps: RealLifeProps = {
+        productName: t('Label'),
+        cases: [
+            {
+                icon: calendarIcon,
+                children: t.raw('RealLifeExample.Case1'),
+            },
+            {
+                icon: refundsIcon,
+                children: t.raw('RealLifeExample.Case2'),
+            },
+        ],
+        video: 'secure.mp4',
+        videoTitle: t('RealLifeExample.LabelVideo'),
     };
     const functions: FunctionCardProps[] = [
         {

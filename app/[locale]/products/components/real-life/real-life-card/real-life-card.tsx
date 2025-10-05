@@ -5,7 +5,7 @@ import styles from "./real-life-card.module.css";
 
 export interface RealLifeCardProps {
     icon: string;
-    children: React.ReactNode;
+    children: React.ReactNode | any;
 }
 
 export function RealLifeCard(props: RealLifeCardProps) {

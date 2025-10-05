@@ -26,14 +26,14 @@ export default function RealLifeCases({props}: {props: RealLifeProps}) {
                         <source src={videoPath} type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
-                    <h2 className={styles["video-title"]}>{props.videoTitle}</h2>
+                    <h2 className={styles["video-title"]} dangerouslySetInnerHTML={{__html: props.videoTitle}} />
                 </div>
 
                 <div className={styles.cards}>
                     {
                         props.cases.map((item, index) => (
                             <RealLifeCard key={index} icon={item.icon}>
-                                {item.children}
+                                <span dangerouslySetInnerHTML={{__html: item.children}} />
                             </RealLifeCard>
                         ))
                     }

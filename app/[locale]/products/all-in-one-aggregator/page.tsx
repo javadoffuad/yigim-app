@@ -39,25 +39,6 @@ const threeThings: ThingCardProps[] = [
   },
 ];
 
-const realLifeProps: RealLifeProps = {
-  productName: 'This product is developed exclusively by YIĞIM\s',
-  video: 'wolt-courier.mp4',
-  videoTitle: 'Wolt Courier',
-  cases: [
-    {
-      icon: banknoteIcon,
-      children: <span>When a <strong>Wolt courier</strong> receives cash from a customer, they need a <strong>quick and secure way to transfer</strong> it to Wolt.</span>,
-    },
-    {
-      icon: smartphoneIcon,
-      children: <span>With our <strong>All-in-One solution</strong>, the courier can easily deposit the cash <strong>via a nearby terminal or mobile</strong> banking app.</span>,
-    },
-    {
-      icon: userIdIcon,
-      children: <span>By entering their Courier ID, the money goes directly to Wolt’s account <strong>no delays, no manual work.</strong></span>,
-    },
-  ],
-}
 const content: ContentImageProps = {
   title: 'Payment Terminals',
   label: 'Our Coverage Network',
@@ -104,6 +85,25 @@ export default function ProductPage() {
       description: t('MainFunctions.SMSPaymentCodes.Description'),
     },
   ];
+  const realLifeProps: RealLifeProps = {
+    productName: t('RealLifeExample.SubLabel'),
+    video: 'wolt-courier.mp4',
+    videoTitle: t('RealLifeExample.LabelVideo'),
+    cases: [
+      {
+        icon: banknoteIcon,
+        children: t.raw('RealLifeExample.Case1'),
+      },
+      {
+        icon: smartphoneIcon,
+        children: t.raw('RealLifeExample.Case2'),
+      },
+      {
+        icon: userIdIcon,
+        children: t.raw('RealLifeExample.Case3'),
+      },
+    ],
+  }
   const videPath = getAbsolutePath('all-in-onefuturistic-neon-ribbon.mp4');
   return (
     <PageWrapper title={t('Label')}>

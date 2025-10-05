@@ -18,8 +18,6 @@ import RealLifeCases, { RealLifeProps } from "../components/real-life/main-secti
 import { getAbsolutePath } from "@/app/utils/absolute-path.utils";
 import { useTranslations } from "next-intl";
 
-const productName = "Fast Invoice Payment";
-
 const threeThings: ThingCardProps[] = [
     {
         number: 1,
@@ -38,31 +36,30 @@ const threeThings: ThingCardProps[] = [
     },
 ];
 
-const realLifeProps: RealLifeProps = {
-    productName: productName,
-    cases: [
-        {
-            icon: bellIcon,
-            children: <span><strong>Baku Electronics</strong> used to send plain SMS reminders for credit payments—customers still had to find the contract, log in, and fill in details.</span>,
-        },
-        {
-            icon: moneyIcon,
-            children: <span>Now, with <strong>YIĞIM’s Fast Invoice Payment,</strong> they send a smart link via SMS (or any other digital channel). The customer taps the link, sees a pre-filled payment page with all contract info, and pays in seconds.</span>,
-        },
-        {
-            icon: energyIcon,
-            children: <span><strong>For the business,</strong> this means faster payments, fewer support calls, and a smoother payment experience—all with one simple link.</span>,
-        },
-    ],
-    video: 'fast-invoice.mp4',
-    videoTitle: 'Fast Invoice, Fast Payment',
-}
-
 export default function ProductPage() {
     const t = useTranslations('Products.Product4');
     const info: ProductInfoProps = {
         title: t('SubLabel'),
         description: t('Description'),
+    };
+    const realLifeProps: RealLifeProps = {
+        productName: t('Label'),
+        cases: [
+            {
+                icon: bellIcon,
+                children: t.raw('RealLifeExample.Case1'),
+            },
+            {
+                icon: moneyIcon,
+                children: t.raw('RealLifeExample.Case2'),
+            },
+            {
+                icon: energyIcon,
+                children: t.raw('RealLifeExample.Case3'),
+            },
+        ],
+        video: 'fast-invoice.mp4',
+        videoTitle: t('RealLifeExample.LabelVideo'),
     };
     const functions: FunctionCardProps[] = [
         {

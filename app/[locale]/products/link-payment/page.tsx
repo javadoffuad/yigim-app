@@ -20,7 +20,6 @@ import billIcon from '@/public/icons/bill.svg';
 import { getAbsolutePath } from "@/app/utils/absolute-path.utils";
 import { useTranslations } from "next-intl";
 
-const productName = 'Link Payment +';
 const content: ContentImageProps = {
     title: 'From Link to \nPayment in Seconds',
     label: 'Link Payment +',
@@ -46,31 +45,30 @@ const threeThings: ThingCardProps[] = [
     },
 ];
 
-const realLifeProps: RealLifeProps = {
-    productName: productName,
-    video: 'link-payment.mp4',
-    videoTitle: 'Instant Payment Links\nfor Seamless Bookings',
-    cases: [
-        {
-            icon: phoneCallingIcon,
-            children: <span>A customer calls to <strong>book a service</strong> or books right at the spot in the <strong>hotel</strong> — just a quick phone reservation.</span>,
-        },
-        {
-            icon: linkIcon,
-            children: <span>Instead of chasing payments later, you generate a <strong>payment link</strong> on the spot and send it e.g. via WhatsApp, SMS, E-mail or any other channel your <strong>guest prefers.</strong></span>,
-        },
-        {
-            icon: billIcon,
-            children: <span><strong>Within minutes,</strong> the guest is able to pay from their phone. You see the payment come through, linked to that booking, and <strong>everything’s tracked automatically</strong>—no paperwork, no confusion.</span>,
-        },
-    ],
-}
-
 export default function ProductPage() {
     const t = useTranslations('Products.Product3');
     const info: ProductInfoProps = {
         title: t('SubLabel'),
         description: t('Description'),
+    };
+    const realLifeProps: RealLifeProps = {
+        productName: t('Label'),
+        video: 'link-payment.mp4',
+        videoTitle: t('RealLifeExample.LabelVideo'),
+        cases: [
+            {
+                icon: phoneCallingIcon,
+                children: t.raw('RealLifeExample.Case1'),
+            },
+            {
+                icon: linkIcon,
+                children: t.raw('RealLifeExample.Case2'),
+            },
+            {
+                icon: billIcon,
+                children: t.raw('RealLifeExample.Case3'),
+            },
+        ],
     };
     const functions: FunctionCardProps[] = [
         {

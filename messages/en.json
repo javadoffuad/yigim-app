@@ -304,6 +304,14 @@
           "Label": "24/7 Support",
           "Description": "Our dedicated team provides 24/7 support"
         }
+      },
+      "RealLifeExample": {
+        "Label": "Real-Life Example",
+        "SubLabel": "This product is developed exclusively by YIĞIM's",
+        "LabelVideo": "Wolt Courier",
+        "Case1": "When a <strong>Wolt courier</strong> receives cash from a customer, they need a <strong>quick and secure way to transfer</strong> it to Wolt.",
+        "Case2": "With our <strong>All-in-One solution</strong>, the courier can easily deposit the cash <strong>via a nearby terminal or mobile</strong> banking app.",
+        "Case3": "By entering their Courier ID, the money goes directly to Wolt’s account — <strong>no delays, no manual work.</strong>"
       }
     },
     "Product2": {
@@ -336,6 +344,12 @@
           "Label": "Notifications",
           "Description": "Automated SMS and email alerts for payment confirmations"
         }
+      },
+      "RealLifeExample": {
+        "Label": "Real-Life Example",
+        "LabelVideo": "Secure Pre-Authorization",
+        "Case1": "In services like <strong>food delivery or taxi rides</strong> (e.g. Wolt, Uber or Bolt ), funds can be <strong>securely pre-authorized</strong> and blocked (frozen) until the service is delivered.",
+        "Case2": "If the service is canceled or not used, the amount is unblocked (returned back) to the customer — <strong>without any commission</strong> or penalty."
       }
     },
     "Product3": {
@@ -368,6 +382,13 @@
           "Label": "Customizable Pages",
           "Description": "Merchants can brand the payment page with their logo, colors, and messaging"
         }
+      },
+      "RealLifeExample": {
+        "Label": "Real-Life Example",
+        "LabelVideo": "Instant Payment Links<br/> for Seamless Bookings",
+        "Case1": "A customer calls to <strong>book a service</strong> or books right at the spot in the <strong>hotel</strong> — just a quick phone reservation.",
+        "Case2": "Instead of chasing payments later, you generate a <strong>payment link</strong> on the spot and send it e.g. via WhatsApp, SMS, E-mail or any other channel your <strong>guest prefers.</strong>",
+        "Case3": "<strong>Within minutes</strong>, the guest is able to pay from their own phone. You see the payment come through, linked to that booking, and <strong>everything’s tracked automatically</strong>: No paperwork, no confusion."
       }
     },
     "Product4": {
@@ -400,6 +421,13 @@
           "Label": "End-to-End Encryption",
           "Description": "Process all transactions with compliance-grade security and full data protection"
         }
+      },
+      "RealLifeExample": {
+        "Label": "Real-Life Example",
+        "LabelVideo": "Fast Invoice, Fast Payment",
+        "Case1": "<strong>Kontakt Home</strong> used to send plain SMS reminders for credit payments. For this, customers still had to find the contract, log in, and fill in details.",
+        "Case2": "Now, with <strong>YIĞIM’s Fast Invoice Payment</strong>, they send a smart and unique link via SMS (or any other digital channel). The customer taps the link, sees a pre-filled payment page with all contract info with their saved card details, and pays in seconds.",
+        "Case3": "<strong>For the business</strong>, this means faster payments, fewer support calls, and a smoother payment experience — all with one simple link."
       }
     }
   },

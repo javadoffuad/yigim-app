@@ -304,6 +304,14 @@
           "Label": "7/24 Dəstək",
           "Description": "Peşəkar komandamız sizə 24/7 dəstək göstərir."
         }
+      },
+      "RealLifeExample": {
+        "Label": "Real Həyatdan nümunə",
+        "SubLabel": "Bu məhsul tam olaraq YIĞIM-ın komandası tərəfindən hazırlanıb.",
+        "LabelVideo": "Wolt Kuryeri",
+        "Case1": "<strong>Wolt kuryeri</strong> müştəridən nağd pul qəbul etdikdə, bu vəsaiti şirkətə <strong>tez və etibarlı şəkildə ötürməlidir.</strong>",
+        "Case2": "<strong>“All-in-One” həlli</strong> ilə kuryer pulu yaxınlıqdakı <strong>terminal və ya mobil bank tətbiqi vasitəsi ilə</strong> hesaba mədaxil edir.",
+        "Case3": "Kuryer ID-ni daxil etməklə vəsait birbaşa Wolt-un hesabına köçürülür — <strong>gecikməsiz, əlavə əməliyyatsız.</strong>"
       }
     },
     "Product2": {
@@ -336,6 +344,12 @@
           "Label": "Bildirişlər",
           "Description": "Ödəniş təsdiqləri üçün avtomatlaşdırılmış SMS və e-poçt bildirişləri."
         }
+      },
+      "RealLifeExample": {
+        "Label": "Real Həyatdan nümunə",
+        "LabelVideo": "Secure Pre-Authorization",
+        "Case1": "Wolt, Uber və ya Bolt kimi <strong>yemək çatdırılması və ya taksi xidmətlərində</strong> vəsaitlər xidmət göstərilənə qədər təhlükəsiz şəkildə əvvəlcədən təsdiqlənə və bloklana (dondurula) bilər.",
+        "Case2": "Əgər xidmət ləğv olunarsa və ya istifadə edilməzsə, məbləğ <strong>heç bir komissiya</strong> və ya cərimə tutulmadan müştəriyə geri qaytarılır."
       }
     },
     "Product3": {
@@ -368,6 +382,13 @@
           "Label": "Fərdi səhifələr",
           "Description": "Satıcılar ödəniş səhifəsini öz loqosu, rəngləri və mesajları ilə brendləşdirə bilərlər."
         }
+      },
+      "RealLifeExample": {
+        "Label": "Real Həyatdan nümunə",
+        "LabelVideo": "Rahat rezervasiya üçün<br/> ani ödəniş linkləri",
+        "Case1": "Müştəri xidməti <strong>sifariş etmək</strong> üçün zəng edir və ya <strong>oteldə</strong> yerindəcə — sadəcə telefonla rezervasiyası edir.",
+        "Case2": "Sonradan ödənişlərin arxasınca qaçmaq əvəzinə, həmin anda <strong>ödəniş linki</strong> yaradırsınız və onu WhatsApp, SMS, E-poçt və ya <strong>qonağınızın üstünlük verdiyi</strong> hər hansı digər kanalla göndərirsiniz.",
+        "Case3": "<strong>Bir neçə dəqiqə</strong> ərzində qonaq öz telefonundan ödənişi həyata keçirə bilir. Siz isə ödənişin həmin rezervasiya ilə əlaqəli şəkildə gəldiyini görürsünüz və <strong>hər şeyi avtomatik şəkildə</strong> izləyə bilirsiniz: Heç bir kağız işi və ya qarışıqlıq yoxdur."
       }
     },
     "Product4": {
@@ -400,6 +421,13 @@
           "Label": "End-to-End şifrələmə",
           "Description": "Bütün əməliyyatlar uyğunluq səviyyəsində təhlükəsizlik və tam məlumat qorunması ilə həyata keçirilir."
         }
+      },
+      "RealLifeExample": {
+        "Label": "Real Həyatdan nümunə",
+        "LabelVideo": "Sürətli faktura, Sürətli ödəniş",
+        "Case1": "<strong>Kontakt Home</strong> əvvəllər kredit ödənişləri üçün sadə SMS xatırlatmaları göndərirdi. Müştərilər isə kontraktı tapmalı, daxil olmalı və məlumatları əl ilə doldurmalı idilər.",
+        "Case2": "İndi isə <strong>YIĞIM-ın Fast Invoice Payment</strong> ilə SMS (və ya digər rəqəmsal kanallarla) ağıllı və unikal link göndərilir. Müştəri linkə klikləyir, bütün müqavilə məlumatları və saxlanılmış kart məlumatları ilə əvvəlcədən doldurulmuş ödəniş səhifəsini görür və saniyələr içində ödənişi həyata keçirir.",
+        "Case3": "<strong>Biznes üçün</strong> bu, daha sürətli ödənişlər, azalan dəstək zəngləri və daha rahat ödəniş təcrübəsi deməkdir — bütün bunlar sadə bir link vasitəsilə."
       }
     }
   },
