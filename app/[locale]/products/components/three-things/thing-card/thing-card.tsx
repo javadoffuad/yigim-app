@@ -14,7 +14,7 @@ export function ThingCard(props: ThingCardProps) {
         <div className={styles.number}>{props.number}</div>
         <div className={styles.details}>
             <h3 className={styles.title}>{props.title}</h3>
-            <p className={styles.description}>{props.description}</p>
+            <p className={styles.description} dangerouslySetInnerHTML={{__html: props.description}} />
         </div>
     </div>
   );

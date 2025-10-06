@@ -18,30 +18,29 @@ import RealLifeCases, { RealLifeProps } from "../components/real-life/main-secti
 import { getAbsolutePath } from "@/app/utils/absolute-path.utils";
 import { useTranslations } from "next-intl";
 
-const threeThings: ThingCardProps[] = [
-    {
-        number: 1,
-        title: 'Secure',
-        description: 'Secure Data Transmission: All data is encrypted to protect customer information',
-    },
-    {
-        number: 2,
-        title: 'Fast & Easy',
-        description: 'Send instant, mobile-friendly invoices customers can pay anytime, anywhere',
-    },
-    {
-        number: 3,
-        title: 'Automated & Smart',
-        description: 'Automate reminders and reduce time chasing payments',
-    },
-];
-
 export default function ProductPage() {
     const t = useTranslations('Products.Product4');
     const info: ProductInfoProps = {
         title: t('SubLabel'),
         description: t('Description'),
     };
+    const threeThings: ThingCardProps[] = [
+        {
+            number: 1,
+            title: t('ThreeThings.Case1.Label'),
+            description: t.raw('ThreeThings.Case1.Description'),
+        },
+        {
+            number: 2,
+            title: t('ThreeThings.Case2.Label'),
+            description: t.raw('ThreeThings.Case2.Description'),
+        },
+        {
+            number: 3,
+            title: t('ThreeThings.Case3.Label'),
+            description: t.raw('ThreeThings.Case3.Description'),
+        },
+    ];
     const realLifeProps: RealLifeProps = {
         productName: t('Label'),
         cases: [

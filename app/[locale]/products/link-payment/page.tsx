@@ -27,30 +27,29 @@ const content: ContentImageProps = {
     description: `This product is developed exclusively by YIĞIM's own developer team. “All-in-One” offers the broadest range of payment acceptance channels, covering nearly every option available. With a single integration, it enables the client’s billing system to quickly connect to multiple payment channels: Cash (terminal networks) or cashless (mobile payments).`,
 }
 
-const threeThings: ThingCardProps[] = [
-    {
-        number: 1,
-        title: 'Effortlessness',
-        description: 'Create links or QRs in seconds— no website or setup needed. Fast setup, low friction, and broad usability — perfect for SMEs, freelancers, and service-based businesses.',
-    },
-    {
-        number: 2,
-        title: 'Any Channel + Faster Payments',
-        description: 'Lets businesses reach customers wherever they are—SMS, email, WhatsApp, etc getting paid quicker',
-    },
-    {
-        number: 3,
-        title: 'Saved Cards & One-Click Payments ',
-        description: 'Enables convenience for returning customers, leading to more sales with less effort.',
-    },
-];
-
 export default function ProductPage() {
     const t = useTranslations('Products.Product3');
     const info: ProductInfoProps = {
         title: t('SubLabel'),
         description: t('Description'),
     };
+    const threeThings: ThingCardProps[] = [
+        {
+            number: 1,
+            title: t('ThreeThings.Case1.Label'),
+            description: t.raw('ThreeThings.Case1.Description'),
+        },
+        {
+            number: 2,
+            title: t('ThreeThings.Case2.Label'),
+            description: t.raw('ThreeThings.Case2.Description'),
+        },
+        {
+            number: 3,
+            title: t('ThreeThings.Case3.Label'),
+            description: t.raw('ThreeThings.Case3.Description'),
+        },
+    ];
     const realLifeProps: RealLifeProps = {
         productName: t('Label'),
         video: 'link-payment.mp4',

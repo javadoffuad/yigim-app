@@ -17,30 +17,29 @@ import ProductInfo, { ProductInfoProps } from "../components/product-info/produc
 import { getAbsolutePath } from "@/app/utils/absolute-path.utils";
 import { useTranslations } from "next-intl";
 
-const threeThings: ThingCardProps[] = [
-    {
-        number: 1,
-        title: 'Backup Plan',
-        description: 'YIĞIM is connected to multiple processing centers, automatically rerouting transactions if one of them fails to ensure uninterrupted service',
-    },
-    {
-        number: 2,
-        title: 'Secure Transactions',
-        description: 'Ensures highest standards of data protection for all payment methods',
-    },
-    {
-        number: 3,
-        title: 'Simplicity',
-        description: 'Simplifies yout accounting by reconciling with YIĞIM instead of multiple banks',
-    },
-];
-
 export default function ProductPage() {
     const t = useTranslations('Products.Product2');
     const info: ProductInfoProps = {
         title: t('SubLabel'),
         description: t('Description'),
     };
+    const threeThings: ThingCardProps[] = [
+        {
+            number: 1,
+            title: t('ThreeThings.Case1.Label'),
+            description: t.raw('ThreeThings.Case1.Description'),
+        },
+        {
+            number: 2,
+            title: t('ThreeThings.Case2.Label'),
+            description: t.raw('ThreeThings.Case2.Description'),
+        },
+        {
+            number: 3,
+            title: t('ThreeThings.Case3.Label'),
+            description: t.raw('ThreeThings.Case3.Description'),
+        },
+    ];
     const realLifeProps: RealLifeProps = {
         productName: t('Label'),
         cases: [
