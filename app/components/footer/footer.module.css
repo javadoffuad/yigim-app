@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     background: #1b1b1b;
-    padding: 140px 0 32px 0;
+    padding: 140px 0 48px 0;
     margin-top: -40px;
 }
 
@@ -19,6 +19,26 @@
     gap: 245px;
 }
 
+.footer-social-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.social-pane {
+    display: flex;
+    flex-direction: column;
+    margin-top: 84px;
+    gap: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #4B4B4B;
+}
+
 .footer-logo {
     width: 156px;
 }
@@ -28,28 +48,28 @@
     gap: 60px;
 }
 
-.footer-social {
+.social-links {
     display: flex;
-    gap: 16px;
+    gap: 8px;
 }
 
-.social-item {
+.social-link {
     flex: 1;
     display: flex;
     align-items: center;
-    gap: 12px;
-    padding: 30px 20px 30px 80px;
     background: #303030;
-    border-radius: 16px;
-    height: 80px;
+    width: 44px;
+    height: 44px;
+    border-radius: 40px;
+    padding: 12px;
 }
 
-.social-item img {
+.social-link img {
     width: 24px;
     height: 24px;
 }
 
-.social-item span {
+.social-link span {
     font-weight: 500;
     font-size: 16px;
     color: white;
@@ -82,19 +102,18 @@
 }
 
 .footer-legal a:hover {
-    color: white;
+    color: #ffc404;
 }
 
 .back-to-top {
-    text-align: right;
     font-weight: 500;
-    font-size: 12px;
-    color: var(--color-secondary);
+    font-size: 14px;
+    color: #fff;
     cursor: pointer;
+    height: 32px;
+    padding: 0 40px 0 16px;
+    border-radius: 28px;
+    background: url(../../../public/icons/round-arrow-up.svg) center right 16px no-repeat #303030;
+    border: 0;
     transition: color 0.2s ease;
-    text-transform: uppercase;
-}
-
-.back-to-top:hover {
-    color: white;
 }
