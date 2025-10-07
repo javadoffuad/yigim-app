@@ -54,7 +54,7 @@
 
 .dropdown-item:hover,
 .dropdown-item.active {
-    background-color: #F4F4F4;
+    background-color: var(--button-tertiary-hover);
 }
 
 .dropdown-item.active {
@@ -68,4 +68,5 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
+    color: var(--color-primary);
 }
