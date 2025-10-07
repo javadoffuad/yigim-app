@@ -4,11 +4,9 @@ import Footer from "@/components/footer/footer";
 import Faq from "@/components/faq/faq";
 import { RequestCallback } from "@/components/request-callback/request-callback";
 import { ILayoutProps } from "@/app/models/layout.models";
-import { setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { routing } from "@/i18n/routing";
-import { generateLocaleStaticParams } from "@/app/utils/static-params";
 
 export const metadata: Metadata = {
   title: "Yigim Contacts",
@@ -21,9 +19,6 @@ export default async function Layout({children, params}: ILayoutProps) {
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
-
-  // Enable static rendering
-  setRequestLocale(locale);
 
   return (
     <html lang="en">
@@ -38,8 +33,4 @@ export default async function Layout({children, params}: ILayoutProps) {
       </body>
     </html>
   );
-}
-
-export async function generateStaticParams() {
-  return generateLocaleStaticParams();
 }

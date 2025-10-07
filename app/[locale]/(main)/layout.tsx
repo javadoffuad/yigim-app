@@ -5,9 +5,7 @@ import Faq from "@/components/faq/faq";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
-import { setRequestLocale } from "next-intl/server";
 import { ILayoutProps } from "@/app/models/layout.models";
-import { generateLocaleStaticParams } from "@/app/utils/static-params";
 
 export const metadata: Metadata = {
   title: "Yigim Home page",
@@ -21,9 +19,6 @@ export default async function MainLayout({children, params}: ILayoutProps) {
     notFound();
   }
 
-  // Enable static rendering
-  setRequestLocale(locale);
-
   return (
     <html lang="en">
       <body>
@@ -36,8 +31,4 @@ export default async function MainLayout({children, params}: ILayoutProps) {
       </body>
     </html>
   );
-}
-
-export async function generateStaticParams() {
-  return generateLocaleStaticParams();
 }
