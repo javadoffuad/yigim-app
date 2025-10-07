@@ -135,7 +135,7 @@ export default function ContactForm() {
                 
                 <button
                     type="submit"
-                    className={styles["submit-btn"]} disabled={isSubmitting}>
+                    className="button button-primary" disabled={isSubmitting}>
                     {isSubmitting ? t('Loading') : t('ButtonSendRequest.Label')}
                 </button>
             </form>
