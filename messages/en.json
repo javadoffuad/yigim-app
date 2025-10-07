@@ -182,10 +182,13 @@
     }
   },
   "PagePrivacyPolicy": {
-    "Label": "Privacy policy"
+    "Label": "Privacy policy",
+    "Content": {
+    }
   },
   "PageCookiePolicy": {
-    "Label": "Cookie policy"
+    "Label": "Cookie policy",
+    "Content": "<h3>What Are Cookies?</h3>\n\n<p>Cookies are small text files stored on your device when you visit our website. They help improve your browsing experience and enable certain website functions.</p>\n\n<h3>1. Managing Cookies</h3>\n\n<p>You can adjust your cookie preferences through your browser settings or via our on-site Cookie Settings panel:</p>\n<strong>Essential Only</strong> – Strictly necessary cookies.<br/><strong>Functional & Performance</strong> – Enable improved experience and analytics.<br/><strong>All Cookies</strong> – Allow all cookie categories.<br/><h3>2. Third-Party Cookies</h3>\n\n<p>Some cookies are set by external services such as Google Analytics. These providers have their own privacy policies that govern how they use your data.</p>\n\n<h3>3. Disabling Cookies</h3>\n\n<p>If you disable cookies, some parts of the website may not function properly.</p>\n\n<h3>4. Updates</h3>\n\n<p>We may update this Cookie Policy periodically. The latest version and its effective date will be displayed on this page.</p>"
   },
   "PageTermsCondition": {
     "Label": "Terms of Service"

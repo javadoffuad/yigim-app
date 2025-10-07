@@ -185,7 +185,8 @@
     "Label": "İstifadə Şərtləri"
   },
   "PageCookiePolicy": {
-    "Label": "Cookie Siyasəti"
+    "Label": "Cookie Siyasəti",
+    "Content": "<h3>Cookie-lər nədir?</h3>\n\n<p>Cookie-lər, veb saytımızı ziyarət etdiyiniz zaman cihazınızda saxlanılan kiçik mətn fayllarıdır. Onlar baxış təcrübənizi yaxşılaşdırmağa və saytın müəyyən funksiyalarını aktiv etməyə kömək edir.</p>\n\n<h3>1. Cookie-lərin idarə olunması</h3>\n\n<p>Cookie seçimlərinizi brauzerinizin ayarlarından və ya saytdakı Cookie Ayarları paneli vasitəsilə tənzimləyə bilərsiniz:</p>\n<strong>Yalnız zəruri</strong> – Yalnız əsas (mütləq vacib) cookie-lər.<br/><strong>Funksional və Performans</strong> – Təcrübəni və analitikaları yaxşılaşdıran cookie-lər.<br/><strong>Bütün cookie-lər</strong> – Bütün cookie kateqoriyalarına icazə verin.<br/><h3>2. Üçüncü tərəf cookie-ləri</h3>\n\n<p>Bəzi cookie-lər Google Analytics kimi xarici xidmətlər tərəfindən təyin olunur. Bu provayderlərin məlumatlarınızdan necə istifadə etdiklərini müəyyən edən öz məxfilik siyasətləri mövcuddur.</p>\n\n<h3>3. Cookie-lərin deaktiv edilməsi</h3>\n\n<p>Əgər cookie-ləri deaktiv etsəniz, saytın bəzi hissələri düzgün işləməyə bilər.</p>\n\n<h3>4. Yeniləmələr</h3>\n\n<p>Bu Cookie Siyasətini mütəmadi olaraq yeniləyə bilərik. Ən son versiya və qüvvəyə minmə tarixi bu səhifədə göstəriləcək.</p>"
   },
   "PageTermsCondition": {
     "Label": "İstifadə Şərtləri"
