@@ -43,6 +43,7 @@
 .faqItem.open .faqQuestion {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+  background: #f3f3f3;
 }
 
 .faqItem.open .faqAnswer {
