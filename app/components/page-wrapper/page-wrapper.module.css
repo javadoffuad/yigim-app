@@ -22,14 +22,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: -168px;
+  margin-top: -185px;
 }
 
 .title-wrapper {
   position: absolute;
   z-index: 1;
   height: 240px;
-  top: 266px;
+  top: 246px;
   left: 0;
   align-items: flex-end;
   width: 100%;

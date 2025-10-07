@@ -181,14 +181,14 @@
       "Label": "Ana səhifəyə qayıt"
     }
   },
-  "PageSecurity": {
-    "Label": "Məlumat təhlükəsizliyi"
+  "PagePrivacyPolicy": {
+    "Label": "İstifadə Şərtləri"
   },
-  "PagePolicy": {
-    "Label": "Cookie siyasəti"
+  "PageCookiePolicy": {
+    "Label": "Cookie Siyasəti"
   },
   "PageTermsCondition": {
-    "Label": "Şərtlər və qaydalar"
+    "Label": "İstifadə Şərtləri"
   },
   "Header": {
     "Navigation": {
@@ -276,9 +276,9 @@
       }
     },
     "AreaStaticNavigation": {
-      "LabelSecurity": "MƏLUMAT TƏHLÜKƏSİZLİYİ",
-      "LabelPolicy": "COOKİE SİYASƏTİ",
-      "LabelTerms": "ŞƏRTLƏR VƏ QAYDALAR",
+      "LabelPrivacyPolicy": "İSTİFADƏ ŞƏRTLƏRİ",
+      "LabelCookiePolicy": "COOKİE SİYASƏTİ",
+      "LabelTerms": "İSTİFADƏ ŞƏRTLƏRİ",
       "LabelBackToTop": "YUXARI HİSSƏYƏ QAYIT"
     }
   },

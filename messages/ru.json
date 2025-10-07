@@ -181,14 +181,14 @@
       "Label": "Вернуться на главную"
     }
   },
-  "PageSecurity": {
-    "Label": "Информационная безопасность"
+  "PagePrivacyPolicy": {
+    "Label": "Условия Использования"
   },
-  "PagePolicy": {
+  "PageCookiePolicy": {
     "Label": "Политика использования файлов cookie"
   },
   "PageTermsCondition": {
-    "Label": "Условия и положения"
+    "Label": "Условия Использования"
   },
   "Header": {
     "Navigation": {
@@ -276,9 +276,9 @@
       }
     },
     "AreaStaticNavigation": {
-      "LabelSecurity": "Информационная безопасность",
-      "LabelPolicy": "Политика использования файлов cookie",
-      "LabelTerms": "Условия и положения",
+      "LabelPrivacyPolicy": "Условия Использования",
+      "LabelCookiePolicy": "Политика использования файлов cookie",
+      "LabelTerms": "Условия Использования",
       "LabelBackToTop": "Наверх"
     }
   },

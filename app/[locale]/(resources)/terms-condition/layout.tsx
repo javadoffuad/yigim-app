@@ -9,8 +9,8 @@ import { routing } from "@/i18n/routing";
 import { ILayoutProps } from "@/app/models/layout.models";
 
 export const metadata: Metadata = {
-  title: "Yigim Terms & condition",
-  description: "Yigim Terms & condition page description",
+  title: "Yigim Terms of Service",
+  description: "Yigim Terms of Service page description",
 };
 
 export default async function Layout({children, params}: ILayoutProps) {

@@ -181,14 +181,14 @@
       "Label": "Go home"
     }
   },
-  "PageSecurity": {
-    "Label": "Information security"
+  "PagePrivacyPolicy": {
+    "Label": "Privacy policy"
   },
-  "PagePolicy": {
+  "PageCookiePolicy": {
     "Label": "Cookie policy"
   },
   "PageTermsCondition": {
-    "Label": "Terms & condition"
+    "Label": "Terms of Service"
   },
   "Header": {
     "Navigation": {
@@ -276,9 +276,9 @@
       }
     },
     "AreaStaticNavigation": {
-      "LabelSecurity": "Information security",
-      "LabelPolicy": "Cookie policy",
-      "LabelTerms": "Terms & condition",
+      "LabelPrivacyPolicy": "Privacy policy",
+      "LabelCookiePolicy": "Cookie policy",
+      "LabelTerms": "Terms of Service",
       "LabelBackToTop": "Back on the top"
     }
   },
