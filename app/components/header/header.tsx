@@ -92,7 +92,7 @@ export default function Header() {
               
               <div className={styles["nav-actions"]}>
                 <LangMenu />
-                <Link href={PAGE_SIGN_IN} className={styles["login-btn"]}>{t('Navigation.Login')}</Link>
+                <Link href={PAGE_SIGN_IN} className="button button-primary button-small">{t('Navigation.Login')}</Link>
               </div>
           </nav>
       </header>

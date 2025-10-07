@@ -57,24 +57,3 @@
     align-items: center;
     gap: 4px;
 }
-
-.login-btn {
-    padding: 0 24px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    background: #ffc404;
-    border: none;
-    color: #1e1e1e;
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 0.28px;
-    border-radius: 100px;
-    cursor: pointer;
-    position: relative;
-    transition: background-color 0.2s ease;
-}
-
-.login-btn:hover {
-    background: rgba(255, 196, 4, 0.9);
-}
