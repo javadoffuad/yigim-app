@@ -321,6 +321,21 @@
         "Case1": "When a <strong>Wolt courier</strong> receives cash from a customer, they need a <strong>quick and secure way to transfer</strong> it to Wolt.",
         "Case2": "With our <strong>All-in-One solution</strong>, the courier can easily deposit the cash <strong>via a nearby terminal or mobile</strong> banking app.",
         "Case3": "By entering their Courier ID, the money goes directly to Wolt’s account — <strong>no delays, no manual work.</strong>"
+      },
+      "ThreeThings": {
+        "Label": "3 Things To Know",
+        "Case1": {
+          "Label": "One Integration, Full Market Coverage",
+          "Description": "With a single integration, your business gains access to the largest omni-channel payment network in Azerbaijan."
+        },
+        "Case2": {
+          "Label": "Your Dashborad: You’re in Control",
+          "Description": "Access live transaction data and exportable daily, weekly, and monthly reports — all from one dashboard."
+        },
+        "Case3": {
+          "Label": "Brand Visibility",
+          "Description": "Your logo appears instantly  in your category across top banks' apps and major terminal networks — boosting reach and building trust"
+        }
       }
     },
     "Product2": {
@@ -359,6 +374,21 @@
         "LabelVideo": "Secure Pre-Authorization",
         "Case1": "In services like <strong>food delivery or taxi rides</strong> (e.g. Wolt, Uber or Bolt ), funds can be <strong>securely pre-authorized</strong> and blocked (frozen) until the service is delivered.",
         "Case2": "If the service is canceled or not used, the amount is unblocked (returned back) to the customer — <strong>without any commission</strong> or penalty."
+      },
+      "ThreeThings": {
+        "Label": "3 Things To Know",
+        "Case1": {
+          "Label": "Service Stability",
+          "Description": "YIĞIM is connected to multiple processing centers, automatically rerouting transactions if one of them fails to ensure uninterrupted service"
+        },
+        "Case2": {
+          "Label": "Secure Transactions",
+          "Description": "We are PCI DSS certified and authorized by the Ministry of Digital Development and Transport of Azerbaijan for managing personal data. We are also certified by the Central Bank of Azerbaijan (CBAR)."
+        },
+        "Case3": {
+          "Label": "Simplicity",
+          "Description": "Simplifies yout accounting by reconciling with YIĞIM instead of multiple banks"
+        }
       }
     },
     "Product3": {
@@ -398,6 +428,21 @@
         "Case1": "A customer calls to <strong>book a service</strong> or books right at the spot in the <strong>hotel</strong> — just a quick phone reservation.",
         "Case2": "Instead of chasing payments later, you generate a <strong>payment link</strong> on the spot and send it e.g. via WhatsApp, SMS, E-mail or any other channel your <strong>guest prefers.</strong>",
         "Case3": "<strong>Within minutes</strong>, the guest is able to pay from their own phone. You see the payment come through, linked to that booking, and <strong>everything’s tracked automatically</strong>: No paperwork, no confusion."
+      },
+      "ThreeThings": {
+        "Label": "3 Things To Know",
+        "Case1": {
+          "Label": "Effortless Full Control",
+          "Description": "You get a comprehensive dashboard: User management control, payment history, reporting.  Perfect for SMEs, freelancers, and service-based businesses."
+        },
+        "Case2": {
+          "Label": "Any Channel + Faster Payments",
+          "Description": "With a simple payment link or QR you will be able to remind your customer about the payment and give them a direct link to proceed to it. No website or setup needed."
+        },
+        "Case3": {
+          "Label": "Saved Cards & One-Click Payments",
+          "Description": "Enables convenience for returning customers, leading to more sales with less effort."
+        }
       }
     },
     "Product4": {
@@ -437,6 +482,21 @@
         "Case1": "<strong>Kontakt Home</strong> used to send plain SMS reminders for credit payments. For this, customers still had to find the contract, log in, and fill in details.",
         "Case2": "Now, with <strong>YIĞIM’s Fast Invoice Payment</strong>, they send a smart and unique link via SMS (or any other digital channel). The customer taps the link, sees a pre-filled payment page with all contract info with their saved card details, and pays in seconds.",
         "Case3": "<strong>For the business</strong>, this means faster payments, fewer support calls, and a smoother payment experience — all with one simple link."
+      },
+      "ThreeThings": {
+        "Label": "3 Things To Know",
+        "Case1": {
+          "Label": "Guaranteed Security",
+          "Description": "Secure Data Transmission: Your customer gets a data protected unique link"
+        },
+        "Case2": {
+          "Label": "Fast & Easy",
+          "Description": "Send mobile-friendly invoices that customers are able to pay instantly"
+        },
+        "Case3": {
+          "Label": "Automated & Smart",
+          "Description": "Automate reminders and reduce time chasing payments. Make sure that customers pay on time."
+        }
       }
     }
   },

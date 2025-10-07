@@ -321,6 +321,21 @@
         "Case1": "<strong>Wolt kuryeri</strong> müştəridən nağd pul qəbul etdikdə, bu vəsaiti şirkətə <strong>tez və etibarlı şəkildə ötürməlidir.</strong>",
         "Case2": "<strong>“All-in-One” həlli</strong> ilə kuryer pulu yaxınlıqdakı <strong>terminal və ya mobil bank tətbiqi vasitəsi ilə</strong> hesaba mədaxil edir.",
         "Case3": "Kuryer ID-ni daxil etməklə vəsait birbaşa Wolt-un hesabına köçürülür — <strong>gecikməsiz, əlavə əməliyyatsız.</strong>"
+      },
+      "ThreeThings": {
+        "Label": "3 Vacib Məqam",
+        "Case1": {
+          "Label": "Bir interqrasiya,  Bazarın tam əhatəsi",
+          "Description": "Bir inteqrasiya ilə Azərbaycanın ən böyük omni-kanal ödəniş şəbəkəsinə çıxış"
+        },
+        "Case2": {
+          "Label": "İdarəetmə paneliniz: Nəzarət sizdədir",
+          "Description": "Canlı əməliyyat məlumatlarına baxın və gündəlik, həftəlik və aylıq hesabatları eyni panel üzərindən endirin."
+        },
+        "Case3": {
+          "Label": "Brend görüntüsü",
+          "Description": "Loqonuz sizin kateqoriyanız üzrə aparıcı bankların tətbiqlərində və əsas terminal şəbəkələrində dərhal görünür — bu da tanıtımı artırır və etimad yaradır."
+        }
       }
     },
     "Product2": {
@@ -359,6 +374,21 @@
         "LabelVideo": "Secure Pre-Authorization",
         "Case1": "Wolt, Uber və ya Bolt kimi <strong>yemək çatdırılması və ya taksi xidmətlərində</strong> vəsaitlər xidmət göstərilənə qədər təhlükəsiz şəkildə əvvəlcədən təsdiqlənə və bloklana (dondurula) bilər.",
         "Case2": "Əgər xidmət ləğv olunarsa və ya istifadə edilməzsə, məbləğ <strong>heç bir komissiya</strong> və ya cərimə tutulmadan müştəriyə geri qaytarılır."
+      },
+      "ThreeThings": {
+        "Label": "3 Vacib Məqam",
+        "Case1": {
+          "Label": "Xidmətin Sabitliyi",
+          "Description": "YIĞIM bir neçə prossesinq mərkəzinə qoşuludur və onlardan biri işini dayandırdıqda əməliyyatları avtomatik olaraq digər mərkəzlərə yönləndirir — bu isə fasiləsiz xidməti təmin edir."
+        },
+        "Case2": {
+          "Label": "Təhlükəsiz Əməliyyatlar",
+          "Description": "Biz PCI DSS sertifikatına malikik və şəxsi məlumatların idarə olunması üzrə Azərbaycan Respublikası Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi tərəfindən, eləcə də Azərbaycan Mərkəzi Bankı (AMB) tərəfindən sertifikatlaşdırılmışıq."
+        },
+        "Case3": {
+          "Label": "Sadəlik",
+          "Description": "YIĞIM ilə inteqrasiya sayəsində bir neçə bankla ayrıca hesablaşma aparmağa ehtiyac qalmır — bu da mühasibatlığı sadələşdirir."
+        }
       }
     },
     "Product3": {
@@ -398,6 +428,21 @@
         "Case1": "Müştəri xidməti <strong>sifariş etmək</strong> üçün zəng edir və ya <strong>oteldə</strong> yerindəcə — sadəcə telefonla rezervasiyası edir.",
         "Case2": "Sonradan ödənişlərin arxasınca qaçmaq əvəzinə, həmin anda <strong>ödəniş linki</strong> yaradırsınız və onu WhatsApp, SMS, E-poçt və ya <strong>qonağınızın üstünlük verdiyi</strong> hər hansı digər kanalla göndərirsiniz.",
         "Case3": "<strong>Bir neçə dəqiqə</strong> ərzində qonaq öz telefonundan ödənişi həyata keçirə bilir. Siz isə ödənişin həmin rezervasiya ilə əlaqəli şəkildə gəldiyini görürsünüz və <strong>hər şeyi avtomatik şəkildə</strong> izləyə bilirsiniz: Heç bir kağız işi və ya qarışıqlıq yoxdur."
+      },
+      "ThreeThings": {
+        "Label": "3 Vacib Məqam",
+        "Case1": {
+          "Label": "Asan və Tam Nəzarət",
+          "Description": "Siz geniş və əhatəli idarəetmə paneli əldə edirsiniz: istifadəçilərin idarəedilməsi, ödəniş tarixi, hesabatlar. Kiçik və orta sahibkarlar, frilanserlər və xidmət sahəsində fəaliyyət göstərən müəssisələr üçün mükəmməldir."
+        },
+        "Case2": {
+          "Label": "İstənilən kanal + Daha sürətli ödənişlər",
+          "Description": "Sadə ödəniş linki və ya QR kodu ilə müştərinizə ödənişi xatırlatmaq və birbaşa ödəniş səhifəsinə yönləndirmək mümkündür. Veb sayt və ya əlavə qeydiyyat tələb olunmur."
+        },
+        "Case3": {
+          "Label": "Kartların yaddaşda saxlanılması & Bir kliklə ödənişlər",
+          "Description": "Təkrar müştərilər üçün rahatlıq yaradır və daha az səylə daha çox satışa gətirib çıxarır."
+        }
       }
     },
     "Product4": {
@@ -437,6 +482,21 @@
         "Case1": "<strong>Kontakt Home</strong> əvvəllər kredit ödənişləri üçün sadə SMS xatırlatmaları göndərirdi. Müştərilər isə kontraktı tapmalı, daxil olmalı və məlumatları əl ilə doldurmalı idilər.",
         "Case2": "İndi isə <strong>YIĞIM-ın Fast Invoice Payment</strong> ilə SMS (və ya digər rəqəmsal kanallarla) ağıllı və unikal link göndərilir. Müştəri linkə klikləyir, bütün müqavilə məlumatları və saxlanılmış kart məlumatları ilə əvvəlcədən doldurulmuş ödəniş səhifəsini görür və saniyələr içində ödənişi həyata keçirir.",
         "Case3": "<strong>Biznes üçün</strong> bu, daha sürətli ödənişlər, azalan dəstək zəngləri və daha rahat ödəniş təcrübəsi deməkdir — bütün bunlar sadə bir link vasitəsilə."
+      },
+      "ThreeThings": {
+        "Label": "3 Vacib Məqam",
+        "Case1": {
+          "Label": "Təhlükəsizlik zəmanəti",
+          "Description": "Məlumatların təhlükəsiz göndərilməsi: Müştərinizə məlumatları qorunan unikal link təqdim edilir."
+        },
+        "Case2": {
+          "Label": "Tez və asan",
+          "Description": "Mobil cihazlara uyğun fakturalar göndərin ki, müştərilər dərhal ödəniş edə bilsin."
+        },
+        "Case3": {
+          "Label": "Avtomatlaşdırılmış və Ağıllı",
+          "Description": "Xatırlatmaları avtomatlaşdırın və ödənişlərin gecikməsinin qarşısını alın. Müştərilərin vaxtında ödəməsini təmin edin."
+        }
       }
     }
   },

@@ -21,24 +21,6 @@ import ContentImage, { ContentImageProps } from "../components/content-image/mai
 import { getAbsolutePath } from "@/app/utils/absolute-path.utils";
 import { useTranslations } from "next-intl";
 
-const threeThings: ThingCardProps[] = [
-  {
-    number: 1,
-    title: 'One Integration, Full Market Coverage',
-    description: 'With a single integration, your business gains access to the largest omni-channel payment network in Azerbaijan.',
-  },
-  {
-    number: 2,
-    title: 'You’re in Control',
-    description: 'Access live transaction data and exportable daily, weekly, and monthly reports — all from one dashboard.',
-  },
-  {
-    number: 3,
-    title: 'Brand Visibility',
-    description: 'Your logo appears instantly across top banks\' apps and major terminal networks — boosting reach and building trust',
-  },
-];
-
 const content: ContentImageProps = {
   title: 'Payment Terminals',
   label: 'Our Coverage Network',
@@ -57,7 +39,24 @@ export default function ProductPage() {
   const info: ProductInfoProps = {
     title: t('SubLabel'),
     description: t('Description'),
-  }
+  };
+  const threeThings: ThingCardProps[] = [
+    {
+      number: 1,
+      title: t('ThreeThings.Case1.Label'),
+      description: t.raw('ThreeThings.Case1.Description'),
+    },
+    {
+      number: 2,
+      title: t('ThreeThings.Case2.Label'),
+      description: t.raw('ThreeThings.Case2.Description'),
+    },
+    {
+      number: 3,
+      title: t('ThreeThings.Case3.Label'),
+      description: t.raw('ThreeThings.Case3.Description'),
+    },
+  ];
   const functions: FunctionCardProps[] = [
     {
       icon: widgetAddIcon,
