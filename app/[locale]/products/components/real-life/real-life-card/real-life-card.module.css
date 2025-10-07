@@ -28,9 +28,8 @@
 }
 
 .content {
-    font-family: 'Geist', sans-serif;
     font-weight: 400;
-    color: #1E1E1E;
+    color: var(--color-primary);
     font-size: 20px;
     letter-spacing: -0.4px;
     line-height: 28px;

@@ -7,7 +7,7 @@
   border-radius: 16px;
   background-color: #F7F7F7;
   border: 1px solid #eaeaec;
-  color: #1E1E1E;
+  color: var(--color-primary);
   flex: 1;
   gap: 20px;
 }

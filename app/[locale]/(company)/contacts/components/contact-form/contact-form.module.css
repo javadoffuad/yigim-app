@@ -28,7 +28,7 @@
     font-size: 64px;
     line-height: 80px;
     letter-spacing: -2.56px;
-    color: #1E1E1E;
+    color: var(--color-primary);
     text-align: center;
 }
 

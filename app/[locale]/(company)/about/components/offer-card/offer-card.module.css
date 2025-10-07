@@ -27,6 +27,6 @@
     font-size: 20px;
     line-height: 28px;
     letter-spacing: -0.4px;
-    color: #1E1E1E;
+    color: var(--color-primary);
     white-space: pre-line;
 }

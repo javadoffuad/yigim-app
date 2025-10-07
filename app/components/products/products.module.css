@@ -84,7 +84,7 @@
     font-size: 28px;
     line-height: 32px;
     letter-spacing: -0.2%;
-    color: #1E1E1E;
+    color: var(--color-primary);
 }
 
 .product-item.active .product-video {

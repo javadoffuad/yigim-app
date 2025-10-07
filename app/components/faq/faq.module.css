@@ -45,14 +45,13 @@
 .faq-subtitle {
     font-weight: 500;
     font-size: 14px;
-    color: #888888;
+    color: var(--color-secondary);
     letter-spacing: 0.56px;
 }
 
 .faq-title {
-    font-family: var(--font-sans);
     font-weight: 500;
-    color: #1E1E1E;
+    color: var(--color-primary);
     font-size: 64px;
     letter-spacing: -4px;
     line-height: 64px;
@@ -60,12 +59,11 @@
 }
 
 .faq-contact {
-    font-family: var(--font-sans);
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
     letter-spacing: -0.2px;
-    color: #1E1E1E;
+    color: var(--color-primary);
 }
 
 .faq-contact span {

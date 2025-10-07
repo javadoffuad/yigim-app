@@ -9,13 +9,25 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #1E1E1E;
 
   --max-width: 1200px;
   --font-sans: 'Geist', sans-serif;
 
+  --color-primary: #1E1E1E;
+  --color-secondary: #888888;
+
   --button-size-s: 40px;
   --button-size-m: 48px;
+  --button-text-size-s: 14px;
+  --button-text-size-m: 16px;
+  --button-text-color: #1E1E1E;
+  --button-primary: #FFC404;
+  --button-primary-hover: #EBB404;
+  --button-tertiary: #F3F3F3;
+  --button-tertiary-hover: #F4F4F4;
+  --button-secondary: #c8c8c8;
+  --button-secondary-hover: #d7d7d7;
 }
 
 @theme inline {
@@ -33,8 +45,8 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  /* background: var(--background);
+  color: var(--foreground); */
 }
 
 /* Button start */
@@ -45,33 +57,42 @@ body {
   align-items: center;
   height: var(--button-size-m);
   text-decoration: none;
-  color: #1e1e1e;
+  color: var(--button-text-color);
   font-weight: 500;
-  font-size: 14px;
+  font-size: var(--button-text-size-m);
   border-radius: 28px;
   transition: background-color 0.2s ease;
   cursor: pointer;
-  background: #f3f3f3;
+  background: var(--button-tertiary);
 }
 
 .button-tertiary {
-  background: #f3f3f3;
+  background: var(--button-tertiary);
 }
 
 .button:hover,
 .button-tertiary:hover  {
-  background: #F4F4F4;
+  background: var(--button-tertiary-hover);
 }
 
 .button-primary {
-  background: #FFC404;
+  background: var(--button-primary);
 }
 
 .button-primary:hover  {
-  background: #EBB404;
+  background: var(--button-primary-hover);
+}
+
+.button-secondary {
+  background: var(--button-secondary);
+}
+
+.button-secondary:hover  {
+  background: var(--button-secondary-hover);
 }
 
 .button-small {
   height: var(--button-size-s);
+  font-size: var(--button-text-size-s);
 }
 /* Button end */

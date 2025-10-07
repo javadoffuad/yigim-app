@@ -11,7 +11,7 @@
     box-sizing: border-box;
     background: transparent;
     border: none;
-    color: #1E1E1E;
+    color: var(--color-primary);
     font-weight: 500;
     font-size: 14px;
     border-radius: 28px;
