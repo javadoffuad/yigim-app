@@ -51,6 +51,7 @@ export default function ProductPage() {
     ];
     const realLifeProps: RealLifeProps = {
         productName: t('Label'),
+        sectionTitle: t('RealLifeExample.Label'),
         video: 'link-payment.mp4',
         videoTitle: t('RealLifeExample.LabelVideo'),
         cases: [
@@ -106,8 +107,12 @@ export default function ProductPage() {
             <ProductInfo info={info} />
             <RealLifeCases props={realLifeProps} />
             <ContentImage content={content} />
-            <ThreeThings videoPath={videoPath} productName={t('Label')} items={threeThings} />
-            <MainFunctions productName={t('Label')} items={functions} />
+            <ThreeThings
+                sectionTitle={t('ThreeThings.Label')}
+                videoPath={videoPath}
+                productName={t('Label')}
+                items={threeThings} />
+            <MainFunctions productName={t('Label')} sectionTitle={t('MainFunctions.Label')} items={functions} />
         </PageWrapper>
     );
 }

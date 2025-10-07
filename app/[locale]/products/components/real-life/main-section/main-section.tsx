@@ -10,6 +10,7 @@ export interface RealLifeProps {
     video: string;
     videoTitle: string;
     cases: RealLifeCardProps[];
+    sectionTitle: string;
 }
 
 export default function RealLifeCases({props}: {props: RealLifeProps}) {
@@ -19,7 +20,7 @@ export default function RealLifeCases({props}: {props: RealLifeProps}) {
             <div className={styles.container}>
                 <SectionTitle
                     title={props.productName}
-                    description="Real-Life Example" />
+                    description={props.sectionTitle} />
 
                 <div className={styles["video-container"]}>
                     <video className={styles.video} loop autoPlay muted>

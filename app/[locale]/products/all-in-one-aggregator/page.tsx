@@ -73,6 +73,7 @@ export default function ProductPage() {
   ];
   const realLifeProps: RealLifeProps = {
     productName: t('RealLifeExample.SubLabel'),
+    sectionTitle: t('RealLifeExample.Label'),
     video: 'wolt-courier.mp4',
     videoTitle: t('RealLifeExample.LabelVideo'),
     cases: [
@@ -109,8 +110,12 @@ export default function ProductPage() {
       <RealLifeCases props={realLifeProps} />
       <ContentImage content={content} />
       <ContentImage content={content2} align="left" />
-      <ThreeThings videoPath={videPath} productName={t('Label')} items={threeThings} />
-      <MainFunctions productName={t('Label')} items={functions} />
+      <ThreeThings
+        sectionTitle={t('ThreeThings.Label')}
+        videoPath={videPath}
+        productName={t('Label')}
+        items={threeThings} />
+      <MainFunctions productName={t('Label')} sectionTitle={t('MainFunctions.Label')} items={functions} />
     </PageWrapper>
   );
 }

@@ -43,6 +43,7 @@ export default function ProductPage() {
     ];
     const realLifeProps: RealLifeProps = {
         productName: t('Label'),
+        sectionTitle: t('RealLifeExample.Label'),
         cases: [
             {
                 icon: bellIcon,
@@ -92,8 +93,12 @@ export default function ProductPage() {
         <PageWrapper title={t('Label')}>
             <ProductInfo info={info} />
             <RealLifeCases props={realLifeProps} />
-            <ThreeThings videoPath={videPath} productName={t('Label')} items={threeThings} />
-            <MainFunctions productName={t('Label')} items={functions} />
+            <ThreeThings
+                sectionTitle={t('ThreeThings.Label')}
+                videoPath={videPath}
+                productName={t('Label')}
+                items={threeThings} />
+            <MainFunctions productName={t('Label')} sectionTitle={t('MainFunctions.Label')} items={functions} />
         </PageWrapper>
     );
 }

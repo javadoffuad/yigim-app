@@ -5,17 +5,18 @@ import { ThingCard, ThingCardProps } from '../thing-card/thing-card';
 import { Suspense } from 'react';
 import SectionTitle from '@/app/components/section-title/section-title';
 
-export default function ThreeThings({items, productName, videoPath}: {
+export default function ThreeThings({items, productName, videoPath, sectionTitle}: {
     items: ThingCardProps[],
     productName: string,
     videoPath: string,
+    sectionTitle: string,
 }) {
   return (
     <section className={styles.section}>
         <div className={styles.container}>
             <SectionTitle
                 title={productName}
-                description="3 Things To Know" />
+                description={sectionTitle} />
 
             <div className={styles.content}>
                 <div className={styles["content-list"]}>
