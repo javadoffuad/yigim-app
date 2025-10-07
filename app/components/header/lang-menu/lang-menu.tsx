@@ -41,7 +41,7 @@ export default function LangMenu() {
         setIsOpen(false);
       }
     };
-    
+
     document.addEventListener('mousedown', handleClickOutside);
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
@@ -55,22 +55,34 @@ export default function LangMenu() {
   const selectLangulage = (newLocale: LanguageCode) => {
     // Сохраняем выбор в localStorage
     localStorage.setItem('preferred-locale', newLocale);
-    
+
     // Создаем новый путь с измененной локалью
     const segments = pathname.split('/');
-    segments[1] = newLocale; // Заменяем локаль в пути
+
+    // Проверяем, является ли первый сегмент одним из LanguageCode
+    const currentFirstSegment = segments[1];
+    const isCurrentSegmentLanguage = Object.values(LanguageCode).includes(currentFirstSegment as LanguageCode);
+
+    if (isCurrentSegmentLanguage) {
+      // Если текущий сегмент - это локаль, заменяем ее
+      segments[1] = newLocale;
+    } else {
+      // Если текущий сегмент не локаль, добавляем новую локаль в начало
+      segments.splice(1, 0, newLocale);
+    }
+
     const newPath = segments.join('/');
-    
+
     router.push(newPath);
     setIsOpen(false);
   };
-  
+
   return (
     <div className={styles.container} ref={dropdownRef}>
       <button className={styles.button} onClick={toggleMenu}>
         {locale}
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-            <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+          <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       </button>
 
