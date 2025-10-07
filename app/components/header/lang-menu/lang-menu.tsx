@@ -93,7 +93,7 @@ export default function LangMenu() {
               key={index}
               className={`${styles["dropdown-item"]} ${locale === lang.code ? styles["active"] : ''}`}
               onClick={() => selectLangulage(lang.code)}>
-              <Image src={lang.icon} alt={lang.name} />
+              <Image src={lang.icon} alt={lang.name} className={styles.flag} />
               <span className={styles["dropdown-txt"]}>{lang.name}</span>
             </div>
           ))

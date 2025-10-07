@@ -61,6 +61,11 @@
     cursor: default;
 }
 
+.flag {
+    width: 20px;
+    height: 20px;
+}
+
 .dropdown-txt {
     display: flex;
     width: 100%;

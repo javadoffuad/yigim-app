@@ -23,7 +23,7 @@
   width: fit-content;
   margin-top: -1px;
   font-weight: 500;
-  color: #888888;
+  color: var(--color-secondary);
   font-size: 14px;
   letter-spacing: 0.56px;
   line-height: 20px;

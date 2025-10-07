@@ -44,7 +44,7 @@
   font-size: 20px;
   line-height: 24px;
   letter-spacing: -0.2px;
-  color: #888888;
+  color: var(--color-secondary);
   display: flex;
   align-self: flex-start;
 }

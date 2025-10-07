@@ -60,7 +60,7 @@
 }
 
 .faqAnswer p {
-  color: #888888;
+  color: var(--color-secondary);
   font-size: 14px;
   line-height: 20px;
   letter-spacing: -0.2px;

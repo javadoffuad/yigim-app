@@ -64,7 +64,7 @@
 }
 
 .position {
-    color: #888888;
+    color: var(--color-secondary);
     font-size: 12px;
     line-height: 16px;
 }

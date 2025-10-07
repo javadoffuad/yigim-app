@@ -16,7 +16,6 @@
   display: flex;
   justify-content: center;
   padding: 0 16px;
-  min-height: 30px;
   margin-top: 60px;
 }
 
@@ -31,60 +30,64 @@
 }
 
 .product-item {
-  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 12px;
   align-items: center;
   width: 284px;
-  min-height: 100px;
   cursor: pointer;
   position: relative;
   transition: all 0.6s ease;
 }
 
 .product-item:not(:last-child)::after {
-    position: absolute;
-    content: "";
-    bottom: -48px;
-    left: 50%;
-    width: 1px;
-    height: 16px;
-    background-color: #D9D9D9;
+  position: absolute;
+  content: "";
+  bottom: -48px;
+  left: 50%;
+  width: 1px;
+  height: 16px;
+  background-color: #D9D9D9;
 }
 
 .product-title {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0%;
-    text-align: center;
-    color: #888888;
-    padding: 0 16px;
-    transition: all 0.6s ease;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: var(--color-secondary);
+  padding: 0 16px;
+  transition: all 0.6s ease;
 }
 
 .product-video {
-    width: 100%;
-    height: 132px;
-    opacity: 1;
-    border-radius: 16px;
-    overflow: hidden;
-    transition: all 0.6s ease;
+  width: 100%;
+  height: 132px;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.6s ease;
+}
+
+.video {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  transition: all 0.6s ease;
 }
 
 .product-item.active {
-    gap: 28px;
-    width: 100%;
-    cursor: default;
+  gap: 28px;
+  width: 100%;
+  cursor: default;
 }
 
 .product-item.active .product-title {
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 32px;
-    letter-spacing: -0.2%;
-    color: var(--color-primary);
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: -0.2%;
+  color: var(--color-primary);
 }
 
 .product-item.active .product-video {

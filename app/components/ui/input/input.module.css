@@ -35,7 +35,7 @@
 
 .input-field:disabled {
   background-color: #f9fafb;
-  color: #888888;
+  color: var(--color-secondary);
   cursor: not-allowed;
 }
 
@@ -55,7 +55,7 @@
   left: 52px;
   top: 50%;
   transform: translateY(-50%);
-  color: #888888;
+  color: var(--color-secondary);
   font-size: 16px;
   line-height: 1.5;
   pointer-events: none;
@@ -89,11 +89,11 @@
   margin-top: 6px;
   padding: 0 16px;
   font-weight: 400;
-  color: #888888;
+  color: var(--color-secondary);
 }
 
 .input-message-caption {
-  color: #888888;
+  color: var(--color-secondary);
 }
 
 .input-message-error {

@@ -64,7 +64,7 @@
 .copyright {
     font-weight: 500;
     font-size: 12px;
-    color: #888888;
+    color: var(--color-secondary);
 }
 
 .footer-legal {
@@ -76,7 +76,7 @@
     text-decoration: none;
     font-weight: 500;
     font-size: 12px;
-    color: #888888;
+    color: var(--color-secondary);
     transition: color 0.2s ease;
     text-transform: uppercase;
 }
@@ -89,7 +89,7 @@
     text-align: right;
     font-weight: 500;
     font-size: 12px;
-    color: #888888;
+    color: var(--color-secondary);
     cursor: pointer;
     transition: color 0.2s ease;
     text-transform: uppercase;

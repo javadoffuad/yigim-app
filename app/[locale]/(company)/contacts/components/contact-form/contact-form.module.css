@@ -18,7 +18,7 @@
 .form-subtitle {
     font-weight: 500;
     font-size: 14px;
-    color: #888888;
+    color: var(--color-secondary);
     letter-spacing: 0.56px;
     text-transform: uppercase;
 }

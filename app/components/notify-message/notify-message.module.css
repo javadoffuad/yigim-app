@@ -47,7 +47,7 @@
 
 .subtitle {
   font-weight: 500;
-  color: #888888;
+  color: var(--color-secondary);
   font-size: 14px;
   letter-spacing: 0.4px;
   line-height: 20px;
