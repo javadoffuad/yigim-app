@@ -336,6 +336,17 @@
           "Label": "Brand Visibility",
           "Description": "Your logo appears instantly  in your category across top banks' apps and major terminal networks — boosting reach and building trust"
         }
+      },
+      "AdditionalInfo": {
+        "Label": "Our Coverage Network",
+        "Info1": {
+          "Label": "Payment Terminals",
+          "Description": "This product is developed exclusively by YIĞIM's own developer team. “All-in-One” connects billing systems directly to the country’s largest terminal networks, allowing businesses to accept cash payments quickly and securely through one single integration."
+        },
+        "Info2": {
+          "Label": "Mobile Apps",
+          "Description": "With the same integration, “All-in-One” also supports cashless payments — enabling clients to accept transactions via mobile  apps. This ensures nearly every payment option is covered within one unified system."
+        }
       }
     },
     "Product2": {
@@ -442,6 +453,12 @@
         "Case3": {
           "Label": "Saved Cards & One-Click Payments",
           "Description": "Enables convenience for returning customers, leading to more sales with less effort."
+        }
+      },
+      "AdditionalInfo": {
+        "Info1": {
+          "Label": "From Link to Payment in Seconds",
+          "Description": "One of YIĞIM's own flagship products - your comprehensive payment management system which enables an effortless payment for your customers & consumers and a full tracking of transactions for you. To further simplify collection of funds for you, we integrated a feature that enables you to simply send a link that will directly lead to the payment page. Easy, seamless, and secure."
         }
       }
     },

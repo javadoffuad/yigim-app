@@ -20,18 +20,17 @@ import billIcon from '@/public/icons/bill.svg';
 import { getAbsolutePath } from "@/app/utils/absolute-path.utils";
 import { useTranslations } from "next-intl";
 
-const content: ContentImageProps = {
-    title: 'From Link to \nPayment in Seconds',
-    label: 'Link Payment +',
-    image: devicesImage,
-    description: `This product is developed exclusively by YIĞIM's own developer team. “All-in-One” offers the broadest range of payment acceptance channels, covering nearly every option available. With a single integration, it enables the client’s billing system to quickly connect to multiple payment channels: Cash (terminal networks) or cashless (mobile payments).`,
-}
-
 export default function ProductPage() {
     const t = useTranslations('Products.Product3');
     const info: ProductInfoProps = {
         title: t('SubLabel'),
         description: t('Description'),
+    };
+    const content: ContentImageProps = {
+        label: t('Label'),
+        title: t('AdditionalInfo.Info1.Label'),
+        image: devicesImage,
+        description: t('AdditionalInfo.Info1.Description'),
     };
     const threeThings: ThingCardProps[] = [
         {

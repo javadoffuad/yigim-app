@@ -21,19 +21,6 @@ import ContentImage, { ContentImageProps } from "../components/content-image/mai
 import { getAbsolutePath } from "@/app/utils/absolute-path.utils";
 import { useTranslations } from "next-intl";
 
-const content: ContentImageProps = {
-  title: 'Payment Terminals',
-  label: 'Our Coverage Network',
-  image: terminalsImage,
-  description: `This product is developed exclusively by YIĞIM's own developer team. “All-in-One” offers the broadest range of payment acceptance channels, covering nearly every option available. With a single integration, it enables the client’s billing system to quickly connect to multiple payment channels: Cash (terminal networks) or cashless (mobile payments).`,
-}
-const content2: ContentImageProps = {
-  title: 'Mobile Apps',
-  label: 'Our Coverage Network',
-  image: appsImage,
-  description: `This product is developed exclusively by YIĞIM's own developer team. “All-in-One” offers the broadest range of payment acceptance channels, covering nearly every option available. With a single integration, it enables the client’s billing system to quickly connect to multiple payment channels: Cash (terminal networks) or cashless (mobile payments).`,
-}
-
 export default function ProductPage() {
   const t = useTranslations('Products.Product1');
   const info: ProductInfoProps = {
@@ -103,6 +90,18 @@ export default function ProductPage() {
       },
     ],
   }
+  const content: ContentImageProps = {
+    title: t('AdditionalInfo.Info1.Label'),
+    label: t('AdditionalInfo.Label'),
+    image: terminalsImage,
+    description: t('AdditionalInfo.Info1.Description'),
+  }
+  const content2: ContentImageProps = {
+    title: t('AdditionalInfo.Info2.Label'),
+    label: t('AdditionalInfo.Label'),
+    image: appsImage,
+    description: t('AdditionalInfo.Info2.Description'),
+  };
   const videPath = getAbsolutePath('all-in-onefuturistic-neon-ribbon.mp4');
   return (
     <PageWrapper title={t('Label')}>
