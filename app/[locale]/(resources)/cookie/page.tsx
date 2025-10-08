@@ -5,7 +5,7 @@ import PageWrapper from "@/components/page-wrapper/page-wrapper";
 import { useTranslations } from "next-intl";
 import styles from './page.module.css';
 
-export default function HelpCenterPage() {
+export default function CookiePolicyPage() {
   const t = useTranslations(I18N_COOKIE_POLICY_PAGE);
   return (
     <PageWrapper title={t('Label')}>
