@@ -15,7 +15,7 @@ import banknoteIcon from "@/public/icons/banknote.svg";
 import smartphoneIcon from "@/public/icons/smartphone.svg";
 import userIdIcon from "@/public/icons/user-id.svg";
 import terminalsImage from "@/public/images/terminals.png";
-import appsImage from "@/public/images/apps.png";
+import mobileDevicesImage from "@/public/images/mobile-devices.png";
 import RealLifeCases, { RealLifeProps } from "../components/real-life/main-section/main-section";
 import ContentImage, { ContentImageProps } from "../components/content-image/main-section/main-section";
 import { getAbsolutePath } from "@/app/utils/absolute-path.utils";
@@ -95,12 +95,15 @@ export default function ProductPage() {
     title: t('AdditionalInfo.Info1.Label'),
     label: t('AdditionalInfo.Label'),
     image: terminalsImage,
+    imageStyles: {
+      marginLeft: '-50px'
+    },
     description: t('AdditionalInfo.Info1.Description'),
   }
   const content2: ContentImageProps = {
     title: t('AdditionalInfo.Info2.Label'),
     label: t('AdditionalInfo.Label'),
-    image: appsImage,
+    image: mobileDevicesImage,
     description: t('AdditionalInfo.Info2.Description'),
   };
   const videPath = getAbsolutePath('all-in-onefuturistic-neon-ribbon.mp4');

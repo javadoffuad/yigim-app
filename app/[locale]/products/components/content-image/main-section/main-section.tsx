@@ -3,12 +3,14 @@
 import Image, { StaticImageData } from 'next/image';
 import styles from './main-section.module.css';
 import SectionTitle from '@/app/components/section-title/section-title';
+import { CSSProperties } from 'react';
 
 export interface ContentImageProps {
     title: string;
     label: string;
     description: string;
     image: StaticImageData;
+    imageStyles?: CSSProperties;
 }
 
 export default function ContentImage({content, align = 'right'}: {content: ContentImageProps, align?: 'left' | 'right'}) {
@@ -29,6 +31,7 @@ export default function ContentImage({content, align = 'right'}: {content: Conte
           
           <div className={styles["image-content"]}>
             <Image
+              style={content.imageStyles}
               src={content.image}
               alt={content.title}
             />

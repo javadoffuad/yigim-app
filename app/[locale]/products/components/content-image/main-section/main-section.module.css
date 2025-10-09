@@ -31,7 +31,10 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  width: 582px;
+  width: 628px;
+  min-height: 648px;
+  background-color: #F3F3F3;
+  border-radius: 32px;
 }
 
 .description {
