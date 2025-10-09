@@ -6,14 +6,14 @@ import SectionTitle from '@/app/components/section-title/section-title';
 import { CSSProperties } from 'react';
 
 export interface ContentImageProps {
-    title: string;
-    label: string;
-    description: string;
-    image: StaticImageData;
-    imageStyles?: CSSProperties;
+  title: string;
+  label: string;
+  description: string;
+  image: StaticImageData;
+  imageStyles?: CSSProperties;
 }
 
-export default function ContentImage({content, align = 'right'}: {content: ContentImageProps, align?: 'left' | 'right'}) {
+export default function ContentImage({ content, align = 'right', children }: { content: ContentImageProps, align?: 'left' | 'right', children?: React.ReactNode }) {
   return (
     <div className={styles["container"]}>
       <section className={styles["section"]}>
@@ -23,12 +23,14 @@ export default function ContentImage({content, align = 'right'}: {content: Conte
               textAlign='left'
               title={content.label}
               description={content.title} />
-            
+
             <p className={styles["description"]}>
               {content.description}
             </p>
+
+            <div>{children}</div>
           </div>
-          
+
           <div className={styles["image-content"]}>
             <Image
               style={content.imageStyles}

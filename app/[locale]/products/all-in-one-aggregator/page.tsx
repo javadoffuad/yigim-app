@@ -112,7 +112,9 @@ export default function ProductPage() {
       <ProductInfo info={info} />
       <RealLifeCases props={realLifeProps} />
       <ContentImage content={content} />
-      <ContentImage content={content2} align="left" />
+      <ContentImage content={content2} align="left">
+        <p>Here is apps</p>
+      </ContentImage>
       <ThreeThings
         sectionTitle={t('ThreeThings.Label')}
         videoPath={videPath}
