@@ -20,6 +20,19 @@ import RealLifeCases, { RealLifeProps } from "../components/real-life/main-secti
 import ContentImage, { ContentImageProps } from "../components/content-image/main-section/main-section";
 import { getAbsolutePath } from "@/app/utils/absolute-path.utils";
 import { useTranslations } from "next-intl";
+import styles from './page.module.css';
+import abbIcon from '@/public/icons/abb.png';
+import oneBankIcon from '@/public/icons/1bank.png';
+import pashaIcon from '@/public/icons/pasha.png';
+import rabitaIcon from '@/public/icons/rabita.png';
+import yeloIcon from '@/public/icons/yelo.png';
+import premiumIcon from '@/public/icons/premium.png';
+import expressIcon from '@/public/icons/express.png';
+import akartIcon from '@/public/icons/akart.png';
+import epulIcon from '@/public/icons/epul.png';
+import xalqbankIcon from '@/public/icons/xalqbank.png';
+import portmanatIcon from '@/public/icons/portmanat.png';
+import Image from "next/image";
 
 export default function ProductPage() {
   const t = useTranslations('Products.Product1');
@@ -113,7 +126,52 @@ export default function ProductPage() {
       <RealLifeCases props={realLifeProps} />
       <ContentImage content={content} />
       <ContentImage content={content2} align="left">
-        <p>Here is apps</p>
+        <div className={styles.apps}>
+          <div className={styles.app}>
+            <Image src={abbIcon} alt="" className={styles["app-icon"]} />
+            <p className={styles["app-name"]}>ABB Mobile</p>
+          </div>
+          <div className={styles.app}>
+            <Image src={oneBankIcon} alt="" className={styles["app-icon"]} />
+            <p className={styles["app-name"]}>Birbank</p>
+          </div>
+          <div className={styles.app}>
+            <Image src={pashaIcon} alt="" className={styles["app-icon"]} />
+            <p className={styles["app-name"]}>PASHA Bank</p>
+          </div>
+          <div className={styles.app}>
+            <Image src={rabitaIcon} alt="" className={styles["app-icon"]} />
+            <p className={styles["app-name"]}>Rabita Mobile</p>
+          </div>
+          <div className={styles.app}>
+            <Image src={yeloIcon} alt="" className={styles["app-icon"]} />
+            <p className={styles["app-name"]}>Yelo Bank</p>
+          </div>
+          <div className={styles.app}>
+            <Image src={premiumIcon} alt="" className={styles["app-icon"]} />
+            <p className={styles["app-name"]}>Premium Bank</p>
+          </div>
+          <div className={styles.app}>
+            <Image src={expressIcon} alt="" className={styles["app-icon"]} />
+            <p className={styles["app-name"]}>Express24</p>
+          </div>
+          <div className={styles.app}>
+            <Image src={akartIcon} alt="" className={styles["app-icon"]} />
+            <p className={styles["app-name"]}>Akart</p>
+          </div>
+          <div className={styles.app}>
+            <Image src={epulIcon} alt="" className={styles["app-icon"]} />
+            <p className={styles["app-name"]}>E-pul.az</p>
+          </div>
+          <div className={styles.app}>
+            <Image src={xalqbankIcon} alt="" className={styles["app-icon"]} />
+            <p className={styles["app-name"]}>Xalq Bank Mobile</p>
+          </div>
+          <div className={styles.app}>
+            <Image src={portmanatIcon} alt="" className={styles["app-icon"]} />
+            <p className={styles["app-name"]}>Portmanat</p>
+          </div>
+        </div>
       </ContentImage>
       <ThreeThings
         sectionTitle={t('ThreeThings.Label')}
