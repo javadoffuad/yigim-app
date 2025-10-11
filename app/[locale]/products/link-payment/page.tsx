@@ -31,6 +31,9 @@ export default function ProductPage() {
         title: t('AdditionalInfo.Info1.Label'),
         content: {
             image: devicesImage,
+            imageStyles: {
+                maxWidth: '530px',
+            }
         },
         description: t('AdditionalInfo.Info1.Description'),
     };
