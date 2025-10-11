@@ -1,4 +1,5 @@
 .apps {
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 24px 16px; /* 24px между строками, 16px между колонками */
 }
