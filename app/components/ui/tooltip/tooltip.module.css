@@ -1,0 +1,41 @@
+
+.tooltip {
+    width: 173px;
+    top: -27px;
+    left: 0;
+    border-radius: 12px;
+    padding: 16px;
+    background: rgba(242, 235, 216, 1);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(26, 26, 26, 1);
+    position: absolute;
+    transform: translateY(-100%);
+    z-index: 1;
+}
+
+.tooltip::after {
+    content: '';
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    top: calc(100% - 4px);
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    background: rgba(242, 235, 216, 1);
+    border-radius: 6px;
+}
+
+.text {
+    z-index: 1;
+    position: relative;
+}
+
+.text mark {
+    border-radius: 8px;
+    padding: 0 4px;
+    background-color: #F8DD84;
+    box-decoration-break: clone;
+}

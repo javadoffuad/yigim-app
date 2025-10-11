@@ -29,7 +29,9 @@ export default function ProductPage() {
     const content: ContentImageProps = {
         label: t('Label'),
         title: t('AdditionalInfo.Info1.Label'),
-        image: devicesImage,
+        content: {
+            image: devicesImage,
+        },
         description: t('AdditionalInfo.Info1.Description'),
     };
     const threeThings: ThingCardProps[] = [

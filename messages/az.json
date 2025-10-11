@@ -517,6 +517,12 @@
           "Label": "Avtomatlaşdırılmış və Ağıllı",
           "Description": "Xatırlatmaları avtomatlaşdırın və ödənişlərin gecikməsinin qarşısını alın. Müştərilərin vaxtında ödəməsini təmin edin."
         }
+      },
+      "AdditionalInfo": {
+        "Info1": {
+          "Label": "Linkdən ödənişə saniyələr içində",
+          "Description": "YIĞIM-ın əsas məhsullarından biri — müştəriləriniz və istifadəçiləriniz üçün asan ödəniş imkanı yaradan, sizin üçün isə bütün əməliyyatların tam izlənməsini təmin edən geniş ödəniş idarəetmə sistemidir. Vəsaitlərin toplanmasını daha da sadələşdirmək məqsədilə, birbaşa ödəniş səhifəsinə yönləndirən linki sadəcə göndərməyə imkan verən bir funksiyanı sistemə əlavə etdik. Sadə, problemsiz və təhlükəsiz."
+        }
       }
     }
   },

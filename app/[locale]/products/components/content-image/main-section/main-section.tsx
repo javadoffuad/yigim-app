@@ -9,15 +9,21 @@ export interface ContentImageProps {
   title: string;
   label: string;
   description: string;
-  image: StaticImageData;
-  imageStyles?: CSSProperties;
+  content: {
+    image?: StaticImageData;
+    imageStyles?: CSSProperties;
+    contentHTML?: React.ReactNode;
+  }
 }
 
-export default function ContentImage({ content, align = 'right', children }: { content: ContentImageProps, align?: 'left' | 'right', children?: React.ReactNode }) {
+type Align = 'left' | 'right' | 'full';
+
+export default function ContentImage({ content, align = 'right', children }: { content: ContentImageProps, align?: Align, children?: React.ReactNode }) {
+  const contentAlign = align === 'left' ? styles['align-left'] : align === 'full' ? styles['align-full'] : '';
   return (
     <div className={styles["container"]}>
-      <section className={styles["section"]}>
-        <div className={`${styles["content-wrapper"]} ${align === 'left' ? styles["reverse"] : ''}`}>
+      <section className={`${styles["section"]} ${contentAlign}`}>
+        <div className={styles["content-wrapper"]}>
           <div className={styles["text-content"]}>
             <SectionTitle
               textAlign='left'
@@ -28,15 +34,24 @@ export default function ContentImage({ content, align = 'right', children }: { c
               {content.description}
             </p>
 
-            <div>{children}</div>
+            {
+              children ? <div>{children}</div> : null
+            }            
           </div>
 
           <div className={styles["image-content"]}>
-            <Image
-              style={content.imageStyles}
-              src={content.image}
-              alt={content.title}
-            />
+
+            {
+              content.content.image
+              ?
+                <Image
+                  style={content.content.imageStyles}
+                  src={content.content.image}
+                  alt={content.title}
+                />
+              : content.content.contentHTML
+            }
+            
           </div>
         </div>
       </section>

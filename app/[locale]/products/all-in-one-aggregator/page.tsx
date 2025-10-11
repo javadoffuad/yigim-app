@@ -107,16 +107,20 @@ export default function ProductPage() {
   const content: ContentImageProps = {
     title: t('AdditionalInfo.Info1.Label'),
     label: t('AdditionalInfo.Label'),
-    image: terminalsImage,
-    imageStyles: {
-      marginLeft: '-50px'
+    content: {
+      image: terminalsImage,
+      imageStyles: {
+        marginLeft: '-50px'
+      },
     },
     description: t('AdditionalInfo.Info1.Description'),
   }
   const content2: ContentImageProps = {
     title: t('AdditionalInfo.Info2.Label'),
     label: t('AdditionalInfo.Label'),
-    image: mobileDevicesImage,
+    content: {
+      image: mobileDevicesImage,
+    },
     description: t('AdditionalInfo.Info2.Description'),
   };
   const videPath = getAbsolutePath('all-in-onefuturistic-neon-ribbon.mp4');

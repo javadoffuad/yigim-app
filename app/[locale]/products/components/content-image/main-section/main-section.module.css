@@ -15,7 +15,11 @@
   gap: 80px;
 }
 
-.reverse {
+.align-full .content-wrapper {
+  flex-direction: column;
+}
+
+.align-left .content-wrapper {
   flex-direction: row-reverse;
 }
 
@@ -35,6 +39,10 @@
   min-height: 648px;
   background-color: #F3F3F3;
   border-radius: 32px;
+}
+
+.align-full .image-content {
+  width: 100%;
 }
 
 .description {

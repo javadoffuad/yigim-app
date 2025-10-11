@@ -517,6 +517,12 @@
           "Label": "Automated & Smart",
           "Description": "Automate reminders and reduce time chasing payments. Make sure that customers pay on time."
         }
+      },
+      "AdditionalInfo": {
+        "Info1": {
+          "Label": "From Link to Payment in Seconds",
+          "Description": "One of YIĞIM's own flagship products - your comprehensive payment management system which enables an effortless payment for your customers & consumers and a full tracking of transactions for you. To further simplify collection of funds for you, we integrated a feature that enables you to simply send a link that will directly lead to the payment page. Easy, seamless, and secure."
+        }
       }
     }
   },
