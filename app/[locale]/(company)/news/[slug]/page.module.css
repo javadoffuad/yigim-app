@@ -5,23 +5,59 @@
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-/* Для экранов шире 768px - 3 колонки */
-@media (min-width: 768px) {
-  .news {
-    grid-template-columns: repeat(3, 1fr);
-  }
+.nav {
+    display: flex;
+    margin-bottom: 48px;
 }
 
-/* Для экранов уже 768px - 2 колонки */
-@media (max-width: 767px) {
-  .news {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.images {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 24px;
+    margin-bottom: 48px;
 }
 
-/* Для экранов уже 480px - 1 колонка */
-@media (max-width: 480px) {
-  .news {
-    grid-template-columns: 1fr;
-  }
+.image {
+    width: 100%;
+    min-height: 200px;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+.date {
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #888888;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -2%;
+    margin-bottom: 40px;
+    color: #1E1E1E;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #1E1E1E;
+    gap: 10px;
+}
+
+.text p:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.button-back,
+.button-back:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    background-image: url(../../../../../public/icons/arrow-left.svg);
+    background-repeat: no-repeat;
+    background-position: left 18px center;
+    padding-left: 44px;
 }

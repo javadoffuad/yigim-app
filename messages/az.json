@@ -116,6 +116,11 @@
   "PageNews": {
     "Label": "Xəbərlər"
   },
+  "PageNewsDetail": {
+    "ButtonBack": {
+      "Label": "Geri"
+    }
+  },
   "PageApi": {
     "Label": "API Sənədləşmə"
   },

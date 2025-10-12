@@ -116,6 +116,11 @@
   "PageNews": {
     "Label": "Company News"
   },
+  "PageNewsDetail": {
+    "ButtonBack": {
+      "Label": "Back"
+    }
+  },
   "PageApi": {
     "Label": "API Documentation"
   },

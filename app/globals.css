@@ -47,34 +47,34 @@ body {
   font-weight: 500;
   font-size: var(--button-text-size-m);
   border-radius: 28px;
-  transition: background-color 0.2s ease;
   cursor: pointer;
-  background: var(--button-tertiary);
+  background-color: var(--button-tertiary);
+  transition: background-color 0.2s ease;
 }
 
 .button-tertiary {
-  background: var(--button-tertiary);
+  background-color: var(--button-tertiary);
 }
 
 .button:hover,
 .button-tertiary:hover  {
-  background: var(--button-tertiary-hover);
+  background-color: var(--button-tertiary-hover);
 }
 
 .button-primary {
-  background: var(--button-primary);
+  background-color: var(--button-primary);
 }
 
 .button-primary:hover  {
-  background: var(--button-primary-hover);
+  background-color: var(--button-primary-hover);
 }
 
 .button-secondary {
-  background: var(--button-secondary);
+  background-color: var(--button-secondary);
 }
 
 .button-secondary:hover  {
-  background: var(--button-secondary-hover);
+  background-color: var(--button-secondary-hover);
 }
 
 .button-small {

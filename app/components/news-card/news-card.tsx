@@ -1,15 +1,9 @@
 import React from "react";
 import styles from "./news-card.module.css";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
+import { INews } from "@/app/models/news.models";
 
-export interface INewsCardProps {
-  id: number | string; // уникальный идентификатор
-  title: string; // заголовок новости
-  date: string; // дата в формате ISO или удобном для отображения
-  image: StaticImageData; // URL изображения с маленьким размером (превью)
-}
-
-export default function NewCard(props: INewsCardProps) {
+export default function NewCard(props: INews) {
   return (
     <div className={styles.card}>
       <div className={styles["image-wrapper"]}>
