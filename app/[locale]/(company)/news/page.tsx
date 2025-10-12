@@ -1,6 +1,6 @@
 'use client';
 
-import NewCard from "@/app/components/news-card/news-card";
+import NewsCard from "@/app/components/news-card/news-card";
 import { I18N_NEWS_PAGE } from "@/app/constants/i18n.constants";
 import PageWrapper from "@/components/page-wrapper/page-wrapper";
 import { useTranslations } from "next-intl";
@@ -15,7 +15,7 @@ export default function NewsPage() {
     <PageWrapper title={t('Label')}>
       <div className={styles.news}>
         {
-          NEWS.map(newsItem => <Link key={newsItem.id} href={`${newsItem.slug}`}><NewCard {...newsItem} /></Link>)
+          NEWS.map(newsItem => <Link key={newsItem.id} href={`${newsItem.slug}`}><NewsCard {...newsItem} /></Link>)
         }
       </div>
     </PageWrapper>

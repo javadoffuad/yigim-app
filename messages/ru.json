@@ -119,6 +119,9 @@
   "PageNewsDetail": {
     "ButtonBack": {
       "Label": "Назад"
+    },
+    "AreaRelatedNews": {
+      "Label": "Похожие новости"
     }
   },
   "PageApi": {

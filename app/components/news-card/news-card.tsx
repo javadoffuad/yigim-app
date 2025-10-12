@@ -3,7 +3,7 @@ import styles from "./news-card.module.css";
 import Image from "next/image";
 import { INews } from "@/app/models/news.models";
 
-export default function NewCard(props: INews) {
+export default function NewsCard(props: INews) {
   return (
     <div className={styles.card}>
       <div className={styles["image-wrapper"]}>

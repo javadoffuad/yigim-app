@@ -119,6 +119,9 @@
   "PageNewsDetail": {
     "ButtonBack": {
       "Label": "Geri"
+    },
+    "AreaRelatedNews": {
+      "Label": "Oxşar xəbərlər"
     }
   },
   "PageApi": {

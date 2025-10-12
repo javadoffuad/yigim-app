@@ -6,9 +6,10 @@ import { useTranslations } from "next-intl";
 import styles from './page.module.css';
 import { use } from "react";
 import { notFound } from "next/navigation";
-import { NEWS_DETAIL } from "@/app/constants/news.constants";
+import { NEWS, NEWS_DETAIL } from "@/app/constants/news.constants";
 import Link from "next/link";
 import Image from "next/image";
+import RelatedNews from "@/app/components/related-news/related-news";
 
 export default function NewsDetailPage({
   params,
@@ -24,6 +25,8 @@ export default function NewsDetailPage({
     notFound();
   }
 
+  const relatedNews = NEWS.slice(0, 3);
+
   return (
     <PageNewsDetail>
       <div className={styles.nav}>
@@ -35,6 +38,7 @@ export default function NewsDetailPage({
       <div className={styles.date}>{newsDetail.date}</div>
       <div className={styles.title}>{newsDetail.title}</div>
       <div className={styles.text} dangerouslySetInnerHTML={{__html: newsDetail.text}} />
+      <RelatedNews sectionTitle={t('AreaRelatedNews.Label')} news={relatedNews} />
     </PageNewsDetail>
   );
 }
