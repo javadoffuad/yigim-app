@@ -10,7 +10,7 @@ import news3 from "@/public/images/news-3.png";
 import news4 from "@/public/images/news-4.jpg";
 import news5 from "@/public/images/news-5.jpg";
 import news6 from "@/public/images/news-6.jpg";
-import styles from './news.module.css';
+import styles from './page.module.css';
 import Link from "next/link";
 
 const news: INewsCardProps[] = [
@@ -58,7 +58,7 @@ export default function NewsPage() {
     <PageWrapper title={t('Label')}>
       <div className={styles.news}>
         {
-          news.map(newsItem => <Link href={"#"}><NewCard {...newsItem} /></Link>)}
+          news.map(newsItem => <Link key={newsItem.id} href={"#"}><NewCard {...newsItem} /></Link>)}
       </div>
     </PageWrapper>
   );
