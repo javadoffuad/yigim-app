@@ -295,6 +295,59 @@
   },
   "Products": {
     "Product1": {
+      "Label": "Internet - Acquiring / E-Comm Solution",
+      "SubLabel": "Reliable payments for your business: Even if one processing center experiences issues, transactions continue smoothly, with a 99.9% success rate.",
+      "Description": "Developed entirely by YIĞIM’s in-house team, this integrated payment gateway supports cards for online stores and apps, ensures the highest transaction success rates, and protects customer data with advanced encryption and tokenization.",
+      "MainFunctions": {
+        "Label": "Main Functions",
+        "CardSave": {
+          "Label": "Card Save",
+          "Description": "Cards used previously are securely tokenized and stored for future use"
+        },
+        "FlexibleTransaction": {
+          "Label": "Flexible Transaction Processing",
+          "Description": "We support both 3D Secure and non-3D Secure transactions"
+        },
+        "HoldingFunds": {
+          "Label": "Holding Funds",
+          "Description": "YIĞIM holds the funds until the service is being fulfilled (e.g. a taxi ride)"
+        },
+        "Refunds": {
+          "Label": "Refunds",
+          "Description": "Easy refund management directly through your dashboard (e.g. taxi ride was cancelled)"
+        },
+        "MarketLeader": {
+          "Label": "Market Leader in Foreign Card Acceptance",
+          "Description": "Expanded reach to international customers"
+        },
+        "Notifications": {
+          "Label": "Notifications",
+          "Description": "Automated SMS and email alerts for payment confirmations"
+        }
+      },
+      "RealLifeExample": {
+        "Label": "Real-Life Example",
+        "LabelVideo": "Secure Pre-Authorization",
+        "Case1": "In services like <strong>food delivery or taxi rides</strong> (e.g. Wolt, Uber or Bolt ), funds can be <strong>securely pre-authorized</strong> and blocked (frozen) until the service is delivered.",
+        "Case2": "If the service is canceled or not used, the amount is unblocked (returned back) to the customer — <strong>without any commission</strong> or penalty."
+      },
+      "ThreeThings": {
+        "Label": "3 Things To Know",
+        "Case1": {
+          "Label": "Service Stability",
+          "Description": "YIĞIM is connected to multiple processing centers, automatically rerouting transactions if one of them fails to ensure uninterrupted service"
+        },
+        "Case2": {
+          "Label": "Secure Transactions",
+          "Description": "We are PCI DSS certified and authorized by the Ministry of Digital Development and Transport of Azerbaijan for managing personal data. We are also certified by the Central Bank of Azerbaijan (CBAR)."
+        },
+        "Case3": {
+          "Label": "Simplicity",
+          "Description": "Simplifies yout accounting by reconciling with YIĞIM instead of multiple banks"
+        }
+      }
+    },
+    "Product2": {
       "Label": "All-In-One Aggregator Service",
       "SubLabel": "With just one integration, you now can simplify your whole payment process.",
       "Description": "This product is fully developed by YIĞIM’s in-house team. The ‘All-in-One’ solution brings together almost every payment method in one place. As a merchant, you would need only ONE integration, your billing system can easily connect to multiple channels — from cash payments at terminals to cashless options like mobile payments.",
@@ -357,59 +410,6 @@
         "Info2": {
           "Label": "Mobile Apps",
           "Description": "With the same integration, “All-in-One” also supports cashless payments — enabling clients to accept transactions via mobile  apps. This ensures nearly every payment option is covered within one unified system."
-        }
-      }
-    },
-    "Product2": {
-      "Label": "Internet - Acquiring / E-Comm Solution",
-      "SubLabel": "Reliable payments for your business: Even if one processing center experiences issues, transactions continue smoothly, with a 99.9% success rate.",
-      "Description": "Developed entirely by YIĞIM’s in-house team, this integrated payment gateway supports cards for online stores and apps, ensures the highest transaction success rates, and protects customer data with advanced encryption and tokenization.",
-      "MainFunctions": {
-        "Label": "Main Functions",
-        "CardSave": {
-          "Label": "Card Save",
-          "Description": "Cards used previously are securely tokenized and stored for future use"
-        },
-        "FlexibleTransaction": {
-          "Label": "Flexible Transaction Processing",
-          "Description": "We support both 3D Secure and non-3D Secure transactions"
-        },
-        "HoldingFunds": {
-          "Label": "Holding Funds",
-          "Description": "YIĞIM holds the funds until the service is being fulfilled (e.g. a taxi ride)"
-        },
-        "Refunds": {
-          "Label": "Refunds",
-          "Description": "Easy refund management directly through your dashboard (e.g. taxi ride was cancelled)"
-        },
-        "MarketLeader": {
-          "Label": "Market Leader in Foreign Card Acceptance",
-          "Description": "Expanded reach to international customers"
-        },
-        "Notifications": {
-          "Label": "Notifications",
-          "Description": "Automated SMS and email alerts for payment confirmations"
-        }
-      },
-      "RealLifeExample": {
-        "Label": "Real-Life Example",
-        "LabelVideo": "Secure Pre-Authorization",
-        "Case1": "In services like <strong>food delivery or taxi rides</strong> (e.g. Wolt, Uber or Bolt ), funds can be <strong>securely pre-authorized</strong> and blocked (frozen) until the service is delivered.",
-        "Case2": "If the service is canceled or not used, the amount is unblocked (returned back) to the customer — <strong>without any commission</strong> or penalty."
-      },
-      "ThreeThings": {
-        "Label": "3 Things To Know",
-        "Case1": {
-          "Label": "Service Stability",
-          "Description": "YIĞIM is connected to multiple processing centers, automatically rerouting transactions if one of them fails to ensure uninterrupted service"
-        },
-        "Case2": {
-          "Label": "Secure Transactions",
-          "Description": "We are PCI DSS certified and authorized by the Ministry of Digital Development and Transport of Azerbaijan for managing personal data. We are also certified by the Central Bank of Azerbaijan (CBAR)."
-        },
-        "Case3": {
-          "Label": "Simplicity",
-          "Description": "Simplifies yout accounting by reconciling with YIĞIM instead of multiple banks"
         }
       }
     },

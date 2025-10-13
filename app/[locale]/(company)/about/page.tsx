@@ -80,10 +80,10 @@ export default function AboutPage() {
         description={t.raw('AreaOffers.Description')} />
 
       <div className={styles["offer-cards"]}>
-        <OfferCard altText="" icon={product2Icon}>
+        <OfferCard altText="" icon={product1Icon}>
           {p('Product1.Label')}
         </OfferCard>
-        <OfferCard altText="" icon={product1Icon}>
+        <OfferCard altText="" icon={product2Icon}>
           {p('Product2.Label')}
         </OfferCard>
         <OfferCard altText="" icon={product3Icon}>

@@ -35,7 +35,7 @@ import portmanatIcon from '@/public/icons/portmanat.png';
 import Image from "next/image";
 
 export default function ProductPage() {
-  const t = useTranslations('Products.Product1');
+  const t = useTranslations('Products.Product2');
   const info: ProductInfoProps = {
     title: t('SubLabel'),
     description: t('Description'),

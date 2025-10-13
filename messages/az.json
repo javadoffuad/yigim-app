@@ -295,6 +295,59 @@
   },
   "Products": {
     "Product1": {
+      "Label": "Internet -Ekvayrinq / E-Ticarət Həlləri",
+      "SubLabel": "Biznesiniz üçün etibarlılıq: Hətta bir prosessinq mərkəzində nasazlıq olsa belə, ödənişləriniz fasiləsiz icra olunur (99.9% uğurlu ödənişlərin faizi).",
+      "Description": "Tam olaraq YIĞIM-ın daxili komandası tərəfindən hazırlanan bu inteqrasiya olunmuş ödəniş imkanı, onlayn mağazalar və mobil tətbiqlər üçün kart dəstəyini təmin edir, əməliyyatların uğur nisbətini maksimuma çatdırır və müştəri məlumatlarını yüksək səviyyəli şifrə və tokenləşdirmə ilə qoruyur.",
+      "MainFunctions": {
+        "Label": "Əsas Funksiyalar",
+        "CardSave": {
+          "Label": "Kart məlumatların yadda saxlanılması",
+          "Description": "Əvvəllər istifadə olunan kartlar təhlükəsiz şəkildə tokenləşdirilir və gələcək istifadə üçün yadda saxlanılır."
+        },
+        "FlexibleTransaction": {
+          "Label": "Əməliyyatların çevik emalı",
+          "Description": "Həm 3D Secure, həm də 3D Secure olmayan əməliyyatları dəstəkləyirik"
+        },
+        "HoldingFunds": {
+          "Label": "Vəsaitlərin saxlanması",
+          "Description": "YIĞIM vəsaitləri xidmət tam yerinə yetirilənə qədər özündə saxlayır (məsələn, taksi sifarişi zamanı)."
+        },
+        "Refunds": {
+          "Label": "Geri qaytarma",
+          "Description": "Geri qaytarmaları paneliniz vasitəsilə asanlıqla idarə edin (məsələn, taksi sifarişi ləğv olunubsa)."
+        },
+        "MarketLeader": {
+          "Label": "Xarici kartların  qəbulu üzrə bazar lideri",
+          "Description": "Xidmətinizi beynəlxalq müştərilər üçün əlçatan edirik."
+        },
+        "Notifications": {
+          "Label": "Bildirişlər",
+          "Description": "Ödəniş təsdiqləri üçün avtomatlaşdırılmış SMS və e-poçt bildirişləri."
+        }
+      },
+      "RealLifeExample": {
+        "Label": "Real Həyatdan nümunə",
+        "LabelVideo": "Secure Pre-Authorization",
+        "Case1": "Wolt, Uber və ya Bolt kimi <strong>yemək çatdırılması və ya taksi xidmətlərində</strong> vəsaitlər xidmət göstərilənə qədər təhlükəsiz şəkildə əvvəlcədən təsdiqlənə və bloklana (dondurula) bilər.",
+        "Case2": "Əgər xidmət ləğv olunarsa və ya istifadə edilməzsə, məbləğ <strong>heç bir komissiya</strong> və ya cərimə tutulmadan müştəriyə geri qaytarılır."
+      },
+      "ThreeThings": {
+        "Label": "3 Vacib Məqam",
+        "Case1": {
+          "Label": "Xidmətin Sabitliyi",
+          "Description": "YIĞIM bir neçə prossesinq mərkəzinə qoşuludur və onlardan biri işini dayandırdıqda əməliyyatları avtomatik olaraq digər mərkəzlərə yönləndirir — bu isə fasiləsiz xidməti təmin edir."
+        },
+        "Case2": {
+          "Label": "Təhlükəsiz Əməliyyatlar",
+          "Description": "Biz PCI DSS sertifikatına malikik və şəxsi məlumatların idarə olunması üzrə Azərbaycan Respublikası Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi tərəfindən, eləcə də Azərbaycan Mərkəzi Bankı (AMB) tərəfindən sertifikatlaşdırılmışıq."
+        },
+        "Case3": {
+          "Label": "Sadəlik",
+          "Description": "YIĞIM ilə inteqrasiya sayəsində bir neçə bankla ayrıca hesablaşma aparmağa ehtiyac qalmır — bu da mühasibatlığı sadələşdirir."
+        }
+      }
+    },
+    "Product2": {
       "Label": "All-In-One Aqreqator Xidməti",
       "SubLabel": "Sadəcə bir inteqrasiya ilə bütün ödəniş proseslərinizi sadələşdirə bilərsiniz.",
       "Description": "“All-in-One” həlli demək olar ki, bütün ödəniş üsullarını bir araya gətirir. Satıcı kimi sizə yalnız BİR inteqrasiya lazımdır: hesablaşma sisteminiz həm nağd (terminallar vasitəsilə), həm də nağdsız (mobil ödənişlər) kanallara qoşula bilər.",
@@ -357,59 +410,6 @@
         "Info2": {
           "Label": "Mobil Tətbiqlər",
           "Description": "Eyni inteqrasiya ilə “All-in-One” həm də nağdsız ödənişləri dəstəkləyir — müştərilərə mobil tətbiqlər vasitəsilə əməliyyatları qəbul etməyə imkan verir. Bu, demək olar ki, bütün ödəniş üsullarının vahid sistemdə əhatə olunmasını təmin edir."
-        }
-      }
-    },
-    "Product2": {
-      "Label": "Internet -Ekvayrinq / E-Ticarət Həlləri",
-      "SubLabel": "Biznesiniz üçün etibarlılıq: Hətta bir prosessinq mərkəzində nasazlıq olsa belə, ödənişləriniz fasiləsiz icra olunur (99.9% uğurlu ödənişlərin faizi).",
-      "Description": "Tam olaraq YIĞIM-ın daxili komandası tərəfindən hazırlanan bu inteqrasiya olunmuş ödəniş imkanı, onlayn mağazalar və mobil tətbiqlər üçün kart dəstəyini təmin edir, əməliyyatların uğur nisbətini maksimuma çatdırır və müştəri məlumatlarını yüksək səviyyəli şifrə və tokenləşdirmə ilə qoruyur.",
-      "MainFunctions": {
-        "Label": "Əsas Funksiyalar",
-        "CardSave": {
-          "Label": "Kart məlumatların yadda saxlanılması",
-          "Description": "Əvvəllər istifadə olunan kartlar təhlükəsiz şəkildə tokenləşdirilir və gələcək istifadə üçün yadda saxlanılır."
-        },
-        "FlexibleTransaction": {
-          "Label": "Əməliyyatların çevik emalı",
-          "Description": "Həm 3D Secure, həm də 3D Secure olmayan əməliyyatları dəstəkləyirik"
-        },
-        "HoldingFunds": {
-          "Label": "Vəsaitlərin saxlanması",
-          "Description": "YIĞIM vəsaitləri xidmət tam yerinə yetirilənə qədər özündə saxlayır (məsələn, taksi sifarişi zamanı)."
-        },
-        "Refunds": {
-          "Label": "Geri qaytarma",
-          "Description": "Geri qaytarmaları paneliniz vasitəsilə asanlıqla idarə edin (məsələn, taksi sifarişi ləğv olunubsa)."
-        },
-        "MarketLeader": {
-          "Label": "Xarici kartların  qəbulu üzrə bazar lideri",
-          "Description": "Xidmətinizi beynəlxalq müştərilər üçün əlçatan edirik."
-        },
-        "Notifications": {
-          "Label": "Bildirişlər",
-          "Description": "Ödəniş təsdiqləri üçün avtomatlaşdırılmış SMS və e-poçt bildirişləri."
-        }
-      },
-      "RealLifeExample": {
-        "Label": "Real Həyatdan nümunə",
-        "LabelVideo": "Secure Pre-Authorization",
-        "Case1": "Wolt, Uber və ya Bolt kimi <strong>yemək çatdırılması və ya taksi xidmətlərində</strong> vəsaitlər xidmət göstərilənə qədər təhlükəsiz şəkildə əvvəlcədən təsdiqlənə və bloklana (dondurula) bilər.",
-        "Case2": "Əgər xidmət ləğv olunarsa və ya istifadə edilməzsə, məbləğ <strong>heç bir komissiya</strong> və ya cərimə tutulmadan müştəriyə geri qaytarılır."
-      },
-      "ThreeThings": {
-        "Label": "3 Vacib Məqam",
-        "Case1": {
-          "Label": "Xidmətin Sabitliyi",
-          "Description": "YIĞIM bir neçə prossesinq mərkəzinə qoşuludur və onlardan biri işini dayandırdıqda əməliyyatları avtomatik olaraq digər mərkəzlərə yönləndirir — bu isə fasiləsiz xidməti təmin edir."
-        },
-        "Case2": {
-          "Label": "Təhlükəsiz Əməliyyatlar",
-          "Description": "Biz PCI DSS sertifikatına malikik və şəxsi məlumatların idarə olunması üzrə Azərbaycan Respublikası Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi tərəfindən, eləcə də Azərbaycan Mərkəzi Bankı (AMB) tərəfindən sertifikatlaşdırılmışıq."
-        },
-        "Case3": {
-          "Label": "Sadəlik",
-          "Description": "YIĞIM ilə inteqrasiya sayəsində bir neçə bankla ayrıca hesablaşma aparmağa ehtiyac qalmır — bu da mühasibatlığı sadələşdirir."
         }
       }
     },

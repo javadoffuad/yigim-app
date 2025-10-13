@@ -19,11 +19,11 @@ export default function Footer() {
     const products = [
         {
             text: p('Product1.Label'),
-            url: PAGE_PRODUCT_ALL_IN_ONE
+            url: PAGE_PRODUCT_INTERNET_ACQUIRING
         },
         {
             text: p('Product2.Label'),
-            url: PAGE_PRODUCT_INTERNET_ACQUIRING
+            url: PAGE_PRODUCT_ALL_IN_ONE
         },
         {
             text: p('Product3.Label'),

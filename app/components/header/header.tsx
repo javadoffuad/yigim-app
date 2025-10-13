@@ -25,16 +25,16 @@ export default function Header() {
 
   const products: ProductMenuItemProps[] = [
     {
-      url: PAGE_PRODUCT_ALL_IN_ONE,
+      url: PAGE_PRODUCT_INTERNET_ACQUIRING,
       title: p('Product1.Label'),
       description: p('Product1.SubLabel'),
-      icon: product2Icon,
+      icon: product1Icon,
     },
     {
-      url: PAGE_PRODUCT_INTERNET_ACQUIRING,
+      url: PAGE_PRODUCT_ALL_IN_ONE,
       title: p('Product2.Label'),
       description: p('Product2.SubLabel'),
-      icon: product1Icon,
+      icon: product2Icon,
     },
     {
       url: PAGE_PRODUCT_LINK_PAYMENT,

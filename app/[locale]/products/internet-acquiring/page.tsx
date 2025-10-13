@@ -18,7 +18,7 @@ import { getAbsolutePath } from "@/app/utils/absolute-path.utils";
 import { useTranslations } from "next-intl";
 
 export default function ProductPage() {
-    const t = useTranslations('Products.Product2');
+    const t = useTranslations('Products.Product1');
     const info: ProductInfoProps = {
         title: t('SubLabel'),
         description: t('Description'),
