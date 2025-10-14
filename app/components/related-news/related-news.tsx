@@ -16,7 +16,7 @@ export default function RelatedNews(props: RelatedNewsProps) {
       <div className={styles.title}>{props.sectionTitle}</div>
       <div className={styles.news}>
         {
-          props.news.map(newsItem => <Link key={newsItem.id} href={`${PAGE_COMPANY_NEWS}/${newsItem.slug}`}><NewsCard {...newsItem} /></Link>)
+          props.news.map(newsItem => <Link key={newsItem.id} href={`${PAGE_COMPANY_NEWS}/${newsItem.id}`}><NewsCard {...newsItem} /></Link>)
         }
       </div>
     </div>

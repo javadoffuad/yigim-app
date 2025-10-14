@@ -2,14 +2,16 @@
 
 import { I18N_NEWS_DETAIL_PAGE } from "@/app/constants/i18n.constants";
 import PageNewsDetail from "@/app/components/page-news-detail/page-news-detail";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import styles from './page.module.css';
 import { use } from "react";
 import { notFound } from "next/navigation";
-import { NEWS, NEWS_DETAIL } from "@/app/constants/news.constants";
+import { getNews, getNewsDetail } from "@/app/constants/news.constants";
 import Link from "next/link";
 import Image from "next/image";
 import RelatedNews from "@/app/components/related-news/related-news";
+import { LanguageCode } from "@/app/models/language.models";
+import { formatDate } from "@/app/utils/date.utils";
 
 export default function NewsDetailPage({
   params,
@@ -18,14 +20,16 @@ export default function NewsDetailPage({
 }) {
   const t = useTranslations(`${I18N_NEWS_DETAIL_PAGE}`);
   const { slug } = use(params);
-  const decodedSlug = decodeURI(slug);
-  console.log(slug, encodeURI(slug));
-  const newsDetail = NEWS_DETAIL.find(x => x.slug === decodedSlug);
+  const locale = useLocale();
+  const decodedNewsId = decodeURI(slug);
+
+  const newsDetail = getNewsDetail(decodedNewsId, locale as LanguageCode);
   if (!newsDetail) {
     notFound();
   }
 
-  const relatedNews = NEWS.slice(0, 3);
+  const relatedNews = getNews(locale as LanguageCode).slice(0, 3);
+  const date = formatDate(newsDetail.date, locale as LanguageCode);
 
   return (
     <PageNewsDetail>
@@ -35,7 +39,7 @@ export default function NewsDetailPage({
       <div className={styles.images}>
         <Image src={newsDetail.images[0]} alt={newsDetail.title} className={styles.image} />
       </div>
-      <div className={styles.date}>{newsDetail.date}</div>
+      <div className={styles.date}>{date}</div>
       <div className={styles.title}>{newsDetail.title}</div>
       <div className={styles.text} dangerouslySetInnerHTML={{__html: newsDetail.text}} />
       <RelatedNews sectionTitle={t('AreaRelatedNews.Label')} news={relatedNews} />
