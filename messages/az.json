@@ -85,6 +85,13 @@
     "AreaOurTeam": {
       "Label": "Komandamız",
       "SubLabel": "Qəhrəmanlarla tanış olun"
+    },
+    "AreaLatestNews": {
+      "Label": "Xəbərlər",
+      "SubLabel": "Son xəbərlər",
+      "ButtonMoreNews": {
+        "Label": "Daha çox xəbər"
+      }
     }
   },
   "PageContacts": {

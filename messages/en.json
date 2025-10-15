@@ -85,6 +85,13 @@
     "AreaOurTeam": {
       "Label": "Our Team",
       "SubLabel": "Meet the heroes"
+    },
+    "AreaLatestNews": {
+      "Label": "News",
+      "SubLabel": "Latest News",
+      "ButtonMoreNews": {
+        "Label": "More News"
+      }
     }
   },
   "PageContacts": {

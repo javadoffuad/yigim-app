@@ -85,6 +85,13 @@
     "AreaOurTeam": {
       "Label": "Наша команда",
       "SubLabel": "Познакомьтесь с героями"
+    },
+    "AreaLatestNews": {
+      "Label": "Новости",
+      "SubLabel": "Последние новости",
+      "ButtonMoreNews": {
+        "Label": "Больше новостей"
+      }
     }
   },
   "PageContacts": {

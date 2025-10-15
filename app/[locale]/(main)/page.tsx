@@ -12,6 +12,7 @@ import { RequestCallback } from '@/components/request-callback/request-callback'
 import { useState } from 'react';
 import ProductsAndServices from '@/components/products/products';
 import OurTeam from '@/app/components/our-team/our-team';
+import LatestNews from '@/app/components/latest-news/latest-news';
 
 export default function MainPage({params}: PageProps<'/[locale]'>) {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,6 +33,7 @@ export default function MainPage({params}: PageProps<'/[locale]'>) {
       <WhoLovesUs />
       <Awards />
       <OurTeam />
+      <LatestNews />
       <RequestCallback outerIsOpen={isOpen} setOuterIsOpen={setRequestCallbackIsOpen} />
     </>
   );
