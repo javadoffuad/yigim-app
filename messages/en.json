@@ -1,5 +1,10 @@
 {
   "PageHome": {
+    "Metadata": {
+      "Title": "YIĞIM | Home",
+      "Description": "One System  Infinite Possibilities",
+      "Keywords": "Secure transactions, acquiring, payment acceptance, website payments, online store, payment system, SMS invoices"
+    },
     "AreaMainPoster": {
       "Label": "One System  Infinite Possibilities",
       "SubLabel": "From startups to governments, we connect the world\n through smart, secure payments.",
