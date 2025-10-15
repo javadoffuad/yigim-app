@@ -10,3 +10,5 @@ export const I18N_PRIVACY_POLICY_PAGE = 'PagePrivacyPolicy';
 export const I18N_COOKIE_POLICY_PAGE = 'PageCookiePolicy';
 export const I18N_TERMS_CONDITION_PAGE = 'PageTermsCondition';
 export const I18N_NOT_FOUND_PAGE = 'PageNotFound';
+export const I18N_METADATA = 'Metadata';
+export const APP_NAME = 'YIĞIM';

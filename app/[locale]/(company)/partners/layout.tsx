@@ -7,11 +7,19 @@ import { ILayoutProps } from "@/app/models/layout.models";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { routing } from "@/i18n/routing";
+import { getTranslations } from "next-intl/server";
+import { I18N_PARTNERS_PAGE } from "@/app/constants/i18n.constants";
 
-export const metadata: Metadata = {
-  title: "Yigim Partners",
-  description: "Yigim partners page description!",
-};
+export async function generateMetadata({params}: ILayoutProps) {
+  const {locale} = await params;
+  const t = await getTranslations({locale, namespace: I18N_PARTNERS_PAGE});
+ 
+  return {
+    title: t('Metadata.Title'),
+    description: t('Metadata.Description'),
+    keywords: t('Metadata.Keywords')
+  } as Metadata;
+}
 
 export default async function Layout({children, params}: ILayoutProps) {
   // Ensure that the incoming `locale` is valid
