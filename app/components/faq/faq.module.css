@@ -1,6 +1,6 @@
 .faq-section {
     background: #fff;
-    padding: 160px 0;
+    padding: 160px 20px;
     border-radius: 0 0 40px 40px;
     width: 100%;
     position: relative;
@@ -16,6 +16,15 @@
     letter-spacing: 0.56px;
     line-height: 20px;
     text-transform: uppercase;
+}
+
+.faq-title {
+    font-weight: 500;
+    color: var(--color-primary);
+    font-size: 64px;
+    letter-spacing: -4px;
+    line-height: 100%;
+    margin: 0;
 }
 
 .faq-content {
@@ -42,22 +51,6 @@
     gap: 16px;
 }
 
-.faq-subtitle {
-    font-weight: 500;
-    font-size: 14px;
-    color: var(--color-secondary);
-    letter-spacing: 0.56px;
-}
-
-.faq-title {
-    font-weight: 500;
-    color: var(--color-primary);
-    font-size: 64px;
-    letter-spacing: -4px;
-    line-height: 64px;
-    margin: 0;
-}
-
 .faq-contact {
     font-weight: 400;
     font-size: 20px;
@@ -78,3 +71,41 @@
     flex-direction: column;
     gap: 20px;
 }
+
+/* Для экранов шире 768px */
+@media (min-width: 768px) {}
+
+/* Для экранов уже 768px */
+@media (max-width: 767px) {
+    .faq-section {
+        padding: 80px 20px;
+    }
+
+    .faq-content {
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .faq-title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .faq-left {
+        width: 100%;
+    }
+
+    .faqList {
+        width: 100%;
+        margin-top: 80px;
+    }
+
+    .faq-contact {
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 80px;
+    }
+}
+
+/* Для экранов уже 480px */
+@media (max-width: 480px) {}

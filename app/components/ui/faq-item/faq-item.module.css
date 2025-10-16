@@ -3,10 +3,6 @@
   position: relative;
 }
 
-.faqItem.faqItemOpen {
-  /* border: none; */
-}
-
 .faqQuestion {
   width: 100%;
   display: flex;
@@ -65,3 +61,28 @@
   line-height: 20px;
   letter-spacing: -0.2px;
 }
+
+/* Для экранов шире 768px */
+@media (min-width: 768px) {}
+
+/* Для экранов уже 768px */
+@media (max-width: 767px) {
+  .faqQuestion {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .faqIcon {
+    width: 20px;
+    height: 20px;
+  }
+ 
+  .aswerInner {
+    padding-top: 10px;
+    padding-bottom: 24px;
+  }
+}
+
+/* Для экранов уже 480px */
+@media (max-width: 480px) {}
