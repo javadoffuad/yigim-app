@@ -108,9 +108,9 @@ export default function Footer() {
                 <div className={styles["footer-bottom"]}>
                     <div className={styles["copyright"]}>© COPYRIGHT YIGIM 2025</div>
                     <div className={styles["footer-legal"]}>
+                        <Link href={PAGE_TERMS_SERVICE}>{t('AreaStaticNavigation.LabelTerms')}</Link>
                         <Link href={PAGE_PRIVACY_POLICY}>{t('AreaStaticNavigation.LabelPrivacyPolicy')}</Link>
                         <Link href={PAGE_COOKIE_POLICY}>{t('AreaStaticNavigation.LabelCookiePolicy')}</Link>
-                        <Link href={PAGE_TERMS_SERVICE}>{t('AreaStaticNavigation.LabelTerms')}</Link>
                     </div>
                     <button className={styles["back-to-top"]} onClick={scrollToTop}>
                         {t('AreaStaticNavigation.LabelBackToTop')}
