@@ -32,3 +32,28 @@
 .footer-link:hover {
     color: #ffc404;
 }
+
+/* Для экранов Диапазон: 768px — 1023px - Планшеты (Портретная и альбомная ориентация) */
+@media (max-width: 1023px) {
+    .footer-column {
+        width: 160px;
+    }
+
+    .footer-link {
+        font-size: 14px;
+    }
+}
+
+/* Для экранов уже 768px */
+@media (max-width: 767px) {
+    .footer-column {
+        width: 200px;
+    }
+
+    .footer-link {
+        font-size: 16px;
+    }
+}
+
+/* Для экранов уже 480px */
+@media (max-width: 480px) {}

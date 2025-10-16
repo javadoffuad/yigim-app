@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     background: #1b1b1b;
-    padding: 140px 0 48px 0;
+    padding: 140px 20px 48px 20px;
     margin-top: -40px;
 }
 
@@ -11,12 +11,13 @@
     flex-direction: column;
     gap: 100px;
     max-width: 1120px;
+    width: 100%;
 }
 
 .footer-top {
     display: flex;
-    align-items: flex-start;
-    gap: 245px;
+    gap: 20px;
+    justify-content: space-between;
 }
 
 .footer-social-container {
@@ -45,7 +46,10 @@
 
 .footer-links {
     display: flex;
-    gap: 60px;
+    flex-grow: 1;
+    width: 100%;
+    max-width: 720px;
+    justify-content: space-between;
 }
 
 .social-links {
@@ -79,9 +83,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 10px;
 }
 
 .copyright {
+    display: flex;
+    flex-shrink: 0;
     font-weight: 500;
     font-size: 12px;
     color: var(--color-secondary);
@@ -117,3 +124,80 @@
     border: 0;
     transition: color 0.2s ease;
 }
+
+/* Для экранов Диапазон: 768px — 1023px - Планшеты (Портретная и альбомная ориентация) */
+@media (max-width: 1023px) {
+    .footer-links {
+        max-width: 510px;
+    }
+
+    .footer-legal {
+        display: flex;
+        gap: 15px;
+    }
+
+    .copyright {
+        font-size: 11px;
+    }
+
+    .footer-legal a {
+        font-size: 11px;
+    }
+
+    .back-to-top {
+        font-size: 13px;
+    }
+}
+
+/* Для экранов уже 768px */
+@media (max-width: 767px) {
+    .footer-content {
+        gap: 64px;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 64px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .footer-legal {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-social-container {
+        align-items: flex-start;
+    }
+
+    .social-pane {
+        margin-top: 64px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        max-width: 100%;
+        gap: 60px;
+    }
+
+    .copyright {
+        font-size: 12px;
+    }
+
+    .footer-legal a {
+        font-size: 12px;
+    }
+
+    .back-to-top {
+        font-size: 14px;
+    }
+}
+
+/* Для экранов уже 480px */
+@media (max-width: 480px) {}
