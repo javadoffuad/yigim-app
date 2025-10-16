@@ -66,7 +66,7 @@ export default function AboutPage() {
   return (
     <PageWrapper title={t('Label')}>
       <CompanyInfo
-        title={t('AreaWhoWeAre.Label')}
+        title={t.raw('AreaWhoWeAre.Label')}
         description={t.raw('AreaWhoWeAre.Description')} />
 
       <div className={styles["stats-grid"]}>

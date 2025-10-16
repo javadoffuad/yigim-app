@@ -8,9 +8,7 @@ export interface CompanyInfoProps {
 export default function CompanyInfo(info: CompanyInfoProps) {
     return (
         <section className={styles.container}>
-            <h2 className={styles.title}>
-                {info.title}
-            </h2>
+            <h2 className={styles.title} dangerouslySetInnerHTML={{__html: info.title}} />
 
             <div className={styles.description} dangerouslySetInnerHTML={{__html: info.description}} />
         </section>
