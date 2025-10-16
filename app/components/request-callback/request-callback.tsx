@@ -71,7 +71,7 @@ export const RequestCallback = (
         <button className={`${styles["contact-button"]} ${styles["contact-button-phone"]}`} onClick={toggleCallbackModal}>
         </button>
 
-        <div ref={dropdownRef}>
+        <div ref={dropdownRef} className={styles["chat-dropdown-container"]}>
           <button className={`${styles["contact-button"]} ${styles["contact-button-chat"]} ${chatIsOpen ? styles.open : ''}`} onClick={toggleChatDropdown}>
           </button>
           {

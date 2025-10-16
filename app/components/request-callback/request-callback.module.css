@@ -20,7 +20,7 @@
   position: fixed;
   width: 140px;
   z-index: 2;
-  bottom: 40px;
+  bottom: 73px;
   right: 40px;
   gap: 12px;
   display: flex;
@@ -56,6 +56,10 @@
   position: relative;
 }
 
+.chat-dropdown-container {
+  position: relative;
+}
+
 .chat-dropdown {
   position: absolute;
   right: 0;
@@ -78,3 +82,32 @@
 .button-phone {
   background: url('../../../public/icons/smartphone-white.svg') center no-repeat rgba(97, 85, 245, 1);
 }
+
+
+/* Для экранов Диапазон: 768px — 1023px - Планшеты (Портретная и альбомная ориентация) */
+@media (max-width: 1023px) {
+    
+}
+
+/* Для экранов уже 768px */
+@media (max-width: 767px) {
+    .quick-contact {
+      flex-direction: column-reverse;
+      width: 52px;
+      bottom: 40px;
+    }
+
+    .contact-button {
+      width: 52px;
+      height: 52px;
+    }
+
+    .chat-dropdown {
+      width: 52px;
+      gap: 4px;
+      bottom: 56px;
+    }
+}
+
+/* Для экранов уже 480px */
+@media (max-width: 480px) {}
