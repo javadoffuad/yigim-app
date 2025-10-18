@@ -8,6 +8,7 @@
     align-items: center;
     gap: 24px;
     text-align: center;
+    min-width: 300px;
 }
 
 .contact-icon {
@@ -21,7 +22,27 @@
 .contact-text {
     font-size: 20px;
     line-height: 28px;
-    letter-spacing: -0.8px;
+    letter-spacing: -0.4px;
     color: var(--color-primary);
     white-space: pre-line;
 }
+
+/* Для экранов Диапазон: 768px — 1023px - Планшеты (Портретная и альбомная ориентация) */
+@media (max-width: 1023px) {}
+
+/* Для экранов уже 768px */
+@media (max-width: 767px) {
+    .contact-icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .contact-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+/* Для экранов уже 480px */
+@media (max-width: 480px) {}

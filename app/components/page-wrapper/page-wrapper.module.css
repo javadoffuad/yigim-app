@@ -1,6 +1,6 @@
 .bg {
   width: 100%;
-  height: 720px;
+  height: 702px;
   background-color: #E8E8E8;
   position: relative;
 }
@@ -10,10 +10,10 @@
   content: "";
   z-index: 1;
   width: 100%;
-  height: 437px;
+  height: 436px;
   bottom: 0;
   opacity: .3;
-  background: linear-gradient(180deg,rgba(255, 196, 4, 0) 0%, rgba(255, 196, 4, 1) 100%);
+  background: linear-gradient(180deg, rgba(255, 196, 4, 0) 0%, rgba(255, 196, 4, 1) 100%);
 }
 
 .main {
@@ -22,28 +22,29 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: -185px;
+  margin-top: -168px;
 }
 
 .title-wrapper {
-  position: absolute;
-  z-index: 1;
-  height: 240px;
-  top: 246px;
-  left: 0;
   align-items: flex-end;
   width: 100%;
-  max-width: 1120px;
+  max-width: 1160px;
   margin: auto;
   display: flex;
+  padding: 0 20px;
+  position: absolute;
+  top: -48px;
+  left: 0;
   right: 0;
+  transform: translateY(-100%);
+  z-index: 3;
 }
 
 .title {
   font-size: 96px;
   font-weight: 500;
   line-height: 120px;
-  letter-spacing: -4px;
+  letter-spacing: -0.4px;
   font-family: 'Geist', sans-serif;
   white-space: pre-line;
   width: 100%;
@@ -55,7 +56,7 @@
   min-height: 200px;
   background-color: white;
   border-radius: 40px 40px 0 0;
-  padding: 120px 0 0 0;
+  padding: 120px 24px 0 24px;
   z-index: 2;
 }
 
@@ -64,3 +65,29 @@
   max-width: 1120px;
   margin: auto;
 }
+
+/* Для экранов Диапазон: 768px — 1023px - Планшеты (Портретная и альбомная ориентация) */
+@media (max-width: 1023px) {}
+
+/* Для экранов уже 768px */
+@media (max-width: 767px) {
+  .bg {
+    height: 569px;
+  }
+
+  .title-wrapper {
+    top: -24px;
+  }
+
+  .title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .content {
+    padding-top: 32px;
+  }
+}
+
+/* Для экранов уже 480px */
+@media (max-width: 480px) {}

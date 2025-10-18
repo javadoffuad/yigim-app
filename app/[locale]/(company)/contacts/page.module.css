@@ -4,4 +4,22 @@
     width: 100%;
     max-width: 1120px;
     margin: 0 auto;
+    flex-wrap: wrap;
+    padding-bottom: 120px;
 }
+
+/* Для экранов Диапазон: 768px — 1023px - Планшеты (Портретная и альбомная ориентация) */
+@media (max-width: 1023px) {
+    
+}
+
+/* Для экранов уже 768px */
+@media (max-width: 767px) {
+    .contact-cards {
+        flex-direction: column;
+        padding-bottom: 27px;
+    }
+}
+
+/* Для экранов уже 480px */
+@media (max-width: 480px) {}

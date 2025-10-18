@@ -19,7 +19,7 @@
     text-transform: uppercase;
 }
 
-.middle .title {
+.size-m .title {
     font-size: 20px;
     line-height: 24px;
 }
@@ -37,8 +37,35 @@
     text-align: left;
 }
 
-.middle .description {
+.size-m .description {
     font-size: 40px;
     line-height: 48px;
     letter-spacing: -0.2px;
 }
+
+.size-xl .description {
+    font-size: 64px;
+    line-height: 80px;
+    letter-spacing: -0.4px;
+}
+
+/* Для экранов Диапазон: 768px — 1023px - Планшеты (Портретная и альбомная ориентация) */
+@media (max-width: 1023px) {}
+
+/* Для экранов уже 768px */
+@media (max-width: 767px) {
+    .title {
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0;
+    }
+
+    .description {
+        font-size: 32px !important;
+        line-height: 40px !important;
+        letter-spacing: -0.4px;
+    }
+}
+
+/* Для экранов уже 480px */
+@media (max-width: 480px) {}

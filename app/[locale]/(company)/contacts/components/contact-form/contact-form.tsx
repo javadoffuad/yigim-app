@@ -9,6 +9,7 @@ import Textarea from '@/app/components/ui/textarea/textarea';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { I18N_CONTACTS_PAGE } from '@/app/constants/i18n.constants';
 import { useTranslations } from 'next-intl';
+import SectionTitle from '@/app/components/section-title/section-title';
 
 type FormData = {
   fullName: string;
@@ -98,10 +99,10 @@ export default function ContactForm() {
 
     return (
         <div className={styles["contact-form-section"]}>
-            <div className={styles["form-header"]}>
-                <div className={styles["form-subtitle"]}>{t('Label')}</div>
-                <h2 className={styles["form-title"]}>{t('SubLabel')}</h2>
-            </div>
+            <SectionTitle
+                title={t('Label')}
+                description={t('SubLabel')}
+                size='xl' />
             
             <form className={styles["contact-form"]} onSubmit={hookFormSubmit(onSubmit)} noValidate>
                 <div className={styles["form-row"]}>

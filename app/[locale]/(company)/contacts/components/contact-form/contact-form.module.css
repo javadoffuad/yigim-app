@@ -4,7 +4,7 @@
     gap: 48px;
     align-items: center;
     width: 100%;
-    margin-top: 120px;
+    padding: 40px 0 80px 0;
     font-family: var(--font-sans);
 }
 
@@ -13,23 +13,6 @@
     flex-direction: column;
     align-items: center;
     gap: 16px;
-}
-
-.form-subtitle {
-    font-weight: 500;
-    font-size: 14px;
-    color: var(--color-secondary);
-    letter-spacing: 0.56px;
-    text-transform: uppercase;
-}
-
-.form-title {
-    font-weight: 500;
-    font-size: 64px;
-    line-height: 80px;
-    letter-spacing: -2.56px;
-    color: var(--color-primary);
-    text-align: center;
 }
 
 .contact-form {
@@ -48,3 +31,33 @@
 .contact-form button {
     align-self: center;
 }
+
+
+/* Для экранов Диапазон: 768px — 1023px - Планшеты (Портретная и альбомная ориентация) */
+@media (max-width: 1023px) {
+    
+}
+
+/* Для экранов уже 768px */
+@media (max-width: 767px) {
+    .contact-form-section {
+        padding-top: 80px;
+        padding-bottom: 180px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .contact-form {
+        gap: 16px;
+    }
+
+    .contact-form button {
+        margin-top: 8px;
+    }
+}
+
+/* Для экранов уже 480px */
+@media (max-width: 480px) {}
