@@ -42,10 +42,20 @@
   min-height: 648px;
   background-color: #F3F3F3;
   border-radius: 32px;
+  padding: 20px;
 }
 
 .align-full .image-content {
   width: 100%;
+}
+
+.align-full .text-content {
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.align-full .image-content {
+  max-width: 100%;
 }
 
 .description {
@@ -61,6 +71,10 @@
   .content-wrapper {
     flex-direction: column;
     gap: 48px;
+  }
+
+  .align-left .content-wrapper {
+    flex-direction: column;
   }
 
   .text-content {

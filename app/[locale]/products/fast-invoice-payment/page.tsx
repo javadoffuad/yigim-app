@@ -63,8 +63,8 @@ export default function ProductPage() {
             contentHTML: <div className={styles["container"]}>
                 <div className={styles["phones"]}>
                     {
-                        phones.map(phone => (
-                            <div className={styles["phone"]}>
+                        phones.map((phone, index) => (
+                            <div key={index} className={styles["phone"]}>
                                 <Tooltip text={phone.tooltip} />
                                 <Image src={phone.icon} alt="" />
                             </div>

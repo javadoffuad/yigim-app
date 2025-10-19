@@ -1,6 +1,6 @@
 .apps {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(92px, 1fr));
     gap: 24px 16px; /* 24px между строками, 16px между колонками */
 }
 
@@ -27,3 +27,16 @@
     text-align: center;
     color: #1A1A1A;
 }
+
+/* Для экранов Диапазон: 768px — 1023px - Планшеты (Портретная и альбомная ориентация) */
+@media (max-width: 1023px) {
+    .apps {
+        gap: 24px;
+    }
+}
+
+/* Для экранов уже 768px */
+@media (max-width: 767px) {}
+
+/* Для экранов уже 480px */
+@media (max-width: 480px) {}
