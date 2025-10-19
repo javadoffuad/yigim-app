@@ -16,20 +16,27 @@
 }
 
 .partners-container {
-    display: flex;
-    flex-wrap: wrap;
     width: 100%;
-    min-height: 20px;
     gap: 16px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .partner-item {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 268px;
     height: 80px;
     border-radius: 16px;
     gap: 12px;
     padding: 20px 80px;
 }
+
+/* Для экранов шире 768px - 3 колонки */
+@media (min-width: 768px) {}
+
+/* Для экранов уже 768px - 2 колонки */
+@media (max-width: 767px) {}
+
+/* Для экранов уже 480px - 1 колонка */
+@media (max-width: 480px) {}
