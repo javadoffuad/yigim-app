@@ -40,8 +40,7 @@
     font-weight: 500;
 }
 
-
-.card:not(:last-child)::after {
+.arrow {
     position: absolute;
     content: "";
     top: calc(50% - 20px);
@@ -58,7 +57,38 @@
     width: 40px;
     height: 40px;
 
-    background: url('../../../../../../public/icons/arrow-right.svg') no-repeat center #fff;
+    background-color: #fff;
     box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.08);
     border-radius: 24px;
 }
+
+.arrow::after {
+    position: absolute;
+    content: "";
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background: url('../../../../../../public/icons/arrow-right.svg') no-repeat center;
+}
+
+/* Для экранов Диапазон: 768px — 1023px - Планшеты (Портретная и альбомная ориентация) */
+@media (max-width: 1023px) {
+
+}
+
+/* Для экранов уже 768px */
+@media (max-width: 767px) {
+    .arrow {
+        right: auto;
+        top: auto;
+        bottom: 0;
+        transform: translateY(calc(50% + 8px));
+    }
+
+    .arrow::after {
+        transform: rotate(90deg);
+    }
+}
+
+/* Для экранов уже 480px */
+@media (max-width: 480px) {}

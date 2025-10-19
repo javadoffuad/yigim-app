@@ -30,7 +30,7 @@
     font-weight: 500;
     color: rgba(255, 255, 255, 0.9);
     font-size: 72px;
-    letter-spacing: -2.88px;
+    letter-spacing: -0.4px;
     line-height: 80px;
     text-align: center;
     margin: 0;
@@ -44,3 +44,29 @@
     display: flex;
     gap: 16px;
 }
+
+
+/* Для экранов Диапазон: 768px — 1023px - Планшеты (Портретная и альбомная ориентация) */
+@media (max-width: 1023px) {
+
+}
+
+/* Для экранов уже 768px */
+@media (max-width: 767px) {
+    .video-container {
+        margin: 80px 0;
+        border-radius: 24px;
+    }
+
+    .video-title {
+        font-size: 48px;
+        line-height: 64px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+}
+
+/* Для экранов уже 480px */
+@media (max-width: 480px) {}

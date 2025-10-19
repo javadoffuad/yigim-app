@@ -15,6 +15,7 @@ export interface RealLifeProps {
 
 export default function RealLifeCases({props}: {props: RealLifeProps}) {
     const videoPath = getAbsolutePath(props.video);
+    const casesCount = props.cases.length - 1;
     return (
         <section className={styles.section}>
             <div className={styles.container}>
@@ -33,7 +34,7 @@ export default function RealLifeCases({props}: {props: RealLifeProps}) {
                 <div className={styles.cards}>
                     {
                         props.cases.map((item, index) => (
-                            <RealLifeCard key={index} icon={item.icon}>
+                            <RealLifeCard key={index} icon={item.icon} showArrow={casesCount !== index}>
                                 <span dangerouslySetInnerHTML={{__html: item.children}} />
                             </RealLifeCard>
                         ))

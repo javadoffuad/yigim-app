@@ -4,7 +4,7 @@
     width: 100%;
     max-width: 1120px;
     min-height: 100px;
-    margin-bottom: 236px;
+    margin-bottom: 120px;
 }
 
 .heading {
@@ -12,7 +12,7 @@
     font-weight: 500;
     color: var(--color-primary);
     font-size: 48px;
-    letter-spacing: -2px;
+    letter-spacing: -0.2px;
     line-height: 56px;
     margin-bottom: 80px;
 }
@@ -26,3 +26,38 @@
     font-size: 20px;
     line-height: 28px;
 }
+
+/* Для экранов Диапазон: 768px — 1023px - Планшеты (Портретная и альбомная ориентация) */
+@media (max-width: 1023px) {
+    .heading {
+        width: 100%;
+    }
+
+    .description {
+        width: 95%;
+    }
+}
+
+/* Для экранов уже 768px */
+@media (max-width: 767px) {
+    .frame {
+        margin-bottom: 60px;
+    }
+
+    .heading {
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: -0.4px;
+        margin-bottom: 48px;
+        width: 100%;
+    }
+
+    .description {
+        font-size: 16px;
+        line-height: 24px;
+        width: 100%;
+    }
+}
+
+/* Для экранов уже 480px */
+@media (max-width: 480px) {}
