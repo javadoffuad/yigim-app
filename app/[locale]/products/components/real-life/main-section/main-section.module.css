@@ -48,7 +48,9 @@
 
 /* Для экранов Диапазон: 768px — 1023px - Планшеты (Портретная и альбомная ориентация) */
 @media (max-width: 1023px) {
-
+    .cards {
+        flex-direction: column;
+    }
 }
 
 /* Для экранов уже 768px */
@@ -61,10 +63,6 @@
     .video-title {
         font-size: 48px;
         line-height: 64px;
-    }
-
-    .cards {
-        flex-direction: column;
     }
 }
 

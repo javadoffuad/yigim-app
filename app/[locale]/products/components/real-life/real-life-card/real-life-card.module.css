@@ -73,11 +73,6 @@
 
 /* Для экранов Диапазон: 768px — 1023px - Планшеты (Портретная и альбомная ориентация) */
 @media (max-width: 1023px) {
-
-}
-
-/* Для экранов уже 768px */
-@media (max-width: 767px) {
     .arrow {
         right: auto;
         top: auto;
@@ -88,6 +83,11 @@
     .arrow::after {
         transform: rotate(90deg);
     }
+}
+
+/* Для экранов уже 768px */
+@media (max-width: 767px) {
+    
 }
 
 /* Для экранов уже 480px */
