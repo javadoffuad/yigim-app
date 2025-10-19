@@ -15,7 +15,7 @@
     display: flex;
     flex-grow: 1;
     flex-direction: column;
-    gap: 22px;
+    gap: 16px;
     overflow: hidden;
 }
 
@@ -86,3 +86,26 @@
 .column:nth-child(3) .scroll-down {
     animation-duration: 35s;
 }
+
+@media (max-width: 1023px) {}
+
+/* Для экранов шире 768px */
+@media (min-width: 768px) {}
+
+/* Для экранов уже 768px */
+@media (max-width: 767px) {
+    .content {
+        gap: 72px;
+    }
+
+    .feedbacks {
+        gap: 12px;
+    }
+
+    .scroll-content {
+        gap: 12px;
+    }
+}
+
+/* Для экранов уже 480px */
+@media (max-width: 480px) {}

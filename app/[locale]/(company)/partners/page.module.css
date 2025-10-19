@@ -8,7 +8,7 @@
     justify-content: center;
     gap: 8px;
     margin-top: 40px;
-    margin-bottom: 120px;
+    margin-bottom: 60px;
 }
 
 .button-all {
@@ -32,11 +32,23 @@
     padding: 20px 80px;
 }
 
-/* Для экранов шире 768px - 3 колонки */
+@media (max-width: 1023px) {
+    .buttons button {
+        padding: 0 20px;
+        font-size: 13px;
+    }
+}
+
+/* Для экранов шире 768px */
 @media (min-width: 768px) {}
 
-/* Для экранов уже 768px - 2 колонки */
-@media (max-width: 767px) {}
+/* Для экранов уже 768px */
+@media (max-width: 767px) {
+    .buttons {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+}
 
-/* Для экранов уже 480px - 1 колонка */
+/* Для экранов уже 480px */
 @media (max-width: 480px) {}
