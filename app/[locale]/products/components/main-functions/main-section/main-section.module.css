@@ -4,9 +4,8 @@
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1120px;
     margin: 0 auto;
-    padding: 0 120px;
 }
 
 .grid {
@@ -25,3 +24,29 @@
 .grid.five > div:nth-last-child(-n+2) {
     grid-column-start: span 3;
 }
+
+/* Для экранов Диапазон: 768px — 1023px - Планшеты (Портретная и альбомная ориентация) */
+@media (max-width: 1023px) {
+    .grid {
+        margin-top: 48px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .grid > div {
+        grid-column-start: span 2;
+    }
+
+    .grid.five > div:nth-last-child(-n+2) {
+        grid-column-start: span 2;
+    }
+}
+
+/* Для экранов уже 768px */
+@media (max-width: 767px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Для экранов уже 480px */
+@media (max-width: 480px) {}

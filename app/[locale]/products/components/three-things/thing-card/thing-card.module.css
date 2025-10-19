@@ -6,7 +6,8 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    min-width: 372px;
+    max-width: 372px;
+    min-width: 320px;
 }
 
 .number {
@@ -46,3 +47,18 @@
     line-height: 24px;
     margin: 0;
 }
+
+/* Для экранов Диапазон: 768px — 1023px - Планшеты (Портретная и альбомная ориентация) */
+@media (max-width: 1023px) {
+    .card {
+        max-width: 100%;
+    }
+}
+
+/* Для экранов уже 768px */
+@media (max-width: 767px) {
+    
+}
+
+/* Для экранов уже 480px */
+@media (max-width: 480px) {}
