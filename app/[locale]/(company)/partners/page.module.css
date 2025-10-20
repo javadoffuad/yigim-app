@@ -32,6 +32,18 @@
     padding: 20px 80px;
 }
 
+.select {
+    display: flex;
+    justify-content: center;
+    margin: 80px 0;
+}
+
+.select > div {
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
 @media (max-width: 1023px) {
     .buttons button {
         padding: 0 20px;
@@ -47,6 +59,10 @@
     .buttons {
         margin-top: 80px;
         margin-bottom: 80px;
+    }
+
+    .select > div {
+        min-width: 100%;
     }
 }
 

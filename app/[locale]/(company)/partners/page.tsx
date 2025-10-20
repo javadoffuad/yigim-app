@@ -10,10 +10,14 @@ import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { I18N_PARTNERS_PAGE } from '@/app/constants/i18n.constants';
 import SectionTitle from '@/app/components/section-title/section-title';
+import { useWindowSize } from '@/app/hooks/use-window-size';
+import Select from '@/app/components/ui/select/select';
 
 export default function PartnersPage() {
   const [selectedCategory, setSelectedCategory] = useState<PartnerCategory>(PartnerCategory.ALL);
   const t = useTranslations(`${I18N_PARTNERS_PAGE}`);
+  const { width } = useWindowSize();
+  const isDesktop = width > 1023;
 
   const categories: ICategory[] = [
     {
@@ -60,18 +64,30 @@ export default function PartnersPage() {
           description={t.raw('AreaWhoLovesUs.Description')} />
 
         <div className={styles.partners}>
-          <div className={styles.buttons}>
-            {
-              categories.map((category, index) =>(
-                <button
-                  key={index}
-                  onClick={() => selectCategory(category.code)}
-                  className={`button ${selectedCategory === category.code ? 'button-primary' : ''} ${category.code === PartnerCategory.ALL ? styles["button-all"] : ''}`}>
-                  {category.name}
-                </button>
-              ))
-            }
-          </div>
+          {
+            isDesktop ?
+              <div className={styles.buttons}>
+                {
+                  categories.map((category, index) =>(
+                    <button
+                      key={index}
+                      onClick={() => selectCategory(category.code)}
+                      className={`button ${selectedCategory === category.code ? 'button-primary' : ''} ${category.code === PartnerCategory.ALL ? styles["button-all"] : ''}`}>
+                      {category.name}
+                    </button>
+                  ))
+                }
+              </div>
+            : <div className={styles.select}>
+                <Select
+                  items={categories}
+                  getKey={(item) => item.code.toString()}
+                  getLabel={(item) => item.name}
+                  selectedItem=''
+                  />
+              </div>
+          }
+          
           <div className={styles['partners-container']}>
             {
               filteredPartners.map((partner, index) =>
