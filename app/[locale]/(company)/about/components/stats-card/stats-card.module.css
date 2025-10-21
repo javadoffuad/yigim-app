@@ -34,8 +34,7 @@
   width: fit-content;
   margin-top: -1px;
   font-weight: 500;
-  font-size: 12px;
-  letter-spacing: -0.24px;
+  font-size: 14px;
   line-height: 16px;
   white-space: pre-line;
 }
@@ -63,7 +62,7 @@
   margin-top: -1px;
   font-weight: 500;
   font-size: 36px;
-  letter-spacing: -0.72px;
+  letter-spacing: -0.2px;
   line-height: 48px;
   white-space: nowrap;
 }
@@ -74,7 +73,31 @@
   margin-top: -1px;
   font-weight: 400;
   font-size: 24px;
-  letter-spacing: -0.48px;
+  letter-spacing: -0.2px;
   line-height: 32px;
   width: 100%;
 }
+
+/* Для экранов Диапазон: 768px — 1023px - Планшеты (Портретная и альбомная ориентация) */
+@media (max-width: 1023px) {}
+
+/* Для экранов уже 768px - 2 колонки */
+@media (max-width: 767px) {
+  .card {
+    border-radius: 12px;
+    height: 180px;
+  }
+
+  .value {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .description {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+/* Для экранов уже 480px - 1 колонка */
+@media (max-width: 480px) {}

@@ -38,3 +38,34 @@
     background-color: #FFE79B;
     box-decoration-break: clone;
 }
+
+/* Для экранов Диапазон: 768px — 1023px - Планшеты (Портретная и альбомная ориентация) */
+@media (max-width: 1023px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .description {
+        margin-left: 0;
+    }
+}
+
+/* Для экранов уже 768px - 2 колонки */
+@media (max-width: 767px) {
+    .title {
+        font-size: 32px;
+        line-height: 40px;
+        flex-shrink: 0;
+    }
+
+    .description {
+        margin-top: 48px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+/* Для экранов уже 480px - 1 колонка */
+@media (max-width: 480px) {
+    
+}
