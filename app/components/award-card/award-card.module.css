@@ -53,11 +53,12 @@
   flex-direction: column;
   height: 316px;
   padding: 32px;
-  gap: 24px;
 }
 
 .card .info {
+  flex-grow: 1;
   flex-direction: column;
+  justify-content: center;
 }
 
 .card .icon-wrapper {
@@ -77,6 +78,7 @@
   line-height: 24px;
   text-align: center;
   align-items: flex-start;
+  min-height: 40px;
 }
 
 .card:nth-child(2) {
@@ -91,3 +93,18 @@
 .card:nth-child(2) .icon-wrapper {
   margin-top: 20px;
 }
+
+/* Для экранов Диапазон: 768px — 1023px - Планшеты (Портретная и альбомная ориентация) */
+@media (max-width: 1023px) {}
+
+/* Для экранов уже 768px - 2 колонки */
+@media (max-width: 767px) {
+  .title,
+  .card .title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+/* Для экранов уже 480px - 1 колонка */
+@media (max-width: 480px) {}
