@@ -24,6 +24,35 @@ export default function CarouselPhotos() {
     arrows: false,
     centerMode: true,
     centerPadding: '100px',
+    responsive: [
+      {
+        breakpoint: 1023,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          initialSlide: 3,
+          centerPadding: '60px',
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+          centerPadding: '40px',
+        }
+      },
+      {
+        breakpoint: 560,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+          centerPadding: '20px',
+        }
+      }
+    ]
   };
 
   return (

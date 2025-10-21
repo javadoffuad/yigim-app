@@ -106,6 +106,7 @@
 /* Для экранов уже 768px - 2 колонки */
 @media (max-width: 767px) {
     .offer-cards {
+        margin-top: 80px;
         gap: 12px;
     }
 }
