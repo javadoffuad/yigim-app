@@ -30,3 +30,33 @@
     color: var(--color-primary);
     white-space: pre-line;
 }
+
+/* Для экранов Диапазон: 768px — 1023px - Планшеты (Портретная и альбомная ориентация) */
+@media (max-width: 1023px) {}
+
+/* Для экранов уже 768px - 2 колонки */
+@media (max-width: 767px) {
+    .contact-card {
+        height: 180px;
+        padding: 30px;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .contact-icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .image {
+        width: 74px;
+    }
+
+    .contact-text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+/* Для экранов уже 480px - 1 колонка */
+@media (max-width: 480px) {}
