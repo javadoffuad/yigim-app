@@ -1,5 +1,9 @@
-import news1 from "@/public/images/news-01.jpeg";
-import news2 from "@/public/images/news-02.jpeg";
+import newsaz1 from "@/public/images/news-1-az.jpeg";
+import newsen1 from "@/public/images/news-1-en.jpeg";
+import newsru1 from "@/public/images/news-1-ru.jpeg";
+import newsaz2 from "@/public/images/news-2-az.jpeg";
+import newsen2 from "@/public/images/news-2-en.jpeg";
+import newsru2 from "@/public/images/news-2-ru.jpeg";
 import news3 from "@/public/images/news-03.jpeg";
 import news4 from "@/public/images/news-04.jpeg";
 import news5 from "@/public/images/news-05.jpg";
@@ -15,13 +19,13 @@ export const NEWS: INews[] = [
     id: 1,
     title: "YIĞIM Enabled Online Payments at the IV Baku Piano Festival",
     date: "2025-07-07T14:51:00",
-    image: news1,
+    image: newsen1,
   },
   {
     id: 2,
     title: "YIĞIM Payment System Launches Online Payment Acceptance for UnionPay Cards!",
     date: "2025-07-02T12:22:00",
-    image: news2,
+    image: newsen2,
   },
   {
     id: 3,
@@ -78,13 +82,13 @@ export const NEWS_AZ: INews[] = [
     id: 1,
     title: "\"YIĞIM\" IV Bakı Piano Festivalda onlayn ödənişlərin qəbulunu təmin edib",
     date: "2025-07-07T14:51:00",
-    image: news1,
+    image: newsaz1,
   },
   {
     id: 2,
     title: "YIĞIM Payment System UnionPay kartları ilə onlayn ödəniş qəbuluna start verdi!",
     date: "2025-07-02T12:22:00",
-    image: news2,
+    image: newsaz2,
   },
   {
     id: 3,
@@ -141,13 +145,13 @@ export const NEWS_RU: INews[] = [
     id: 1,
     title: "YIĞIM обеспечил приём онлайн-платежей на IV Baku Piano Festival",
     date: "2025-07-07T14:51:00",
-    image: news1,
+    image: newsru1,
   },
   {
     id: 2,
     title: "YIĞIM Payment System запустила прием онлайн-платежей по картам UnionPay!",
     date: "2025-07-02T12:22:00",
-    image: news2,
+    image: newsru2,
   },
   {
     id: 3,
@@ -204,14 +208,14 @@ export const NEWS_DETAIL: INewsDeatil[] = [
     id: 1,
     title: "YIĞIM Enabled Online Payments at the IV Baku Piano Festival",
     date: "2025-07-07T14:51:00",
-    images: [news1],
+    images: [newsen1],
     text: "<p>From June 14 to 28, 2025, Baku hosted the 4th International Baku Piano Festival, which brought together talented performers and ensembles from around the world. YIĞIM Payment System proudly served as the official payment partner of the festival, providing technical support for online ticket sales and secure payment processing.</p><p>As part of the collaboration with the festival organizers, YIĞIM provided a reliable payment infrastructure on the festival's website, enabling audiences to conveniently and securely purchase tickets using both local and international bank cards.</p><p>\"We are proud to have been part of such a large-scale and culturally significant event. Supporting culture, education, and social initiatives is a key area of focus for our company. We believe technology can serve as a strong foundation for progress in these fields, and YIĞIM is committed to contributing to the development of meaningful public projects at all levels,\" said Vugar Jafarov, CEO of YIĞIM Payment System.</p><p>The festival's founder and organizer, Shahin Novrasli, an Honored Artist of the Republic of Azerbaijan, expressed his appreciation for the partnership:</p><p>\"Events of this scale are complex and multi-layered. We especially value partners who not only listen but also respond quickly to our needs. YIĞIM Payment System's integration ensured a high level of reliability and convenience for ticket purchases. The support of companies like YIĞIM is essential for the development of the cultural sector in our country.\"</p><p>YIĞIM Payment System will continue to support initiatives aimed at the development of culture, education, sports, and entrepreneurship in Azerbaijan, offering secure and modern payment solutions tailored to events of any scale.</p><h2>About YIĞIM</h2><p>YIĞIM Payment System is one of Azerbaijan's leading fintech companies and was the first in the country to receive the international PCI DSS security certification. Founded in 2017, the company currently serves over 300 clients, including notable brands such as Bolt, Wolt, Uber, Yango, Hilton, Fairmont, Hertz, Wingz Scooter, and others.</p><p>YIĞIM was also the first company in Azerbaijan to enable online payments via Google Pay and Apple Pay for websites and mobile applications. Among other implemented solutions are online payments with American Express and UnionPay cards, as well as integration with Visa Token Service (VISA VTS), enhancing the security and convenience of cashless transactions.</p>",
   },
   {
     id: 2,
     title: "YIĞIM Payment System Launches Online Payment Acceptance for UnionPay Cards!",
     date: "2025-07-02T12:22:00",
-    images: [news2],
+    images: [newsen2],
     text: "<p>YIĞIM Payment System is proud to announce the launch of a new service: online payments via UnionPay cards are now available through our platform. This step opens new opportunities for both local businesses and customers from Asian countries where UnionPay is widely used.</p><p>Leading companies such as Wolt and Bolt, which provide food delivery, taxi, and e-scooter rental services in Azerbaijan, are already accepting UnionPay payments through YIĞIM.</p><p>UnionPay is the world's largest payment system by number of issued cards, operating in over 180 countries. UnionPay cards are issued in more than 80 countries and regions outside mainland China, with over 9 billion cards issued globally. Top countries for UnionPay card issuance outside of China include Hong Kong, South Korea, Singapore, Thailand, and Russia.</p><h2>What is the advantage?</h2><p>With visa-free travel now in effect between Azerbaijan and China, an influx of tourists is projected from both China and other countries where UnionPay is the preferred payment option.</p><p>For visitors, students, and entrepreneurs accustomed to UnionPay, the ability to pay with familiar methods in Azerbaijan enhances comfort and encourages spending.</p><h2>Benefits for Businesses:</h2><ul><li>New markets and customers – Accepting UnionPay increases the attractiveness of your goods and services to international audiences, especially from Asia.</li><li>Higher conversion rates – Familiar and convenient payment options increase the likelihood of purchase completion.</li><li>Reliability and security – Payments are processed via YIĞIM's PCI DSS-certified infrastructure, ensuring international-level safety and compliance.</li></ul><p>YIĞIM continues to actively develop Azerbaijan's digital payment infrastructure, offering businesses innovative solutions aligned with global trends.</p><h2>About YIĞIM</h2><p>YIĞIM Payment System is one of Azerbaijan's leading fintech companies and the first in the country to receive the international PCI DSS security certification. Founded in 2017, YIĞIM currently serves over 300 clients, including brands such as Bolt, Wolt, Uber, Yango, Hilton, Fairmont, Hertz, Wingz Scooter, and more.</p><p>YIĞIM was also the first company in Azerbaijan to enable payments via Google Pay and Apple Pay on websites and mobile applications. Other implemented solutions include online payments via American Express and UnionPay cards, as well as integration with Visa Token Service (VISA VTS) — enhancing the security and convenience of cashless transactions.</p>",
   },
   {
@@ -277,14 +281,14 @@ export const NEWS_DETAIL_AZ: INewsDeatil[] = [
     id: 1,
     title: "\"YIĞIM\" IV Bakı Piano Festivalda onlayn ödənişlərin qəbulunu təmin edib",
     date: "2025-07-07T14:51:00",
-    images: [news1],
+    images: [newsaz1],
     text: "<p>2025-ci il 14–28 iyun tarixlərində Bakıda böyük izdihamla keçirilən IV Beynəlxalq Baku Piano Festivalı dünyanın müxtəlif ölkələrindən istedadlı ifaçıları və musiqi kollektivlərini bir araya gətirdi. YIĞIM Payment System bu mötəbər musiqi tədbirinin rəsmi ödəniş tərəfdaşı qismində çıxış edərək, onlayn bilet satışının və ödənişlərin qəbulunun texniki dəstəyini təmin etdi.</p><p>Festivalın təşkilatçıları ilə əməkdaşlıq çərçivəsində YIĞIM, tədbirin rəsmi vebsaytında ödənişlərin qəbulunu təmin edən etibarlı infrastruktur təqdim etdi. Bu isə tamaşaçılara həm yerli, həm də beynəlxalq bank kartlarından istifadə etməklə biletləri tez, rahat və təhlükəsiz şəkildə almağa imkan yaratdı.</p><p>\"Belə miqyaslı və mədəni əhəmiyyətli bir layihənin bir hissəsi olmaqdan qürur duyuruq. Mədəniyyətin, təhsilin və ictimai təşəbbüslərin dəstəklənməsi bizim şirkətin əsas inkişaf istiqamətlərindəndir. Biz inanırıq ki, texnologiyalar bu sahələrdə tərəqqinin möhkəm dayağı ola bilər və YIĞIM olaraq bu sahələrin inkişafına öz töhfəmizi verməyə hazırıq\", – deyə YIĞIM Payment Systemin baş direktoru Vüqar Cəfərov bildirib.</p><p>Festivalın təşkilatçısı, Azərbaycanın Əməkdar Artisti Şahin Növrəstə əməkdaşlığa görə minnətdarlığını belə ifadə edib:<br>\"Belə tədbirlərin təşkili mürəkkəb və çoxşaxəli prosesdir. Bizim tələblərimizi vaxtında anlayan və çevik şəkildə reaksiya verən tərəfdaşları xüsusilə yüksək qiymətləndiririk. YIĞIM Payment System tərəfindən təqdim olunan ödəniş inteqrasiyası bilet satış prosesində yüksək etibarlılıq və rahatlıq təmin etdi. Mədəniyyət sahəsinin inkişafı üçün bu cür şirkətlərin dəstəyi son dərəcə vacibdir.\"</p><p>YIĞIM Payment System gələcəkdə də Azərbaycanda mədəniyyətin, təhsilin, idmanın və sahibkarlığın inkişafına yönəlmiş layihələri dəstəkləməyə davam edəcək və istənilən miqyaslı təşəbbüslər üçün müasir və etibarlı ödəniş həlləri təqdim edəcəkdir.</p><h2>YIĞIM haqqında</h2><p>YIĞIM Payment System — Azərbaycanın aparıcı fintex şirkətlərindən biridir və ölkədə beynəlxalq PCI DSS təhlükəsizlik sertifikatını alan ilk şirkət olmuşdur. 2017-ci ildə təsis edilmiş şirkət bu gün Bolt, Wolt, Uber, Yango, Hilton, Fairmont, Hertz, Wingz Scooter və digər tanınmış brendlər də daxil olmaqla 300-dən artıq müştəriyə xidmət göstərir.</p><p>YIĞIM, Google Pay və Apple Pay vasitəsilə internetdə və mobil tətbiqlərdə ödəniş qəbul edən Azərbaycanda ilk şirkət olmuşdur. Bundan əlavə, American Express, UnionPay kartları ilə onlayn ödəniş imkanı və Visa Token Service (VISA VTS) inteqrasiyası da uğurla tətbiq olunmuşdur ki, bu da nağdsız əməliyyatların təhlükəsizliyini və rahatlığını daha da artırır.</p>",
   },
   {
     id: 2,
     title: "YIĞIM Payment System UnionPay kartları ilə onlayn ödəniş qəbuluna start verdi!",
     date: "2025-07-02T12:22:00",
-    images: [news2],
+    images: [newsaz2],
     text: "<p>YIĞIM Payment System məmnuniyyətlə yeni xidmətin istifadəyə verildiyini elan edir: artıq platformamız vasitəsilə UnionPay kartları ilə onlayn ödənişlərin qəbulu mümkündür. Bu addım həm yerli biznes, həm də UnionPay kartlarından geniş istifadə olunan Asiya ölkələrindən olan müştərilər üçün ödəniş imkanlarını artırır. Qeyd edək ki, Azərbaycanda qida çatdırılması, taksi və elektrik skuterlərinin icarəsi xidmətləri göstərən Wolt və Bolt kimi aparıcı şirkətlər artıq UnionPay ödənişlərini YIĞIM vasitəsilə qəbul etməyə başlayıblar.</p><p>UnionPay – dünyada buraxılmış kart sayına görə ən böyük ödəniş sistemlərindəndir, 180-dən çox ölkəni əhatə edir. Hal-hazırda UnionPay kartları Çin xaricində 80-dən çox ölkədə buraxılır. Ümumi kart sayı 9 milyardı ötüb. Çin xaricində UnionPay kartlarının ən çox buraxıldığı ölkələr arasında Honq Konq, Cənubi Koreya, Sinqapur, Tailand və Rusiya yer alır.</p><h2>Üstünlükləri nədir?</h2><p>Azərbaycanla Çin arasında vizasız rejimin ləğvi ilə təkcə Çindən deyil, UnionPay-in əsas ödəniş üsulu kimi istifadə edildiyi digər ölkələrdən də turist axınının artacağı gözlənilir. UnionPay kart istifadəçiləri olan qonaqlar, tələbələr və sahibkarlar üçün bu sistemin Azərbaycanda mövcudluğu onların rahatlığı və alış-verişə təşviqi baxımından əhəmiyyətlidir.</p><h2>Biznes üçün üstünlüklər:</h2><ul><li>Yeni bazarlar və müştərilər – UnionPay kartlarının qəbulu Asiya ölkələrindən olan beynəlxalq müştərilər üçün məhsul və xidmətlərin cəlbediciliyini artırır.</li><li>Konversiyanın artması – alışdığı və rahat ödəniş üsulları müştərilərin alış-verişi tamamlaması ehtimalını artırır.</li><li>Etibarlılıq və təhlükəsizlik – Ödənişlər beynəlxalq PCI DSS standartlarına cavab verən YIĞIM-ın sertifikatlaşdırılmış infrastrukturu vasitəsilə həyata keçirilir.</li></ul><p>YIĞIM, Azərbaycan üçün rəqəmsal ödəniş infrastrukturunu inkişaf etdirməyə davam edir və bizneslərə qlobal trendlərə uyğun müasir həllər və inteqrasiyalar təqdim edir.</p><h2>YIĞIM haqqında:</h2><p>YIĞIM Payment System — Azərbaycanın aparıcı fintex şirkətlərindən biridir və ölkədə PCI DSS beynəlxalq təhlükəsizlik sertifikatı alan ilk şirkətdir. 2017-ci ildə təsis edilmiş YIĞIM bu gün Bolt, Wolt, Uber, Yango, Hilton, Fairmont, Hertz, Wingz Scooter və digər brendlər də daxil olmaqla 300-dən çox müştəriyə xidmət göstərir.</p><p>YIĞIM həmçinin Google Pay və Apple Pay vasitəsilə onlayn və mobil tətbiqlərdə ödəniş qəbul edən ilk Azərbaycan şirkətidir. Bununla yanaşı, American Express, UnionPay kartları ilə onlayn ödəniş, eləcə də Visa Token Service (VISA VTS) inteqrasiyası da uğurla həyata keçirilib – bu isə ödəniş prosesini daha təhlükəsiz və rahat edir.</p>",
   },
   {
@@ -350,14 +354,14 @@ export const NEWS_DETAIL_RU: INewsDeatil[] = [
     id: 1,
     title: "YIĞIM обеспечил приём онлайн-платежей на IV Baku Piano Festival",
     date: "2025-07-07T14:51:00",
-    images: [news1],
+    images: [newsru1],
     text: "<p>С 14 по 28 июня 2025 года в Баку с аншлагом прошёл IV Международный фестиваль фортепианной музыки – Baku Piano Festival, объединивший на одной сцене талантливых исполнителей и коллективы из разных стран. YIĞIM Payment System с гордостью выступил официальным платёжным партнёром фестиваля, обеспечив техническую поддержку онлайн-продажи билетов и приёма платежей.</p><p>В рамках сотрудничества с организаторами фестиваля, YIĞIM предоставил надежную инфраструктуру для приёма платежей на сайте фестиваля, что позволило зрителям быстро, удобно и безопасно приобретать билеты с использованием как локальных, так и международных банковских карт.</p><p>«Мы гордимся тем, что стали частью такого масштабного и культурно значимого события. Поддержка культуры, образования и социальных инициатив — важный вектор развития нашей компании. Мы уверены, что технологии могут стать надёжной опорой для прогресса в этих сферах, и YIĞIM готов вносить вклад в развитие общественных проектов на всех уровнях», – отметил генеральный директор YIĞIM Payment System Вугар Джафаров.</p><p>Организатор фестиваля, заслуженный артист Азербайджанской Республики Шахин Новрасли, выразил признательность за сотрудничество:<br>«Каждое подобное мероприятие — это сложный и многослойный процесс, и мы особенно ценим партнёров, которые умеют не только слышать, но и оперативно реагировать на наши потребности. Платёжная интеграция от YIĞIM Payment System обеспечила высокий уровень надёжности и удобства при покупке билетов. Поддержка таких компаний крайне важна для развития культурной сферы в стране».</p><p>YIĞIM Payment System продолжит поддерживать проекты, направленные на развитие культуры, образования, спорта и предпринимательства в Азербайджане, предлагая надёжные и современные платёжные решения для любого масштаба.</p><h2>О компании YIĞIM</h2><p>YIĞIM Payment System — одна из ведущих финтех-компаний Азербайджана, первая в стране, получившая международный сертификат безопасности PCI DSS. Основанная в 2017 году, компания сегодня обслуживает более 300 клиентов, включая такие бренды, как Bolt, Wolt, Uber, Yango, Hilton, Fairmont, Hertz, Wingz Scooter и другие.</p><p>YIĞIM стала первой компанией в Азербайджане, обеспечившей возможность приёма платежей через Google Pay и Apple Pay в интернете и мобильных приложениях. Среди других внедрённых решений — поддержка онлайн-платежей по картам American Express, UnionPay, а также интеграция с Visa Token Service (VISA VTS), что повышает уровень безопасности и удобства безналичных транзакций.</p>",
   },
   {
     id: 2,
     title: "YIĞIM Payment System запустила прием онлайн-платежей по картам UnionPay!",
     date: "2025-07-02T12:22:00",
-    images: [news2],
+    images: [newsru2],
     text: "<p>YIĞIM Payment System с радостью объявляет о запуске новой услуги: теперь через нашу платформу стало возможно принимать онлайн-платежи по картам UnionPay. Этот шаг расширяет возможности как для локального бизнеса, так и для клиентов из стран Азии, где активно используются карты UnionPay. YIĞIM Payment System уже предоставил возможность приёма онлайн-платежей по картам UnionPay таким ведущим компаниям, как Wolt и Bolt, предоставляющими в Азербайджане услуги в сфере доставки еды, такси и аренды электросамокатов.</p><p>UnionPay – крупнейшая платёжная система в мире по количеству выпущенных карт, охватывающая более 180 стран. На сегодняшний день карты UnionPay выпускаются более чем в 80 странах и регионах за пределами Китая. Общее количество выпущенных по всему миру – более 9 миллиардов. Среди топ-стран по количеству выпущенных карт UnionPay за пределами Китая – Гонконг, Южная Корея, Сингапур, Таиланд и Россия.</p><h2>В чем преимущество?</h2><p>С отменой визового режима между Азербайджаном и Китаем ожидается рост туристического потока не только из Китая, но и из других стран, где UnionPay является основным способом оплаты.</p><p>Для гостей, студентов и бизнесменов, привыкших к удобным платежам через UnionPay, возможность расплачиваться привычным способом в Азербайджане — важный элемент комфортного пребывания и стимул к совершению покупок.</p><h2>Преимущества для бизнеса:</h2><p><strong>Новые рынки и клиенты</strong> – приём карт UnionPay повышает привлекательность товаров и услуг для международной аудитории, особенно из стран Азии.</p><p><strong>Увеличение конверсии</strong> – привычные и удобные способы оплаты увеличивают вероятность завершения онлайн-покупок.</p><p><strong>Надежность и безопасность</strong> – платежи проходят через сертифицированную инфраструктуру YIĞIM, соответствующую международным стандартам PCI DSS.</p><p>YIĞIM продолжает активно развивать цифровую платёжную инфраструктуру Азербайджана, предлагая бизнесу современные решения и интеграции, соответствующие глобальным трендам.</p><h2>О компании YIĞIM</h2><p>YIĞIM Payment System — одна из ведущих финтех-компаний Азербайджана, первая в стране, получившая международный сертификат безопасности PCI DSS. Основанная в 2017 году, компания сегодня обслуживает более 300 клиентов, включая такие бренды, как Bolt, Wolt, Uber, Yango, Hilton, Fairmont, Hertz, Wingz Scooter и другие.</p><p>YIĞIM стала первой компанией в Азербайджане, обеспечившей возможность приёма платежей через Google Pay и Apple Pay в интернете и мобильных приложениях. Среди других внедрённых решений — поддержка онлайн-платежей по картам American Express, UnionPay, а также интеграция с Visa Token Service (VISA VTS), что повышает уровень безопасности и удобства безналичных транзакций.</p>",
   },
   {
