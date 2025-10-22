@@ -6,7 +6,7 @@ export default function FeedbackCard({
   brand, 
   author, 
   feedback, 
-  position 
+  position
 }: IFeedback) {
     return (
         <div className={styles.card}>
