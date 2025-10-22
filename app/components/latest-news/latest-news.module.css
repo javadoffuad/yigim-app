@@ -32,7 +32,12 @@
 
 /* Для экранов уже 768px - 2 колонки */
 @media (max-width: 767px) {
+  .section {
+    padding: 80px 0;
+  }
+  
   .news {
+    margin-top: 80px;
     grid-template-columns: repeat(2, 1fr);
   }
 }
