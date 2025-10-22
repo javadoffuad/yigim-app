@@ -7,10 +7,13 @@ import { useTranslations } from "next-intl";
 import { I18N_HOME_PAGE } from "@/app/constants/i18n.constants";
 import SectionTitle from "../section-title/section-title";
 import AwardCard from "../award-card/award-card";
+import { useWindowSize } from "@/app/hooks/use-window-size";
 
 export default function Awards() {
   const t = useTranslations(`${I18N_HOME_PAGE}.AreaWhatWeAreProud`);
   const c = useTranslations('Awards');
+  const {width} = useWindowSize();
+  const awardType = width > 1023 ? 'stroke' : 'card';
   return (
     <div className={styles["section"]}>
       <SectionTitle
@@ -19,9 +22,9 @@ export default function Awards() {
 
       <div className={styles["content"]}>
         <div className={styles["awards"]}>
-          <AwardCard icon={azercosmosLogo} title={c('Azercosmos.Label')} type="stroke" />
-          <AwardCard icon={visaLogo} title={c('Visa.Label')} type="stroke" />
-          <AwardCard icon={pciLogo} title={c('PciDss.Label')} type="stroke" />
+          <AwardCard icon={azercosmosLogo} title={c('Azercosmos.Label')} type={awardType} />
+          <AwardCard icon={visaLogo} title={c('Visa.Label')} type={awardType} />
+          <AwardCard icon={pciLogo} title={c('PciDss.Label')} type={awardType} />
         </div>
       </div>
     </div>

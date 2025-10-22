@@ -5,7 +5,7 @@
   margin: 0 auto;
   align-items: center;
   gap: 120px;
-  padding: 120px 0;
+  padding: 175px 0 120px 0;
   position: relative;
 }
 
@@ -13,7 +13,6 @@
   position: relative;
   width: 100%;
   max-width: 1400px;
-  height: 702px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,14 +29,37 @@
   flex-direction: column;
 }
 
-.awards > div:nth-child(1) {
+.awards>div:nth-child(1) {
   transform: rotate(-3deg);
 }
 
-.awards > div:nth-child(2) {
+.awards>div:nth-child(2) {
   transform: rotate(1deg);
 }
 
-.awards > div:nth-child(3) {
+.awards>div:nth-child(3) {
   transform: rotate(-2deg);
 }
+
+/* Для экранов Диапазон: 768px — 1023px - Планшеты (Портретная и альбомная ориентация) */
+@media (max-width: 1023px) {
+  .awards {
+    gap: 24px;
+  }
+
+  .awards>div {
+    transform: rotate(0) !important;
+    height: 260px !important;
+  }
+}
+
+/* Для экранов уже 768px */
+@media (max-width: 767px) {
+  .section {
+    padding: 80px 0;
+    gap: 80px;
+  }
+}
+
+/* Для экранов уже 480px */
+@media (max-width: 480px) {}
