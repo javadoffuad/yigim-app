@@ -13,10 +13,12 @@
     flex-direction: column;
     align-items: center;
     gap: 120px;
+    padding: 0 20px;
 }
 
 .feedbacks {
-    width: 972px;
+    max-width: 972px;
+    width: 100%;
     display: flex;
     flex-grow: 1;
     flex-direction: row;

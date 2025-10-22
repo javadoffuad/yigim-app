@@ -1,4 +1,4 @@
-.w-full{
+.w-full {
     width: 100%;
 }
 
@@ -21,6 +21,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 20px;
 }
 
 .bouncing-container {
@@ -35,7 +36,34 @@
 }
 
 .buttons {
-  display: flex;
-  gap: 10px;
-  margin-top: 40px;
+    display: flex;
+    gap: 10px;
+    margin-top: 40px;
 }
+
+
+/* Для экранов Диапазон: 768px — 1023px - Планшеты (Портретная и альбомная ориентация) */
+@media (max-width: 1023px) {}
+
+/* Для экранов уже 768px - 2 колонки */
+@media (max-width: 767px) {
+    .section {
+        height: 812px;
+        min-height: 812px;
+    }
+
+    .h-full {
+        height: 812px;
+    }
+
+    .title-wrapper {
+        top: 80px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+}
+
+/* Для экранов уже 480px - 1 колонка */
+@media (max-width: 480px) {}
