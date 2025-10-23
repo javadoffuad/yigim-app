@@ -19,7 +19,7 @@
   width: 100%;
 }
 
-.key-facts-title span {
+.header-title span {
   background: url('../../../public/highlight.svg') 0 1px no-repeat;
   background-size: 100%;
   padding: 4px 10px;
@@ -38,7 +38,7 @@
   text-transform: uppercase;
 }
 
-.key-facts-title {
+.header-title {
   position: relative;
   width: 100%;
   font-weight: 500;
@@ -167,7 +167,7 @@
   margin-top: -1px;
   font-weight: 500;
   font-size: 12px;
-  letter-spacing: -0.24px;
+  letter-spacing: -0.2px;
   line-height: 16px;
   white-space: pre-line;
 }
@@ -230,7 +230,7 @@
   margin-top: -1px;
   font-weight: 400;
   font-size: 24px;
-  letter-spacing: -0.48px;
+  letter-spacing: -0.2px;
   line-height: 32px;
   white-space: normal;
 }
@@ -242,3 +242,59 @@
 .key-fact-description.dark {
   color: var(--color-primary);
 }
+
+/* Для экранов Диапазон: 768px — 1023px - Планшеты (Портретная и альбомная ориентация) */
+@media (max-width: 1023px) {}
+
+/* Для экранов уже 768px */
+@media (max-width: 767px) {
+  .header-title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .key-facts-container .key-fact-card {
+    padding: 12px;
+    width: 160px;
+    height: 120px;
+  }
+
+  /* .key-fact-card.card-3 {
+    top: -70px;
+    left: 314px;
+    z-index: 1;
+  }
+
+  .key-fact-card.card-4 {
+    top: 101px;
+    left: 164px;
+    z-index: 1;
+  }
+
+  .key-fact-card.card-6 {
+    top: 54px;
+    left: 350px;
+    z-index: 1;
+  } */
+
+  .key-fact-title {
+    font-size: 10px;
+    letter-spacing: 0;
+    line-height: 12px;
+  }
+
+  .key-fact-value {
+    font-size: 20px;
+    letter-spacing: -0.1px;
+    line-height: 30px;
+  }
+
+  .key-fact-description {
+    font-size: 14px;
+    letter-spacing: -0.1px;
+    line-height: 20px;
+  }
+}
+
+/* Для экранов уже 480px */
+@media (max-width: 480px) {}

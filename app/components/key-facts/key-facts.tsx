@@ -65,7 +65,7 @@ export default function KeyFacts() {
           {t('Label')}
         </div>
 
-        <div className={styles["key-facts-title"]} dangerouslySetInnerHTML={{__html: t.raw('Description')}} />
+        <div className={styles["header-title"]} dangerouslySetInnerHTML={{__html: t.raw('Description')}} />
       </div>
 
       <div className={styles["key-facts-grid"]}>
