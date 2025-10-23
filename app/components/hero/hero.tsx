@@ -2,13 +2,13 @@
 
 import { Suspense } from 'react';
 import {Link} from '@/i18n/navigation';
-import styles from './main-header.module.css';
+import styles from './hero.module.css';
 import { PAGE_RESOURCES_DEVELOPERS } from '@/constants/navigation.constants';
 import { getAbsolutePath } from '@/app/utils/absolute-path.utils';
 import { useTranslations } from 'next-intl';
 import { I18N_HOME_PAGE } from '@/app/constants/i18n.constants';
 
-export default function MainHeader() {
+export default function Hero() {
   const videoPath = getAbsolutePath('main.mp4');
   const t = useTranslations(`${I18N_HOME_PAGE}.AreaMainPoster`);
 

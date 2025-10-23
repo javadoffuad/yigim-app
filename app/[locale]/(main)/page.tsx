@@ -1,7 +1,7 @@
 'use client';
 
 import KeyFacts from '@/components/key-facts/key-facts';
-import MainHeader from '@/components/main-header/main-header';
+import Hero from '@/app/components/hero/hero';
 import OurVision from '@/components/our-vision/our-vision';
 import WhoLovesUs from '@/components/who-loves-us/who-loves-us';
 import { BouncingParameters } from '@/components/bouncing-partners/bouncing-partners';
@@ -23,7 +23,7 @@ export default function MainPage({params}: PageProps<'/[locale]'>) {
 
   return (
     <>
-      <MainHeader />
+      <Hero />
       <WhoWeAre />
       <KeyFacts />
       <OurVision />
