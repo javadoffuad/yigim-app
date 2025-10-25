@@ -75,3 +75,17 @@
     line-height: 16px;
     color: var(--color-primary);
 }
+
+/* Для экранов Диапазон: 768px — 1023px - Планшеты (Портретная и альбомная ориентация) */
+@media (max-width: 1023px) {
+    .dropdown.align-top {
+        top: auto;
+        bottom: 45px;
+    }
+}
+
+/* Для экранов уже 768px */
+@media (max-width: 767px) {}
+
+/* Для экранов уже 480px */
+@media (max-width: 480px) {}

@@ -10,7 +10,7 @@ import { useLocale } from 'next-intl';
 import { useRouter, usePathname } from 'next/navigation';
 import { Language, LanguageCode } from '@/app/models/language.models';
 
-export default function LangMenu() {
+export default function LangMenu(props: {align?: 'top' | 'bottom'}) {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const locale = useLocale();
@@ -76,6 +76,8 @@ export default function LangMenu() {
     router.push(newPath);
     setIsOpen(false);
   };
+  const alignClass = props.align === "top" ? styles["align-top"] : '';
+  const openClass = isOpen ? styles.open : '';
 
   return (
     <div className={styles.container} ref={dropdownRef}>
@@ -86,7 +88,7 @@ export default function LangMenu() {
         </svg>
       </button>
 
-      <div className={`${styles.dropdown} ${isOpen ? styles.open : ''}`}>
+      <div className={`${styles.dropdown} ${openClass} ${alignClass}`}>
         {
           languages.map((lang, index) => (
             <div
