@@ -58,3 +58,24 @@
   margin-top: 16px;
   margin-bottom: 32px;
 }
+
+/* Для экранов Диапазон: 768px — 1023px - Планшеты (Портретная и альбомная ориентация) */
+@media (max-width: 1023px) {
+  
+}
+
+/* Для экранов уже 768px */
+@media (max-width: 767px) {
+  .message {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+  .code {
+    font-size: 140px;
+    line-height: 160px;
+  }
+}
+
+/* Для экранов уже 480px */
+@media (max-width: 480px) {}
