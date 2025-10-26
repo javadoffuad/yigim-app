@@ -62,3 +62,30 @@
     background-position: left 18px center;
     padding-left: 44px;
 }
+
+/* Для экранов Диапазон: 768px — 1023px - Планшеты (Портретная и альбомная ориентация) */
+@media (max-width: 1023px) {}
+
+/* Для экранов уже 768px - 2 колонки */
+@media (max-width: 767px) {
+    .date {
+        margin-bottom: 24px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .title {
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 24px;
+    }
+
+    .text {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 44px;
+    }
+}
+
+/* Для экранов уже 480px - 1 колонка */
+@media (max-width: 480px) {}

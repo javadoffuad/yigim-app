@@ -18,26 +18,28 @@
   width: 100%;
   gap: 16px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
 }
 
-/* Для экранов шире 768px - 3 колонки */
-@media (min-width: 768px) {
-  .news {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
+/* Для экранов Диапазон: 768px — 1023px */
+@media (max-width: 1023px) {}
 
 /* Для экранов уже 768px - 2 колонки */
 @media (max-width: 767px) {
+  .container {
+    padding: 80px 0;
+    gap: 80px;
+  }
+
   .news {
-    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .title {
+    font-size: 32px;
+    line-height: 40px;
   }
 }
 
 /* Для экранов уже 480px - 1 колонка */
-@media (max-width: 480px) {
-  .news {
-    grid-template-columns: 1fr;
-  }
-}
+@media (max-width: 480px) {}

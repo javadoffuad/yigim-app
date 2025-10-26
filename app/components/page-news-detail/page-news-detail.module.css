@@ -13,7 +13,7 @@
   height: 437px;
   bottom: 0;
   opacity: .3;
-  background: linear-gradient(180deg,rgba(255, 196, 4, 0) 0%, rgba(255, 196, 4, 1) 100%);
+  background: linear-gradient(180deg, rgba(255, 196, 4, 0) 0%, rgba(255, 196, 4, 1) 100%);
 }
 
 .main {
@@ -25,36 +25,12 @@
   margin-top: -185px;
 }
 
-.title-wrapper {
-  position: absolute;
-  z-index: 1;
-  height: 240px;
-  top: 246px;
-  left: 0;
-  align-items: flex-end;
-  width: 100%;
-  max-width: 1120px;
-  margin: auto;
-  display: flex;
-  right: 0;
-}
-
-.title {
-  font-size: 96px;
-  font-weight: 500;
-  line-height: 120px;
-  letter-spacing: -4px;
-  font-family: 'Geist', sans-serif;
-  white-space: pre-line;
-  width: 100%;
-  max-width: 1120px;
-}
-
 .content {
   width: calc(100% - 16px);
   min-height: 200px;
   background-color: white;
   border-radius: 40px 40px 0 0;
+  padding: 0 24px;
   z-index: 2;
 }
 
@@ -64,3 +40,25 @@
   margin: auto;
   margin-top: -256px;
 }
+
+/* Для экранов Диапазон: 768px — 1023px - Планшеты (Портретная и альбомная ориентация) */
+@media (max-width: 1023px) {}
+
+/* Для экранов уже 768px - 2 колонки */
+@media (max-width: 767px) {
+  .bg {
+    height: 569px;
+  }
+
+  .content {
+    border-radius: 24px 24px 0 0;
+    padding: 0 12px;
+  }
+
+  .inner {
+    margin-top: -196px;
+  }
+}
+
+/* Для экранов уже 480px - 1 колонка */
+@media (max-width: 480px) {}
