@@ -1,4 +1,4 @@
-.dropdown {
+.container {
     position: fixed;
     left: 0;
     width: 100%;
@@ -10,10 +10,12 @@
     display: flex;
 }
 
-.dropdown-inner {
-    display: flex;
+.navList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     position: relative;
     width: 100%;
+    padding: 0 10px;
     margin: 152px auto 0 auto;
     max-width: var(--max-width);
     gap: 16px;

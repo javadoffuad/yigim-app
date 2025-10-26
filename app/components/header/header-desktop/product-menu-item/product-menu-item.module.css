@@ -1,16 +1,15 @@
-.dropdown-product {
-    width: 288px;
+.link {
     min-height: 164px;
     padding: 20px;
     font-family: var(--font-sans);
     border-radius: 16px;
 }
 
-.dropdown-product:hover {
+.link:hover {
     background-color: rgba(0, 0, 0, 0.05);
 }
 
-.icon-wrapper {
+.iconWrapper {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,14 +25,14 @@
     height: 28px;
 }
 
-.dropdown-product-title {
+.title {
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 8px;
 }
 
-.dropdown-product-desc {
+.description {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;

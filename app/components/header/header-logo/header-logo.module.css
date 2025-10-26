@@ -1,0 +1,11 @@
+.logo {
+    width: 188px;
+    height: auto;
+}
+
+/* Для экранов Диапазон: 768px — 1023px */
+@media (max-width: 1023px) {
+    .logo {
+        width: 140px;
+    }
+}

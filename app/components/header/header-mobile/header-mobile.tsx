@@ -1,65 +1,25 @@
 'use client';
 
-import Image from 'next/image';
 import styles from './header-mobile.module.css'
-import logo from '@/public/header-logo.svg';
-import product1Icon from '@/public/icons/product-1.svg';
-import product2Icon from '@/public/icons/product-2.svg';
-import product3Icon from '@/public/icons/product-3.svg';
-import product4Icon from '@/public/icons/product-4.svg';
 
-import { Link } from '@/i18n/navigation';
-import { PAGE_COMPANY_ABOUT, PAGE_COMPANY_CONTACTS, PAGE_COMPANY_NEWS, PAGE_HOME, PAGE_PRODUCT_ALL_IN_ONE, PAGE_PRODUCT_FAST_INVOICE_PAYMENT, PAGE_PRODUCT_INTERNET_ACQUIRING, PAGE_PRODUCT_LINK_PAYMENT, PAGE_RESOURCES_DEVELOPERS, PAGE_SIGN_IN } from '@/constants/navigation.constants';
-import { ProductMenuItemProps } from '../product-menu-item/product-menu-item';
-import { ProductMenu } from '../product-menu/product-menu';
 import { useEffect, useRef, useState } from 'react';
-import LangMenu from '../lang-menu/lang-menu';
-import { useTranslations } from 'next-intl';
+import { HeaderLogo } from '../header-logo/header-logo';
+import { MenuDropdown } from './menu-dropdown/menu-dropdown';
 
 export default function HeaderMobile() {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
-  const [productMenuIsOpen, setProductMenuIsOpen] = useState(false);
-  const productMenuRef = useRef<HTMLDivElement>(null);
-  const productsButtonRef = useRef<HTMLSpanElement>(null);
-  const t = useTranslations('Header');
-  const p = useTranslations('Products');
-
-  const products: ProductMenuItemProps[] = [
-    {
-      url: PAGE_PRODUCT_INTERNET_ACQUIRING,
-      title: p('Product1.Label'),
-      description: p('Product1.SubLabel'),
-      icon: product1Icon,
-    },
-    {
-      url: PAGE_PRODUCT_ALL_IN_ONE,
-      title: p('Product2.Label'),
-      description: p('Product2.SubLabel'),
-      icon: product2Icon,
-    },
-    {
-      url: PAGE_PRODUCT_LINK_PAYMENT,
-      title: p('Product3.Label'),
-      description: p('Product3.SubLabel'),
-      icon: product3Icon,
-    },
-    {
-      url: PAGE_PRODUCT_FAST_INVOICE_PAYMENT,
-      title: p('Product4.Label'),
-      description: p('Product4.SubLabel'),
-      icon: product4Icon,
-    },
-  ];
+  const menuDropdownRef = useRef<HTMLDivElement>(null);
+  const menuButtonRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     const handleClickOutside = (event: any) => {
       if (
-        productMenuRef?.current &&
-        !productMenuRef.current.contains(event.target as Node) &&
-        productsButtonRef?.current &&
-        !productsButtonRef.current.contains(event.target as Node)
+        menuDropdownRef?.current &&
+        !menuDropdownRef.current.contains(event.target as Node) &&
+        menuButtonRef?.current &&
+        !menuButtonRef.current.contains(event.target as Node)
       ) {
-        setProductMenuIsOpen(false);
+        setMenuIsOpen(false);
       }
     };
 
@@ -69,50 +29,23 @@ export default function HeaderMobile() {
     };
   }, []);
 
-  const toggleDropdown = () => {
-    setProductMenuIsOpen(!productMenuIsOpen);
-  }
-
   const toggleMenu = () => {
     setMenuIsOpen(!menuIsOpen);
   }
 
-  const buttonClass = menuIsOpen ? styles["close-button"] : styles["burger-button"];
+  const buttonClass = menuIsOpen ? styles.closeButton : styles.burgerButton;
+  const headerClass = menuIsOpen ? styles.isOpen : '';
 
   return (
-    <>
-      <header className={styles.header}>
-        <div className={styles["nav-container"]}>
-          <nav className={styles.nav}>
-            <Link href={PAGE_HOME}>
-              <Image src={logo} alt="YIĞIM Logo" className={styles["logo"]} />
-            </Link>
+    <header className={`${styles.header} ${headerClass}`}>
+      <div className={styles.container}>
+        <nav className={styles.nav}>
+          <HeaderLogo />
+          <button ref={menuButtonRef} className={`${styles.menuButton} ${buttonClass}`} onClick={toggleMenu}></button>
+        </nav>
 
-            <div className={styles["nav-actions"]}>
-              <button className={`${styles["menu-button"]} ${buttonClass}`} onClick={toggleMenu}></button>
-            </div>
-          </nav>
-
-          {
-            menuIsOpen
-              ? <div className={styles["menu-dropdown"]}>
-                  <div className={styles["nav-list"]}>menu</div>
-                  <div className={styles["nav-actions"]}>
-                    <LangMenu align='top' />
-                    <Link href={PAGE_SIGN_IN} className="button button-primary button-small">{t('Navigation.Login')}</Link>
-                  </div>
-                </div>
-              : null
-          }
-        </div>
-      </header>
-
-      {
-        productMenuIsOpen
-          ? <ProductMenu ref={productMenuRef} products={products} closeMenu={toggleDropdown} />
-          : null
-      }
-
-    </>
+        { menuIsOpen ? <MenuDropdown ref={menuDropdownRef} /> : null }
+      </div>
+    </header>
   );
 }
