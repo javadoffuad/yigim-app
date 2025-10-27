@@ -218,26 +218,24 @@ export function BouncingParameters({setRequestCallbackIsOpen}: {setRequestCallba
     };
   }, [isInitialized]);
 
-  const handleMouseDown = (event: React.MouseEvent<HTMLCanvasElement>) => {
+  const handleStart = (clientX: number, clientY: number) => {
     const canvas = canvasRef.current;
     if (!canvas) return;
 
     const rect = canvas.getBoundingClientRect();
-    const mouseX = event.clientX - rect.left;
-    const mouseY = event.clientY - rect.top;
+    const x = clientX - rect.left;
+    const y = clientY - rect.top;
 
     let ballToDrag: Ball | null = null;
-    let minDistance = Infinity;
 
-    // Find the topmost ball to drag by iterating backwards
     for (let i = ballsRef.current.length - 1; i >= 0; i--) {
         const ball = ballsRef.current[i];
-        const dx = mouseX - ball.x;
-        const dy = mouseY - ball.y;
+        const dx = x - ball.x;
+        const dy = y - ball.y;
         const distance = Math.sqrt(dx * dx + dy * dy);
         if (distance < ballRadius) {
             ballToDrag = ball;
-            break; // Found the topmost, break the loop
+            break;
         }
     }
 
@@ -247,42 +245,40 @@ export function BouncingParameters({setRequestCallbackIsOpen}: {setRequestCallba
       ballToDrag.vy = 0;
       dragInfo.current = {
         ball: ballToDrag,
-        offsetX: mouseX - ballToDrag.x,
-        offsetY: mouseY - ballToDrag.y
+        offsetX: x - ballToDrag.x,
+        offsetY: y - ballToDrag.y
       };
     }
   };
 
-  const handleMouseMove = (event: React.MouseEvent<HTMLCanvasElement>) => {
+  const handleMove = (clientX: number, clientY: number) => {
     const { ball } = dragInfo.current;
     if (!ball || !ball.isDragging) return;
     
     const canvas = canvasRef.current;
     if (!canvas) return;
     const rect = canvas.getBoundingClientRect();
-    const mouseX = event.clientX - rect.left;
-    const mouseY = event.clientY - rect.top;
+    const x = clientX - rect.left;
+    const y = clientY - rect.top;
 
     const dpr = window.devicePixelRatio || 1;
     const canvasWidth = canvas.width / dpr;
     const canvasHeight = canvas.height / dpr;
     
-    const newX = mouseX - dragInfo.current.offsetX;
-    const newY = mouseY - dragInfo.current.offsetY;
+    const newX = x - dragInfo.current.offsetX;
+    const newY = y - dragInfo.current.offsetY;
 
-    // Record previous position to calculate velocity
     const prevX = ball.x;
     const prevY = ball.y;
 
     ball.x = Math.max(ballRadius, Math.min(canvasWidth - ballRadius, newX));
     ball.y = Math.max(ballRadius, Math.min(canvasHeight - ballRadius, newY));
 
-    // Update velocity based on mouse movement
     ball.vx = (ball.x - prevX);
     ball.vy = (ball.y - prevY);
   };
 
-  const handleMouseUp = () => {
+  const handleEnd = () => {
     const { ball } = dragInfo.current;
     if (ball && ball.isDragging) {
       ball.isDragging = false;
@@ -290,8 +286,36 @@ export function BouncingParameters({setRequestCallbackIsOpen}: {setRequestCallba
     dragInfo.current.ball = null;
   };
 
+  const handleMouseDown = (event: React.MouseEvent<HTMLCanvasElement>) => {
+    handleStart(event.clientX, event.clientY);
+  };
+
+  const handleMouseMove = (event: React.MouseEvent<HTMLCanvasElement>) => {
+    handleMove(event.clientX, event.clientY);
+  };
+
+  const handleMouseUp = () => {
+    handleEnd();
+  };
+
   const handleMouseLeave = () => {
-    handleMouseUp();
+    handleEnd();
+  };
+
+  const handleTouchStart = (event: React.TouchEvent<HTMLCanvasElement>) => {
+    if (event.touches.length > 0) {
+      handleStart(event.touches[0].clientX, event.touches[0].clientY);
+    }
+  };
+
+  const handleTouchMove = (event: React.TouchEvent<HTMLCanvasElement>) => {
+    if (event.touches.length > 0) {
+      handleMove(event.touches[0].clientX, event.touches[0].clientY);
+    }
+  };
+
+  const handleTouchEnd = () => {
+    handleEnd();
   };
 
   const handleClick = () => {
@@ -318,6 +342,10 @@ export function BouncingParameters({setRequestCallbackIsOpen}: {setRequestCallba
             onMouseMove={handleMouseMove}
             onMouseUp={handleMouseUp}
             onMouseLeave={handleMouseLeave}
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
+            onTouchCancel={handleTouchEnd}
             className={`${styles["w-full"]} ${styles["h-full"]}`}
           />
         </div>
