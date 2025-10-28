@@ -1,3 +1,5 @@
+'use client';
+
 import React from "react";
 import styles from "./awards.module.css";
 import azercosmosLogo from '@/public/partners/azercosmos.svg';

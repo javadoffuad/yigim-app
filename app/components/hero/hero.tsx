@@ -1,6 +1,6 @@
 'use client';
 
-import { Suspense } from 'react';
+import { Suspense, useEffect, useState } from 'react';
 import {Link} from '@/i18n/navigation';
 import styles from './hero.module.css';
 import { PAGE_RESOURCES_DEVELOPERS } from '@/constants/navigation.constants';
@@ -9,10 +9,16 @@ import { useTranslations } from 'next-intl';
 import { I18N_HOME_PAGE } from '@/app/constants/i18n.constants';
 
 export default function Hero() {
-  const width = window.innerWidth;
-  const isMobile = width <= 480;
-  const videoSrc = isMobile ? 'hero-mobile.mp4' : 'hero.mp4'
-  const videoPath = getAbsolutePath(videoSrc);
+  const [videoPath, setVideoPath] = useState('');
+
+  useEffect(() => {
+    const width = window.innerWidth;
+    const mobile = width <= 480;
+    
+    const videoSrc = mobile ? 'hero-mobile.mp4' : 'hero.mp4';
+    setVideoPath(getAbsolutePath(videoSrc));
+  }, []);
+
   const t = useTranslations(`${I18N_HOME_PAGE}.AreaMainPoster`);
 
   return (
@@ -28,12 +34,17 @@ export default function Hero() {
         </div>
       </div>
 
-      <Suspense fallback={<p>Loading video...</p>}>
-        <video className={styles.video} loop autoPlay muted>
-          <source src={videoPath} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </Suspense>
+      {
+        videoPath
+        ? <Suspense fallback={<p>Loading video...</p>}>
+          <video className={styles.video} loop autoPlay muted>
+            <source src={videoPath} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </Suspense>
+        : <div className={styles.video}></div>
+      }
+      
     </div>
   );
 }
