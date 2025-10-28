@@ -1,3 +1,5 @@
+'use client';
+
 import React from "react";
 import styles from "./our-team.module.css";
 import { useTranslations } from "next-intl";
