@@ -9,7 +9,10 @@ import { useTranslations } from 'next-intl';
 import { I18N_HOME_PAGE } from '@/app/constants/i18n.constants';
 
 export default function Hero() {
-  const videoPath = getAbsolutePath('main.mp4');
+  const width = window.innerWidth;
+  const isMobile = width <= 480;
+  const videoSrc = isMobile ? 'hero-mobile.mp4' : 'hero.mp4'
+  const videoPath = getAbsolutePath(videoSrc);
   const t = useTranslations(`${I18N_HOME_PAGE}.AreaMainPoster`);
 
   return (

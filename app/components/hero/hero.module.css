@@ -91,4 +91,10 @@
 }
 
 /* Для экранов уже 480px */
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+  .video {
+    height: 100vh;
+    clip-path: inset(1px 1px);
+    object-position: bottom;
+  }
+}
