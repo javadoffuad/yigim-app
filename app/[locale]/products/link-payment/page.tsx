@@ -33,6 +33,7 @@ export default function ProductPage() {
             image: devicesImage,
             imageStyles: {
                 maxWidth: '530px',
+                width: '100%',
             }
         },
         description: t('AdditionalInfo.Info1.Description'),
