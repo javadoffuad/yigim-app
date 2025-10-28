@@ -36,12 +36,10 @@ export default function Hero() {
 
       {
         videoPath
-        ? <Suspense fallback={<p>Loading video...</p>}>
-          <video className={styles.video} loop autoPlay muted>
+        ? <video className={styles.video} loop autoPlay muted>
             <source src={videoPath} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-        </Suspense>
         : <div className={styles.video}></div>
       }
       
