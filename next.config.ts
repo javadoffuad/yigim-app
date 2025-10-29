@@ -13,6 +13,7 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: false,
   },
+  output: "standalone",
   async redirects() {
     return [
       {
