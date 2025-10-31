@@ -2,7 +2,7 @@
 
 import React from "react";
 import styles from "./carousel-photos.module.css";
-import Slider from "react-slick";
+import Slider, { Settings } from "react-slick";
 import Image from "next/image";
 import carousel1 from '@/public/images/carousel-1.png';
 import carousel2 from '@/public/images/carousel-2.png';
@@ -17,8 +17,8 @@ export default function CarouselPhotos() {
   const { width } = useWindowSize();
 
   const getSettings = () => {
-    const baseSettings = {
-      ddots: false,
+    const baseSettings: Settings = {
+      dots: false,
       infinite: true,
       speed: 500,
       slidesToShow: 4,
