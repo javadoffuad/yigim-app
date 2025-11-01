@@ -18,8 +18,21 @@
   transition: all 0.8s ease-in-out;
 }
 
-.icon {
+.image {
   width: 100%;
+  height: 100%;
+}
+
+.card > .tooltip {
+  opacity: 0;
+}
+
+.card:nth-child(1) .tooltip {
+  animation: slideTooltip 0.8s ease-in-out forwards;
+}
+
+.card.slide-out .tooltip {
+  animation: slideOutTooltip 0.4s ease-in-out forwards;
 }
 
 /* Позиционирование карточек в стопке с видимыми 50px справа и заданной opacity */
@@ -87,6 +100,30 @@
     transform: translateX(0) rotate(0deg);
     opacity: 0.03;
     /* Остается opacity 0.03 */
+  }
+}
+
+@keyframes slideTooltip {
+  0% {
+    top: -7px;
+    opacity: 0;
+  }
+
+  100% {
+    top: -27px;
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutTooltip {
+  0% {
+    top: -27px;
+    opacity: 1;
+  }
+
+  100% {
+    top: -7px;
+    opacity: 0;
   }
 }
 
