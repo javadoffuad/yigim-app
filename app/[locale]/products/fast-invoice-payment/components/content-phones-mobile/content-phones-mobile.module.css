@@ -1,0 +1,168 @@
+.carousel-container {
+  width: 100%;
+  max-width: 370px;
+  padding: 20px 0;
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  position: relative;
+  height: 345px;
+}
+
+.card {
+  position: absolute;
+  width: 170px;
+  height: 345px;
+  transition: all 0.8s ease-in-out;
+}
+
+.icon {
+  width: 100%;
+}
+
+/* Позиционирование карточек в стопке с видимыми 50px справа и заданной opacity */
+.card:nth-child(1) {
+  z-index: 5;
+  left: 0;
+  opacity: 1;
+}
+
+.card:nth-child(2) {
+  z-index: 4;
+  left: 50px;
+  opacity: 0.3;
+}
+
+.card:nth-child(3) {
+  z-index: 3;
+  left: 100px;
+  opacity: 0.1;
+}
+
+.card:nth-child(4) {
+  z-index: 2;
+  left: 150px;
+  opacity: 0.07;
+}
+
+.card:nth-child(5) {
+  z-index: 1;
+  left: 200px;
+  opacity: 0.03;
+}
+
+/* Анимация перемещения карточек */
+@keyframes slideOut {
+  0% {
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateX(-100px) rotate(-5deg);
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: translateX(-300px) rotate(-10deg);
+    opacity: 0;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(300px) rotate(10deg);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateX(150px) rotate(5deg);
+    opacity: 0.03;
+    /* Начинаем с opacity 0.03 */
+  }
+
+  100% {
+    transform: translateX(0) rotate(0deg);
+    opacity: 0.03;
+    /* Остается opacity 0.03 */
+  }
+}
+
+.slide-out {
+  animation: slideOut 0.8s ease-in-out forwards;
+}
+
+.slide-in {
+  animation: slideIn 0.8s ease-in-out forwards;
+}
+
+.slide-1 {
+  animation: slide1 0.8s ease-in-out forwards;
+}
+
+.slide-2 {
+  animation: slide2 0.8s ease-in-out forwards;
+}
+
+.slide-3 {
+  animation: slide3 0.8s ease-in-out forwards;
+}
+
+.slide-4 {
+  animation: slide4 0.8s ease-in-out forwards;
+}
+
+@keyframes slide1 {
+  0% {
+    left: 50px;
+    opacity: 0.3;
+  }
+
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slide2 {
+  0% {
+    left: 100px;
+    opacity: 0.1;
+  }
+
+  100% {
+    left: 50px;
+    opacity: 0.3;
+  }
+}
+
+@keyframes slide3 {
+  0% {
+    left: 150px;
+    opacity: 0.07;
+  }
+
+  100% {
+    left: 100px;
+    opacity: 0.1;
+  }
+}
+
+@keyframes slide4 {
+  0% {
+    left: 200px;
+    opacity: 0.03;
+  }
+
+  100% {
+    left: 150px;
+    opacity: 0.07;
+  }
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {}
+
+@media (max-width: 480px) {}

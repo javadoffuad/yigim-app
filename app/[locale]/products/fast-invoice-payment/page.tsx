@@ -23,11 +23,12 @@ import RealLifeCases, { RealLifeProps } from "../components/real-life/main-secti
 import { getAbsolutePath } from "@/app/utils/absolute-path.utils";
 import { useTranslations } from "next-intl";
 import ContentImage, { ContentImageProps } from "../components/content-image/main-section/main-section";
-import styles from "./page.module.css";
-import Image, { StaticImageData } from "next/image";
-import Tooltip from "@/app/components/ui/tooltip/tooltip";
+import { StaticImageData } from "next/image";
+import ContentPhonesMobile from "./components/content-phones-mobile/content-phones-mobile";
+import ContentPhonesDesktop from "./components/content-phones-desktop/content-phones-desktop";
+import { useWindowSize } from "@/app/hooks/use-window-size";
 
-const phones: {tooltip: string, icon: StaticImageData}[] = [
+const phones: { tooltip: string, icon: StaticImageData }[] = [
     {
         icon: smartphone1,
         tooltip: "Service provider sends debt notification to their customers using their <mark>own sms gateway</mark> sms text contains personalized payment link"
@@ -48,10 +49,12 @@ const phones: {tooltip: string, icon: StaticImageData}[] = [
         icon: smartphone5,
         tooltip: "Notification about <mark>Successful Payment + Receipt Download</mark>"
     },
-]
+];
 
 export default function ProductPage() {
     const t = useTranslations('Products.Product4');
+    const { width } = useWindowSize();
+    const isDesktop = width > 1023;
     const info: ProductInfoProps = {
         title: t('SubLabel'),
         description: t('Description'),
@@ -60,18 +63,9 @@ export default function ProductPage() {
         label: t('Label'),
         title: t('AdditionalInfo.Info1.Label'),
         content: {
-            contentHTML: <div className={styles["container"]}>
-                <div className={styles["phones"]}>
-                    {
-                        phones.map((phone, index) => (
-                            <div key={index} className={styles["phone"]}>
-                                <Tooltip text={phone.tooltip} />
-                                <Image src={phone.icon} alt="" />
-                            </div>
-                        ))
-                    }
-                </div>
-            </div>,
+            contentHTML: isDesktop
+                ? <ContentPhonesDesktop phones={phones} />
+                : <ContentPhonesMobile phones={phones} />,
         },
         description: t('AdditionalInfo.Info1.Description'),
     };
