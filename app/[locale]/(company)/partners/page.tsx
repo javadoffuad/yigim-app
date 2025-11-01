@@ -45,6 +45,9 @@ export default function PartnersPage() {
       name: t('AreaWhoLovesUs.ButtonMarketplace.Label'),
     },
   ];
+  const currentCategory = (selectedCategory !== null || selectedCategory !== undefined)
+    ? categories.find(cat => cat.code === selectedCategory)
+    : undefined;
 
   // Фильтрация партнеров
   const filteredPartners = selectedCategory === PartnerCategory.ALL 
@@ -83,7 +86,8 @@ export default function PartnersPage() {
                   items={categories}
                   getKey={(item) => item.code.toString()}
                   getLabel={(item) => item.name}
-                  selectedItem=''
+                  selectedItem={currentCategory}
+                  onClick={(item) => selectCategory(item.code)}
                   />
               </div>
           }

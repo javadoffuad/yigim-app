@@ -8,10 +8,11 @@ export interface ISelectProps<T> {
   items: T[];
   getKey: (item: T) => string;
   getLabel: (item: T) => string;
-  selectedItem: string;
+  selectedItem?: T;
+  onClick: (item: T) => void;
 }
 
-export default function Select<T>({items, selectedItem, getLabel, getKey}: ISelectProps<T>) {
+export default function Select<T>({items, selectedItem, getLabel, getKey, onClick}: ISelectProps<T>) {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const locale = useLocale();
@@ -36,13 +37,14 @@ export default function Select<T>({items, selectedItem, getLabel, getKey}: ISele
   const selectItem = (newItem: T) => {
     console.log('select item', newItem);
     setIsOpen(false);
+    onClick(newItem);
   };
   const firstItem = items[0]!;
 
   return (
     <div className={styles.container} ref={dropdownRef}>
       <button className="button" onClick={toggleMenu}>
-        {selectedItem ? selectedItem : getLabel(firstItem)}
+        {selectedItem ? getLabel(selectedItem) : getLabel(firstItem)}
         <svg className={styles.icon} width="12" height="12" viewBox="0 0 12 12" fill="none">
           <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
