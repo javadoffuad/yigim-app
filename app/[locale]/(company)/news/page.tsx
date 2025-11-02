@@ -15,7 +15,7 @@ export default function NewsPage() {
   const locale = useLocale();
   const news = getNews(locale as LanguageCode);
   return (
-    <PageWrapper title={t('Label')}>
+    <PageWrapper title={t('Label')} className={styles.container}>
       <div className={styles.news}>
         {
           news.map(newsItem => <Link key={newsItem.id} href={`${newsItem.id}`}><NewsCard {...newsItem} /></Link>)

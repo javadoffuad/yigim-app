@@ -16,7 +16,7 @@ export default function ContactsPage() {
   const t = useTranslations(`${I18N_CONTACTS_PAGE}`);
   return (
     <>
-    <PageWrapper title={t('Label')}>
+    <PageWrapper title={t('Label')} className={styles.container}>
       <div className={styles["contact-cards"]}>
         <ContactCard altText="Email" icon={email}>
           {EMAIL}

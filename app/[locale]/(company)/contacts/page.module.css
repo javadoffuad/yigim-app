@@ -2,16 +2,18 @@
     display: flex;
     gap: 24px;
     width: 100%;
-    max-width: 1120px;
+    max-width: 1144px;
     margin: 0 auto;
     flex-wrap: wrap;
-    padding-bottom: 120px;
+    padding: 0 12px 120px 12px;
+}
+
+.container {
+    padding-top: 32px;
 }
 
 /* Для экранов Диапазон: 768px — 1023px - Планшеты (Портретная и альбомная ориентация) */
-@media (max-width: 1023px) {
-    
-}
+@media (max-width: 1023px) {}
 
 /* Для экранов уже 768px */
 @media (max-width: 767px) {

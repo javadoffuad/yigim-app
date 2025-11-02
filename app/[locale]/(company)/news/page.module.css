@@ -5,6 +5,10 @@
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
 }
 
+.container {
+  padding-top: 20px !important;
+}
+
 /* Для экранов Диапазон: 768px — 1023px */
 @media (max-width: 1023px) {}
 
