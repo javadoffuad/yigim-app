@@ -5,7 +5,7 @@ import Image from "next/image";
 import userIcon from '@/public/icons/user.svg';
 import phoneIcon from '@/public/icons/phone.svg';
 import closeIcon from '@/public/icons/close.svg';
-import "./request-callback-form.css";
+import styles from "./request-callback-form.module.css";
 import Input from "../ui/input/input";
 import { useForm, SubmitHandler } from "react-hook-form"
 import { useTranslations } from "next-intl";
@@ -93,17 +93,17 @@ export const RequestCallbackForm = (props: RequestCallbackFormProps): JSX.Elemen
   const formValues = watch();
 
   return (
-    <div className="request-callback-card">
-      <div className="card-content">
-        <div className="header-section">
-          <div className="subtitle">{t('Label')}</div>
-          <h1 className="title">
+    <div className={styles["request-callback-card"]}>
+      <div className={styles["card-content"]}>
+        <div className={styles["header-section"]}>
+          <div className={styles["subtitle"]}>{t('Label')}</div>
+          <h1 className={styles["title"]}>
             {t('Description')}
           </h1>
         </div>
 
-        <form className="form-section" onSubmit={hookFormSubmit(onSubmit)} noValidate>
-          <div className="input-group">
+        <form className={styles["form-section"]} onSubmit={hookFormSubmit(onSubmit)} noValidate>
+          <div className={styles["input-group"]}>
             <Input
               icon={userIcon}
               label={t('ControlFullName.Label')}
@@ -123,13 +123,13 @@ export const RequestCallbackForm = (props: RequestCallbackFormProps): JSX.Elemen
               onBlur={() => handleBlur('phoneNumber')} />
           </div>
 
-          <button type="submit" className="submit-button" disabled={isSubmitting}>
+          <button type="submit" className={styles["submit-button"]} disabled={isSubmitting}>
             {isSubmitting ? t('Loading') : t('ButtonCallMe.Label')}
           </button>
         </form>
 
-        <button className="close-button" onClick={props.handleClose}>
-          <Image src={closeIcon} className="close-icon" alt="" />
+        <button className={styles["close-button"]} onClick={props.handleClose}>
+          <Image src={closeIcon} className={styles["close-icon"]} alt="" />
         </button>
       </div>
     </div>
