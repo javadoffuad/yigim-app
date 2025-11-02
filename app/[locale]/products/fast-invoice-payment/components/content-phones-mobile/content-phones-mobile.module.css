@@ -28,8 +28,9 @@
   height: 100%;
 }
 
-.card>.tooltip {
+.card .tooltip {
   opacity: 0;
+  width: var(--card-width);
 }
 
 .card:nth-child(1) .tooltip {
