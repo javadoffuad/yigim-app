@@ -18,12 +18,12 @@
 
 .quick-contact {
   position: fixed;
+  display: flex;
   width: 140px;
-  z-index: 2;
   bottom: 73px;
   right: 40px;
   gap: 12px;
-  display: flex;
+  z-index: 3;
 }
 
 .contact-button {

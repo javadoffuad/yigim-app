@@ -12,6 +12,7 @@ import { I18N_PARTNERS_PAGE } from '@/app/constants/i18n.constants';
 import SectionTitle from '@/app/components/section-title/section-title';
 import { useWindowSize } from '@/app/hooks/use-window-size';
 import Select from '@/app/components/ui/select/select';
+import TabCategory from './components/tab-category/tab-category';
 
 export default function PartnersPage() {
   const [selectedCategory, setSelectedCategory] = useState<PartnerCategory>(PartnerCategory.ALL);
@@ -69,18 +70,10 @@ export default function PartnersPage() {
         <div className={styles.partners}>
           {
             isDesktop ?
-              <div className={styles.buttons}>
-                {
-                  categories.map((category, index) =>(
-                    <button
-                      key={index}
-                      onClick={() => selectCategory(category.code)}
-                      className={`button ${selectedCategory === category.code ? 'button-primary' : ''} ${category.code === PartnerCategory.ALL ? styles["button-all"] : ''}`}>
-                      {category.name}
-                    </button>
-                  ))
-                }
-              </div>
+              <TabCategory
+                categories={categories}
+                selectedCategory={selectedCategory}
+                onClick={(categoryCode) => selectCategory(categoryCode)} />
             : <div className={styles.select}>
                 <Select
                   items={categories}

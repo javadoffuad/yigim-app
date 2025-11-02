@@ -3,23 +3,11 @@
     margin-top: 134px;
 }
 
-.buttons {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    margin-top: 40px;
-    margin-bottom: 60px;
-}
-
-.button-all {
-    padding: 0 32px;
-}
-
 .partners-container {
     width: 100%;
     gap: 16px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .partner-item {
@@ -49,10 +37,11 @@
         padding: 0 20px;
         font-size: 13px;
     }
-}
 
-/* Для экранов шире 768px */
-@media (min-width: 768px) {}
+    .partners-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 
 /* Для экранов уже 768px */
 @media (max-width: 767px) {
@@ -66,7 +55,7 @@
     }
 
     .partners-container {
-        grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .partner-item {

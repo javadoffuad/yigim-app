@@ -1,0 +1,11 @@
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.button-all {
+    padding: 0 32px;
+}
