@@ -8,6 +8,7 @@
   content: '';
   top: 0;
   bottom: 0;
+  left: 0;
   width: 100%;
   background: linear-gradient(90deg, rgba(233, 234, 238, 0.5) 40.38%, rgba(233, 234, 238, 0) 100%), rgba(0, 0, 0, 0.03);
 }
