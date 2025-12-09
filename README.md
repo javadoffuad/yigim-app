@@ -2,7 +2,7 @@
 
 Modern web application built with Next.js, featuring a responsive design and seamless user experience.
 
-![Next.js](https://img.shields.io/badge/Next.js-15.5.0-black?style=for-the-badge&logo=next.js)
+![Next.js](https://img.shields.io/badge/Next.js-16.0.7-black?style=for-the-badge&logo=next.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)
 ![Docker](https://img.shields.io/badge/Docker-✓-blue?style=for-the-badge&logo=docker)
 
